@@ -1,0 +1,59 @@
+{
+  "blocs_html_non_vides": 1079,
+  "paragraphes_mesures_source": 795,
+  "mesures_extraites": 795,
+  "sous_sections": 80,
+  "blocs_non_classes": [],
+  "textes_mesures_repetes": [],
+  "comptages": [
+    {
+      "section": "ÉCONOMIE, TRAVAIL ET LOGEMENT",
+      "annonce": 212,
+      "extrait": 207,
+      "ecart": -5
+    },
+    {
+      "section": "INSTITUTIONS, DÉMOCRATIE ET SOCIÉTÉ",
+      "annonce": 122,
+      "extrait": 117,
+      "ecart": -5
+    },
+    {
+      "section": "ÉCOLOGIE ET CLIMAT",
+      "annonce": 164,
+      "extrait": 158,
+      "ecart": -6
+    },
+    {
+      "section": "EUROPE ET INTERNATIONAL",
+      "annonce": 87,
+      "extrait": 85,
+      "ecart": -2
+    },
+    {
+      "section": "SANTÉ ET SOCIAL",
+      "annonce": 86,
+      "extrait": 68,
+      "ecart": -18
+    },
+    {
+      "section": "ÉDUCATION, RECHERCHE ET JEUNESSE",
+      "annonce": 94,
+      "extrait": 91,
+      "ecart": -3
+    },
+    {
+      "section": "SÉCURITÉ, POLICE ET JUSTICE PÉNALE",
+      "annonce": 44,
+      "extrait": 44,
+      "ecart": 0
+    },
+    {
+      "section": "IMMIGRATION, DROITS ET LUTTE CONTRE LES DISCRIMINATIONS",
+      "annonce": 25,
+      "extrait": 25,
+      "ecart": 0
+    }
+  ],
+  "limite": "Les nombres annoncés ne définissent pas le découpage. Une puce peut contenir plusieurs propositions. Aucune mesure n’est inventée pour atteindre ces nombres."
+}

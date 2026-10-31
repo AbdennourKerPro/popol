@@ -1,0 +1,2074 @@
+{
+  "pdf": "assets/Programme-Mélenchon-LFI.pdf",
+  "pdf_sha256": "9855c5693995fac7e37d67e5adb2ece4deb5f5789e008018e53de8fe6c4cb19a",
+  "pages_pdf": 59,
+  "blocs_annexe_comparees": 171,
+  "blocs_annexe_correspondantes": 171,
+  "blocs_annexe_a_verifier": 0,
+  "blocs_annexe_correspondantes_sans_glyphe_indetermine": 135,
+  "blocs_annexe_correspondantes_avec_glyphes_indetermines": 36,
+  "methode": "Comparaison intégrale des tokens de chaque mesure, après normalisation des accents, espaces et ponctuation. Les caractères U+FFFD du PDF sont des jokers de lettres/chiffres ; les variantes correspondantes sont comptées. Les bandeaux récurrents sont retirés par texte et coordonnées.",
+  "limite": "Contrôle des blocs d’annexe, distincts des propositions. Les glyphes indéterminés restent non validés ; aucune vérification de la véracité ni du statut officiel du résumé.",
+  "blocs_annexe": [
+    {
+      "id": "a01-ss01-b001",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 16,
+        "pages_pdf": [
+          41
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b002",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 57,
+        "pages_pdf": [
+          41,
+          42
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b003",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 85,
+        "pages_pdf": [
+          42
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b004",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 92,
+        "pages_pdf": [
+          42
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b005",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 99,
+        "pages_pdf": [
+          42
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b006",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 106,
+        "pages_pdf": [
+          42
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b007",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 113,
+        "pages_pdf": [
+          42
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b008",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 118,
+        "pages_pdf": [
+          42
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b009",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 134,
+        "pages_pdf": [
+          42
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b010",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 158,
+        "pages_pdf": [
+          42,
+          43
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b011",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 176,
+        "pages_pdf": [
+          43
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b012",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 195,
+        "pages_pdf": [
+          43
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b013",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 212,
+        "pages_pdf": [
+          43
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b014",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 231,
+        "pages_pdf": [
+          43
+        ],
+        "glyphes_pdf_indetermines": 2
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b015",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 245,
+        "pages_pdf": [
+          43
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b016",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 258,
+        "pages_pdf": [
+          43
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b017",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 284,
+        "pages_pdf": [
+          43
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b018",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 301,
+        "pages_pdf": [
+          43
+        ],
+        "glyphes_pdf_indetermines": 2
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b019",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 315,
+        "pages_pdf": [
+          43
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b020",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 332,
+        "pages_pdf": [
+          44
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b021",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 346,
+        "pages_pdf": [
+          44
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b022",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 360,
+        "pages_pdf": [
+          44
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b023",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 377,
+        "pages_pdf": [
+          44
+        ],
+        "glyphes_pdf_indetermines": 2
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b024",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 405,
+        "pages_pdf": [
+          44
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b025",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 423,
+        "pages_pdf": [
+          44
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b026",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 437,
+        "pages_pdf": [
+          44
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b027",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 455,
+        "pages_pdf": [
+          44
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b028",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 471,
+        "pages_pdf": [
+          44
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b029",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 490,
+        "pages_pdf": [
+          44,
+          45
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b030",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 511,
+        "pages_pdf": [
+          45
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b031",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 532,
+        "pages_pdf": [
+          45
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b032",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 542,
+        "pages_pdf": [
+          45
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b033",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 560,
+        "pages_pdf": [
+          45
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b034",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 579,
+        "pages_pdf": [
+          45
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b035",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 590,
+        "pages_pdf": [
+          45
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b036",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 600,
+        "pages_pdf": [
+          45
+        ],
+        "glyphes_pdf_indetermines": 2
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b037",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 621,
+        "pages_pdf": [
+          45
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b038",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 631,
+        "pages_pdf": [
+          45
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b039",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 650,
+        "pages_pdf": [
+          46
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b040",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 669,
+        "pages_pdf": [
+          46
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b041",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 685,
+        "pages_pdf": [
+          46
+        ],
+        "glyphes_pdf_indetermines": 2
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b042",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 701,
+        "pages_pdf": [
+          46
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b043",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 717,
+        "pages_pdf": [
+          46
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b044",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 732,
+        "pages_pdf": [
+          46
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b045",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 746,
+        "pages_pdf": [
+          46
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b046",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 757,
+        "pages_pdf": [
+          46
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b047",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 771,
+        "pages_pdf": [
+          46
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b048",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 785,
+        "pages_pdf": [
+          46
+        ],
+        "glyphes_pdf_indetermines": 2
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b049",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 801,
+        "pages_pdf": [
+          46,
+          47
+        ],
+        "glyphes_pdf_indetermines": 2
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b050",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 821,
+        "pages_pdf": [
+          47
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b051",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 835,
+        "pages_pdf": [
+          47
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b052",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 853,
+        "pages_pdf": [
+          47
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b053",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 873,
+        "pages_pdf": [
+          47
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss01-b054",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 886,
+        "pages_pdf": [
+          47
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b001",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 902,
+        "pages_pdf": [
+          47
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b002",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 905,
+        "pages_pdf": [
+          47
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b003",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 920,
+        "pages_pdf": [
+          47
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b004",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 930,
+        "pages_pdf": [
+          47
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b005",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 935,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b006",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 944,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b007",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 950,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b008",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 962,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b009",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 968,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b010",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 973,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b011",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 980,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b012",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 985,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b013",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 990,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b014",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 994,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b015",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1005,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b016",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1012,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b017",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1021,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b018",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1027,
+        "pages_pdf": [
+          48
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b019",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1030,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b020",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1035,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b021",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1040,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b022",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1045,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b023",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1050,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b024",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1055,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b025",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1068,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b026",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1076,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b027",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1084,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b028",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1089,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b029",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1097,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b030",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1106,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b031",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1111,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b032",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1114,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b033",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1119,
+        "pages_pdf": [
+          49
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b034",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1128,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b035",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1141,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b036",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1153,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b037",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1157,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b038",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1165,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b039",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1170,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b040",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1173,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b041",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1177,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b042",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1181,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b043",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1186,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b044",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1192,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b045",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1203,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b046",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1216,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b047",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1225,
+        "pages_pdf": [
+          50
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b048",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1233,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b049",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1241,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b050",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1246,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b051",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1261,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b052",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1271,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b053",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1280,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b054",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1285,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b055",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1291,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b056",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1295,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b057",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1303,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b058",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1308,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b059",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1312,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b060",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1316,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b061",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1322,
+        "pages_pdf": [
+          51
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b062",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1329,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b063",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1338,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b064",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1346,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b065",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1351,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b066",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1356,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b067",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1363,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b068",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1368,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b069",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1377,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b070",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1391,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b071",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1399,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b072",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1407,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b073",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1413,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b074",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1427,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b075",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1430,
+        "pages_pdf": [
+          52
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b076",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1440,
+        "pages_pdf": [
+          53
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b077",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1452,
+        "pages_pdf": [
+          53
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a01-ss02-b078",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1458,
+        "pages_pdf": [
+          53
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss01-b001",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1481,
+        "pages_pdf": [
+          53
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss01-b002",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1509,
+        "pages_pdf": [
+          54
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss01-b003",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1546,
+        "pages_pdf": [
+          54
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss01-b004",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1584,
+        "pages_pdf": [
+          54
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b001",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1613,
+        "pages_pdf": [
+          54
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b002",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1616,
+        "pages_pdf": [
+          54
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b003",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1658,
+        "pages_pdf": [
+          54,
+          55
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b004",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1711,
+        "pages_pdf": [
+          55
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b005",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1733,
+        "pages_pdf": [
+          55
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b006",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1759,
+        "pages_pdf": [
+          55
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b007",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1778,
+        "pages_pdf": [
+          55
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b008",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1804,
+        "pages_pdf": [
+          55
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 3
+    },
+    {
+      "id": "a02-ss02-b009",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1805,
+        "pages_pdf": [
+          55
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b010",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1834,
+        "pages_pdf": [
+          55
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b011",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1837,
+        "pages_pdf": [
+          56
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b012",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1860,
+        "pages_pdf": [
+          56
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b013",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1893,
+        "pages_pdf": [
+          56
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b014",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1913,
+        "pages_pdf": [
+          56
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b015",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1947,
+        "pages_pdf": [
+          56
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b016",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1950,
+        "pages_pdf": [
+          56
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b017",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1966,
+        "pages_pdf": [
+          56
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b018",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 1985,
+        "pages_pdf": [
+          56,
+          57
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b019",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2011,
+        "pages_pdf": [
+          57
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b020",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2032,
+        "pages_pdf": [
+          57
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b021",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2060,
+        "pages_pdf": [
+          57
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b022",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2075,
+        "pages_pdf": [
+          57
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 3
+    },
+    {
+      "id": "a02-ss02-b023",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2076,
+        "pages_pdf": [
+          57
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b024",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2109,
+        "pages_pdf": [
+          57
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b025",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2112,
+        "pages_pdf": [
+          57
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b026",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2139,
+        "pages_pdf": [
+          57
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b027",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2155,
+        "pages_pdf": [
+          58
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b028",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2158,
+        "pages_pdf": [
+          58
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b029",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2201,
+        "pages_pdf": [
+          58
+        ],
+        "glyphes_pdf_indetermines": 1
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b030",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2224,
+        "pages_pdf": [
+          58
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss02-b031",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2257,
+        "pages_pdf": [
+          58
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 5
+    },
+    {
+      "id": "a02-ss02-b032",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2258,
+        "pages_pdf": [
+          58
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss03-b001",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2287,
+        "pages_pdf": [
+          58
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss03-b002",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2314,
+        "pages_pdf": [
+          58,
+          59
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    },
+    {
+      "id": "a02-ss03-b003",
+      "statut": "correspondance_normalisee",
+      "correspondance": {
+        "position_token": 2335,
+        "pages_pdf": [
+          59
+        ],
+        "glyphes_pdf_indetermines": 0
+      },
+      "nombre_occurrences": 1
+    }
+  ],
+  "premiere_page_recherche": 41
+}
