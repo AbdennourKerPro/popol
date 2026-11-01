@@ -1,0 +1,15 @@
+services:
+  review:
+    build:
+      context: .
+      dockerfile: Dockerfile.review
+    image: chati-review:local
+    init: true
+    user: "${REVIEW_UID:-1000}:${REVIEW_GID:-1000}"
+    ports:
+      - "127.0.0.1:${REVIEW_PORT:-8081}:8081"
+    volumes:
+      - ./benchmarks/chati-v2/human-review/2026-11-01-session/session.json:/review-data/session.json:ro
+      - ./benchmarks/chati-v2/human-review/2026-11-01-session/annotations:/review-annotations
+      - ./assets/Programme-Mélenchon-LFI.pdf:/documents/programme.pdf:ro
+    restart: unless-stopped

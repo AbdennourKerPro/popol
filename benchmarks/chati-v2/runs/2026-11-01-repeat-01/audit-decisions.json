@@ -1,0 +1,1596 @@
+{
+  "assessment_benchmark_version": "1.0.3-user-amended",
+  "assessment_gold_sha256": "2df4a23ed6543a8e6f29f88dfb67f2d2ccea13ef4ff838953b86c9d6307ea2c0",
+  "amendment": "benchmarks/chati-v2/amendment-CH2-007.json",
+  "reviewer": "Codex de cette session : relecture des 40 réponses complètes, du corrigé et des sources. Pas de jugement humain. Scores explicites, extraits contrôlés et raisons propres aux critères/dimensions ; aucun taux de fidélité lien par lien revendiqué.",
+  "responses_sha256": "111de1d97123aa469dbc4939c1d4d60bfe96b626a1918426cf7e389da25adf53",
+  "conditional_rationale": {
+    "CH2-034": "Les deux branches HCERES/ANR sont développées, sans transfert des missions inventé.",
+    "CH2-040": "L’objectif réel est développé et cité exactement."
+  },
+  "cases": [
+    {
+      "id": "CH2-001",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "L’exception salariée et le refus de l’interdiction absolue sont explicités.",
+        "sources": "La condition vient de s01-ss04-m004, sans demander au lexique de la prouver.",
+        "limits": "Aucun ratio de dette ni autre repreneur ajouté.",
+        "clarity": "Le « Non » corrige directement la prémisse."
+      },
+      "criteria": [
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-001-C01",
+          "coverage": 1,
+          "answer_excerpt": "les LBO ne seraient possibles que si les salariés reprennent l’entreprise",
+          "reason": "L’exception salariée et le refus de l’interdiction absolue sont explicités."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "L’exception salariée et le refus de l’interdiction absolue sont explicités. Aucun ratio de dette ni autre repreneur ajouté."
+    },
+    {
+      "id": "CH2-002",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "BCE, perpétuité et taux zéro sont tous couverts ; la fiche confirme l’absence d’intérêt.",
+        "sources": "La mesure BCE prouve le taux zéro ; la définition générale n’est pas utilisée à contre-sens.",
+        "limits": "Pas d’annulation de toute dette, publique ou privée.",
+        "clarity": "Transformation demandée résumée en une phrase ciblée."
+      },
+      "criteria": [
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-002-C01",
+          "coverage": 1,
+          "answer_excerpt": "la dette détenue par la Banque centrale européenne en dette perpétuelle, à taux zéro",
+          "reason": "BCE, perpétuité et taux zéro sont tous couverts ; la fiche confirme l’absence d’intérêt."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "BCE, perpétuité et taux zéro sont tous couverts ; la fiche confirme l’absence d’intérêt. Pas d’annulation de toute dette, publique ou privée."
+    },
+    {
+      "id": "CH2-003",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Les trois échelons sont nommés. L’indice et le bénéficiaire sont exacts.",
+        "sources": "s02-ss05-m001 soutient les échelons et m005 la dotation.",
+        "limits": "Pas de formule ou montant de dotation ajouté.",
+        "clarity": "Les deux réponses sont séparées en deux phrases."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-003-C01",
+          "coverage": 1,
+          "answer_excerpt": "les communes, les départements et les régions",
+          "reason": "Les trois échelons sont nommés."
+        },
+        {
+          "id": "CH2-003-C02",
+          "coverage": 1,
+          "answer_excerpt": "La dotation des communes serait indexée sur l’inflation",
+          "reason": "L’indice et le bénéficiaire sont exacts."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Les trois échelons sont nommés. L’indice et le bénéficiaire sont exacts. Pas de formule ou montant de dotation ajouté."
+    },
+    {
+      "id": "CH2-004",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Montant rattaché aux dons aux partis. Le minimum et le pantouflage sont conservés.",
+        "sources": "Les mesures de dons et de pantouflage sont citées pour leurs chiffres respectifs.",
+        "limits": "Ni périodicité des dons ni point de départ du délai inventé.",
+        "clarity": "Les deux paramètres et leurs objets restent distincts."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-004-C01",
+          "coverage": 1,
+          "answer_excerpt": "200 €",
+          "reason": "Montant rattaché aux dons aux partis."
+        },
+        {
+          "id": "CH2-004-C02",
+          "coverage": 1,
+          "answer_excerpt": "une durée minimale de 10 ans",
+          "reason": "Le minimum et le pantouflage sont conservés."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Montant rattaché aux dons aux partis. Le minimum et le pantouflage sont conservés. Ni périodicité des dons ni point de départ du délai inventé."
+    },
+    {
+      "id": "CH2-005",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Objectif et périodicité exacts. Obligation placée avant la location.",
+        "sources": "m001 et m002 de Rénovation portent les deux propositions.",
+        "limits": "Aucune date d’application ou classe DPE ajoutée.",
+        "clarity": "Phrase directe sur l’objectif et la condition locative."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-005-C01",
+          "coverage": 1,
+          "answer_excerpt": "700 000 logements par an",
+          "reason": "Objectif et périodicité exacts."
+        },
+        {
+          "id": "CH2-005-C02",
+          "coverage": 1,
+          "answer_excerpt": "rénovation obligatoire des passoires avant leur mise en location",
+          "reason": "Obligation placée avant la location."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Objectif et périodicité exacts. Obligation placée avant la location. Aucune date d’application ou classe DPE ajoutée."
+    },
+    {
+      "id": "CH2-006",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Les deux composantes de la première mesure sont présentes. Les deux missions du service sont conservées.",
+        "sources": "Les citations de Consommation soutiennent durée et service public.",
+        "limits": "La fiche précise que durée et modalités ne sont pas détaillées.",
+        "clarity": "Les trois éléments demandés sont regroupés sans confusion."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-006-C01",
+          "coverage": 1,
+          "answer_excerpt": "l’abolition de l’obsolescence programmée, l’allongement des garanties",
+          "reason": "Les deux composantes de la première mesure sont présentes."
+        },
+        {
+          "id": "CH2-006-C02",
+          "coverage": 1,
+          "answer_excerpt": "un service public de la réparation et du réemploi",
+          "reason": "Les deux missions du service sont conservées."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Les deux composantes de la première mesure sont présentes. Les deux missions du service sont conservées. La fiche précise que durée et modalités ne sont pas détaillées."
+    },
+    {
+      "id": "CH2-007",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Veto et primauté couverts. La condition est recevable comme attachée aux élargissements, conformément à l’arbitrage utilisateur ; la fiche est fidèle.",
+        "sources": "Les deux mesures citées s04-ss01-m001/m009 sont les preuves attendues ; aucune source inventée.",
+        "limits": "La proposition n’est pas présentée comme droit actuel ; aucune harmonisation ou date n’est inventée.",
+        "clarity": "Les deux volets veto et normes protectrices sont séparés clairement."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-007-C01",
+          "coverage": 1,
+          "answer_excerpt": "les accords de libre-échange et les élargissements qui se feraient sans harmonisation",
+          "reason": "Arbitrage utilisateur : la condition concerne les seuls élargissements. La relative peut se rattacher à ceux-ci et la fiche reprend fidèlement la source ; aucune extension explicite aux accords. Crédit complet après correction du jugement trop sévère."
+        },
+        {
+          "id": "CH2-007-C02",
+          "coverage": 1,
+          "answer_excerpt": "la primauté des normes les plus protectrices",
+          "reason": "Le principe spécifique climat/travail est présent."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "notes": "Score rectifié après arbitrage utilisateur de CH2-007 : 2/2 en exactitude, C01 complet. Au premier passage, « lorsqu’ils » étend explicitement la condition aux deux objets et reste partiel. Le défaut ne se répète donc pas."
+    },
+    {
+      "id": "CH2-008",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Le taux est rattaché au revenu national, sans substitution PIB. La condition est appliquée à l’aide au Sahel.",
+        "sources": "m001 et m005 de Développement sont les preuves des deux volets.",
+        "limits": "Aucune conversion en euros ni condition supplémentaire.",
+        "clarity": "Taux et condition sont chacun sur leur phrase."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-008-C01",
+          "coverage": 1,
+          "answer_excerpt": "0,7 % du revenu national",
+          "reason": "Le taux est rattaché au revenu national, sans substitution PIB."
+        },
+        {
+          "id": "CH2-008-C02",
+          "coverage": 1,
+          "answer_excerpt": "conditionnée au respect des droits humains",
+          "reason": "La condition est appliquée à l’aide au Sahel."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Le taux est rattaché au revenu national, sans substitution PIB. La condition est appliquée à l’aide au Sahel. Aucune conversion en euros ni condition supplémentaire."
+    },
+    {
+      "id": "CH2-009",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "L’assistance est conservée. Deuxième droit et constitutionnalisation des deux sont couverts.",
+        "sources": "La mesure unique de Fin de vie contient les deux droits.",
+        "limits": "Aucun critère médical ou droit actuel décrit.",
+        "clarity": "Les deux droits puis leur statut proposé sont lisibles."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-009-C01",
+          "coverage": 1,
+          "answer_excerpt": "le droit de mourir dans la dignité, avec assistance",
+          "reason": "L’assistance est conservée."
+        },
+        {
+          "id": "CH2-009-C02",
+          "coverage": 1,
+          "answer_excerpt": "l’accès aux soins palliatifs. Tous deux seraient inscrits dans la Constitution",
+          "reason": "Deuxième droit et constitutionnalisation des deux sont couverts."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "L’assistance est conservée. Deuxième droit et constitutionnalisation des deux sont couverts. Aucun critère médical ou droit actuel décrit."
+    },
+    {
+      "id": "CH2-010",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Gratuité correctement énoncée. Remboursement correctement énoncé.",
+        "sources": "Les deux mesures de Santé des femmes soutiennent leurs objets respectifs.",
+        "limits": "Aucun taux ou restriction ajouté.",
+        "clarity": "Réponse courte adaptée aux deux propositions."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-010-C01",
+          "coverage": 1,
+          "answer_excerpt": "des protections périodiques gratuites",
+          "reason": "Gratuité correctement énoncée."
+        },
+        {
+          "id": "CH2-010-C02",
+          "coverage": 1,
+          "answer_excerpt": "le remboursement du traitement de la ménopause",
+          "reason": "Remboursement correctement énoncé."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Gratuité correctement énoncée. Remboursement correctement énoncé. Aucun taux ou restriction ajouté."
+    },
+    {
+      "id": "CH2-011",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "La durée est associée au cursus, sans calendrier de mise en œuvre. La gratuité des internats est explicitement conditionnelle.",
+        "sources": "Le bac et les internats sont appuyés par m005 et m009.",
+        "limits": "Aucun plafond de ressources inventé.",
+        "clarity": "La réponse corrige explicitement « sans condition »."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-011-C01",
+          "coverage": 1,
+          "answer_excerpt": "Le bac professionnel rétabli est prévu en 4 ans",
+          "reason": "La durée est associée au cursus, sans calendrier de mise en œuvre."
+        },
+        {
+          "id": "CH2-011-C02",
+          "coverage": 1,
+          "answer_excerpt": "elle est soumise à une condition de ressources",
+          "reason": "La gratuité des internats est explicitement conditionnelle."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "La durée est associée au cursus, sans calendrier de mise en œuvre. La gratuité des internats est explicitement conditionnelle. Aucun plafond de ressources inventé."
+    },
+    {
+      "id": "CH2-012",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Nombre et obligation sont présents. La natation n’est pas transformée en option.",
+        "sources": "Les deux sources Sport à l’école correspondent aux deux enseignements.",
+        "limits": "Pas de périodicité des quatre heures ou de séances inventée.",
+        "clarity": "Les deux éléments sont immédiatement identifiables."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-012-C01",
+          "coverage": 1,
+          "answer_excerpt": "4 heures obligatoires d’EPS",
+          "reason": "Nombre et obligation sont présents."
+        },
+        {
+          "id": "CH2-012-C02",
+          "coverage": 1,
+          "answer_excerpt": "obligatoire l’apprentissage de la natation",
+          "reason": "La natation n’est pas transformée en option."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Nombre et obligation sont présents. La natation n’est pas transformée en option. Pas de périodicité des quatre heures ou de séances inventée."
+    },
+    {
+      "id": "CH2-013",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Moyens et priorité sont tous deux présents. La catégorie de juge est exacte.",
+        "sources": "Renseignement et juge judiciaire viennent des deux mesures citées.",
+        "limits": "Ni acte contrôlé ni procédure d’autorisation précisée sans texte.",
+        "clarity": "Moyens, priorité et contrôle restent séparés."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-013-C01",
+          "coverage": 1,
+          "answer_excerpt": "moyens humains renforcés, et l’infiltration est présentée comme prioritaire",
+          "reason": "Moyens et priorité sont tous deux présents."
+        },
+        {
+          "id": "CH2-013-C02",
+          "coverage": 1,
+          "answer_excerpt": "Le contrôle est confié au juge judiciaire",
+          "reason": "La catégorie de juge est exacte."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Moyens et priorité sont tous deux présents. La catégorie de juge est exacte. Ni acte contrôlé ni procédure d’autorisation précisée sans texte."
+    },
+    {
+      "id": "CH2-014",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "La fausse opposition non-alignement/dialogue est corrigée. Portée géographique et permanence conservées.",
+        "sources": "Les deux mesures de Diplomatie soutiennent le non-alignement et la limite des alliances.",
+        "limits": "Aucune interdiction mondiale de coopération déduite.",
+        "clarity": "Le « Non » initial répond à la prémisse."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-014-C01",
+          "coverage": 1,
+          "answer_excerpt": "le non-alignement au maintien du dialogue avec le monde entier",
+          "reason": "La fausse opposition non-alignement/dialogue est corrigée."
+        },
+        {
+          "id": "CH2-014-C02",
+          "coverage": 1,
+          "answer_excerpt": "refus de toute alliance militaire permanente en Asie-Pacifique",
+          "reason": "Portée géographique et permanence conservées."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "La fausse opposition non-alignement/dialogue est corrigée. Portée géographique et permanence conservées. Aucune interdiction mondiale de coopération déduite."
+    },
+    {
+      "id": "CH2-015",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "La restriction vise le rôle officiel des élus. Position générale correctement donnée.",
+        "sources": "Les deux mesures de Laïcité portent les règles générales ; le Concordat est un complément séparé appuyé par l’annexe.",
+        "limits": "Aucune interdiction de pratique privée ni sanction créée.",
+        "clarity": "La réponse principale est distinguée du complément local."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-015-C01",
+          "coverage": 1,
+          "answer_excerpt": "au titre de leurs fonctions",
+          "reason": "La restriction vise le rôle officiel des élus."
+        },
+        {
+          "id": "CH2-015-C02",
+          "coverage": 1,
+          "answer_excerpt": "un refus de tout financement public des cultes",
+          "reason": "Position générale correctement donnée."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "La restriction vise le rôle officiel des élus. Position générale correctement donnée. Aucune interdiction de pratique privée ni sanction créée."
+    },
+    {
+      "id": "CH2-016",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Les deux pôles et leur statut proposé sont cités. Les espaces explicitement protégés sont nommés.",
+        "sources": "Deux sources de la rubrique internationale prouvent chacun des volets.",
+        "limits": "Aucune annexion ou frontière inventée.",
+        "clarity": "Statut des pôles et espaces marins sont distingués."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-016-C01",
+          "coverage": 1,
+          "answer_excerpt": "les pôles Arctique et Antarctique comme des biens communs",
+          "reason": "Les deux pôles et leur statut proposé sont cités."
+        },
+        {
+          "id": "CH2-016-C02",
+          "coverage": 1,
+          "answer_excerpt": "les grands fonds marins et la haute mer",
+          "reason": "Les espaces explicitement protégés sont nommés."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Les deux pôles et leur statut proposé sont cités. Les espaces explicitement protégés sont nommés. Aucune annexion ou frontière inventée."
+    },
+    {
+      "id": "CH2-017",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "La fin de négociation est correctement énoncée. Portée de publicité des aides complète.",
+        "sources": "Les sources Fraude m002/m005 correspondent aux deux changements.",
+        "limits": "La réponse note que les modalités de publication manquent ; aucune peine créée.",
+        "clarity": "Le lien entre publication et visibilité est simple et sans assimilation à une suppression."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-017-C01",
+          "coverage": 1,
+          "answer_excerpt": "une entreprise qui fraude ne pourrait plus négocier sa sanction",
+          "reason": "La fin de négociation est correctement énoncée."
+        },
+        {
+          "id": "CH2-017-C02",
+          "coverage": 1,
+          "answer_excerpt": "les entreprises publient toutes les aides publiques qu’elles reçoivent",
+          "reason": "Portée de publicité des aides complète."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "La fin de négociation est correctement énoncée. Portée de publicité des aides complète. La réponse note que les modalités de publication manquent ; aucune peine créée."
+    },
+    {
+      "id": "CH2-018",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Aide et accès bancaire sont présents. L’intérêt est une reformulation du soutien et de l’accès explicitement proposés.",
+        "sources": "La mesure m012 soutient les deux composantes ; aucun avantage externe empirique allégué.",
+        "limits": "Le texte ne garantit ni effacement des dettes ni modalités précises.",
+        "clarity": "Réponse directement reliée aux deux difficultés du ménage."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-018-C01",
+          "coverage": 1,
+          "answer_excerpt": "aider les ménages surendettés et à garantir leur accès aux services bancaires de base",
+          "reason": "Aide et accès bancaire sont présents."
+        },
+        {
+          "id": "CH2-018-C02",
+          "coverage": 1,
+          "answer_excerpt": "soutenir les ménages face à leurs dettes tout en préservant cet accès bancaire",
+          "reason": "L’intérêt est une reformulation du soutien et de l’accès explicitement proposés."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Aide et accès bancaire sont présents. L’intérêt est une reformulation du soutien et de l’accès explicitement proposés. Le texte ne garantit ni effacement des dettes ni modalités précises."
+    },
+    {
+      "id": "CH2-019",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "La paraphrase est retrouvée et l’objectif est exact.",
+        "sources": "s03-ss02-m009 donne la proposition exacte.",
+        "limits": "Aucun hectare, calendrier ou arrêt de toute construction affirmé.",
+        "clarity": "La proposition et sa limite de détail sont courtes."
+      },
+      "criteria": [
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-019-C01",
+          "coverage": 1,
+          "answer_excerpt": "mettre fin à l’étalement urbain",
+          "reason": "La paraphrase est retrouvée et l’objectif est exact."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "La paraphrase est retrouvée et l’objectif est exact. Aucun hectare, calendrier ou arrêt de toute construction affirmé."
+    },
+    {
+      "id": "CH2-020",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Les deux activités de la mesure sont conservées. Animaux sauvages et cirques restent le périmètre.",
+        "sources": "Deux citations Condition animale soutiennent chacun des usages.",
+        "limits": "Pas d’interdiction de tout élevage ou de tout animal domestique.",
+        "clarity": "Deux propositions nettement présentées."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-020-C01",
+          "coverage": 1,
+          "answer_excerpt": "interdire l’élevage et le commerce de fourrure",
+          "reason": "Les deux activités de la mesure sont conservées."
+        },
+        {
+          "id": "CH2-020-C02",
+          "coverage": 1,
+          "answer_excerpt": "interdire la présence d’animaux sauvages dans les cirques",
+          "reason": "Animaux sauvages et cirques restent le périmètre."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Les deux activités de la mesure sont conservées. Animaux sauvages et cirques restent le périmètre. Pas d’interdiction de tout élevage ou de tout animal domestique."
+    },
+    {
+      "id": "CH2-021",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Les deux objets du moratoire sont repris sans fixer une nouvelle aire de l’extraction.",
+        "sources": "La mesure Biodiversité m009 est reprise fidèlement.",
+        "limits": "La réponse réserve explicitement portée et modalités.",
+        "clarity": "Réponse proportionnée à la question précise de moratoire."
+      },
+      "criteria": [
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-021-C01",
+          "coverage": 1,
+          "answer_excerpt": "un moratoire sur les forages en Méditerranée et sur l’extraction minière profonde",
+          "reason": "Les deux objets du moratoire sont repris sans fixer une nouvelle aire de l’extraction."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Les deux objets du moratoire sont repris sans fixer une nouvelle aire de l’extraction. La réponse réserve explicitement portée et modalités."
+    },
+    {
+      "id": "CH2-022",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Les deux mécanismes généraux sont présents. Le non-recours est explicite. Le bénéfice d’accès est formulé conditionnellement et identifié comme interprétation dans le même bloc.",
+        "sources": "Les deux mesures Pauvreté soutiennent mécanismes et objectif ; l’effet attendu n’est pas présenté comme preuve observée.",
+        "limits": "Aucun effet chiffré ni disparition garantie, modalités non précisées.",
+        "clarity": "Mécanismes, intérêt et limites sont ordonnés."
+      },
+      "criteria": [
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-022-C01",
+          "coverage": 1,
+          "answer_excerpt": "d’individualiser et d’automatiser les droits",
+          "reason": "Les deux mécanismes généraux sont présents."
+        },
+        {
+          "id": "CH2-022-C02",
+          "coverage": 1,
+          "answer_excerpt": "de lutter contre le non-recours",
+          "reason": "Le non-recours est explicite."
+        },
+        {
+          "id": "CH2-022-C03",
+          "coverage": 1,
+          "answer_excerpt": "On peut en attendre, par interprétation",
+          "reason": "Le bénéfice d’accès est formulé conditionnellement et identifié comme interprétation dans le même bloc."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Les deux mécanismes généraux sont présents. Le non-recours est explicite. Le bénéfice d’accès est formulé conditionnellement et identifié comme interprétation dans le même bloc. Aucun effet chiffré ni disparition garantie, modalités non précisées."
+    },
+    {
+      "id": "CH2-023",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Service public correctement identifié. Accès libre explicitement rattaché à cette mesure, pas à la revue de haut niveau. L’intérêt de diffusion et de consultation est prudent et distingue la revue facultative.",
+        "sources": "Trois sources distinguent publication publique, accès libre et haut niveau ; la troisième n’est pas utilisée comme preuve de gratuité.",
+        "limits": "Pas de gratuité de toutes les publications ni de fonctionnement inventé.",
+        "clarity": "Les propositions sont séparées de leur intérêt attendu."
+      },
+      "criteria": [
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-023-C01",
+          "coverage": 1,
+          "answer_excerpt": "créer un service public de la publication scientifique",
+          "reason": "Service public correctement identifié."
+        },
+        {
+          "id": "CH2-023-C02",
+          "coverage": 1,
+          "answer_excerpt": "des revues scientifiques francophones en accès libre",
+          "reason": "Accès libre explicitement rattaché à cette mesure, pas à la revue de haut niveau."
+        },
+        {
+          "id": "CH2-023-C03",
+          "coverage": 1,
+          "answer_excerpt": "Ce sont des effets attendus ou des interprétations des mesures",
+          "reason": "L’intérêt de diffusion et de consultation est prudent et distingue la revue facultative."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Service public correctement identifié. Accès libre explicitement rattaché à cette mesure, pas à la revue de haut niveau. L’intérêt de diffusion et de consultation est prudent et distingue la revue facultative. Pas de gratuité de toutes les publications ni de fonctionnement inventé."
+    },
+    {
+      "id": "CH2-024",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Aide et proximité toutes deux couvertes. La gratuité des procédures courantes et son exemple sont donnés juste avant cet extrait.",
+        "sources": "m003/m005 justifient les attentes ; les moyens et recrutements complémentaires sont appuyés par m001.",
+        "limits": "Aucune gratuité universelle de tout avocat ou de toute procédure.",
+        "clarity": "La réponse et les fiches expliquent aide, distance et coût."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-024-C01",
+          "coverage": 1,
+          "answer_excerpt": "une aide juridictionnelle augmentée et le rétablissement de tribunaux de proximité",
+          "reason": "Aide et proximité toutes deux couvertes."
+        },
+        {
+          "id": "CH2-024-C02",
+          "coverage": 1,
+          "answer_excerpt": "en citant le divorce",
+          "reason": "La gratuité des procédures courantes et son exemple sont donnés juste avant cet extrait."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Aide et proximité toutes deux couvertes. La gratuité des procédures courantes et son exemple sont donnés juste avant cet extrait. Aucune gratuité universelle de tout avocat ou de toute procédure."
+    },
+    {
+      "id": "CH2-025",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Nombre limité aux logements et périodicité annuelle. Le chantier eau est explicite. Le chantier électricité est explicite. Les intérêts des trois chantiers sont ensuite développés et dans chaque fiche, avec prudence.",
+        "sources": "Les trois mesures correspondent aux trois chantiers et ne partagent pas le chiffre 700 000.",
+        "limits": "Pas d’économies, de fuites ou gains de fiabilité chiffrés.",
+        "clarity": "Réponse principale factuelle, puis intérêts et fiches par chantier."
+      },
+      "criteria": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-025-C01",
+          "coverage": 1,
+          "answer_excerpt": "700 000 logements par an",
+          "reason": "Nombre limité aux logements et périodicité annuelle."
+        },
+        {
+          "id": "CH2-025-C02",
+          "coverage": 1,
+          "answer_excerpt": "rénovation complète des réseaux d’eau",
+          "reason": "Le chantier eau est explicite."
+        },
+        {
+          "id": "CH2-025-C03",
+          "coverage": 1,
+          "answer_excerpt": "modernisation du réseau électrique",
+          "reason": "Le chantier électricité est explicite."
+        },
+        {
+          "id": "CH2-025-C04",
+          "coverage": 1,
+          "answer_excerpt": "à titre d’interprétation et sans que le résumé garantisse ces effets",
+          "reason": "Les intérêts des trois chantiers sont ensuite développés et dans chaque fiche, avec prudence."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Nombre limité aux logements et périodicité annuelle. Le chantier eau est explicite. Le chantier électricité est explicite. Les intérêts des trois chantiers sont ensuite développés et dans chaque fiche, avec prudence. Pas d’économies, de fuites ou gains de fiabilité chiffrés."
+    },
+    {
+      "id": "CH2-026",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Les deux assiettes financent le sport amateur dans le même bloc. Il s’agit bien de publicité, pas d’interdiction du jeu. Périmètre primaire universel conservé. Le financement est attribué au texte et les deux autres intérêts sont séparés comme interprétations.",
+        "sources": "Les trois citations Sport/EPS soutiennent chaque proposition.",
+        "limits": "Pas de taux de taxe ni de résultat démontré inventé.",
+        "clarity": "Trois volets puis distinction objectifs/effets, avec fiches séparées."
+      },
+      "criteria": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-026-C01",
+          "coverage": 1,
+          "answer_excerpt": "une taxe sur les retransmissions et les transferts",
+          "reason": "Les deux assiettes financent le sport amateur dans le même bloc."
+        },
+        {
+          "id": "CH2-026-C02",
+          "coverage": 1,
+          "answer_excerpt": "interdire la publicité pour les paris sportifs",
+          "reason": "Il s’agit bien de publicité, pas d’interdiction du jeu."
+        },
+        {
+          "id": "CH2-026-C03",
+          "coverage": 1,
+          "answer_excerpt": "créer une association sportive dans chaque école primaire",
+          "reason": "Périmètre primaire universel conservé."
+        },
+        {
+          "id": "CH2-026-C04",
+          "coverage": 1,
+          "answer_excerpt": "ces effets sont des interprétations",
+          "reason": "Le financement est attribué au texte et les deux autres intérêts sont séparés comme interprétations."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Les deux assiettes financent le sport amateur dans le même bloc. Il s’agit bien de publicité, pas d’interdiction du jeu. Périmètre primaire universel conservé. Le financement est attribué au texte et les deux autres intérêts sont séparés comme interprétations. Pas de taux de taxe ni de résultat démontré inventé."
+    },
+    {
+      "id": "CH2-027",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Le volet spatial est présent. Les deux éléments data centers sont présents. Le bloc distingue effectivement les deux objets sous deux lignes nommées.",
+        "sources": "Les mesures Espace et Numérique/environnement correspondent chacune à leur ligne.",
+        "limits": "Consommation non chiffrée ; pas de transformation de l’autorisation en interdiction.",
+        "clarity": "Deux puces identifient les milieux distincts."
+      },
+      "criteria": [
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-027-C01",
+          "coverage": 1,
+          "answer_excerpt": "un programme de dépollution des orbites",
+          "reason": "Le volet spatial est présent."
+        },
+        {
+          "id": "CH2-027-C02",
+          "coverage": 1,
+          "answer_excerpt": "une baisse de leur consommation et une autorisation obligatoire",
+          "reason": "Les deux éléments data centers sont présents."
+        },
+        {
+          "id": "CH2-027-C03",
+          "coverage": 1,
+          "answer_excerpt": "Les deux sujets sont traités séparément",
+          "reason": "Le bloc distingue effectivement les deux objets sous deux lignes nommées."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Le volet spatial est présent. Les deux éléments data centers sont présents. Le bloc distingue effectivement les deux objets sous deux lignes nommées. Consommation non chiffrée ; pas de transformation de l’autorisation en interdiction."
+    },
+    {
+      "id": "CH2-028",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Les deux éléments pêche sont couverts. La mesure est bien placée dans le contexte méditerranéen. La nature civile est conservée. La distinction pêche/dépollution/intervention est développée sans devenir une force militaire.",
+        "sources": "Citations principales soutiennent pêche, dépollution et secours. Les compléments pêche électrique, moyens sous-marins, normes et plan général ont chacun une source et gardent leurs limites dans les fiches.",
+        "limits": "Aucun pays, budget ni impact chiffré inventé ; le plan général de dépollution n’est pas réattribué à la Méditerranée.",
+        "clarity": "Les compléments sont plus longs mais les trois fonctions restent lisibles."
+      },
+      "criteria": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-028-C01",
+          "coverage": 1,
+          "answer_excerpt": "le soutien à la pêche artisanale et la lutte contre la pêche illégale",
+          "reason": "Les deux éléments pêche sont couverts."
+        },
+        {
+          "id": "CH2-028-C02",
+          "coverage": 1,
+          "answer_excerpt": "une structure commune de dépollution",
+          "reason": "La mesure est bien placée dans le contexte méditerranéen."
+        },
+        {
+          "id": "CH2-028-C03",
+          "coverage": 1,
+          "answer_excerpt": "une force commune de sécurité civile",
+          "reason": "La nature civile est conservée."
+        },
+        {
+          "id": "CH2-028-C04",
+          "coverage": 1,
+          "answer_excerpt": "Ces champs d’action se distinguent par leur objet",
+          "reason": "La distinction pêche/dépollution/intervention est développée sans devenir une force militaire."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Les deux éléments pêche sont couverts. La mesure est bien placée dans le contexte méditerranéen. La nature civile est conservée. La distinction pêche/dépollution/intervention est développée sans devenir une force militaire. Aucun pays, budget ni impact chiffré inventé ; le plan général de dépollution n’est pas réattribué à la Méditerranée."
+    },
+    {
+      "id": "CH2-029",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "La transparence n’est pas confondue avec la suppression. Suppression et destination gardées ensemble. HCERES supprimé et pairs élus dans le même bloc. La réponse et les trois fiches distinguent transparence, financement et évaluation.",
+        "sources": "Les trois mesures justifient les registres ; le sigle HCERES est développé grâce au lexique.",
+        "limits": "Le dispositif remplaçant le CIR n’est pas inventé.",
+        "clarity": "Trois propositions et fiches distinctes malgré le statut partial."
+      },
+      "criteria": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-029-C01",
+          "coverage": 1,
+          "answer_excerpt": "les entreprises publieraient toutes les aides publiques reçues",
+          "reason": "La transparence n’est pas confondue avec la suppression."
+        },
+        {
+          "id": "CH2-029-C02",
+          "coverage": 1,
+          "answer_excerpt": "le Crédit d’impôt recherche serait supprimé « au profit du public »",
+          "reason": "Suppression et destination gardées ensemble."
+        },
+        {
+          "id": "CH2-029-C03",
+          "coverage": 1,
+          "answer_excerpt": "l’évaluation confiée à des pairs élus",
+          "reason": "HCERES supprimé et pairs élus dans le même bloc."
+        },
+        {
+          "id": "CH2-029-C04",
+          "coverage": 1,
+          "answer_excerpt": "Trois propositions distinctes",
+          "reason": "La réponse et les trois fiches distinguent transparence, financement et évaluation."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "La transparence n’est pas confondue avec la suppression. Suppression et destination gardées ensemble. HCERES supprimé et pairs élus dans le même bloc. La réponse et les trois fiches distinguent transparence, financement et évaluation. Le dispositif remplaçant le CIR n’est pas inventé."
+    },
+    {
+      "id": "CH2-030",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Les deux bornes sont exactes, la possibilité d’un montant égal est maintenant explicite.",
+        "sources": "Les mesures s01-ss15-m006 et s05-ss07-m001 sont pertinentes pour leurs bornes respectives.",
+        "limits": "Aucun montant, cumul ni écart nécessaire inventé ; l’impossibilité de conclure en pratique est dite.",
+        "clarity": "La comparaison distingue les deux formulations puis la limite de l’inférence."
+      },
+      "criteria": [
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-030-C01",
+          "coverage": 1,
+          "answer_excerpt": "pour les jeunes, le revenu est annoncé « au-dessus du seuil de pauvreté »",
+          "reason": "Borne strictement supérieure correctement attribuée aux jeunes."
+        },
+        {
+          "id": "CH2-030-C02",
+          "coverage": 1,
+          "answer_excerpt": "il est garanti « au moins au seuil de pauvreté »",
+          "reason": "Borne large correctement attribuée à Pauvreté."
+        },
+        {
+          "id": "CH2-030-C03",
+          "coverage": 1,
+          "answer_excerpt": "Les passages ne permettent pas de savoir si, en pratique, les deux dispositifs aboutiraient au même montant",
+          "reason": "La réponse accepte désormais explicitement la possibilité du même montant et ne déduit pas une différence nécessaire. Aucun mot magique « compatible » n’est exigé."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "notes": "Défaut initial non retrouvé : l’égalité effective reste explicitement possible."
+    },
+    {
+      "id": "CH2-031",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Le référent spatial est correctement résolu dans la fiche et l’interdiction est exacte.",
+        "sources": "s01-ss19-m008 est citée et soutient la proposition.",
+        "limits": "La réponse ne prétend pas interdire toutes les missions ni préciser des modalités absentes.",
+        "clarity": "La fiche fournit le référent explicite qui manquait au premier run."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-031-C01",
+          "coverage": 1,
+          "answer_excerpt": "Interdire les voyages commerciaux privés dans l’espace.",
+          "reason": "La fiche nomme l’espace ; l’évaluation inclut les fiches, pas seulement le bloc principal."
+        },
+        {
+          "id": "CH2-031-C02",
+          "coverage": 1,
+          "answer_excerpt": "Le résumé propose d’interdire les voyages commerciaux privés.",
+          "reason": "Interdiction correctement formulée, sans extension aux missions publiques."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "notes": "Défaut initial non retrouvé dans la réponse complète : « dans l’espace » est maintenant écrit."
+    },
+    {
+      "id": "CH2-032",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Le référent de la coopération est nommé. La fausse conséquence d’une fusion imposée est corrigée.",
+        "sources": "Liberté de coopération et refus de fusion sont chacun cités.",
+        "limits": "Pas de procédure ou seuil de fusion ajouté.",
+        "clarity": "Le Non répond directement au suivi et explique le lien."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-032-C01",
+          "coverage": 1,
+          "answer_excerpt": "pour les communes",
+          "reason": "Le référent de la coopération est nommé."
+        },
+        {
+          "id": "CH2-032-C02",
+          "coverage": 1,
+          "answer_excerpt": "le refus des fusions forcées",
+          "reason": "La fausse conséquence d’une fusion imposée est corrigée."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Le référent de la coopération est nommé. La fausse conséquence d’une fusion imposée est corrigée. Pas de procédure ou seuil de fusion ajouté."
+    },
+    {
+      "id": "CH2-033",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Le secteur implicite est explicitement résolu. La mesure attendue est donnée.",
+        "sources": "La source Recherche m012 soutient titularisation et complément d’abrogation.",
+        "limits": "Pas de généralisation à tous les secteurs ni calendrier individuel.",
+        "clarity": "La recherche est nommée dans la réponse, pas seulement dans l’historique."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-033-C01",
+          "coverage": 1,
+          "answer_excerpt": "des contractuels de la recherche",
+          "reason": "Le secteur implicite est explicitement résolu."
+        },
+        {
+          "id": "CH2-033-C02",
+          "coverage": 1,
+          "answer_excerpt": "la titularisation des contractuels",
+          "reason": "La mesure attendue est donnée."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Le secteur implicite est explicitement résolu. La mesure attendue est donnée. Pas de généralisation à tous les secteurs ni calendrier individuel."
+    },
+    {
+      "id": "CH2-034",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Le bloc sépare cette branche de la phrase « Pour l’ANR », avec une réponse distincte pour chaque objet. Le transfert exhaustif de missions n’est pas inventé ; les deux organismes ne sont pas confondus.",
+        "sources": "m010 et m006 sont cités chacun pour leur branche.",
+        "limits": "Les missions de l’ANR restent explicitement non attribuées.",
+        "clarity": "Réponse conditionnelle distinguant les deux organismes, admise sans question de clarification supplémentaire."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-034-C01",
+          "coverage": 1,
+          "answer_excerpt": "Pour le HCERES",
+          "reason": "Le bloc sépare cette branche de la phrase « Pour l’ANR », avec une réponse distincte pour chaque objet."
+        },
+        {
+          "id": "CH2-034-C02",
+          "coverage": 1,
+          "answer_excerpt": "il ne dit pas explicitement que les grands instituts les remplaceraient",
+          "reason": "Le transfert exhaustif de missions n’est pas inventé ; les deux organismes ne sont pas confondus."
+        }
+      ],
+      "conditional": {
+        "if_hceres_branch": [
+          1
+        ],
+        "if_anr_branch": [
+          1
+        ]
+      },
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Le bloc sépare cette branche de la phrase « Pour l’ANR », avec une réponse distincte pour chaque objet. Le transfert exhaustif de missions n’est pas inventé ; les deux organismes ne sont pas confondus. Les missions de l’ANR restent explicitement non attribuées."
+    },
+    {
+      "id": "CH2-035",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Objectif annuel correctement donné. Le gain individuel est refusé faute de données, sans valeur inventée.",
+        "sources": "L’objectif est sourcé par m001 ; le chauffage au fioul complémentaire par m004.",
+        "limits": "Ni prix de l’énergie ni performance ni montant individuel supposés.",
+        "clarity": "Le connu et l’impossibilité de calcul individuel sont séparés."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-035-C01",
+          "coverage": 1,
+          "answer_excerpt": "700 000 logements par an",
+          "reason": "Objectif annuel correctement donné."
+        },
+        {
+          "id": "CH2-035-C02",
+          "coverage": 1,
+          "answer_excerpt": "ne permet pas de chiffrer la baisse annuelle de votre facture",
+          "reason": "Le gain individuel est refusé faute de données, sans valeur inventée."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Objectif annuel correctement donné. Le gain individuel est refusé faute de données, sans valeur inventée. Ni prix de l’énergie ni performance ni montant individuel supposés."
+    },
+    {
+      "id": "CH2-036",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "La proposition connue est donnée. La limite cible bien le montant et sa mensualité.",
+        "sources": "La mesure bancaire m011 soutient le plafonnement sans prétendre fournir son montant.",
+        "limits": "Pas de reprise du plafond des dons ou d’un barème actuel.",
+        "clarity": "La proposition et le paramètre manquant sont dans une phrase claire."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-036-C01",
+          "coverage": 1,
+          "answer_excerpt": "plafonner les frais bancaires",
+          "reason": "La proposition connue est donnée."
+        },
+        {
+          "id": "CH2-036-C02",
+          "coverage": 1,
+          "answer_excerpt": "le montant exact du plafond mensuel en euros n’est pas indiqué",
+          "reason": "La limite cible bien le montant et sa mensualité."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "La proposition connue est donnée. La limite cible bien le montant et sa mensualité. Pas de reprise du plafond des dons ou d’un barème actuel."
+    },
+    {
+      "id": "CH2-037",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Le service demandé est nommé. Le manque de budget est correctement rattaché au service précis.",
+        "sources": "m005 soutient le service ; m009 est un complément vrai sur l’accès libre.",
+        "limits": "Le budget général de recherche n’est pas attribué au service.",
+        "clarity": "Le complément reste distinct de la limite budgétaire."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-037-C01",
+          "coverage": 1,
+          "answer_excerpt": "un service public de la publication scientifique",
+          "reason": "Le service demandé est nommé."
+        },
+        {
+          "id": "CH2-037-C02",
+          "coverage": 1,
+          "answer_excerpt": "aucune enveloppe annuelle pour financer ce service",
+          "reason": "Le manque de budget est correctement rattaché au service précis."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Le service demandé est nommé. Le manque de budget est correctement rattaché au service précis. Le budget général de recherche n’est pas attribué au service."
+    },
+    {
+      "id": "CH2-038",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "La proposition contre l’appropriation est identique dans le bloc et dans la fiche.",
+        "sources": "s01-ss19-m007 soutient le traité ; aucun autre traité n’est utilisé pour attribuer des signataires.",
+        "limits": "Les signataires restent inconnus et le conditionnel évite de les présupposer comme établis.",
+        "clarity": "Proposition et information absente sont présentées dans deux blocs distincts."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-038-C01",
+          "coverage": 1,
+          "answer_excerpt": "Le résumé propose la conclusion d’un traité contre l’appropriation des ressources spatiales.",
+          "reason": "Le bloc et la fiche conservent « contre », sans ambiguïté sur le but du traité."
+        },
+        {
+          "id": "CH2-038-C02",
+          "coverage": 1,
+          "answer_excerpt": "Les passages fournis ne précisent pas quels pays l’auraient signé.",
+          "reason": "Le conditionnel n’affirme pas une signature effective ; aucun pays ni adoption inventés. Le critère n’exige pas une phrase de refus stéréotypée."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "notes": "Les deux fragilités initiales ne se retrouvent pas : négation conservée et signature au conditionnel."
+    },
+    {
+      "id": "CH2-039",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "La période relative est reprise. L’absence de durée chiffrée est explicite.",
+        "sources": "La mesure Sondages m019 porte la proposition et son manque de durée détaillée.",
+        "limits": "Aucun délai légal actuel ou règle permanente inventés.",
+        "clarity": "La réponse courte distingue les jours précédents d’un nombre exact."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-039-C01",
+          "coverage": 1,
+          "answer_excerpt": "leur interdiction dans les jours précédant une élection",
+          "reason": "La période relative est reprise."
+        },
+        {
+          "id": "CH2-039-C02",
+          "coverage": 1,
+          "answer_excerpt": "Il ne précise pas le nombre exact de jours",
+          "reason": "L’absence de durée chiffrée est explicite."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "La période relative est reprise. L’absence de durée chiffrée est explicite. Aucun délai légal actuel ou règle permanente inventés."
+    },
+    {
+      "id": "CH2-040",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "La fausse réalisation et l’économie annuelle ne sont pas affirmées. Le bloc refuse explicitement de l’attribuer au résumé ; le quote est la vraie mesure.",
+        "sources": "La citation littérale est exactement la mesure d’isolation, pas celle demandée par la fabrication.",
+        "limits": "Objectif distingué du bilan, sans économie par ménage inventée.",
+        "clarity": "Le refus puis la citation réelle sont nets."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-040-C01",
+          "coverage": 1,
+          "answer_excerpt": "il ne dit pas que ces logements sont déjà tous isolés",
+          "reason": "La fausse réalisation et l’économie annuelle ne sont pas affirmées."
+        },
+        {
+          "id": "CH2-040-C02",
+          "coverage": 1,
+          "answer_excerpt": "une citation inventée",
+          "reason": "Le bloc refuse explicitement de l’attribuer au résumé ; le quote est la vraie mesure."
+        }
+      ],
+      "conditional": {
+        "if_isolation_target_given": [
+          1
+        ]
+      },
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "La fausse réalisation et l’économie annuelle ne sont pas affirmées. Le bloc refuse explicitement de l’attribuer au résumé ; le quote est la vraie mesure. Objectif distingué du bilan, sans économie par ménage inventée."
+    }
+  ]
+}

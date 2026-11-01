@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+.runtime/
+output/
+
+# Secrets: never committed nor copied into an image
+secrets/
+*service-account*.json
+*-firebase-adminsdk-*.json
+serviceAccountKey*.json
+firebase/.firebaserc
+.firebase/
+firebase-debug.log
+firestore-debug.log

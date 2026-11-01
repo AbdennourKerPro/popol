@@ -1,0 +1,162 @@
+{
+  "reviewer": "Codex de cette session ; lecture du corrigé, des sources et des réponses complètes. Ce n’est pas une annotation humaine.",
+  "scope": "Four originally incomplete cases only. The separate audit-decisions.json and metrics.json cover all forty repeat answers.",
+  "responses_sha256": "111de1d97123aa469dbc4939c1d4d60bfe96b626a1918426cf7e389da25adf53",
+  "cases": [
+    {
+      "id": "CH2-007",
+      "scores": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Primauté correcte ; le veto garde une ambiguïté de portée. Même politique conservatrice que le premier audit, sans déclarer une inversion certaine.",
+        "sources": "Les deux mesures citées s04-ss01-m001/m009 sont les preuves attendues ; aucune source inventée.",
+        "limits": "La proposition n’est pas présentée comme droit actuel ; aucune harmonisation ou date n’est inventée. Le défaut de portée est déjà compté en exactitude.",
+        "clarity": "Les deux volets veto et normes protectrices sont séparés clairement."
+      },
+      "criteria": [
+        0.5,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-007-C01",
+          "coverage": 0.5,
+          "answer_excerpt": "les accords de libre-échange et les élargissements qui se feraient sans harmonisation",
+          "reason": "La relative peut encore être lue comme portant sur les deux objets. Le libellé est plus proche de la source que le « lorsqu’ils » initial, mais ne lève pas ce risque de portée. Demi-crédit conservateur ; ce jugement grammatical est à confirmer humainement."
+        },
+        {
+          "id": "CH2-007-C02",
+          "coverage": 1,
+          "answer_excerpt": "la primauté des normes les plus protectrices",
+          "reason": "Le principe spécifique climat/travail est présent."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "notes": "Fragilité encore possible sur la portée de « sans harmonisation ». La formulation change et le constat de stabilité reste conservateur, pas une certitude linguistique."
+    },
+    {
+      "id": "CH2-030",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Les deux bornes sont exactes, la possibilité d’un montant égal est maintenant explicite.",
+        "sources": "Les mesures s01-ss15-m006 et s05-ss07-m001 sont pertinentes pour leurs bornes respectives.",
+        "limits": "Aucun montant, cumul ni écart nécessaire inventé ; l’impossibilité de conclure en pratique est dite.",
+        "clarity": "La comparaison distingue les deux formulations puis la limite de l’inférence."
+      },
+      "criteria": [
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-030-C01",
+          "coverage": 1,
+          "answer_excerpt": "pour les jeunes, le revenu est annoncé « au-dessus du seuil de pauvreté »",
+          "reason": "Borne strictement supérieure correctement attribuée aux jeunes."
+        },
+        {
+          "id": "CH2-030-C02",
+          "coverage": 1,
+          "answer_excerpt": "il est garanti « au moins au seuil de pauvreté »",
+          "reason": "Borne large correctement attribuée à Pauvreté."
+        },
+        {
+          "id": "CH2-030-C03",
+          "coverage": 1,
+          "answer_excerpt": "Les passages ne permettent pas de savoir si, en pratique, les deux dispositifs aboutiraient au même montant",
+          "reason": "La réponse accepte désormais explicitement la possibilité du même montant et ne déduit pas une différence nécessaire. Aucun mot magique « compatible » n’est exigé."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "notes": "Défaut initial non retrouvé : l’égalité effective reste explicitement possible."
+    },
+    {
+      "id": "CH2-031",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Le référent spatial est correctement résolu dans la fiche et l’interdiction est exacte.",
+        "sources": "s01-ss19-m008 est citée et soutient la proposition.",
+        "limits": "La réponse ne prétend pas interdire toutes les missions ni préciser des modalités absentes.",
+        "clarity": "La fiche fournit le référent explicite qui manquait au premier run."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-031-C01",
+          "coverage": 1,
+          "answer_excerpt": "Interdire les voyages commerciaux privés dans l’espace.",
+          "reason": "La fiche nomme l’espace ; l’évaluation inclut les fiches, pas seulement le bloc principal."
+        },
+        {
+          "id": "CH2-031-C02",
+          "coverage": 1,
+          "answer_excerpt": "Le résumé propose d’interdire les voyages commerciaux privés.",
+          "reason": "Interdiction correctement formulée, sans extension aux missions publiques."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "notes": "Défaut initial non retrouvé dans la réponse complète : « dans l’espace » est maintenant écrit."
+    },
+    {
+      "id": "CH2-038",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "La proposition contre l’appropriation est identique dans le bloc et dans la fiche.",
+        "sources": "s01-ss19-m007 soutient le traité ; aucun autre traité n’est utilisé pour attribuer des signataires.",
+        "limits": "Les signataires restent inconnus et le conditionnel évite de les présupposer comme établis.",
+        "clarity": "Proposition et information absente sont présentées dans deux blocs distincts."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-038-C01",
+          "coverage": 1,
+          "answer_excerpt": "Le résumé propose la conclusion d’un traité contre l’appropriation des ressources spatiales.",
+          "reason": "Le bloc et la fiche conservent « contre », sans ambiguïté sur le but du traité."
+        },
+        {
+          "id": "CH2-038-C02",
+          "coverage": 1,
+          "answer_excerpt": "Les passages fournis ne précisent pas quels pays l’auraient signé.",
+          "reason": "Le conditionnel n’affirme pas une signature effective ; aucun pays ni adoption inventés. Le critère n’exige pas une phrase de refus stéréotypée."
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "notes": "Les deux fragilités initiales ne se retrouvent pas : négation conservée et signature au conditionnel."
+    }
+  ]
+}

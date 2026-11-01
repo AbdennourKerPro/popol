@@ -12,7 +12,7 @@ from benchmark_rules import group_coverage, score_result
 class BenchmarkRulesTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        base = ROOT / 'benchmarks/militia-v1'
+        base = ROOT / 'benchmarks/chati-v1'
         cls.refs = {r['id']: r for r in map(json.loads, (base / 'references.jsonl').read_text().splitlines())}
 
     def groups(self, number):
@@ -95,7 +95,7 @@ class BenchmarkRulesTest(unittest.TestCase):
         self.assertFalse(score_result(dict.fromkeys(['accuracy', 'sources', 'limits', 'clarity'], 2), True)['passed'])
 
     def test_data_provenance_and_question_separation(self):
-        base = ROOT / 'benchmarks/militia-v1'
+        base = ROOT / 'benchmarks/chati-v1'
         manifest = json.loads((base / 'manifest.json').read_text())
         corpus = {r['id']: r for f in ['mesures.jsonl', 'annexes.jsonl']
                   for r in map(json.loads, (ROOT / 'data/structured' / f).read_text().splitlines())}

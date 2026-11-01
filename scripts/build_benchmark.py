@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the 40-case, closed-corpus Milit'IA benchmark and evidence snapshots.
+"""Build the 40-case, closed-corpus Chati benchmark and evidence snapshots.
 
 This authors evaluation data only: it neither calls an LLM nor runs a benchmark.
 """
@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "benchmarks/militia-v1"
+OUT = ROOT / "benchmarks/chati-v1"
 CORPUS = ROOT / "data/structured/mesures.jsonl"
 
 
@@ -342,12 +342,12 @@ def build():
         questions.append({"id": spec["id"], "messages": messages})
     source_hashes = sorted({r["source_sha256"] for r in sources.values()})
     assert len(source_hashes) == 1
-    manifest = {"name": "Milit’IA — benchmark de référence", "version": "0.2.2-reviewed", "schema_version": "2.0", "date": "2026-10-31",
+    manifest = {"name": "Chati, le Chat Insoumis — benchmark de référence", "version": "0.2.2-reviewed", "schema_version": "2.0", "date": "2026-10-31",
                 "status": "final_review_optional_note_applied", "question_count": 40,
-                "review": "benchmarks/militia-v1/benchmark_review-v0.2.1.md",
+                "review": "benchmarks/chati-v1/benchmark_review-v0.2.1.md",
                 "independently_reviewed_version": "0.2.1-reviewed",
                 "next_benchmark_plan": "benchmarks/NEXT-BENCHMARK.md",
-                "initial_review": "benchmarks/militia-v1/benchmark_review.md", "decisions": "benchmarks/militia-v1/review-decisions.md",
+                "initial_review": "benchmarks/chati-v1/benchmark_review.md", "decisions": "benchmarks/chati-v1/review-decisions.md",
                 "categories": dict(Counter(c["category"] for c in CASES)),
                 "answerability": dict(Counter(c["answerability"] for c in CASES)),
                 "corpus": {"measures": "data/structured/mesures.jsonl", "measure_count": len(corpus),
@@ -364,7 +364,7 @@ def build():
     write_jsonl(OUT / "questions.jsonl", questions)
     write_jsonl(OUT / "references.jsonl", references)
     (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    lines = ["# Milit’IA — 40 questions de référence", "", "Version 0.2.2 — remarque facultative MIL-023 intégrée après validation indépendante des 40 cas en version 0.2.1 ; benchmark non exécuté.", "",
+    lines = ["# Chati — 40 questions de référence", "", "Version 0.2.2 — remarque facultative MIL-023 intégrée après validation indépendante des 40 cas en version 0.2.1 ; benchmark non exécuté.", "",
              "Corpus fermé : résumé archivé, sans recherche web. Une réponse de référence est un exemple, pas une formulation obligatoire.", "",
              "Les extraits ci-dessous proviennent automatiquement du corpus. La revue finale est benchmark_review-v0.2.1.md ; l’ajout facultatif au critère d’erreur de MIL-023 ne constitue pas une nouvelle validation indépendante.", ""]
     for row in references:

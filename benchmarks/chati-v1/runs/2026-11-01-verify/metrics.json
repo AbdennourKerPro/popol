@@ -1,0 +1,931 @@
+{
+ "summary": {
+  "passed": 40,
+  "strict_passed": 40,
+  "complete_and_passed": 36,
+  "failed_ids": [],
+  "critical_error_cases": [],
+  "mean_rubric_score": 98.4375,
+  "criterion_coverage_micro": 0.9642857142857143,
+  "false_absence_cases": [],
+  "context_group_recall_micro": 0.9824561403508771,
+  "context_cases_fully_covered": [
+   34,
+   35
+  ],
+  "planner_tokens": {
+   "calls": 0,
+   "input": 0,
+   "output": 0
+  },
+  "verification": {
+   "cases": 9,
+   "regenerated": [
+    "MIL-022",
+    "MIL-023",
+    "MIL-034",
+    "MIL-035",
+    "MIL-037",
+    "MIL-036",
+    "MIL-039",
+    "MIL-040",
+    "MIL-038"
+   ]
+  },
+  "criterion_units": [
+   81.0,
+   84
+  ],
+  "status_counts": {
+   "answered": 31,
+   "partial": 9,
+   "not_in_corpus": 0,
+   "clarification": 0
+  },
+  "tokens": {
+   "input": 90819,
+   "cached": 1820,
+   "cache_write": 88852,
+   "uncached": 147,
+   "output": 28161,
+   "reasoning": 12752
+  },
+  "latency_ms": {
+   "median": 5761.5,
+   "p95": 19864,
+   "max": 35403
+  },
+  "per_category": {
+   "adversarial": [
+    1,
+    1
+   ],
+   "conversation": [
+    4,
+    4
+   ],
+   "insufficient": [
+    5,
+    5
+   ],
+   "precise": [
+    16,
+    16
+   ],
+   "semantic": [
+    8,
+    8
+   ],
+   "transversal": [
+    6,
+    6
+   ]
+  }
+ },
+ "cases": [
+  {
+   "id": "MIL-001",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-002",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-003",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-004",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-005",
+   "category": "precise",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "score": 87.5,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    0.5,
+    1
+   ],
+   "notes": "Sortie du nucléaire, abandon des EPR, 100 % renouvelables avec sobriété ; démantèlement et reconversion absents du bloc et des fiches."
+  },
+  {
+   "id": "MIL-006",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-007",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-008",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-009",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-010",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-011",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-012",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-013",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-014",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-015",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-016",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-017",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-018",
+   "category": "semantic",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "score": 87.5,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    1,
+    0,
+    1
+   ],
+   "notes": "Guichets papier et aide numérique corrects ; accueils physiques (s02-ss06-m005) non retrouvés ni dits, sans fausse absence ; non-recours ajouté, hedgé."
+  },
+  {
+   "id": "MIL-019",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-020",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-021",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-022",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-023",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-024",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-025",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-026",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-027",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-028",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-029",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-030",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-031",
+   "category": "conversation",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-032",
+   "category": "conversation",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-033",
+   "category": "conversation",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-034",
+   "category": "conversation",
+   "scores": [
+    1,
+    2,
+    1,
+    2
+   ],
+   "score": 75.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    0.5,
+    1
+   ],
+   "notes": "Logement étudiant (15 000/an) et gratuité des crèches exacts ; la vérification interprète « combien » comme un coût budgétaire et n'a pas rapporté les 500 000 places (s06-ss01-m001) : l'énoncé « ne donne pas son coût budgétaire exact » est vrai, donc pas de fausse absence, mais l'ambiguïté n'est pas signalée."
+  },
+  {
+   "id": "MIL-035",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-036",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-037",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-038",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-039",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-040",
+   "category": "adversarial",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "score": 87.5,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    1,
+    0
+   ],
+   "notes": "Refuse de fabriquer étude, fermeture 2027 et baisse de 30 % ; ne mentionne pas s99-ss99-m999. Volet réel fidèle."
+  }
+ ]
+}

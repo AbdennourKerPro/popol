@@ -1,0 +1,29 @@
+services:
+  app:
+    build: .
+    image: chati:local
+    init: true
+    ports:
+      - "${CHATI_HOST:-127.0.0.1}:${CHATI_PORT:-8080}:8080"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-6-luna}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-text-embedding-3-small}
+      RETRIEVAL_MODE: ${RETRIEVAL_MODE:-lexical}
+      INDEX_ENRICHMENT: ${INDEX_ENRICHMENT:-true}
+      SYNONYMS: ${SYNONYMS:-true}
+      RETRIEVAL_COUNT: ${RETRIEVAL_COUNT:-12}
+      VERIFY_ABSENCE: ${VERIFY_ABSENCE:-false}
+      QUERY_PLANNING: ${QUERY_PLANNING:-false}
+      RETRIEVAL_PER_SUBSECTION: ${RETRIEVAL_PER_SUBSECTION:-0}
+      CONTEXT_MODE: ${CONTEXT_MODE:-retrieval}
+      CONSULTATION_MODE: ${CONSULTATION_MODE:-true}
+      OPENAI_TIMEOUT: ${OPENAI_TIMEOUT:-60}
+      MAX_CONCURRENT_REQUESTS: ${MAX_CONCURRENT_REQUESTS:-4}
+      WEB_SEARCH_ENABLED: ${WEB_SEARCH_ENABLED:-true}
+      WEB_MAX_TOOL_CALLS: ${WEB_MAX_TOOL_CALLS:-3}
+    volumes:
+      - chati-index:/app/runtime
+    restart: unless-stopped
+volumes:
+  chati-index:

@@ -1,0 +1,1114 @@
+{
+ "assessment": {
+  "benchmark_version": "1.0.3-user-amended",
+  "gold_sha256": "2df4a23ed6543a8e6f29f88dfb67f2d2ccea13ef4ff838953b86c9d6307ea2c0",
+  "audit_sha256": "d02fc8558a36f27c50a4e99bbc30edffa49fce3e7b557b025a18dde317dc57f4"
+ },
+ "summary": {
+  "passed": 40,
+  "strict_passed": 40,
+  "complete_and_passed": 36,
+  "failed_ids": [],
+  "critical_error_cases": [],
+  "mean_rubric_score": 98.4375,
+  "criterion_coverage_micro": 0.9772727272727273,
+  "false_absence_cases": [],
+  "context_group_recall_micro": 1.0,
+  "context_cases_fully_covered": [
+   38,
+   38
+  ],
+  "planner_tokens": {
+   "calls": 0,
+   "input": 0,
+   "output": 0
+  },
+  "verification": {
+   "cases": 0,
+   "regenerated": []
+  },
+  "coverage_by_kind": {
+   "fact": {
+    "units": 66.5,
+    "count": 67,
+    "coverage": 0.9925373134328358
+   },
+   "interpretation": {
+    "units": 5,
+    "count": 5,
+    "coverage": 1.0
+   },
+   "structure": {
+    "units": 3.5,
+    "count": 4,
+    "coverage": 0.875
+   },
+   "resolution": {
+    "units": 2.5,
+    "count": 3,
+    "coverage": 0.8333333333333334
+   },
+   "clarification": {
+    "units": 2,
+    "count": 2,
+    "coverage": 1.0
+   },
+   "limitation": {
+    "units": 4.5,
+    "count": 5,
+    "coverage": 0.9
+   },
+   "refusal": {
+    "units": 2,
+    "count": 2,
+    "coverage": 1.0
+   }
+  },
+  "per_subsection_cases_passed_complete": {
+   "s01-ss02": [
+    2,
+    2,
+    2
+   ],
+   "s01-ss04": [
+    3,
+    3,
+    3
+   ],
+   "s01-ss05": [
+    1,
+    1,
+    1
+   ],
+   "s01-ss15": [
+    1,
+    1,
+    0
+   ],
+   "s01-ss17": [
+    1,
+    1,
+    1
+   ],
+   "s01-ss19": [
+    3,
+    3,
+    1
+   ],
+   "s02-ss02": [
+    2,
+    2,
+    2
+   ],
+   "s02-ss03": [
+    1,
+    1,
+    1
+   ],
+   "s02-ss05": [
+    2,
+    2,
+    2
+   ],
+   "s02-ss07": [
+    1,
+    1,
+    1
+   ],
+   "s02-ss10": [
+    1,
+    1,
+    1
+   ],
+   "s03-ss02": [
+    1,
+    1,
+    1
+   ],
+   "s03-ss05": [
+    4,
+    4,
+    4
+   ],
+   "s03-ss06": [
+    1,
+    1,
+    1
+   ],
+   "s03-ss11": [
+    1,
+    1,
+    1
+   ],
+   "s03-ss12": [
+    2,
+    2,
+    2
+   ],
+   "s03-ss13": [
+    1,
+    1,
+    1
+   ],
+   "s04-ss01": [
+    1,
+    1,
+    0
+   ],
+   "s04-ss02": [
+    1,
+    1,
+    1
+   ],
+   "s04-ss05": [
+    1,
+    1,
+    1
+   ],
+   "s04-ss07": [
+    1,
+    1,
+    1
+   ],
+   "s04-ss08": [
+    1,
+    1,
+    1
+   ],
+   "s05-ss01": [
+    1,
+    1,
+    1
+   ],
+   "s05-ss06": [
+    1,
+    1,
+    1
+   ],
+   "s05-ss07": [
+    2,
+    2,
+    1
+   ],
+   "s06-ss06": [
+    1,
+    1,
+    1
+   ],
+   "s06-ss08": [
+    5,
+    5,
+    5
+   ],
+   "s06-ss10": [
+    2,
+    2,
+    2
+   ],
+   "s07-ss03": [
+    1,
+    1,
+    1
+   ]
+  },
+  "criterion_units": [
+   86.0,
+   88
+  ],
+  "status_counts": {
+   "answered": 30,
+   "partial": 10,
+   "not_in_corpus": 0,
+   "clarification": 0
+  },
+  "tokens": {
+   "input": 69843,
+   "cached": 0,
+   "cache_write": 69723,
+   "uncached": 120,
+   "output": 16396,
+   "reasoning": 7061
+  },
+  "latency_ms": {
+   "median": 3650.0,
+   "p95": 7247,
+   "max": 11894
+  },
+  "per_category": {
+   "adversarial": [
+    1,
+    1
+   ],
+   "conversation": [
+    4,
+    4
+   ],
+   "insufficient": [
+    5,
+    5
+   ],
+   "precise": [
+    16,
+    16
+   ],
+   "semantic": [
+    8,
+    8
+   ],
+   "transversal": [
+    6,
+    6
+   ]
+  }
+ },
+ "cases": [
+  {
+   "id": "CH2-001",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Exception unique énoncée, sans plafond d'endettement inventé."
+  },
+  {
+   "id": "CH2-002",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Taux zéro repris de la mesure ; « sans intérêt » est cohérent avec lui et n'utilise pas la définition générale."
+  },
+  {
+   "id": "CH2-003",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Deux mesures, aucun montant ni formule."
+  },
+  {
+   "id": "CH2-004",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Minimum de 10 ans conservé, aucune périodicité inventée."
+  },
+  {
+   "id": "CH2-005",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "« Par an » et « avant location » conservés ; « pas d'autre échéance » est exact."
+  },
+  {
+   "id": "CH2-006",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Aucune durée de garantie inventée ; réserve explicite sur les modalités."
+  },
+  {
+   "id": "CH2-007",
+   "category": "precise",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "score": 87.5,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    0.5,
+    1
+   ],
+   "notes": "Après clarification utilisateur : « lorsqu’ils se font sans harmonisation » étend explicitement la condition aux accords et aux élargissements. Or elle concerne uniquement les élargissements. C01 reste partiel (0,5), exactitude 1/2 ; la primauté est correcte."
+  },
+  {
+   "id": "CH2-008",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "« Revenu national » conservé, aucune conversion en euros."
+  },
+  {
+   "id": "CH2-009",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Aucun critère médical ni droit actuel ajouté."
+  },
+  {
+   "id": "CH2-010",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Aucune restriction ni taux inventé ; réserve sur les modalités."
+  },
+  {
+   "id": "CH2-011",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "« Prévu sur 4 ans » reprend le libellé sans présenter de calendrier ; internats sous condition de ressources."
+  },
+  {
+   "id": "CH2-012",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Quatre heures sans périodicité inventée."
+  },
+  {
+   "id": "CH2-013",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Aucun objet de contrôle ni procédure inventé."
+  },
+  {
+   "id": "CH2-014",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Réponse « Non » fondée sur l'association explicite non-alignement/dialogue ; « permanente » et « Asie-Pacifique » conservés."
+  },
+  {
+   "id": "CH2-015",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Présence limitée « au titre de leurs fonctions » ; le Concordat (complément accepté) est sourcé par l'annexe, sans remplacer le refus général."
+  },
+  {
+   "id": "CH2-016",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Aucune annexion ni traité adopté."
+  },
+  {
+   "id": "CH2-017",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "« Gros fraudeurs poursuivis plus sévèrement » est sourcé (s01-ss02-m003) et facultatif ; aucune peine inventée."
+  },
+  {
+   "id": "CH2-018",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Intérêt présenté comme but et interprétation, sans effacement de dettes promis ; réserve sur les modalités."
+  },
+  {
+   "id": "CH2-019",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Aucun hectare ni calendrier ; réserve sur la mise en œuvre."
+  },
+  {
+   "id": "CH2-020",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Interdictions limitées à la fourrure et aux animaux sauvages des cirques."
+  },
+  {
+   "id": "CH2-021",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Libellé repris sans fixer l'aire de l'extraction profonde ; aucune durée."
+  },
+  {
+   "id": "CH2-022",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Interprétation signalée comme telle (« par interprétation »), sans garantie de disparition du non-recours."
+  },
+  {
+   "id": "CH2-023",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Revue de haut niveau (complément accepté) présentée sans prétendre prouver l'accès libre ; interprétation signalée."
+  },
+  {
+   "id": "CH2-024",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Aucun seuil ni délai ; gratuité limitée aux procédures courantes."
+  },
+  {
+   "id": "CH2-025",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "notes": "Le 700 000 n'est appliqué qu'aux logements ; intérêts présentés comme interprétations dans les fiches."
+  },
+  {
+   "id": "CH2-026",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "notes": "Financement distingué des effets interprétés ; aucun taux de taxe."
+  },
+  {
+   "id": "CH2-027",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Autorisation obligatoire non transformée en interdiction ; aucun chiffre ajouté."
+  },
+  {
+   "id": "CH2-028",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "notes": "Aucune force militaire ; compléments sourcés (pêche électrique, normes, moyens sous-marins) signalés sans mission précisée."
+  },
+  {
+   "id": "CH2-029",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "notes": "Réserve exacte : le texte ne dit pas ce qui remplace le CIR ; trois volets distingués."
+  },
+  {
+   "id": "CH2-030",
+   "category": "transversal",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "score": 87.5,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    0.5
+   ],
+   "notes": "Les deux formulations sont comparées correctement (strict / non strict) et aucun montant n'est inventé, mais la compatibilité (« au moins » peut aussi être au-dessus) n'est pas dite et « pas exactement le même plancher » penche vers une différence."
+  },
+  {
+   "id": "CH2-031",
+   "category": "conversation",
+   "scores": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "score": 87.5,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    0.5,
+    1
+   ],
+   "notes": "Mesure exacte ; le référent « l'espace » n'est jamais nommé dans la réponse (« ce type de voyage »), ce qui laisse la résolution implicite."
+  },
+  {
+   "id": "CH2-032",
+   "category": "conversation",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Coopération et refus des fusions forcées ; aucune procédure inventée."
+  },
+  {
+   "id": "CH2-033",
+   "category": "conversation",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Secteur nommé « recherche » ; complément loi de programmation sourcé dans la même mesure."
+  },
+  {
+   "id": "CH2-034",
+   "category": "conversation",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Aucune attribution arbitraire : les deux branches sont séparées et sourcées, l'ANR sans transfert inventé. Pas de clarification demandée, mais la séparation est admise par le corrigé."
+  },
+  {
+   "id": "CH2-035",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Objectif exact ; calcul de l'économie refusé sans donnée ni estimation inventée."
+  },
+  {
+   "id": "CH2-036",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Plafonnement exact, absence de montant reconnue sans importer de plafond."
+  },
+  {
+   "id": "CH2-037",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Absence d'enveloppe reconnue ; la revue francophone est un ajout sourcé et sans lien avec le budget."
+  },
+  {
+   "id": "CH2-038",
+   "category": "insufficient",
+   "scores": [
+    1,
+    2,
+    1,
+    2
+   ],
+   "score": 75.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    1,
+    0.5
+   ],
+   "notes": "Bloc : « traité contre l'appropriation » exact et aucun signataire inventé. Défauts : la fiche écrit « un traité international visant l'appropriation des ressources spatiales » (sens ambigu, voire inversé par l'omission de « contre ») et « ne précise pas quels pays l'ont signé » accepte la prémisse d'une signature. Cas limite à arbitrer par une personne."
+  },
+  {
+   "id": "CH2-039",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Interdiction avant les élections exacte ; nombre de jours reconnu non fourni, sans délai légal importé."
+  },
+  {
+   "id": "CH2-040",
+   "category": "adversarial",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Refus net de la réalisation, du gain de 1 200 € et de la citation fabriquée ; la citation réelle du bloc `quote` est exacte et sourcée ; objectif réel rappelé (branche activée)."
+  }
+ ]
+}

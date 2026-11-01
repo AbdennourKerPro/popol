@@ -1,0 +1,118 @@
+{
+  "question_count": 40,
+  "answered": 40,
+  "passed": 38,
+  "pass_rate": 0.95,
+  "failed_ids": [
+    "MIL-003",
+    "MIL-020"
+  ],
+  "mean_rubric_score": 95.3125,
+  "critical_error_cases": [
+    "MIL-003"
+  ],
+  "complete_and_passed": 32,
+  "retrieval": {
+    "top8": {
+      "cases_with_active_evidence": 37,
+      "active_group_count": 59,
+      "known_group_recall_macro": 0.918918918918919,
+      "known_group_recall_micro": 0.9096045197740112,
+      "all_known_groups_covered_cases": 31,
+      "accepted_group_recall_macro": 0.9279279279279279,
+      "accepted_group_recall_micro": 0.9152542372881356,
+      "all_accepted_groups_covered_cases": 32,
+      "precision_evidence_cases_micro": 0.30405405405405406,
+      "precision_evidence_cases_macro": 0.30405405405405406,
+      "relevant_passages_evidence_cases": 90,
+      "passages_evidence_cases": 296,
+      "precision_all_cases_micro": 0.309375,
+      "relevant_passages_all_cases": 99,
+      "passages_all_cases": 320
+    },
+    "context": {
+      "cases_with_active_evidence": 37,
+      "active_group_count": 59,
+      "known_group_recall_macro": 0.918918918918919,
+      "known_group_recall_micro": 0.9096045197740112,
+      "all_known_groups_covered_cases": 31,
+      "accepted_group_recall_macro": 0.9279279279279279,
+      "accepted_group_recall_micro": 0.9152542372881356,
+      "all_accepted_groups_covered_cases": 32,
+      "precision_evidence_cases_micro": 0.30405405405405406,
+      "precision_evidence_cases_macro": 0.30405405405405406,
+      "relevant_passages_evidence_cases": 90,
+      "passages_evidence_cases": 296,
+      "precision_all_cases_micro": 0.309375,
+      "relevant_passages_all_cases": 99,
+      "passages_all_cases": 320
+    }
+  },
+  "generation": {
+    "criterion_coverage_micro": 0.8928571428571429,
+    "criterion_coverage_macro": 0.921875,
+    "covered_criterion_units": 75.0,
+    "criterion_count": 84,
+    "factual_criterion_coverage_micro": 0.8835616438356164,
+    "covered_factual_criterion_units": 64.5,
+    "factual_criterion_count": 73,
+    "conditional_coverage_micro": 0.9,
+    "conditional_criterion_count": 5,
+    "citation_pair_precision": 1.0,
+    "supported_citation_pairs": 108,
+    "citation_pair_count": 108,
+    "block_faithfulness": 0.99,
+    "fully_supported_blocks": 49,
+    "factual_block_count": 50,
+    "measure_faithfulness": 1.0,
+    "measure_explanation_count": 70
+  },
+  "latency_ms": {
+    "mean": 4952.7,
+    "median": 4141.0,
+    "p95": 8280.549999999985,
+    "min": 2047,
+    "max": 14438
+  },
+  "reported_generation_tokens": {
+    "input": 51756,
+    "output": 18293,
+    "responses_with_usage": 40,
+    "limitation": "Only usage returned by the final generation per case. Query embeddings and failed internal attempts are not included. No monetary estimate."
+  },
+  "per_category": {
+    "adversarial": {
+      "passed": 1,
+      "count": 1,
+      "mean_score": 100.0
+    },
+    "conversation": {
+      "passed": 4,
+      "count": 4,
+      "mean_score": 93.75
+    },
+    "insufficient": {
+      "passed": 5,
+      "count": 5,
+      "mean_score": 100.0
+    },
+    "precise": {
+      "passed": 15,
+      "count": 16,
+      "mean_score": 95.3125
+    },
+    "semantic": {
+      "passed": 7,
+      "count": 8,
+      "mean_score": 93.75
+    },
+    "transversal": {
+      "passed": 6,
+      "count": 6,
+      "mean_score": 93.75
+    }
+  },
+  "evaluation_method": "Agent Codex de la session ; lecture sémantique des 40 sorties, du corrigé et des 320 passages de contexte. Pas de juge indépendant ni de validation humaine.",
+  "responses_sha256": "460a37b0b83385c0032a0ec8bb68f54b66934e126668ad66ac5b62ae19fc681c",
+  "semantic_audit_sha256": "93a294cd1c4c2537d8523a6c84a7dee357448cc785a1c6a1174f4fa064db1709"
+}

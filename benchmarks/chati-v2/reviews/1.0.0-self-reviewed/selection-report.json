@@ -1,0 +1,584 @@
+{
+  "rule": "Exclude every v1 evidence measure subsection, including optional/alternative sources; also exclude measure IDs named elsewhere in v1 gold.",
+  "v1_references_sha256": "37331646c26202a326b4672dea0a5c84f7ecb406729a538de5622cd38f95afa3",
+  "total_subsections": 80,
+  "excluded_by_next_benchmark": [
+    "s01-ss01",
+    "s01-ss06",
+    "s01-ss07",
+    "s01-ss08",
+    "s01-ss09",
+    "s01-ss10",
+    "s01-ss13",
+    "s01-ss14",
+    "s01-ss16",
+    "s01-ss20",
+    "s02-ss01",
+    "s02-ss04",
+    "s02-ss06",
+    "s02-ss09",
+    "s03-ss01",
+    "s03-ss03",
+    "s03-ss04",
+    "s03-ss07",
+    "s03-ss09",
+    "s03-ss10",
+    "s04-ss03",
+    "s04-ss04",
+    "s05-ss02",
+    "s05-ss05",
+    "s05-ss08",
+    "s05-ss09",
+    "s05-ss10",
+    "s05-ss11",
+    "s06-ss01",
+    "s06-ss03",
+    "s06-ss05",
+    "s06-ss07",
+    "s06-ss09",
+    "s07-ss01",
+    "s07-ss02",
+    "s07-ss04",
+    "s08-ss01",
+    "s08-ss02",
+    "s08-ss03"
+  ],
+  "conservative_extra_exclusions": [
+    "s01-ss11"
+  ],
+  "eligible_subsections": [
+    "s01-ss02",
+    "s01-ss03",
+    "s01-ss04",
+    "s01-ss05",
+    "s01-ss12",
+    "s01-ss15",
+    "s01-ss17",
+    "s01-ss18",
+    "s01-ss19",
+    "s02-ss02",
+    "s02-ss03",
+    "s02-ss05",
+    "s02-ss07",
+    "s02-ss08",
+    "s02-ss10",
+    "s03-ss02",
+    "s03-ss05",
+    "s03-ss06",
+    "s03-ss08",
+    "s03-ss11",
+    "s03-ss12",
+    "s03-ss13",
+    "s04-ss01",
+    "s04-ss02",
+    "s04-ss05",
+    "s04-ss06",
+    "s04-ss07",
+    "s04-ss08",
+    "s04-ss09",
+    "s05-ss01",
+    "s05-ss03",
+    "s05-ss04",
+    "s05-ss06",
+    "s05-ss07",
+    "s06-ss02",
+    "s06-ss04",
+    "s06-ss06",
+    "s06-ss08",
+    "s06-ss10",
+    "s07-ss03"
+  ],
+  "selected_subsections": [
+    {
+      "id": "s01-ss02",
+      "section_id": "s01",
+      "section": "ÉCONOMIE, TRAVAIL ET LOGEMENT",
+      "title": "Lutte contre la fraude fiscale",
+      "case_ids": [
+        "CH2-017",
+        "CH2-029"
+      ]
+    },
+    {
+      "id": "s01-ss04",
+      "section_id": "s01",
+      "section": "ÉCONOMIE, TRAVAIL ET LOGEMENT",
+      "title": "Banques et finance",
+      "case_ids": [
+        "CH2-001",
+        "CH2-018",
+        "CH2-036"
+      ]
+    },
+    {
+      "id": "s01-ss05",
+      "section_id": "s01",
+      "section": "ÉCONOMIE, TRAVAIL ET LOGEMENT",
+      "title": "Dette publique",
+      "case_ids": [
+        "CH2-002"
+      ]
+    },
+    {
+      "id": "s01-ss15",
+      "section_id": "s01",
+      "section": "ÉCONOMIE, TRAVAIL ET LOGEMENT",
+      "title": "Égalité femmes-hommes et jeunesse",
+      "case_ids": [
+        "CH2-030"
+      ]
+    },
+    {
+      "id": "s01-ss17",
+      "section_id": "s01",
+      "section": "ÉCONOMIE, TRAVAIL ET LOGEMENT",
+      "title": "Infrastructures et bois",
+      "case_ids": [
+        "CH2-025"
+      ]
+    },
+    {
+      "id": "s01-ss19",
+      "section_id": "s01",
+      "section": "ÉCONOMIE, TRAVAIL ET LOGEMENT",
+      "title": "Espace",
+      "case_ids": [
+        "CH2-027",
+        "CH2-031",
+        "CH2-038"
+      ]
+    },
+    {
+      "id": "s02-ss02",
+      "section_id": "s02",
+      "section": "INSTITUTIONS, DÉMOCRATIE ET SOCIÉTÉ",
+      "title": "Vie politique et probité",
+      "case_ids": [
+        "CH2-004",
+        "CH2-039"
+      ]
+    },
+    {
+      "id": "s02-ss03",
+      "section_id": "s02",
+      "section": "INSTITUTIONS, DÉMOCRATIE ET SOCIÉTÉ",
+      "title": "Laïcité",
+      "case_ids": [
+        "CH2-015"
+      ]
+    },
+    {
+      "id": "s02-ss05",
+      "section_id": "s02",
+      "section": "INSTITUTIONS, DÉMOCRATIE ET SOCIÉTÉ",
+      "title": "Collectivités territoriales",
+      "case_ids": [
+        "CH2-003",
+        "CH2-032"
+      ]
+    },
+    {
+      "id": "s02-ss07",
+      "section_id": "s02",
+      "section": "INSTITUTIONS, DÉMOCRATIE ET SOCIÉTÉ",
+      "title": "Justice",
+      "case_ids": [
+        "CH2-024"
+      ]
+    },
+    {
+      "id": "s02-ss10",
+      "section_id": "s02",
+      "section": "INSTITUTIONS, DÉMOCRATIE ET SOCIÉTÉ",
+      "title": "Sport",
+      "case_ids": [
+        "CH2-026"
+      ]
+    },
+    {
+      "id": "s03-ss02",
+      "section_id": "s03",
+      "section": "ÉCOLOGIE ET CLIMAT",
+      "title": "Territoires et outre-mer",
+      "case_ids": [
+        "CH2-019"
+      ]
+    },
+    {
+      "id": "s03-ss05",
+      "section_id": "s03",
+      "section": "ÉCOLOGIE ET CLIMAT",
+      "title": "Rénovation des bâtiments",
+      "case_ids": [
+        "CH2-005",
+        "CH2-025",
+        "CH2-035",
+        "CH2-040"
+      ]
+    },
+    {
+      "id": "s03-ss06",
+      "section_id": "s03",
+      "section": "ÉCOLOGIE ET CLIMAT",
+      "title": "Consommation et déchets",
+      "case_ids": [
+        "CH2-006"
+      ]
+    },
+    {
+      "id": "s03-ss11",
+      "section_id": "s03",
+      "section": "ÉCOLOGIE ET CLIMAT",
+      "title": "Condition animale",
+      "case_ids": [
+        "CH2-020"
+      ]
+    },
+    {
+      "id": "s03-ss12",
+      "section_id": "s03",
+      "section": "ÉCOLOGIE ET CLIMAT",
+      "title": "Biodiversité et océans",
+      "case_ids": [
+        "CH2-021",
+        "CH2-028"
+      ]
+    },
+    {
+      "id": "s03-ss13",
+      "section_id": "s03",
+      "section": "ÉCOLOGIE ET CLIMAT",
+      "title": "Numérique et environnement",
+      "case_ids": [
+        "CH2-027"
+      ]
+    },
+    {
+      "id": "s04-ss01",
+      "section_id": "s04",
+      "section": "EUROPE ET INTERNATIONAL",
+      "title": "Union européenne",
+      "case_ids": [
+        "CH2-007"
+      ]
+    },
+    {
+      "id": "s04-ss02",
+      "section_id": "s04",
+      "section": "EUROPE ET INTERNATIONAL",
+      "title": "Diplomatie",
+      "case_ids": [
+        "CH2-014"
+      ]
+    },
+    {
+      "id": "s04-ss05",
+      "section_id": "s04",
+      "section": "EUROPE ET INTERNATIONAL",
+      "title": "Justice mondiale, commerce et climat",
+      "case_ids": [
+        "CH2-016"
+      ]
+    },
+    {
+      "id": "s04-ss07",
+      "section_id": "s04",
+      "section": "EUROPE ET INTERNATIONAL",
+      "title": "Développement et Afrique",
+      "case_ids": [
+        "CH2-008"
+      ]
+    },
+    {
+      "id": "s04-ss08",
+      "section_id": "s04",
+      "section": "EUROPE ET INTERNATIONAL",
+      "title": "Méditerranée",
+      "case_ids": [
+        "CH2-028"
+      ]
+    },
+    {
+      "id": "s05-ss01",
+      "section_id": "s05",
+      "section": "SANTÉ ET SOCIAL",
+      "title": "Fin de vie",
+      "case_ids": [
+        "CH2-009"
+      ]
+    },
+    {
+      "id": "s05-ss06",
+      "section_id": "s05",
+      "section": "SANTÉ ET SOCIAL",
+      "title": "Santé des femmes",
+      "case_ids": [
+        "CH2-010"
+      ]
+    },
+    {
+      "id": "s05-ss07",
+      "section_id": "s05",
+      "section": "SANTÉ ET SOCIAL",
+      "title": "Pauvreté",
+      "case_ids": [
+        "CH2-022",
+        "CH2-030"
+      ]
+    },
+    {
+      "id": "s06-ss06",
+      "section_id": "s06",
+      "section": "ÉDUCATION, RECHERCHE ET JEUNESSE",
+      "title": "Voie professionnelle",
+      "case_ids": [
+        "CH2-011"
+      ]
+    },
+    {
+      "id": "s06-ss08",
+      "section_id": "s06",
+      "section": "ÉDUCATION, RECHERCHE ET JEUNESSE",
+      "title": "Recherche",
+      "case_ids": [
+        "CH2-023",
+        "CH2-029",
+        "CH2-033",
+        "CH2-034",
+        "CH2-037"
+      ]
+    },
+    {
+      "id": "s06-ss10",
+      "section_id": "s06",
+      "section": "ÉDUCATION, RECHERCHE ET JEUNESSE",
+      "title": "Sport à l’école",
+      "case_ids": [
+        "CH2-012",
+        "CH2-026"
+      ]
+    },
+    {
+      "id": "s07-ss03",
+      "section_id": "s07",
+      "section": "SÉCURITÉ, POLICE ET JUSTICE PÉNALE",
+      "title": "Terrorisme et renseignement",
+      "case_ids": [
+        "CH2-013"
+      ]
+    }
+  ],
+  "exclusion_reasons": {
+    "s01-ss01": [
+      "MIL-001",
+      "MIL-029",
+      "MIL-035"
+    ],
+    "s01-ss06": [
+      "MIL-021",
+      "MIL-029"
+    ],
+    "s01-ss07": [
+      "MIL-021"
+    ],
+    "s01-ss08": [
+      "MIL-014",
+      "MIL-017",
+      "MIL-023",
+      "MIL-025"
+    ],
+    "s01-ss09": [
+      "MIL-025"
+    ],
+    "s01-ss10": [
+      "MIL-037"
+    ],
+    "s01-ss13": [
+      "MIL-027"
+    ],
+    "s01-ss14": [
+      "MIL-002",
+      "MIL-031",
+      "MIL-038",
+      "MIL-039"
+    ],
+    "s01-ss16": [
+      "MIL-029"
+    ],
+    "s01-ss20": [
+      "MIL-018"
+    ],
+    "s02-ss01": [
+      "MIL-003"
+    ],
+    "s02-ss04": [
+      "MIL-004"
+    ],
+    "s02-ss06": [
+      "MIL-018"
+    ],
+    "s02-ss09": [
+      "MIL-036"
+    ],
+    "s03-ss01": [
+      "MIL-029",
+      "MIL-032",
+      "MIL-036"
+    ],
+    "s03-ss03": [
+      "MIL-006"
+    ],
+    "s03-ss04": [
+      "MIL-005",
+      "MIL-029",
+      "MIL-032",
+      "MIL-040"
+    ],
+    "s03-ss07": [
+      "MIL-019",
+      "MIL-028",
+      "MIL-029"
+    ],
+    "s03-ss09": [
+      "MIL-020"
+    ],
+    "s03-ss10": [
+      "MIL-029"
+    ],
+    "s04-ss03": [
+      "MIL-007",
+      "MIL-014"
+    ],
+    "s04-ss04": [
+      "MIL-008"
+    ],
+    "s05-ss02": [
+      "MIL-009"
+    ],
+    "s05-ss05": [
+      "MIL-027"
+    ],
+    "s05-ss08": [
+      "MIL-027",
+      "MIL-033"
+    ],
+    "s05-ss09": [
+      "MIL-010"
+    ],
+    "s05-ss10": [
+      "MIL-023",
+      "MIL-026",
+      "MIL-036"
+    ],
+    "s05-ss11": [
+      "MIL-028"
+    ],
+    "s06-ss01": [
+      "MIL-011",
+      "MIL-034"
+    ],
+    "s06-ss03": [
+      "MIL-022"
+    ],
+    "s06-ss05": [
+      "MIL-026"
+    ],
+    "s06-ss07": [
+      "MIL-012"
+    ],
+    "s06-ss09": [
+      "MIL-027",
+      "MIL-034"
+    ],
+    "s07-ss01": [
+      "MIL-013",
+      "MIL-030"
+    ],
+    "s07-ss02": [
+      "MIL-022",
+      "MIL-036"
+    ],
+    "s07-ss04": [
+      "MIL-014"
+    ],
+    "s08-ss01": [
+      "MIL-015",
+      "MIL-016",
+      "MIL-024",
+      "MIL-033"
+    ],
+    "s08-ss02": [
+      "MIL-024"
+    ],
+    "s08-ss03": [
+      "MIL-030"
+    ]
+  },
+  "selected_subsection_overlap_with_v1": [],
+  "cases_by_section_including_cross_section_cases": {
+    "s01": [
+      "CH2-001",
+      "CH2-002",
+      "CH2-017",
+      "CH2-018",
+      "CH2-025",
+      "CH2-027",
+      "CH2-029",
+      "CH2-030",
+      "CH2-031",
+      "CH2-036",
+      "CH2-038"
+    ],
+    "s02": [
+      "CH2-003",
+      "CH2-004",
+      "CH2-015",
+      "CH2-024",
+      "CH2-026",
+      "CH2-032",
+      "CH2-039"
+    ],
+    "s03": [
+      "CH2-005",
+      "CH2-006",
+      "CH2-019",
+      "CH2-020",
+      "CH2-021",
+      "CH2-025",
+      "CH2-027",
+      "CH2-028",
+      "CH2-035",
+      "CH2-040"
+    ],
+    "s04": [
+      "CH2-007",
+      "CH2-008",
+      "CH2-014",
+      "CH2-016",
+      "CH2-028"
+    ],
+    "s05": [
+      "CH2-009",
+      "CH2-010",
+      "CH2-022",
+      "CH2-030"
+    ],
+    "s06": [
+      "CH2-011",
+      "CH2-012",
+      "CH2-023",
+      "CH2-026",
+      "CH2-029",
+      "CH2-033",
+      "CH2-034",
+      "CH2-037"
+    ],
+    "s07": [
+      "CH2-013"
+    ]
+  },
+  "omitted_section": {
+    "id": "s08",
+    "reason": "Every subsection was already mobilized in v1; no artificial coverage added."
+  }
+}

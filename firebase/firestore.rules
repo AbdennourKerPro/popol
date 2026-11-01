@@ -1,0 +1,11 @@
+rules_version = '2';
+
+// Chati never lets a browser talk to Firestore: only the server (Firebase Admin SDK,
+// which bypasses these rules) reads and writes the invitations and the counters.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

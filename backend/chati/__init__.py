@@ -1,0 +1,1 @@
+"""Chati, le Chat Insoumis."""

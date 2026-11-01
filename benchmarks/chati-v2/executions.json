@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "runs": {
+    "2026-11-01-default": {
+      "path": "benchmarks/chati-v2/runs/2026-11-01-default",
+      "responses_sha256": "fec76f710a5cef8aa730950fff2d00356083d68c6def7fdc7917c2bb418ccfd0",
+      "started_at": "2026-11-01T15:30:20.536900+00:00",
+      "completed_at": "2026-11-01T15:31:53.895079+00:00",
+      "collected_case_count": 40,
+      "semantically_scored_case_count": 40,
+      "assessment_scope": "all forty cases, Claude audit with post-execution CH2-007 rationale amended by Codex following user clarification; scores unchanged",
+      "report": "benchmarks/chati-v2/runs/2026-11-01-default/REPORT.md"
+    },
+    "2026-11-01-repeat-01": {
+      "path": "benchmarks/chati-v2/runs/2026-11-01-repeat-01",
+      "responses_sha256": "111de1d97123aa469dbc4939c1d4d60bfe96b626a1918426cf7e389da25adf53",
+      "started_at": "2026-11-01T15:45:52.256316+00:00",
+      "completed_at": "2026-11-01T15:47:23.361681+00:00",
+      "collected_case_count": 40,
+      "semantically_scored_case_count": 40,
+      "assessment_scope": "all forty cases, explicit Codex audit with user clarification of CH2-007",
+      "report": "benchmarks/chati-v2/runs/2026-11-01-repeat-01/REPORT.md"
+    }
+  },
+  "benchmark_version": "1.0.3-user-amended",
+  "publication_manifest_sha256": "0be54dfe13d380f8ce4aa3c3d5294af4140d03d2151c641bb140cfec2158de55",
+  "note": "Original publication manifest archived in reviews/1.0.2-validated. Run fingerprints unchanged; current judgments use post-execution user amendment of CH2-007.",
+  "human_review_session": "benchmarks/chati-v2/human-review/2026-11-01-session/session.json",
+  "current_manifest_sha256": "4a43a7c2138531b5f016e6f1a39fded9afdbf22908de8d81cf6e76dad2c4b01c"
+}

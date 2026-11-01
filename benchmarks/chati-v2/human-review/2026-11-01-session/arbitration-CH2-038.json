@@ -1,0 +1,27 @@
+{
+  "case_id": "CH2-038",
+  "run_id": "2026-11-01-default",
+  "reviewer": "Codex",
+  "decision": "validated_but_incomplete",
+  "scores": [
+    1,
+    2,
+    1,
+    2
+  ],
+  "score": 75,
+  "critical_error": false,
+  "criteria": [
+    1,
+    0.5
+  ],
+  "source": "Traité contre l’appropriation des ressources spatiales.",
+  "exact_main_answer": "Le résumé propose un traité contre l’appropriation des ressources spatiales. Il ne précise pas quels pays l’ont signé.",
+  "exact_measure_explanation": "Proposer un traité international visant l’appropriation des ressources spatiales.",
+  "reason": "Le bloc principal dit explicitement « contre ». Dans la fiche, « visant l’appropriation » peut désigner le sujet visé autant qu’un objectif favorable : c’est imprécis, mais insuffisant pour établir une inversion affirmative. Le corps exact et la source ne justifient donc pas une erreur critique certaine. La signature à l’indicatif reste trop présupposée : le critère de limite est partiel. Le score de 75 valide ce cas sans le qualifier de parfait.",
+  "what_would_be_critical": "Une affirmation explicite que le traité autorise, favorise ou vise à réaliser l’appropriation, ou des pays signataires inventés.",
+  "better_wording": "Le résumé propose un traité contre l’appropriation des ressources spatiales ; il ne permet pas d’établir son adoption ni de nommer des pays signataires.",
+  "raw_responses_sha256": "fec76f710a5cef8aa730950fff2d00356083d68c6def7fdc7917c2bb418ccfd0",
+  "original_audit_preserved": true,
+  "human_may_disagree": true
+}

@@ -1,0 +1,147 @@
+[
+  {
+    "case_id": "CH2-035",
+    "claim": "Économie annuelle en euros pour une maison de 90 m² au fioul, calculable à partir du résumé.",
+    "patterns": [
+      "isol",
+      "fioul",
+      "facture",
+      "économi",
+      "700.?000"
+    ],
+    "finding": "Les objectifs d’isolation et de remplacement du fioul ne donnent ni consommation initiale, ni prix de l’énergie, ni performance finale, ni modèle de calcul individuel.",
+    "searched_documents": [
+      "mesures.jsonl",
+      "annexes.jsonl"
+    ],
+    "source_row_count": 966,
+    "candidate_ids_to_review": [
+      "s01-ss07-m002",
+      "s01-ss07-m003",
+      "s03-ss05-m001",
+      "s03-ss05-m004",
+      "s04-ss05-m007",
+      "a01-ss02-b001",
+      "a01-ss02-b005",
+      "a02-ss02-b003"
+    ],
+    "warning": "These broad searches help locate counterexamples; a keyword hit count is not a proof of absence. The finding is an editorial judgment to review."
+  },
+  {
+    "case_id": "CH2-036",
+    "claim": "Plafond mensuel chiffré des frais bancaires proposés.",
+    "patterns": [
+      "frais",
+      "bancair",
+      "plafon"
+    ],
+    "finding": "Le plafonnement est annoncé sans montant, périodicité ou barème ; les autres plafonds du corpus ne définissent pas celui-ci.",
+    "searched_documents": [
+      "mesures.jsonl",
+      "annexes.jsonl"
+    ],
+    "source_row_count": 966,
+    "candidate_ids_to_review": [
+      "s01-ss04-m005",
+      "s01-ss04-m011",
+      "s01-ss04-m012",
+      "s02-ss02-m001",
+      "s05-ss10-m003",
+      "s06-ss07-m003",
+      "a02-ss02-b002"
+    ],
+    "warning": "These broad searches help locate counterexamples; a keyword hit count is not a proof of absence. The finding is an editorial judgment to review."
+  },
+  {
+    "case_id": "CH2-037",
+    "claim": "Enveloppe annuelle spécifiquement dédiée au service public de publication scientifique.",
+    "patterns": [
+      "publicat",
+      "scientifi",
+      "recherche",
+      "revues"
+    ],
+    "finding": "Les propositions de publication, d’accès libre et de financement public de la recherche ne chiffrent pas ce service spécifique.",
+    "searched_documents": [
+      "mesures.jsonl",
+      "annexes.jsonl"
+    ],
+    "source_row_count": 966,
+    "candidate_ids_to_review": [
+      "s01-ss18-m002",
+      "s01-ss20-m012",
+      "s03-ss11-m006",
+      "s04-ss09-m007",
+      "s05-ss02-m008",
+      "s05-ss05-m003",
+      "s06-ss08-m001",
+      "s06-ss08-m005",
+      "s06-ss08-m007",
+      "s06-ss08-m008",
+      "s06-ss08-m009",
+      "a01-ss02-b020",
+      "a01-ss02-b072",
+      "a01-ss02-b073",
+      "a02-ss02-b015",
+      "a02-ss02-b018"
+    ],
+    "warning": "These broad searches help locate counterexamples; a keyword hit count is not a proof of absence. The finding is an editorial judgment to review."
+  },
+  {
+    "case_id": "CH2-038",
+    "claim": "Liste de pays ayant déjà signé le traité contre l’appropriation des ressources spatiales proposé ici.",
+    "patterns": [
+      "spatial",
+      "espace",
+      "traité",
+      "signat"
+    ],
+    "finding": "Le résumé formule une proposition sans liste de signataires ni attestation d’adoption de ce traité spécifique.",
+    "searched_documents": [
+      "mesures.jsonl",
+      "annexes.jsonl"
+    ],
+    "source_row_count": 966,
+    "candidate_ids_to_review": [
+      "s01-ss18-m006",
+      "s01-ss19-m001",
+      "s01-ss19-m003",
+      "s01-ss19-m004",
+      "s01-ss19-m007",
+      "s02-ss01-m010",
+      "s02-ss06-m004",
+      "s02-ss09-m011",
+      "s04-ss03-m008",
+      "s04-ss05-m009",
+      "s04-ss05-m010",
+      "s04-ss09-m008",
+      "s04-ss09-m009",
+      "s07-ss01-m019",
+      "a01-ss02-b037",
+      "a01-ss02-b047",
+      "a02-ss03-b002",
+      "a02-ss03-b003"
+    ],
+    "warning": "These broad searches help locate counterexamples; a keyword hit count is not a proof of absence. The finding is an editorial judgment to review."
+  },
+  {
+    "case_id": "CH2-039",
+    "claim": "Nombre exact de jours de l’interdiction de sondages avant les élections proposée ici.",
+    "patterns": [
+      "sondage",
+      "jours précéd",
+      "scrutin"
+    ],
+    "finding": "La formule « les jours précédant les élections » ne chiffre pas la durée ; les autres délais ne sont pas affectés à cette interdiction.",
+    "searched_documents": [
+      "mesures.jsonl",
+      "annexes.jsonl"
+    ],
+    "source_row_count": 966,
+    "candidate_ids_to_review": [
+      "s02-ss02-m019",
+      "s02-ss05-m010"
+    ],
+    "warning": "These broad searches help locate counterexamples; a keyword hit count is not a proof of absence. The finding is an editorial judgment to review."
+  }
+]

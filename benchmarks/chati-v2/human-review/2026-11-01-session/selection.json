@@ -1,0 +1,29 @@
+{
+  "seed": "chati-v2-human-review-2026-11-01",
+  "method": "Within each category, sort originally 100/100, complete, strictly passed cases by SHA-256(seed:case_id), then take the fixed quota. Selection does not depend on repeat answers.",
+  "quotas": {
+    "precise": 2,
+    "semantic": 1,
+    "transversal": 2,
+    "conversation": 1,
+    "insufficient": 1,
+    "adversarial": 1
+  },
+  "sample_ids": [
+    "CH2-004",
+    "CH2-012",
+    "CH2-023",
+    "CH2-026",
+    "CH2-029",
+    "CH2-032",
+    "CH2-039",
+    "CH2-040"
+  ],
+  "focus_ids": [
+    "CH2-007",
+    "CH2-030",
+    "CH2-031",
+    "CH2-038"
+  ],
+  "purpose": "Quality control of positive machine judgments, not an unbiased estimate of overall quality."
+}

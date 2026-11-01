@@ -1,0 +1,7 @@
+ Container popol-app-run-9f8945820652 Creating 
+ Container popol-app-run-9f8945820652 Created 
+enrichi + syn., 12 passages {'recall_macro': 0.986, 'recall_micro': 0.982, 'groups': 57, 'context_recall_micro': 0.982, 'cases_fully_covered': 34, 'cases': 35, 'mean_distinct_subsections': 6.114} ['MIL-018']
+enrichi + syn., 16 passages {'recall_macro': 0.986, 'recall_micro': 0.982, 'groups': 57, 'context_recall_micro': 0.982, 'cases_fully_covered': 34, 'cases': 35, 'mean_distinct_subsections': 8.029} ['MIL-018']
+enrichi + syn., 20 passages {'recall_macro': 0.986, 'recall_micro': 0.982, 'groups': 57, 'context_recall_micro': 0.982, 'cases_fully_covered': 34, 'cases': 35, 'mean_distinct_subsections': 10.257} ['MIL-018']
+base, 12 passages {'recall_macro': 0.914, 'recall_micro': 0.906, 'groups': 57, 'context_recall_micro': 0.906, 'cases_fully_covered': 29, 'cases': 35, 'mean_distinct_subsections': 5.686} ['MIL-018', 'MIL-020', 'MIL-025', 'MIL-027', 'MIL-029', 'MIL-030']
+base, 20 passages {'recall_macro': 0.976, 'recall_micro': 0.965, 'groups': 57, 'context_recall_micro': 0.942, 'cases_fully_covered': 33, 'cases': 35, 'mean_distinct_subsections': 9.371} ['MIL-018', 'MIL-025']

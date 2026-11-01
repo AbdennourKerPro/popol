@@ -1,0 +1,49 @@
+{
+  "name": "Chati — second lot de 40 questions sur sous-sections disjointes",
+  "version": "1.0.0-self-reviewed",
+  "schema_version": "2.1",
+  "date": "2026-11-01",
+  "status": "self_reviewed_pending_independent_review",
+  "question_count": 40,
+  "categories": {
+    "precise": 16,
+    "semantic": 8,
+    "transversal": 6,
+    "conversation": 4,
+    "insufficient": 5,
+    "adversarial": 1
+  },
+  "answerability": {
+    "answerable": 33,
+    "needs_clarification": 1,
+    "partial": 5,
+    "unsupported_request": 1
+  },
+  "corpus": {
+    "measures": "data/structured/mesures.jsonl",
+    "measure_count": 795,
+    "measures_file_sha256": "d51f6081e2fba997856a1cc19d4012d3ccf71e6abc577e8871dc3aa99de54075",
+    "annexes": "data/structured/annexes.jsonl",
+    "annex_block_count": 171,
+    "annexes_file_sha256": "18d3f501fb95435ce9b3e1c214e46b19ea5e4820c4f1026a92c446d42de51c75",
+    "html_sha256": "22bc05c9b552956fbab0785d174eba2d170ea03c39323b686e077a9846ea1c79",
+    "hierarchy_and_appendices": "data/structured/programme.json",
+    "hierarchy_file_sha256": "cf22e7273f3aa00ba666847d57fb2e59ba92d93d0e7b6ce368660f61a5f9956f",
+    "pdf": "assets/Programme-Mélenchon-LFI.pdf",
+    "pdf_sha256": "9855c5693995fac7e37d67e5adb2ece4deb5f5789e008018e53de8fe6c4cb19a"
+  },
+  "subsection_count": 29,
+  "v1_excluded_subsection_count": 39,
+  "conservative_extra_excluded_subsection_count": 1,
+  "measure_subsection_overlap_with_v1": 0,
+  "selection_report": "benchmarks/chati-v2/selection-report.json",
+  "plan": "benchmarks/NEXT-BENCHMARK.md",
+  "review": "benchmarks/chati-v2/benchmark_review.md",
+  "independent_review": null,
+  "scoring_policy": "benchmarks/chati-v2/EVALUATION.md",
+  "scope": "Closed frozen source corpus; no web, no current-law assumptions. Enrichment aliases are not evidence.",
+  "not_executed": true,
+  "no_independent_model_exposure_claim": true,
+  "input_sha256": "1f1e1fa9e80dba152dc855c8bb0b37c5e04f3920de694dbf1715998e4181bcb7",
+  "gold_sha256": "3e0b4bb3dfba056e4bd309dd6132aeddd99c8381cc3d1ed81b5abcc1aa346cef"
+}

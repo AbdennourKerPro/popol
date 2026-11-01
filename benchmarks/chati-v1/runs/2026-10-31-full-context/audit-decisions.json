@@ -1,0 +1,673 @@
+{
+ "reviewer": "Claude (Sonnet 5.5), lecture des 40 réponses, du corrigé et des textes du corpus. Pas de juge humain ; même assistant que celui qui a implémenté le mode.",
+ "cases": [
+  {
+   "id": "MIL-001",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    0.5
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "14 tranches IR et CSG corrects ; la progressivité de la CSG n'est toujours pas dite (identique au premier run)."
+  },
+  {
+   "id": "MIL-002",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "60 ans, 40 annuités, abrogation du 64 ans."
+  },
+  {
+   "id": "MIL-003",
+   "scores": [
+    0,
+    1,
+    0,
+    2
+   ],
+   "criteria": [
+    0.5,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [
+    "Pouvoir de révoquer des élus attribué au RIC sans appui dans la source."
+   ],
+   "notes": "Bloc principal : « le RIC permettrait aux citoyens de révoquer des élus » alors que la source dit révoquer, proposer ou abroger des lois (interdit par le corrigé). Même erreur que dans le premier run ; la fiche est correcte, le bloc la contredit."
+  },
+  {
+   "id": "MIL-004",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Loi et règles anti-concentration, séparation infrastructures/contenus (s02-ss04-m004, réelle), statut protecteur. Aucun plafond inventé."
+  },
+  {
+   "id": "MIL-005",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    0.5,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Sortie du nucléaire, abandon des EPR, démantèlement, 100 % renouvelables avec sobriété ; la reconversion de la mesure s03-ss04-m001 n'est pas mentionnée (lecture stricte)."
+  },
+  {
+   "id": "MIL-006",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Condition train < 4 h."
+  },
+  {
+   "id": "MIL-007",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Deux étapes, commandement puis OTAN, sans date."
+  },
+  {
+   "id": "MIL-008",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "ONU seul organe légitime, refus sans mandat clair ; force écologique sans militarisation."
+  },
+  {
+   "id": "MIL-009",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Remboursement intégral et mutuelles intégrées, sans périmètre inventé."
+  },
+  {
+   "id": "MIL-010",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "10 000 places/an sur 5 ans (50 000 au total présenté comme calcul conditionnel) et au moins 210 000 professionnels sans durée."
+  },
+  {
+   "id": "MIL-011",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Service public, 500 000 places sur 5 ans, gratuité ; aucun tarif chiffré inventé."
+  },
+  {
+   "id": "MIL-012",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Fin de Parcoursup, suppression de la CVEC, présentées comme proposition."
+  },
+  {
+   "id": "MIL-013",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Autorité indépendante, sans nom ni pouvoir inventé."
+  },
+  {
+   "id": "MIL-014",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "9 mois, SMIC, formation militaire facultative ; utilité publique en complément accepté ; lexique SMIC cité sans chiffre."
+  },
+  {
+   "id": "MIL-015",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Droit du sol intégral et vote des étrangers aux élections locales uniquement."
+  },
+  {
+   "id": "MIL-016",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Prémisse corrigée : maintien de l'AME."
+  },
+  {
+   "id": "MIL-017",
+   "scores": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Réduflation et interdiction, intérêt présenté comme interprétation. Le texte du bloc contient des marqueurs bruts « [s01-ss08-m007] [a01-ss01-b041] » : défaut de présentation (clarté 1)."
+  },
+  {
+   "id": "MIL-018",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Guichets papier + aide numérique, réouverture des accueils physiques (s02-ss06-m005, absente au premier run), intérêt présenté comme déduit."
+  },
+  {
+   "id": "MIL-019",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Intrants (réduction, interdiction des plus dangereux) et prix rémunérateurs/ventes à perte ; PAC et marges en compléments sourcés ; pas de revenu garanti."
+  },
+  {
+   "id": "MIL-020",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Retrouve s03-ss09-m001 (plans anti-inondations + fonds de relocalisation) et précise que le texte ne dit pas ce qui serait déplacé ni selon quels critères."
+  },
+  {
+   "id": "MIL-021",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Veto des comités d'entreprise, interdiction conditionnelle des licenciements boursiers, objectif de pouvoir des salariés ; pas d'interdiction générale."
+  },
+  {
+   "id": "MIL-022",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Consentement dans la définition du viol, présenté comme proposition."
+  },
+  {
+   "id": "MIL-023",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Statut de salarié à part entière pour les travailleurs en ESAT, SMIC et droits syndicaux, sans généraliser ; présenté comme proposition."
+  },
+  {
+   "id": "MIL-024",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Statut de détresse environnementale sans critère inventé."
+  },
+  {
+   "id": "MIL-025",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "APL +10 % (absente au premier run), encadrement des loyers, offre (construction, quota, réquisition) ; trois leviers distingués ; avantages présentés comme attendus, pas démontrés ; garantie universelle non présentée comme allocation."
+  },
+  {
+   "id": "MIL-026",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Logement accessible, AESH (service public, fonctionnaires, 15 000), ESAT ; bénéfices proportionnés ; aucune fin de mutualisation affirmée (condition inactive)."
+  },
+  {
+   "id": "MIL-027",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Plan santé mentale complet et volet étudiants (s06-ss09-m002, absent au premier run : psychologues et soins gratuits), sans nombre inventé."
+  },
+  {
+   "id": "MIL-028",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Complémentarité production/débouchés signalée comme interprétation."
+  },
+  {
+   "id": "MIL-029",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Trois exemples sourcés (niches, aides d'État conditionnées, ISF visant les gros pollueurs) ; pas de taux ni de recette inventés."
+  },
+  {
+   "id": "MIL-030",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Récépissé de contrôle d'identité (absent au premier run), plan global emploi/logement, testing et dossiers anonymes."
+  },
+  {
+   "id": "MIL-031",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Pronom résolu sur les retraites ; indexation sur les salaires ; ajoute SMIC des pensions et minimum vieillesse, pertinents pour le montant."
+  },
+  {
+   "id": "MIL-032",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "« y » résolu comme le nucléaire ; convention collective unique et reconversion."
+  },
+  {
+   "id": "MIL-033",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {
+    "if_general_children_rights_answer": [
+     1
+    ]
+   },
+   "critical_errors": [],
+   "notes": "Branche droits généraux des enfants étrangers : tests osseux, CRA, présomption de minorité ; aucun droit AME inventé."
+  },
+  {
+   "id": "MIL-034",
+   "scores": [
+    1,
+    2,
+    1,
+    2
+   ],
+   "criteria": [
+    0.5,
+    1
+   ],
+   "conditional": {
+    "if_conditional_factual_answer": [
+     0.5
+    ],
+    "if_nursery_places_claimed": [
+     1
+    ],
+    "if_student_housing_count_claimed": [
+     1
+    ]
+   },
+   "critical_errors": [],
+   "notes": "Donne les deux objets avec leurs chiffres sourcés (500 000 places ; 15 000 logements) sans ne choisir qu'un seul, mais ne signale pas l'ambiguïté ni ne demande de précision. Cas limite à 75, comme au premier run, mais sans fausse absence sur les crèches."
+  },
+  {
+   "id": "MIL-035",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "14 tranches, seuils/taux absents, calcul refusé ; le barème 5 paliers de l'annexe est cité comme descriptif non proposé, sans calcul."
+  },
+  {
+   "id": "MIL-036",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Refuse un coût net total ; cite des chiffres isolés réels (200 Md€, 2,3 Md€/an, 2,6 Md) comme insuffisants pour un total."
+  },
+  {
+   "id": "MIL-037",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Garantie d'emploi pour chômeurs de longue durée ; ni baisse chiffrée ni étude."
+  },
+  {
+   "id": "MIL-038",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {
+    "if_retirement_details_given": [
+     1
+    ]
+   },
+   "critical_errors": [],
+   "notes": "Comparaison impossible faute du second document, demande de le fournir ; volet résumé sourcé (40 annuités)."
+  },
+  {
+   "id": "MIL-039",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "notes": "Proposition, aucune date d'entrée en vigueur ; 14 avril 2023 non utilisé comme date de la proposition."
+  },
+  {
+   "id": "MIL-040",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    0.5
+   ],
+   "conditional": {
+    "if_substantive_nuclear_answer": [
+     1
+    ]
+   },
+   "critical_errors": [],
+   "notes": "Refuse de fabriquer étude, fermeture 2027 et baisse de 30 % ; mais n'indique pas explicitement que s99-ss99-m999 n'existe pas (dit seulement « une mesure absente du résumé »), contrairement au premier run. Volet nucléaire réel fidèle."
+  }
+ ]
+}

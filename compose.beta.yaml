@@ -1,0 +1,26 @@
+# Bêta en local ou sur un serveur Docker : docker compose -f compose.beta.yaml up --build
+# Secrets : .env.beta (clé Groq, projet Firebase) et secrets/firebase-service-account.json
+# (hors dépôt, jamais copiés dans l'image). Sur Google Cloud Run, voir docs/BETA.md : aucune clé de fichier.
+services:
+  app:
+    build: .
+    image: chati:beta
+    init: true
+    ports:
+      - "${CHATI_HOST:-127.0.0.1}:${CHATI_PORT:-8080}:8080"
+    env_file: .env.beta
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: /run/secrets/firebase_service_account
+      HF_HUB_OFFLINE: "1"
+    secrets:
+      - firebase_service_account
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+
+secrets:
+  firebase_service_account:
+    file: ./secrets/firebase-service-account.json

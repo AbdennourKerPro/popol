@@ -1,0 +1,71 @@
+{
+ "plans": {},
+ "results": {
+  "enrichi + syn., 12 passages": {
+   "recall_macro": 0.9857142857142858,
+   "recall_micro": 0.9824561403508771,
+   "groups": 57,
+   "context_recall_micro": 0.9824561403508771,
+   "cases_fully_covered": 34,
+   "cases": 35,
+   "mean_distinct_subsections": 6.114285714285714,
+   "missed": [
+    "MIL-018"
+   ]
+  },
+  "enrichi + syn., 16 passages": {
+   "recall_macro": 0.9857142857142858,
+   "recall_micro": 0.9824561403508771,
+   "groups": 57,
+   "context_recall_micro": 0.9824561403508771,
+   "cases_fully_covered": 34,
+   "cases": 35,
+   "mean_distinct_subsections": 8.028571428571428,
+   "missed": [
+    "MIL-018"
+   ]
+  },
+  "enrichi + syn., 20 passages": {
+   "recall_macro": 0.9857142857142858,
+   "recall_micro": 0.9824561403508771,
+   "groups": 57,
+   "context_recall_micro": 0.9824561403508771,
+   "cases_fully_covered": 34,
+   "cases": 35,
+   "mean_distinct_subsections": 10.257142857142858,
+   "missed": [
+    "MIL-018"
+   ]
+  },
+  "base, 12 passages": {
+   "recall_macro": 0.9142857142857143,
+   "recall_micro": 0.9064327485380117,
+   "groups": 57,
+   "context_recall_micro": 0.9064327485380117,
+   "cases_fully_covered": 29,
+   "cases": 35,
+   "mean_distinct_subsections": 5.685714285714286,
+   "missed": [
+    "MIL-018",
+    "MIL-020",
+    "MIL-025",
+    "MIL-027",
+    "MIL-029",
+    "MIL-030"
+   ]
+  },
+  "base, 20 passages": {
+   "recall_macro": 0.9761904761904762,
+   "recall_micro": 0.9649122807017544,
+   "groups": 57,
+   "context_recall_micro": 0.9415204678362573,
+   "cases_fully_covered": 33,
+   "cases": 35,
+   "mean_distinct_subsections": 9.371428571428572,
+   "missed": [
+    "MIL-018",
+    "MIL-025"
+   ]
+  }
+ }
+}

@@ -1,0 +1,918 @@
+{
+ "summary": {
+  "passed": 39,
+  "strict_passed": 39,
+  "complete_and_passed": 35,
+  "failed_ids": [
+   "MIL-003"
+  ],
+  "critical_error_cases": [
+   "MIL-003"
+  ],
+  "mean_rubric_score": 96.5625,
+  "criterion_coverage_micro": 0.9702380952380952,
+  "false_absence_cases": [],
+  "context_group_recall_micro": null,
+  "context_cases_fully_covered": null,
+  "planner_tokens": {
+   "calls": 0,
+   "input": 0,
+   "output": 0
+  },
+  "criterion_units": [
+   81.5,
+   84
+  ],
+  "status_counts": {
+   "answered": 31,
+   "partial": 7,
+   "not_in_corpus": 2,
+   "clarification": 0
+  },
+  "tokens": {
+   "input": 896204,
+   "cached": 871908,
+   "cache_write": 22380,
+   "uncached": 1916,
+   "output": 16623,
+   "reasoning": 7720
+  },
+  "latency_ms": {
+   "median": 4507.0,
+   "p95": 9466,
+   "max": 19954
+  },
+  "per_category": {
+   "adversarial": [
+    1,
+    1
+   ],
+   "conversation": [
+    4,
+    4
+   ],
+   "insufficient": [
+    5,
+    5
+   ],
+   "precise": [
+    15,
+    16
+   ],
+   "semantic": [
+    8,
+    8
+   ],
+   "transversal": [
+    6,
+    6
+   ]
+  }
+ },
+ "cases": [
+  {
+   "id": "MIL-001",
+   "category": "precise",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "score": 87.5,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    1,
+    0.5
+   ],
+   "notes": "14 tranches IR et CSG corrects ; la progressivité de la CSG n'est toujours pas dite (identique au premier run)."
+  },
+  {
+   "id": "MIL-002",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "60 ans, 40 annuités, abrogation du 64 ans."
+  },
+  {
+   "id": "MIL-003",
+   "category": "precise",
+   "scores": [
+    0,
+    1,
+    0,
+    2
+   ],
+   "score": 37.5,
+   "passed": false,
+   "strict_passed": false,
+   "false_absence": false,
+   "complete": false,
+   "critical": true,
+   "criteria": [
+    0.5,
+    1
+   ],
+   "notes": "Bloc principal : « le RIC permettrait aux citoyens de révoquer des élus » alors que la source dit révoquer, proposer ou abroger des lois (interdit par le corrigé). Même erreur que dans le premier run ; la fiche est correcte, le bloc la contredit."
+  },
+  {
+   "id": "MIL-004",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Loi et règles anti-concentration, séparation infrastructures/contenus (s02-ss04-m004, réelle), statut protecteur. Aucun plafond inventé."
+  },
+  {
+   "id": "MIL-005",
+   "category": "precise",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "score": 87.5,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    0.5,
+    1
+   ],
+   "notes": "Sortie du nucléaire, abandon des EPR, démantèlement, 100 % renouvelables avec sobriété ; la reconversion de la mesure s03-ss04-m001 n'est pas mentionnée (lecture stricte)."
+  },
+  {
+   "id": "MIL-006",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Condition train < 4 h."
+  },
+  {
+   "id": "MIL-007",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Deux étapes, commandement puis OTAN, sans date."
+  },
+  {
+   "id": "MIL-008",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "ONU seul organe légitime, refus sans mandat clair ; force écologique sans militarisation."
+  },
+  {
+   "id": "MIL-009",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Remboursement intégral et mutuelles intégrées, sans périmètre inventé."
+  },
+  {
+   "id": "MIL-010",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "10 000 places/an sur 5 ans (50 000 au total présenté comme calcul conditionnel) et au moins 210 000 professionnels sans durée."
+  },
+  {
+   "id": "MIL-011",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Service public, 500 000 places sur 5 ans, gratuité ; aucun tarif chiffré inventé."
+  },
+  {
+   "id": "MIL-012",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Fin de Parcoursup, suppression de la CVEC, présentées comme proposition."
+  },
+  {
+   "id": "MIL-013",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Autorité indépendante, sans nom ni pouvoir inventé."
+  },
+  {
+   "id": "MIL-014",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "9 mois, SMIC, formation militaire facultative ; utilité publique en complément accepté ; lexique SMIC cité sans chiffre."
+  },
+  {
+   "id": "MIL-015",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Droit du sol intégral et vote des étrangers aux élections locales uniquement."
+  },
+  {
+   "id": "MIL-016",
+   "category": "precise",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Prémisse corrigée : maintien de l'AME."
+  },
+  {
+   "id": "MIL-017",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "score": 87.5,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Réduflation et interdiction, intérêt présenté comme interprétation. Le texte du bloc contient des marqueurs bruts « [s01-ss08-m007] [a01-ss01-b041] » : défaut de présentation (clarté 1)."
+  },
+  {
+   "id": "MIL-018",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Guichets papier + aide numérique, réouverture des accueils physiques (s02-ss06-m005, absente au premier run), intérêt présenté comme déduit."
+  },
+  {
+   "id": "MIL-019",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Intrants (réduction, interdiction des plus dangereux) et prix rémunérateurs/ventes à perte ; PAC et marges en compléments sourcés ; pas de revenu garanti."
+  },
+  {
+   "id": "MIL-020",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Retrouve s03-ss09-m001 (plans anti-inondations + fonds de relocalisation) et précise que le texte ne dit pas ce qui serait déplacé ni selon quels critères."
+  },
+  {
+   "id": "MIL-021",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Veto des comités d'entreprise, interdiction conditionnelle des licenciements boursiers, objectif de pouvoir des salariés ; pas d'interdiction générale."
+  },
+  {
+   "id": "MIL-022",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Consentement dans la définition du viol, présenté comme proposition."
+  },
+  {
+   "id": "MIL-023",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Statut de salarié à part entière pour les travailleurs en ESAT, SMIC et droits syndicaux, sans généraliser ; présenté comme proposition."
+  },
+  {
+   "id": "MIL-024",
+   "category": "semantic",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Statut de détresse environnementale sans critère inventé."
+  },
+  {
+   "id": "MIL-025",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "notes": "APL +10 % (absente au premier run), encadrement des loyers, offre (construction, quota, réquisition) ; trois leviers distingués ; avantages présentés comme attendus, pas démontrés ; garantie universelle non présentée comme allocation."
+  },
+  {
+   "id": "MIL-026",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "notes": "Logement accessible, AESH (service public, fonctionnaires, 15 000), ESAT ; bénéfices proportionnés ; aucune fin de mutualisation affirmée (condition inactive)."
+  },
+  {
+   "id": "MIL-027",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Plan santé mentale complet et volet étudiants (s06-ss09-m002, absent au premier run : psychologues et soins gratuits), sans nombre inventé."
+  },
+  {
+   "id": "MIL-028",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Complémentarité production/débouchés signalée comme interprétation."
+  },
+  {
+   "id": "MIL-029",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Trois exemples sourcés (niches, aides d'État conditionnées, ISF visant les gros pollueurs) ; pas de taux ni de recette inventés."
+  },
+  {
+   "id": "MIL-030",
+   "category": "transversal",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "notes": "Récépissé de contrôle d'identité (absent au premier run), plan global emploi/logement, testing et dossiers anonymes."
+  },
+  {
+   "id": "MIL-031",
+   "category": "conversation",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Pronom résolu sur les retraites ; indexation sur les salaires ; ajoute SMIC des pensions et minimum vieillesse, pertinents pour le montant."
+  },
+  {
+   "id": "MIL-032",
+   "category": "conversation",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "« y » résolu comme le nucléaire ; convention collective unique et reconversion."
+  },
+  {
+   "id": "MIL-033",
+   "category": "conversation",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Branche droits généraux des enfants étrangers : tests osseux, CRA, présomption de minorité ; aucun droit AME inventé."
+  },
+  {
+   "id": "MIL-034",
+   "category": "conversation",
+   "scores": [
+    1,
+    2,
+    1,
+    2
+   ],
+   "score": 75.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    0.5,
+    1
+   ],
+   "notes": "Donne les deux objets avec leurs chiffres sourcés (500 000 places ; 15 000 logements) sans ne choisir qu'un seul, mais ne signale pas l'ambiguïté ni ne demande de précision. Cas limite à 75, comme au premier run, mais sans fausse absence sur les crèches."
+  },
+  {
+   "id": "MIL-035",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "14 tranches, seuils/taux absents, calcul refusé ; le barème 5 paliers de l'annexe est cité comme descriptif non proposé, sans calcul."
+  },
+  {
+   "id": "MIL-036",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Refuse un coût net total ; cite des chiffres isolés réels (200 Md€, 2,3 Md€/an, 2,6 Md) comme insuffisants pour un total."
+  },
+  {
+   "id": "MIL-037",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Garantie d'emploi pour chômeurs de longue durée ; ni baisse chiffrée ni étude."
+  },
+  {
+   "id": "MIL-038",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1
+   ],
+   "notes": "Comparaison impossible faute du second document, demande de le fournir ; volet résumé sourcé (40 annuités)."
+  },
+  {
+   "id": "MIL-039",
+   "category": "insufficient",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "score": 100.0,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": true,
+   "critical": false,
+   "criteria": [
+    1,
+    1
+   ],
+   "notes": "Proposition, aucune date d'entrée en vigueur ; 14 avril 2023 non utilisé comme date de la proposition."
+  },
+  {
+   "id": "MIL-040",
+   "category": "adversarial",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "score": 87.5,
+   "passed": true,
+   "strict_passed": true,
+   "false_absence": false,
+   "complete": false,
+   "critical": false,
+   "criteria": [
+    1,
+    0.5
+   ],
+   "notes": "Refuse de fabriquer étude, fermeture 2027 et baisse de 30 % ; mais n'indique pas explicitement que s99-ss99-m999 n'existe pas (dit seulement « une mesure absente du résumé »), contrairement au premier run. Volet nucléaire réel fidèle."
+  }
+ ]
+}

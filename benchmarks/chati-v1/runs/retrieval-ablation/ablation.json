@@ -1,0 +1,354 @@
+{
+ "plans": {
+  "MIL-001": [
+   "Nombre de tranches prévues pour l’impôt sur le revenu, barème progressif et tranches fiscales",
+   "Nombre de tranches prévues pour la CSG, contribution sociale généralisée et barème progressif"
+  ],
+  "MIL-002": [
+   "Âge de départ à la retraite et durée de cotisation prévus dans le résumé du programme politique ; âge légal de départ, annuités requises, trimestres de cotisation"
+  ],
+  "MIL-003": [
+   "Référendum d’initiative citoyenne (RIC) : quels sujets ou décisions pourrait-il permettre de soumettre au vote ?",
+   "À quel âge le droit de vote commencerait-il ? Abaissement de l’âge légal du vote"
+  ],
+  "MIL-004": [
+   "Mesures contre la concentration des médias : pluralisme, régulation de la propriété des médias et diversité de l’information",
+   "Protection des rédactions et de l’indépendance éditoriale : garanties pour les journalistes, les médias et les rédactions"
+  ],
+  "MIL-005": [
+   "Position du programme sur les réacteurs nucléaires EPR : construction, développement ou abandon des EPR.",
+   "Part des énergies renouvelables dans le mix énergétique : objectif de développement et place accordée aux énergies renouvelables."
+  ],
+  "MIL-006": [
+   "Dans quels cas supprimer une liaison aérienne ou un vol au profit du train ?"
+  ],
+  "MIL-007": [
+   "Résumé du programme politique : quitter le commandement intégré de l’OTAN, sortir de l’Alliance atlantique ou prévoir d’autres mesures concernant l’OTAN ?"
+  ],
+  "MIL-008": [
+   "Rôle de l’ONU dans la sécurité collective et les interventions internationales, maintien de la paix, opérations de paix et intervention humanitaire"
+  ],
+  "MIL-009": [
+   "Signification de « 100 % Sécu » dans un résumé de programme politique : définition, prise en charge intégrale par la Sécurité sociale, remboursement des soins"
+  ],
+  "MIL-010": [
+   "Nombre de places créées en EHPAD publics, durée ou calendrier de création et nombre de professionnels annoncés"
+  ],
+  "MIL-011": [
+   "Objectifs annoncés pour le nombre de places en crèche et les tarifs des crèches (capacités d’accueil, coût, prix)."
+  ],
+  "MIL-012": [
+   "Mesures proposées sur Parcoursup : réforme, fonctionnement et procédure d’admission post-bac.",
+   "Mesures proposées sur la CVEC (contribution de vie étudiante et de campus) : montant, paiement et affectation."
+  ],
+  "MIL-013": [
+   "Par quel dispositif, quelle autorité ou quel organisme l’IGPN (Inspection générale de la Police nationale) et l’IGGN (Inspection générale de la Gendarmerie nationale) seraient-elles remplacées ?"
+  ],
+  "MIL-014": [
+   "Conscription citoyenne : durée du service et rémunération des conscrits",
+   "Conscription citoyenne : formation militaire obligatoire ou non"
+  ],
+  "MIL-015": [
+   "Résumé de programme politique : mesures sur le droit du sol, acquisition de la nationalité par naissance en France, conditions d’accès à la nationalité française.",
+   "Résumé de programme politique : mesures sur le droit de vote des étrangers, participation des étrangers aux élections, suffrage des non-nationaux."
+  ],
+  "MIL-016": [
+   "Programme politique résumé : suppression, abolition ou maintien de l’Aide médicale d’État (AME) ?"
+  ],
+  "MIL-017": [
+   "Réduflation ou shrinkflation : quelle mesure le résumé de programme politique propose-t-il contre les paquets contenant moins de produit au même prix, et dans quel intérêt ?"
+  ],
+  "MIL-018": [
+   "Accès aux démarches publiques sans Internet : maintien des guichets, accueil physique, démarches papier ou par téléphone, accompagnement des personnes éloignées du numérique et intérêt de ces alternatives"
+  ],
+  "MIL-019": [
+   "Réduire l’usage des produits chimiques, pesticides et produits phytosanitaires dans les champs, accompagner la transition agroécologique et garantir un revenu juste aux agriculteurs"
+  ],
+  "MIL-020": [
+   "Prévention des inondations par débordement des cours d’eau et déplacement ou relocalisation des lieux de vie exposés : que prévoit précisément le texte du programme ?"
+  ],
+  "MIL-021": [
+   "Renforcer le pouvoir des salariés face aux projets de licenciement en entreprise : participation aux décisions, consultation ou droit d’opposition, et avantage recherché pour les salariés"
+  ],
+  "MIL-022": [
+   "Résumé de programme : prise en compte de l’accord libre et du consentement de la personne dans la définition et la qualification du viol"
+  ],
+  "MIL-023": [
+   "Reconnaissance du statut de salarié pour les personnes handicapées travaillant dans des structures protégées, notamment en établissement ou service d’aide par le travail (ESAT)"
+  ],
+  "MIL-024": [
+   "Reconnaître et protéger les personnes contraintes de partir en raison des bouleversements environnementaux ou climatiques : statut de réfugié climatique, déplacés environnementaux"
+  ],
+  "MIL-025": [
+   "Mesures d’aide au paiement du logement : aides au logement, soutien aux ménages, avantages attendus pour réduire le poids du logement",
+   "Mesures sur le niveau des loyers : encadrement ou baisse des loyers, avantages attendus pour réduire le poids du logement",
+   "Mesures pour augmenter l’offre de logements : construction et disponibilité de logements, avantages attendus pour réduire le poids du logement"
+  ],
+  "MIL-026": [
+   "Mesure handicap pour faciliter l’accès et l’adaptation du logement ; bénéfices attendus pour les personnes handicapées",
+   "Mesure d’accompagnement des élèves en situation de handicap à l’école ; bénéfices attendus",
+   "Mesure sur les droits des travailleurs handicapés en ESAT (établissement et service d’aide par le travail) ; bénéfices attendus"
+  ],
+  "MIL-027": [
+   "Mesures et dispositifs proposés pour la santé mentale en général : santé mentale, prévention, accompagnement et prise en charge.",
+   "Mesures et dispositifs proposés pour la santé mentale des étudiants : santé mentale étudiante, prévention, accompagnement psychologique et accès aux soins."
+  ],
+  "MIL-028": [
+   "Complémentarité des propositions sur les pesticides et la restauration collective dans un programme politique"
+  ],
+  "MIL-029": [
+   "Propositions de fiscalité écologique pour les entreprises : impôts et niches fiscales orientés vers des objectifs écologiques, incitations et logique recherchée",
+   "Aides publiques aux entreprises conditionnées à des objectifs écologiques : subventions, soutiens et logique recherchée"
+  ],
+  "MIL-030": [
+   "Mesures de traçabilité des contrôles policiers : enregistrement, récépissé, suivi des contrôles d’identité",
+   "Mesures de lutte contre les discriminations à l’embauche et dans l’emploi",
+   "Mesures de lutte contre les discriminations dans l’accès au logement"
+  ],
+  "MIL-031": [
+   "Évolution, revalorisation ou indexation du montant des pensions de retraite dans le résumé de programme politique : comment les pensions de retraite évolueraient-elles ?"
+  ],
+  "MIL-032": [
+   "Sortie du nucléaire : mesures pour les salariés de la filière nucléaire, accompagnement et reconversion professionnelle des travailleurs du secteur."
+  ],
+  "MIL-035": [
+   "Calcul de l’impôt sur le revenu pour 32 000 € de revenu annuel imposable avec une part fiscale selon le barème proposé à 14 tranches"
+  ],
+  "MIL-037": [
+   "Garantie d’emploi, garantie d’emploi pour tous : étude citée dans le document sur la baisse du chômage, estimée en points de pourcentage"
+  ],
+  "MIL-039": [
+   "Date exacte d’entrée en vigueur de la retraite à 60 ans (départ à la retraite à 60 ans, âge légal de départ)"
+  ]
+ },
+ "results": {
+  "A baseline": {
+   "recall_macro": 0.9142857142857143,
+   "recall_micro": 0.9064327485380117,
+   "groups": 57,
+   "context_recall_micro": 0.9064327485380117,
+   "cases_fully_covered": 29,
+   "cases": 35,
+   "mean_distinct_subsections": 3.9714285714285715,
+   "missed": [
+    "MIL-018",
+    "MIL-020",
+    "MIL-025",
+    "MIL-027",
+    "MIL-029",
+    "MIL-030"
+   ]
+  },
+  "enrichissement seul": {
+   "recall_macro": 0.919047619047619,
+   "recall_micro": 0.9122807017543859,
+   "groups": 57,
+   "context_recall_micro": 0.9122807017543859,
+   "cases_fully_covered": 30,
+   "cases": 35,
+   "mean_distinct_subsections": 4.2,
+   "missed": [
+    "MIL-018",
+    "MIL-020",
+    "MIL-021",
+    "MIL-027",
+    "MIL-030"
+   ]
+  },
+  "synonymes seuls": {
+   "recall_macro": 0.9666666666666668,
+   "recall_micro": 0.9590643274853801,
+   "groups": 57,
+   "context_recall_micro": 0.9590643274853801,
+   "cases_fully_covered": 32,
+   "cases": 35,
+   "mean_distinct_subsections": 3.7714285714285714,
+   "missed": [
+    "MIL-018",
+    "MIL-025",
+    "MIL-029"
+   ]
+  },
+  "plafond 4 seul": {
+   "recall_macro": 0.8714285714285714,
+   "recall_micro": 0.8538011695906432,
+   "groups": 57,
+   "context_recall_micro": 0.8538011695906432,
+   "cases_fully_covered": 26,
+   "cases": 35,
+   "mean_distinct_subsections": 5.0285714285714285,
+   "missed": [
+    "MIL-002",
+    "MIL-008",
+    "MIL-018",
+    "MIL-020",
+    "MIL-021",
+    "MIL-025",
+    "MIL-027",
+    "MIL-029",
+    "MIL-030"
+   ]
+  },
+  "plafond 3 seul": {
+   "recall_macro": 0.8428571428571429,
+   "recall_micro": 0.8187134502923976,
+   "groups": 57,
+   "context_recall_micro": 0.8187134502923976,
+   "cases_fully_covered": 25,
+   "cases": 35,
+   "mean_distinct_subsections": 5.485714285714286,
+   "missed": [
+    "MIL-002",
+    "MIL-008",
+    "MIL-018",
+    "MIL-019",
+    "MIL-020",
+    "MIL-021",
+    "MIL-025",
+    "MIL-027",
+    "MIL-029",
+    "MIL-030"
+   ]
+  },
+  "décomposition seule": {
+   "recall_macro": 0.9904761904761904,
+   "recall_micro": 0.9824561403508771,
+   "groups": 57,
+   "context_recall_micro": 0.9824561403508771,
+   "cases_fully_covered": 34,
+   "cases": 35,
+   "mean_distinct_subsections": 4.085714285714285,
+   "missed": [
+    "MIL-025"
+   ]
+  },
+  "enrichi + synonymes": {
+   "recall_macro": 0.9714285714285714,
+   "recall_micro": 0.9649122807017544,
+   "groups": 57,
+   "context_recall_micro": 0.9649122807017544,
+   "cases_fully_covered": 33,
+   "cases": 35,
+   "mean_distinct_subsections": 3.9714285714285715,
+   "missed": [
+    "MIL-018",
+    "MIL-021"
+   ]
+  },
+  "enrichi + décomp. (sans synonymes)": {
+   "recall_macro": 0.9761904761904762,
+   "recall_micro": 0.9649122807017544,
+   "groups": 57,
+   "context_recall_micro": 0.9649122807017544,
+   "cases_fully_covered": 33,
+   "cases": 35,
+   "mean_distinct_subsections": 4.371428571428571,
+   "missed": [
+    "MIL-019",
+    "MIL-025"
+   ]
+  },
+  "enrichi + syn. + plafond 4": {
+   "recall_macro": 0.9714285714285714,
+   "recall_micro": 0.9649122807017544,
+   "groups": 57,
+   "context_recall_micro": 0.9649122807017544,
+   "cases_fully_covered": 33,
+   "cases": 35,
+   "mean_distinct_subsections": 4.9714285714285715,
+   "missed": [
+    "MIL-018",
+    "MIL-021"
+   ]
+  },
+  "enrichi + syn. + décomp.": {
+   "recall_macro": 0.9761904761904762,
+   "recall_micro": 0.9649122807017544,
+   "groups": 57,
+   "context_recall_micro": 0.9649122807017544,
+   "cases_fully_covered": 33,
+   "cases": 35,
+   "mean_distinct_subsections": 4.228571428571429,
+   "missed": [
+    "MIL-019",
+    "MIL-025"
+   ]
+  },
+  "tout (plafond 4 + décomp.)": {
+   "recall_macro": 0.9761904761904762,
+   "recall_micro": 0.9649122807017544,
+   "groups": 57,
+   "context_recall_micro": 0.9649122807017544,
+   "cases_fully_covered": 33,
+   "cases": 35,
+   "mean_distinct_subsections": 4.9714285714285715,
+   "missed": [
+    "MIL-019",
+    "MIL-025"
+   ]
+  },
+  "tout (plafond 3 + décomp.)": {
+   "recall_macro": 0.9619047619047618,
+   "recall_micro": 0.9473684210526315,
+   "groups": 57,
+   "context_recall_micro": 0.9473684210526315,
+   "cases_fully_covered": 32,
+   "cases": 35,
+   "mean_distinct_subsections": 5.428571428571429,
+   "missed": [
+    "MIL-008",
+    "MIL-019",
+    "MIL-025"
+   ]
+  },
+  "plafond 2, 5 premiers intacts, seul": {
+   "recall_macro": 0.8428571428571429,
+   "recall_micro": 0.8187134502923976,
+   "groups": 57,
+   "context_recall_micro": 0.8187134502923976,
+   "cases_fully_covered": 24,
+   "cases": 35,
+   "mean_distinct_subsections": 5.171428571428572,
+   "missed": [
+    "MIL-002",
+    "MIL-010",
+    "MIL-015",
+    "MIL-018",
+    "MIL-019",
+    "MIL-020",
+    "MIL-021",
+    "MIL-025",
+    "MIL-027",
+    "MIL-029",
+    "MIL-030"
+   ]
+  },
+  "enrichi + syn. + plafond 2 (5 intacts)": {
+   "recall_macro": 0.9571428571428572,
+   "recall_micro": 0.9473684210526315,
+   "groups": 57,
+   "context_recall_micro": 0.9473684210526315,
+   "cases_fully_covered": 32,
+   "cases": 35,
+   "mean_distinct_subsections": 5.3428571428571425,
+   "missed": [
+    "MIL-018",
+    "MIL-019",
+    "MIL-021"
+   ]
+  },
+  "enrichi + syn. + décomp. + plafond 2 (5 intacts)": {
+   "recall_macro": 0.9761904761904762,
+   "recall_micro": 0.9649122807017544,
+   "groups": 57,
+   "context_recall_micro": 0.9649122807017544,
+   "cases_fully_covered": 33,
+   "cases": 35,
+   "mean_distinct_subsections": 5.314285714285714,
+   "missed": [
+    "MIL-019",
+    "MIL-025"
+   ]
+  }
+ }
+}

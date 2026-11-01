@@ -1,0 +1,81 @@
+{
+  "scope": [
+    "CH2-007",
+    "CH2-030",
+    "CH2-031",
+    "CH2-038"
+  ],
+  "case_count": 4,
+  "complete_initial": 0,
+  "complete_repeat": 3,
+  "validated_repeat": 4,
+  "global_repeat_score": null,
+  "cases": [
+    {
+      "id": "CH2-007",
+      "initial_criteria": [
+        0.5,
+        1
+      ],
+      "repeat_criteria": [
+        0.5,
+        1
+      ],
+      "initial_complete": false,
+      "repeat_complete": false,
+      "repeat_score": 87.5,
+      "repeat_passed": true,
+      "notes": "Fragilité encore possible sur la portée de « sans harmonisation ». La formulation change et le constat de stabilité reste conservateur, pas une certitude linguistique."
+    },
+    {
+      "id": "CH2-030",
+      "initial_criteria": [
+        1,
+        1,
+        0.5
+      ],
+      "repeat_criteria": [
+        1,
+        1,
+        1
+      ],
+      "initial_complete": false,
+      "repeat_complete": true,
+      "repeat_score": 100.0,
+      "repeat_passed": true,
+      "notes": "Défaut initial non retrouvé : l’égalité effective reste explicitement possible."
+    },
+    {
+      "id": "CH2-031",
+      "initial_criteria": [
+        0.5,
+        1
+      ],
+      "repeat_criteria": [
+        1,
+        1
+      ],
+      "initial_complete": false,
+      "repeat_complete": true,
+      "repeat_score": 100.0,
+      "repeat_passed": true,
+      "notes": "Défaut initial non retrouvé dans la réponse complète : « dans l’espace » est maintenant écrit."
+    },
+    {
+      "id": "CH2-038",
+      "initial_criteria": [
+        1,
+        0.5
+      ],
+      "repeat_criteria": [
+        1,
+        1
+      ],
+      "initial_complete": false,
+      "repeat_complete": true,
+      "repeat_score": 100.0,
+      "repeat_passed": true,
+      "notes": "Les deux fragilités initiales ne se retrouvent pas : négation conservée et signature au conditionnel."
+    }
+  ]
+}

@@ -1,0 +1,966 @@
+{"id": "s01-ss01-m001", "alias": "Barème de l’impôt sur le revenu plus progressif : combien de tranches et quelle contribution pour les plus aisés ?"}
+{"id": "s01-ss01-m002", "alias": "CSG à barème progressif, avec plusieurs niveaux de prélèvement selon les revenus."}
+{"id": "s01-ss01-m003", "alias": "Impôt minimum sur la fortune totale des milliardaires, à hauteur d’au moins 2 %."}
+{"id": "s01-ss01-m004", "alias": "Retour de l’impôt sur la fortune, renforcé notamment pour les grands pollueurs."}
+{"id": "s01-ss01-m005", "alias": "Fin du prélèvement forfaitaire sur les placements : comment seront imposés les revenus du capital ?"}
+{"id": "s01-ss01-m006", "alias": "Droits de succession renforcés pour les très grandes fortunes, avec une limite à l’héritage reçu."}
+{"id": "s01-ss01-m007", "alias": "TVA réduite sur les achats indispensables et relevée sur les articles de luxe."}
+{"id": "s01-ss01-m008", "alias": "Réexamen des avantages fiscaux pour retirer ceux jugés injustes ou néfastes pour l’environnement."}
+{"id": "s01-ss01-m009", "alias": "Impôt des sociétés calculé sur les bénéfices effectivement réalisés en France."}
+{"id": "s01-ss01-m010", "alias": "Rétablissement du prélèvement dû lorsqu’on part de France avec une grande fortune."}
+{"id": "s01-ss01-m011", "alias": "Taxation durable des bénéfices exceptionnels, quel que soit le secteur d’activité."}
+{"id": "s01-ss01-m012", "alias": "Impôt local sur les biens immobiliers modulé selon la richesse réelle."}
+{"id": "s01-ss01-m013", "alias": "Remplacement de l’avantage fiscal lié au couple par une réduction d’impôt pour chaque enfant."}
+{"id": "s01-ss01-m014", "alias": "Prélèvement sur les achats et ventes d’actifs financiers."}
+{"id": "s01-ss01-m015", "alias": "Contribution accrue sur les ventes immobilières très coûteuses pour financer la lutte contre l’habitat indigne."}
+{"id": "s01-ss02-m001", "alias": "Renforcer la lutte contre les impôts fraudés ou dissimulés : quelle priorité contre la fraude fiscale ?"}
+{"id": "s01-ss02-m002", "alias": "Fin des arrangements sur les pénalités des sociétés prises en flagrant délit de fraude."}
+{"id": "s01-ss02-m003", "alias": "Sanctions judiciaires plus dures pour les grands fraudeurs fiscaux."}
+{"id": "s01-ss02-m004", "alias": "Mettre fin aux combines autour des revenus d’actions."}
+{"id": "s01-ss02-m005", "alias": "Rendre publiques les subventions et autres soutiens reçus par les sociétés."}
+{"id": "s01-ss02-m006", "alias": "Examiner les avantages fiscaux et ventes d’entreprises publiques des trois dernières décennies, et envisager des poursuites."}
+{"id": "s01-ss03-m001", "alias": "Qui décidera des biens communs et de leur gestion publique ? Référendum sur l’eau, l’énergie et les autres ressources partagées."}
+{"id": "s01-ss03-m002", "alias": "Qui veille sur les biens communs ? Création d’un défenseur chargé de publier un rapport annuel."}
+{"id": "s01-ss03-m003", "alias": "La propriété privée peut-elle primer sur la protection de l’eau, de l’air et de la santé ?"}
+{"id": "s01-ss03-m004", "alias": "Peut-on retrouver le droit de marcher sur les sentiers qui traversent des terrains privés ?"}
+{"id": "s01-ss03-m005", "alias": "Comment revenir sur les ventes au privé d’aéroports, d’autoroutes et de la Française des Jeux ?"}
+{"id": "s01-ss03-m006", "alias": "L’État pourra-t-il prendre temporairement le contrôle d’usines jugées d’intérêt général ? Réquisition des usines."}
+{"id": "s01-ss03-m007", "alias": "Fin des partenariats public-privé et examen de ces contrats : que prévoit le programme ?"}
+{"id": "s01-ss03-m008", "alias": "Quels secteurs auraient des pôles publics ? Médicaments, transports, banques, énergie et armement."}
+{"id": "s01-ss03-m009", "alias": "Des poursuites contre les personnes accusées d’avoir attaqué le patrimoine industriel français."}
+{"id": "s01-ss04-m001", "alias": "Séparer les banques du quotidien des banques d’investissement : comment distinguer les deux activités ?"}
+{"id": "s01-ss04-m002", "alias": "Surveiller les flux de capitaux et la circulation de l’argent : quel contrôle des mouvements financiers ?"}
+{"id": "s01-ss04-m003", "alias": "Interdire les placements jugés toxiques et encadrer les rendements élevés : quelles limites aux produits financiers ?"}
+{"id": "s01-ss04-m004", "alias": "Rachat d’entreprise financé surtout par emprunt : dans quelles conditions les salariés peuvent-ils reprendre la société ?"}
+{"id": "s01-ss04-m005", "alias": "Mettre en place un ensemble bancaire public : quel rôle pour une banque publique ?"}
+{"id": "s01-ss04-m006", "alias": "Placer certaines banques du quotidien sous tutelle publique : quelles banques seraient concernées ?"}
+{"id": "s01-ss04-m007", "alias": "Examiner ce que coûtent réellement les banques : comment évaluer leurs dépenses ?"}
+{"id": "s01-ss04-m008", "alias": "Créer des établissements chargés des actifs polluants : comment gérer ces actifs financiers ?"}
+{"id": "s01-ss04-m009", "alias": "Sanctionner les placements néfastes pour le climat : que faire des investissements qui nuisent à l’environnement ?"}
+{"id": "s01-ss04-m010", "alias": "Retirer les réductions d’impôts liées à l’épargne placée hors du pays : quels avantages fiscaux seraient supprimés ?"}
+{"id": "s01-ss04-m011", "alias": "Fixer une limite aux tarifs bancaires : comment réduire le montant des frais de banque ?"}
+{"id": "s01-ss04-m012", "alias": "Soutenir les foyers endettés et leur assurer les services bancaires essentiels : quelle aide pour accéder à un compte de base ?"}
+{"id": "s01-ss05-m001", "alias": "Que faire de la dette détenue par la BCE : la convertir en emprunt sans échéance et sans intérêts ?"}
+{"id": "s01-ss05-m002", "alias": "La BCE peut-elle acheter la dette directement, sans intermédiaire bancaire privé ?"}
+{"id": "s01-ss05-m003", "alias": "Obliger les banques à garder des obligations de l’État français."}
+{"id": "s01-ss05-m004", "alias": "Examiner publiquement les comptes et budgets pour retracer l’origine de la dette et repérer les parts contestables."}
+{"id": "s01-ss05-m005", "alias": "Mettre fin aux emprunts dont le montant varie avec l’inflation."}
+{"id": "s01-ss05-m006", "alias": "Retirer l’endettement lié au Covid des comptes de la Sécurité sociale."}
+{"id": "s01-ss05-m007", "alias": "Créer un fonds qui reprendrait les dettes des petites sociétés et des agriculteurs bio."}
+{"id": "s01-ss06-m001", "alias": "Comment rendre l’impôt des entreprises plus équitable entre petites sociétés et grands groupes, et favoriser l’investissement plutôt que les dividendes ?"}
+{"id": "s01-ss06-m002", "alias": "Impôt sur les sociétés modulé selon la manière dont les bénéfices sont utilisés."}
+{"id": "s01-ss06-m003", "alias": "Plafonner les versements aux actionnaires au montant des bénéfices réalisés."}
+{"id": "s01-ss06-m004", "alias": "Comment encadrer les dividendes par rapport aux sommes versées au personnel ?"}
+{"id": "s01-ss06-m005", "alias": "Fin du suivi permanent des cours en Bourse et vote renforcé pour les actionnaires fidèles dans la durée."}
+{"id": "s01-ss06-m006", "alias": "Empêcher les suppressions d’emplois liées aux marchés financiers dans les sociétés qui versent des dividendes ou reçoivent des aides."}
+{"id": "s01-ss06-m007", "alias": "Fin des indemnités de départ dorées et des pensions supplémentaires réservées aux dirigeants."}
+{"id": "s01-ss06-m008", "alias": "Mettre fin aux options sur actions et aux titres attribués gratuitement."}
+{"id": "s01-ss06-m009", "alias": "Limiter à vingt contre un la différence entre les salaires les plus bas et les plus élevés d’une société."}
+{"id": "s01-ss06-m010", "alias": "Aides publiques liées à des buts sociaux et environnementaux."}
+{"id": "s01-ss06-m011", "alias": "Priorité aux salariés pour racheter leur société et la transformer en coopérative."}
+{"id": "s01-ss06-m012", "alias": "Les représentants du personnel peuvent-ils bloquer des suppressions de postes ?"}
+{"id": "s01-ss06-m013", "alias": "Accroître le rôle des salariés lorsqu’une entreprise est en difficulté et fait l’objet d’un redressement."}
+{"id": "s01-ss06-m014", "alias": "Réserver au personnel un tiers des places dans les organes qui dirigent l’entreprise."}
+{"id": "s01-ss06-m015", "alias": "Mieux protéger les élus et délégués du personnel."}
+{"id": "s01-ss06-m016", "alias": "Fonds de compensation commun entre sociétés."}
+{"id": "s01-ss06-m017", "alias": "Mesurer le progrès humain avec des repères comme la santé et l’éducation."}
+{"id": "s01-ss07-m001", "alias": "Quelles aides pour les artisans et commerçants qui s’installent ?"}
+{"id": "s01-ss07-m002", "alias": "Étendre l’économie sociale et solidaire à plus d’activités."}
+{"id": "s01-ss07-m003", "alias": "L’ESS peut-elle être prioritaire pour obtenir des financements et des contrats publics ?"}
+{"id": "s01-ss07-m004", "alias": "Davantage d’appui aux entreprises coopératives."}
+{"id": "s01-ss07-m005", "alias": "Favoriser les SCIC et les SCOP, des coopératives associant utilité sociale, ancrage local ou salariés associés majoritaires."}
+{"id": "s01-ss07-m006", "alias": "Faut-il examiner la possibilité que les salariés reprennent leur entreprise ?"}
+{"id": "s01-ss07-m007", "alias": "Faire grandir les structures coopératives qui accompagnent l’activité et l’emploi."}
+{"id": "s01-ss08-m001", "alias": "Quel salaire minimum est prévu, et comment suit-il la hausse des prix ?"}
+{"id": "s01-ss08-m002", "alias": "Revalorisation des aides sociales minimales : qu’est-il prévu pour les minima sociaux ?"}
+{"id": "s01-ss08-m003", "alias": "Hausse de la valeur du point servant à calculer la rémunération des agents publics."}
+{"id": "s01-ss08-m004", "alias": "Augmentation de l’aide au logement : que prévoit le programme pour les APL ?"}
+{"id": "s01-ss08-m005", "alias": "Discussions sur les rémunérations organisées secteur par secteur."}
+{"id": "s01-ss08-m006", "alias": "Limiter le coût et les marges des biens indispensables : quelle régulation des prix est proposée ?"}
+{"id": "s01-ss08-m007", "alias": "Mettre fin à la shrinkflation, quand un produit contient moins pour le même prix."}
+{"id": "s01-ss08-m008", "alias": "Quelle part des factures d’énergie et d’eau serait gratuite au départ ?"}
+{"id": "s01-ss08-m009", "alias": "Renforcement du dispositif qualité-prix dans les territoires ultramarins."}
+{"id": "s01-ss09-m001", "alias": "Quel projet prévoit de bâtir chaque année des logements publics très écologiques pendant cinq ans ?"}
+{"id": "s01-ss09-m002", "alias": "Peut-on expulser un locataire sans lui trouver un autre logement ?"}
+{"id": "s01-ss09-m003", "alias": "Suppression de la loi Kasbarian : que prévoit le programme ?"}
+{"id": "s01-ss09-m004", "alias": "Qu’est-ce que la garantie universelle des loyers ?"}
+{"id": "s01-ss09-m005", "alias": "Plafonnement des loyers sur tout le territoire, avec des baisses dans les grandes villes."}
+{"id": "s01-ss09-m006", "alias": "Quelle part de logements sociaux est exigée, et quelles sanctions sont prévues ?"}
+{"id": "s01-ss09-m007", "alias": "Faut-il obtenir une autorisation avant de mettre un logement en location partout ?"}
+{"id": "s01-ss09-m008", "alias": "Rétablissement du soutien public aux HLM."}
+{"id": "s01-ss09-m009", "alias": "Que prévoit le programme pour les logements laissés vacants ?"}
+{"id": "s01-ss09-m010", "alias": "Combien de jours par an peut-on louer un logement sur Airbnb ?"}
+{"id": "s01-ss09-m011", "alias": "Combien de logements peut-on transmettre par héritage avant leur réquisition ?"}
+{"id": "s01-ss10-m001", "alias": "Quel emploi garantir aux personnes au chômage depuis longtemps ?"}
+{"id": "s01-ss10-m002", "alias": "Réduire la durée hebdomadaire du travail à 35 heures, et à 32 heures dans les professions pénibles."}
+{"id": "s01-ss10-m003", "alias": "Une semaine supplémentaire de vacances rémunérées pour chacun."}
+{"id": "s01-ss10-m004", "alias": "Une rencontre nationale pour discuter de la durée du travail."}
+{"id": "s01-ss10-m005", "alias": "Revoir le travail dominical."}
+{"id": "s01-ss10-m006", "alias": "Mettre un terme à l’aménagement imposé des horaires et du temps de travail."}
+{"id": "s01-ss10-m007", "alias": "Pouvoir réellement couper les communications liées au travail."}
+{"id": "s01-ss10-m008", "alias": "Annuler les textes Pénicaud et El Khomri, et rétablir la règle la plus favorable aux salariés."}
+{"id": "s01-ss11-m001", "alias": "Plafond de contrats précaires selon la taille de l’entreprise : quelle limite pour les embauches temporaires ?"}
+{"id": "s01-ss11-m002", "alias": "Reconnaître les travailleurs des plateformes comme salariés : quel statut pour les personnes qui travaillent via une appli ?"}
+{"id": "s01-ss11-m003", "alias": "Passage à un emploi titulaire pour les agents publics en situation précaire : que prévoit-on pour les contractuels ?"}
+{"id": "s01-ss11-m004", "alias": "Limiter les rangs de sous-traitants à un seul niveau : jusqu’où peut aller la chaîne de sous-traitance ?"}
+{"id": "s01-ss11-m005", "alias": "Revalorisation de la situation des apprentis : que prévoit-on pour les personnes en apprentissage ?"}
+{"id": "s01-ss11-m006", "alias": "Agir contre le travail à temps partiel subi : que faire quand on ne choisit pas ses horaires réduits ?"}
+{"id": "s01-ss11-m007", "alias": "Droits conservés entre deux contrats, comme la formation et les congés : que devient leur continuité ?"}
+{"id": "s01-ss11-m008", "alias": "Revenu préservé pendant une reconversion professionnelle : comment maintenir ses ressources lors d’un changement de métier ?"}
+{"id": "s01-ss11-m009", "alias": "Chaque salarié dispose de 36 heures annuelles de formation choisie : quel temps de formation libre est prévu ?"}
+{"id": "s01-ss11-m010", "alias": "Stages et apprentissages rattachés à la sécurité sociale professionnelle : quelle place pour ces parcours ?"}
+{"id": "s01-ss12-m001", "alias": "Retour sur les changements de l’assurance-chômage associés à Macron : quelles réformes seraient annulées ?"}
+{"id": "s01-ss12-m002", "alias": "Suppression de France Travail et des activités obligatoires de 15 heures : qu’est-ce qui changerait pour les demandeurs d’emploi ?"}
+{"id": "s01-ss12-m003", "alias": "Accès des personnes sans emploi à la médecine professionnelle : qui pourrait en bénéficier ?"}
+{"id": "s01-ss12-m004", "alias": "Versement des allocations dès le début de la période de chômage : quand l’indemnisation commencerait-elle ?"}
+{"id": "s01-ss12-m005", "alias": "Liberté de refuser une proposition jugée raisonnable : faut-il obligatoirement l’accepter ?"}
+{"id": "s01-ss12-m006", "alias": "Arrêt des radiations après une première absence : quelle sanction en cas de rendez-vous manqué ?"}
+{"id": "s01-ss12-m007", "alias": "Indemnisation adaptée aux travailleurs intermittents et aux salariés temporaires : quel régime est prévu ?"}
+{"id": "s01-ss12-m008", "alias": "Disparition de la règle assimilant un abandon de poste à une démission : que devient cette présomption ?"}
+{"id": "s01-ss12-m009", "alias": "Protection des ressources de l’Unédic contre les prélèvements de l’État : qui pourrait puiser dans ses caisses ?"}
+{"id": "s01-ss13-m001", "alias": "Prévenir les décès liés à l’activité professionnelle ; comment viser zéro mort au travail ?"}
+{"id": "s01-ss13-m002", "alias": "Statut professionnel de l’épuisement lié au travail ; le burn-out peut-il être reconnu comme maladie professionnelle ?"}
+{"id": "s01-ss13-m003", "alias": "Augmentation du nombre d’inspecteurs du travail ; quels moyens pour les contrôles ?"}
+{"id": "s01-ss13-m004", "alias": "Limites de température et pauses imposées au travail ; quelles règles s’appliquent ?"}
+{"id": "s01-ss13-m005", "alias": "Médecine professionnelle renforcée et intégrée au service public ; quelle place pour le suivi de santé au travail ?"}
+{"id": "s01-ss13-m006", "alias": "Instances d’hygiène et de sécurité au travail rétablies, avec avis qui s’imposent ; quel rôle pour les CHSCT ?"}
+{"id": "s01-ss13-m007", "alias": "Reconnaissance de l’ensemble des produits cancérogènes ; quels produits sont identifiés comme tels ?"}
+{"id": "s01-ss13-m008", "alias": "Prise en compte des accidents professionnels dans les contrats publics ; quel lien avec les marchés publics ?"}
+{"id": "s01-ss13-m009", "alias": "Statistiques sur le travail élargies à l’ensemble des travailleurs ; qui est inclus dans les données ?"}
+{"id": "s01-ss13-m010", "alias": "Travailleurs à leur compte également concernés ; les indépendants sont-ils couverts ?"}
+{"id": "s01-ss13-m011", "alias": "Sanctions visant les donneurs d’ordre ; quelles pénalités sont prévues ?"}
+{"id": "s01-ss14-m001", "alias": "Âge de départ et durée de cotisation : peut-on partir à 60 ans après 40 annuités ?"}
+{"id": "s01-ss14-m002", "alias": "Montant plancher des pensions au niveau du salaire minimum revalorisé : quel minimum pour les retraités ?"}
+{"id": "s01-ss14-m003", "alias": "Minimum versé aux personnes âgées : quel montant par rapport au seuil de pauvreté ?"}
+{"id": "s01-ss14-m004", "alias": "Droits à la retraite pendant le RSA : peut-on faire valider des trimestres ?"}
+{"id": "s01-ss14-m005", "alias": "Financement des retraites : hausse progressive des cotisations et prise en compte des dividendes ?"}
+{"id": "s01-ss14-m006", "alias": "Revalorisation des pensions en fonction des salaires : comment évoluera leur montant ?"}
+{"id": "s01-ss14-m007", "alias": "Placements du fonds de réserve : exclusion des secteurs polluants, quels investissements sont concernés ?"}
+{"id": "s01-ss14-m008", "alias": "Calcul de la pension : suppression de la minoration appelée décote ?"}
+{"id": "s01-ss15-m001", "alias": "Contrôle des écarts de rémunération dans les entreprises, avec pénalités sévères ; comment faire respecter l’égalité salariale ?"}
+{"id": "s01-ss15-m002", "alias": "Valorisation des professions du soin et de l’accompagnement, souvent féminisées ; comment mieux reconnaître ces métiers ?"}
+{"id": "s01-ss15-m003", "alias": "Prise en compte de la charge psychologique et de l’usure émotionnelle ; comment mesurer cette pénibilité ?"}
+{"id": "s01-ss15-m004", "alias": "Allocation de soutien familial individualisée et augmentée ; que prévoit le texte pour cette aide ?"}
+{"id": "s01-ss15-m005", "alias": "Congé d’accueil de l’enfant aux mêmes conditions et obligatoire pour chacun des parents ; comment s’organise ce congé ?"}
+{"id": "s01-ss15-m006", "alias": "Garantie d’autonomie des jeunes visant un niveau supérieur au seuil de pauvreté ; que prévoit cette garantie ?"}
+{"id": "s01-ss15-m007", "alias": "Dispositif d’emploi destiné aux jeunes pour cinq ans dans le secteur non marchand ; de quel type d’emploi s’agit-il ?"}
+{"id": "s01-ss16-m001", "alias": "Faire revenir dans le pays la fabrication des biens indispensables ; comment produire ici ce qui est essentiel ?"}
+{"id": "s01-ss16-m002", "alias": "Protection commerciale urgente contre le dumping ; que faire face aux pratiques de dumping ?"}
+{"id": "s01-ss16-m003", "alias": "Renforcer la surveillance publique des investissements venus de l’étranger ; qui contrôle ces placements ?"}
+{"id": "s01-ss16-m004", "alias": "Reconstruire l’industrie, notamment les filières des puces électroniques et des médicaments ; quel plan pour ces secteurs ?"}
+{"id": "s01-ss16-m005", "alias": "Orienter les achats publics vers les entreprises locales, sociales et écologiques ; qui peut obtenir les marchés publics ?"}
+{"id": "s01-ss16-m006", "alias": "Faire dépendre les aides du lieu d’implantation ; quels critères géographiques pour les aides ?"}
+{"id": "s01-ss16-m007", "alias": "Exiger des produits importés qu’ils respectent des règles sociales et environnementales ; quelles normes pour les marchandises venues d’ailleurs ?"}
+{"id": "s01-ss16-m008", "alias": "Taxes douanières liées à l’écologie ; que sont les droits de douane verts ?"}
+{"id": "s01-ss16-m009", "alias": "Supprimer les avantages fiscaux appliqués au kérosène ; quelle fiscalité pour ce carburant ?"}
+{"id": "s01-ss16-m010", "alias": "Prélèvement calculé au kilomètre aux frontières ; comment désigner cette taxe kilométrique frontalière ?"}
+{"id": "s01-ss16-m011", "alias": "Caution demandée pour les investissements venus de l’étranger ; quel dépôt faut-il fournir pour investir ?"}
+{"id": "s01-ss16-m012", "alias": "Réquisition comme sanction lorsqu’une entreprise délocalise ; que risque-t-on en cas de délocalisation ?"}
+{"id": "s01-ss16-m013", "alias": "Revoir le cadre de l’Organisation mondiale du commerce ; faut-il renégocier l’OMC ?"}
+{"id": "s01-ss16-m014", "alias": "Créer en France une fonderie pour fabriquer des microprocesseurs ; où produire des puces ?"}
+{"id": "s01-ss17-m001", "alias": "Adapter et remettre en état les équipements et réseaux face aux changements du climat ; comment préparer les infrastructures ?"}
+{"id": "s01-ss17-m002", "alias": "Réfection de l’ensemble des conduites et équipements liés à l’eau ; que prévoit-on pour les réseaux d’eau ?"}
+{"id": "s01-ss17-m003", "alias": "Chantiers importants sur le rail et remise en service de voies ferrées ; quelles lignes pourraient rouvrir ?"}
+{"id": "s01-ss17-m004", "alias": "Réduire les consommations d’énergie et miser sur les énergies de la mer ; que prévoit-on pour l’énergie ?"}
+{"id": "s01-ss17-m005", "alias": "Remise à niveau des lignes et équipements qui acheminent l’électricité ; comment faire évoluer le réseau électrique ?"}
+{"id": "s01-ss17-m006", "alias": "Évaluer puis renforcer les ponts et autres ouvrages d’art ; comment vérifier leur solidité ?"}
+{"id": "s01-ss17-m007", "alias": "Relancer la production et les activités du bois à l’échelle locale ; que faire pour la filière bois ?"}
+{"id": "s01-ss17-m008", "alias": "Construire avec des matériaux plus écologiques, comme le bois, la terre ou la paille ; quelles solutions pour le bâtiment ?"}
+{"id": "s01-ss18-m001", "alias": "Nettoyage et lutte contre la pollution des océans : que prévoit le programme pour assainir les mers ?"}
+{"id": "s01-ss18-m002", "alias": "Recherche sur les océans et le monde maritime : quelle place pour la France dans ce domaine ?"}
+{"id": "s01-ss18-m003", "alias": "Établissements de formation maritime dans les départements concernés : où pourra-t-on étudier les métiers de la mer ?"}
+{"id": "s01-ss18-m004", "alias": "Apprendre des méthodes et savoir-faire respectueux de l’environnement : quelle formation aux pratiques durables ?"}
+{"id": "s01-ss18-m005", "alias": "Installation habitée sous l’eau à l’année : qu’est-il prévu pour vivre durablement en milieu sous-marin ?"}
+{"id": "s01-ss18-m006", "alias": "Faire reconnaître à l’étranger le domaine maritime de la France : quelle reconnaissance de ses espaces en mer ?"}
+{"id": "s01-ss18-m007", "alias": "Contrôle et observation en mer : quels moyens de surveillance supplémentaires ?"}
+{"id": "s01-ss18-m008", "alias": "Protéger les postes et les activités liés à la mer : que prévoit le programme pour l’emploi maritime ?"}
+{"id": "s01-ss18-m009", "alias": "Redynamiser les installations portuaires : que prévoit le programme pour les ports ?"}
+{"id": "s01-ss18-m010", "alias": "Bâtiments destinés à la souveraineté et maintien d’une présence dans les régions polaires : que prévoit le programme en mer et aux pôles ?"}
+{"id": "s01-ss19-m001", "alias": "Comment freiner la militarisation de l’espace et l’escalade des armes en orbite ?"}
+{"id": "s01-ss19-m002", "alias": "Nettoyer les orbites des débris et de la pollution spatiale : quel programme ?"}
+{"id": "s01-ss19-m003", "alias": "Replacer Arianespace sous propriété publique : que prévoit ce retour ?"}
+{"id": "s01-ss19-m004", "alias": "Quelles capacités pour protéger et défendre l’espace ?"}
+{"id": "s01-ss19-m005", "alias": "Quel rôle pour la France dans les expéditions à destination de Mars ?"}
+{"id": "s01-ss19-m006", "alias": "Consolider la présence durable d’êtres humains dans l’espace."}
+{"id": "s01-ss19-m007", "alias": "Comment empêcher qu’un pays s’approprie les richesses de l’espace ?"}
+{"id": "s01-ss19-m008", "alias": "Mettre fin aux séjours spatiaux privés à but commercial."}
+{"id": "s01-ss19-m009", "alias": "Rendre les systèmes de navigation Galileo et GPS compatibles : est-ce obligatoire ?"}
+{"id": "s01-ss20-m001", "alias": "Comment accéder gratuitement à une connexion Internet de base ?"}
+{"id": "s01-ss20-m002", "alias": "Déploiement de la fibre optique sur l’ensemble du territoire français."}
+{"id": "s01-ss20-m003", "alias": "Quel rôle pour la CNIL face aux discriminations liées aux algorithmes ?"}
+{"id": "s01-ss20-m004", "alias": "Le droit d’utiliser le chiffrement serait-il garanti par la Constitution ?"}
+{"id": "s01-ss20-m005", "alias": "Données ouvertes du secteur public ; quelles informations publiques sont accessibles en open data ?"}
+{"id": "s01-ss20-m006", "alias": "Comment effectuer ses démarches sur papier et obtenir de l’aide quand le numérique pose problème ?"}
+{"id": "s01-ss20-m007", "alias": "Égalité de traitement du trafic Internet : que signifie la neutralité du réseau ?"}
+{"id": "s01-ss20-m008", "alias": "Maîtrise publique des réseaux et équipements numériques."}
+{"id": "s01-ss20-m009", "alias": "Hébergement informatique dans un nuage public français : existe-t-il un cloud public national ?"}
+{"id": "s01-ss20-m010", "alias": "Création d’un organisme public consacré aux logiciels libres."}
+{"id": "s01-ss20-m011", "alias": "Utilisation généralisée de logiciels ouverts dans les administrations et les établissements scolaires."}
+{"id": "s01-ss20-m012", "alias": "Outils numériques proposés par les services publics, comme un moteur de recherche ; quels services en ligne ?"}
+{"id": "s01-ss20-m013", "alias": "Les grandes plateformes peuvent-elles décider seules quels contenus sont censurés ?"}
+{"id": "s01-ss20-m014", "alias": "Hébergement en France des informations détenues par les services publics."}
+{"id": "s01-ss20-m015", "alias": "Quel cadre international pour piloter Internet sous l’égide des Nations unies ?"}
+{"id": "s01-ss20-m016", "alias": "Partenariats numériques internationaux sans passer par les grandes entreprises du web."}
+{"id": "s01-ss20-m017", "alias": "Soutien au secteur français du jeu vidéo et aux activités liées au virtuel."}
+{"id": "s01-ss20-m018", "alias": "Structure nationale consacrée au jeu vidéo ; à quoi servirait un centre dédié ?"}
+{"id": "s01-ss20-m019", "alias": "Quelle mission nationale pour orienter l’intelligence artificielle vers des usages utiles à la société ?"}
+{"id": "s01-ss20-m020", "alias": "Quels usages de l’intelligence artificielle seraient proscrits, comme la surveillance ou la notation sociale ?"}
+{"id": "s02-ss01-m001", "alias": "Assemblée constituante chargée d’élaborer une nouvelle République ; qui convoquer pour préparer la 6e République ?"}
+{"id": "s02-ss01-m002", "alias": "Vote populaire pour démarrer la démarche et choisir comment sera composée l’assemblée constituante."}
+{"id": "s02-ss01-m003", "alias": "Les anciens élus au Parlement pourront-ils participer à la Constituante ? Non, ils en seront exclus."}
+{"id": "s02-ss01-m004", "alias": "Faire approuver la nouvelle loi fondamentale par les électeurs."}
+{"id": "s02-ss01-m005", "alias": "Quel type de gouvernement assurerait une vie parlementaire durable ? Un système parlementaire stable."}
+{"id": "s02-ss01-m006", "alias": "Contrôle du gouvernement par les députés et obligation de justifier son action devant le Parlement."}
+{"id": "s02-ss01-m007", "alias": "Répartition des sièges à l’Assemblée selon le nombre de voix obtenues par chaque liste."}
+{"id": "s02-ss01-m008", "alias": "Fin de l’usage du 49.3 et des votes imposés aux parlementaires."}
+{"id": "s02-ss01-m009", "alias": "Référendum citoyen pour destituer un élu, soumettre une idée de loi ou supprimer une loi."}
+{"id": "s02-ss01-m010", "alias": "Les électeurs devront-ils se prononcer sur une révision constitutionnelle ou un nouvel accord européen ?"}
+{"id": "s02-ss01-m011", "alias": "Que deviennent les recommandations des assemblées citoyennes ? Elles seront transmises aux parlementaires."}
+{"id": "s02-ss01-m012", "alias": "Abaisser à 16 ans l’âge auquel on peut voter."}
+{"id": "s02-ss02-m001", "alias": "Quel montant de contribution aux partis politiques est autorisé ? Limitation des dons financiers aux formations politiques."}
+{"id": "s02-ss02-m002", "alias": "Comment distinguer les finances publiques de l’État ? Séparation entre l’argent et les pouvoirs publics."}
+{"id": "s02-ss02-m003", "alias": "Comment limiter le poids des groupes de pression dans la vie politique ? Encadrement de l’influence des lobbyistes."}
+{"id": "s02-ss02-m004", "alias": "Quelles sanctions et quel dispositif national contre la corruption ? Écarter de l’éligibilité les personnes condamnées pour corruption."}
+{"id": "s02-ss02-m005", "alias": "Comment empêcher les responsables publics de rejoindre le secteur privé concerné ? Règles contre les allers-retours professionnels."}
+{"id": "s02-ss02-m006", "alias": "Comment rendre les concours de la fonction publique plus divers socialement ? Diversité des profils parmi les candidats."}
+{"id": "s02-ss02-m007", "alias": "La justice peut-elle enquêter sans entrave sur les fraudes aux impôts ? Liberté d’investigation en matière fiscale."}
+{"id": "s02-ss02-m008", "alias": "Comment les organisations patronales sont-elles représentées ? Représentation des employeurs déterminée par les élections."}
+{"id": "s02-ss02-m009", "alias": "Qui choisit les représentants à la tête de la Sécurité sociale ? Élection par les personnes assurées."}
+{"id": "s02-ss02-m010", "alias": "Les cabinets de conseil peuvent-ils prendre en charge l’action publique ? Fin de la sous-traitance des politiques publiques."}
+{"id": "s02-ss02-m011", "alias": "Que prévoit le retour sur la réforme des services préfectoraux et diplomatiques ? Suppression de cette réforme."}
+{"id": "s02-ss02-m012", "alias": "Que devient le bulletin blanc et quelles règles pour participer au scrutin ? Prise en compte du vote blanc, obligation de voter et seuil de validité."}
+{"id": "s02-ss02-m013", "alias": "Comment les citoyens peuvent-ils soutenir une candidature à la présidence ? Parrainage citoyen pour l’élection présidentielle."}
+{"id": "s02-ss02-m014", "alias": "La communication électorale peut-elle être confiée à des prestataires ? Interdiction de sa sous-traitance."}
+{"id": "s02-ss02-m015", "alias": "Un élu peut-il exercer plusieurs fonctions ou les cumuler au fil du temps ? Limitation stricte du cumul des mandats."}
+{"id": "s02-ss02-m016", "alias": "Les élus peuvent-ils prendre un congé pour s’occuper de leur enfant ? Congé parental lié à leur mandat."}
+{"id": "s02-ss02-m017", "alias": "Quel accompagnement pour se former une fois son mandat terminé ? Formation après l’exercice d’un mandat."}
+{"id": "s02-ss02-m018", "alias": "Que prévoit l’amnistie pour les militants condamnés, notamment parmi les Gilets jaunes et les écologistes ? Loi d’amnistie."}
+{"id": "s02-ss02-m019", "alias": "Comment encadrer la publication des enquêtes d’opinion autour des scrutins ? Transparence des sondages et restriction avant les élections."}
+{"id": "s02-ss02-m020", "alias": "Comment assurer une représentation égale des femmes et des hommes dans les institutions ? Parité obligatoire."}
+{"id": "s02-ss03-m001", "alias": "Que signifie une laïcité appliquée sans exception ?"}
+{"id": "s02-ss03-m002", "alias": "Fin du régime concordataire en Alsace-Moselle et des statuts particuliers ultramarins."}
+{"id": "s02-ss03-m003", "alias": "Les responsables élus peuvent-ils participer à des offices religieux dans le cadre de leur mandat ?"}
+{"id": "s02-ss03-m004", "alias": "Pas d’argent public pour les religions ni leurs activités cultuelles."}
+{"id": "s02-ss03-m005", "alias": "Une école publique non confessionnelle dans toutes les communes."}
+{"id": "s02-ss03-m006", "alias": "Davantage de ressources pour la mission de lutte contre les dérives sectaires, la Miviludes."}
+{"id": "s02-ss04-m001", "alias": "Financement autonome et progressif de la radio et de la télévision publiques."}
+{"id": "s02-ss04-m002", "alias": "Quelles règles pour limiter la concentration des médias ?"}
+{"id": "s02-ss04-m003", "alias": "Règles contre le regroupement de médias au même niveau ou à plusieurs étapes de la filière."}
+{"id": "s02-ss04-m004", "alias": "Distinguer les réseaux techniques des contenus médiatiques : comment séparer les tuyaux des programmes ?"}
+{"id": "s02-ss04-m005", "alias": "Un conseil de déontologie des médias comme instance de contrôle citoyen."}
+{"id": "s02-ss04-m006", "alias": "Quel statut pour protéger les équipes de rédaction ?"}
+{"id": "s02-ss04-m007", "alias": "Les plateformes doivent-elles rester impartiales ?"}
+{"id": "s02-ss04-m008", "alias": "Participation des abonnés et des utilisateurs à la gouvernance."}
+{"id": "s02-ss04-m009", "alias": "Aides publiques aux médias d’information : qui peut en bénéficier ?"}
+{"id": "s02-ss04-m010", "alias": "Mode de désignation des présidents de France Télévisions et Radio France : une élection parlementaire."}
+{"id": "s02-ss04-m011", "alias": "Aide aux médias locaux et aux coopératives de journalistes."}
+{"id": "s02-ss04-m012", "alias": "Comment lutter contre les actions en justice visant à faire taire ?"}
+{"id": "s02-ss04-m013", "alias": "Protection des reporters pendant les manifestations."}
+{"id": "s02-ss05-m001", "alias": "Quels sont les niveaux de collectivités : commune, département et région ?"}
+{"id": "s02-ss05-m002", "alias": "Les communes peuvent-elles choisir librement de travailler ensemble ?"}
+{"id": "s02-ss05-m003", "alias": "Fin des grandes régions et des métropoles qualifiées de technocratiques."}
+{"id": "s02-ss05-m004", "alias": "Abroger la loi NOTRe sur l’organisation territoriale."}
+{"id": "s02-ss05-m005", "alias": "La dotation financière des communes évoluerait-elle avec l’inflation ?"}
+{"id": "s02-ss05-m006", "alias": "Opposition aux regroupements de communes imposés."}
+{"id": "s02-ss05-m007", "alias": "Aide financière destinée aux communes rurales."}
+{"id": "s02-ss05-m008", "alias": "Comment ajuster la rémunération des élus au temps consacré à leur mandat ?"}
+{"id": "s02-ss05-m009", "alias": "Reconnaissance du rôle des secrétaires de mairie."}
+{"id": "s02-ss05-m010", "alias": "Élections municipales avec listes et représentation paritaire dans chaque commune."}
+{"id": "s02-ss05-m011", "alias": "Davantage de parité au sein des conseils communautaires."}
+{"id": "s02-ss05-m012", "alias": "Rencontre consacrée à l’avenir des territoires insulaires."}
+{"id": "s02-ss05-m013", "alias": "Quel statut prévu par l’article 74 pour la Corse ?"}
+{"id": "s02-ss06-m001", "alias": "Quels services du quotidien peut-on trouver près de son domicile ?"}
+{"id": "s02-ss06-m002", "alias": "Le département comme niveau territorial de référence."}
+{"id": "s02-ss06-m003", "alias": "Comment assurer un appui pérenne aux associations avec des accords sur plusieurs années ?"}
+{"id": "s02-ss06-m004", "alias": "Quelle démarche consacrée aux quartiers populaires et aux zones rurales ?"}
+{"id": "s02-ss06-m005", "alias": "Retour des guichets et des échanges en personne."}
+{"id": "s02-ss06-m006", "alias": "Quels moyens supplémentaires pour les territoires qui ont pris du retard ?"}
+{"id": "s02-ss06-m007", "alias": "Investir dans les services publics, avec une attention particulière aux territoires ultramarins."}
+{"id": "s02-ss06-m008", "alias": "Comment renforcer les liaisons et l’accès aux territoires isolés ?"}
+{"id": "s02-ss06-m009", "alias": "Quelle part des embauches est réservée aux personnes recrutées sur place en outre-mer ?"}
+{"id": "s02-ss07-m001", "alias": "Renforcer les effectifs et les ressources des tribunaux ; comment augmenter le nombre de juges et de greffiers ?"}
+{"id": "s02-ss07-m002", "alias": "Préparer les juges aux réalités des territoires ultramarins ; quelle formation pour les magistrats outre-mer ?"}
+{"id": "s02-ss07-m003", "alias": "Rendre l’accès au juge plus abordable et rapprocher les tribunaux des habitants ; qu’est-ce qui est prévu pour l’aide juridique ?"}
+{"id": "s02-ss07-m004", "alias": "Garantir à chacun la possibilité d’être défendu, avec une protection inscrite dans la Constitution."}
+{"id": "s02-ss07-m005", "alias": "Ne plus payer certaines démarches judiciaires habituelles, comme une séparation ; quelles procédures seraient sans frais ?"}
+{"id": "s02-ss07-m006", "alias": "Le Parlement déciderait chaque année des grandes orientations des poursuites et des sanctions."}
+{"id": "s02-ss07-m007", "alias": "Préserver les juges des pressions extérieures ; comment garantir l’autonomie de la justice ?"}
+{"id": "s02-ss07-m008", "alias": "Maintenir confidentiels les éléments d’une enquête avant le procès ; comment préserver le secret de l’instruction ?"}
+{"id": "s02-ss08-m001", "alias": "Protection du corps contre sa mise en marché et inscription dans la Constitution du droit de choisir pour soi-même."}
+{"id": "s02-ss08-m002", "alias": "En quoi consiste l’adoption sociale ?"}
+{"id": "s02-ss08-m003", "alias": "Modifier gratuitement la mention du sexe sur ses papiers, y compris pour un mineur avec l’accord d’un parent."}
+{"id": "s02-ss08-m004", "alias": "Établissement de la filiation par reconnaissance par défaut et opposition à la gestation pour autrui."}
+{"id": "s02-ss08-m005", "alias": "Mesures pour mettre fin aux violences visant les personnes lesbiennes, gays, bi, trans et intersexes."}
+{"id": "s02-ss08-m006", "alias": "Faire appliquer rigoureusement l’interdiction des pratiques visant à changer l’orientation sexuelle ou l’identité de genre."}
+{"id": "s02-ss08-m007", "alias": "Accroître les ressources du Défenseur des droits."}
+{"id": "s02-ss08-m008", "alias": "Mettre fin à la prostitution."}
+{"id": "s02-ss09-m001", "alias": "Quelle part du PIB consacrer à la culture ?"}
+{"id": "s02-ss09-m002", "alias": "Quels chantiers culturels pour réduire les écarts entre territoires ?"}
+{"id": "s02-ss09-m003", "alias": "Quel appui apporter aux collectivités ?"}
+{"id": "s02-ss09-m004", "alias": "Quel prix pour entrer dans les musées publics : gratuité ou tarifs accessibles ?"}
+{"id": "s02-ss09-m005", "alias": "Où consulter gratuitement une médiathèque publique sur internet ?"}
+{"id": "s02-ss09-m006", "alias": "Quelle place pour l’apprentissage artistique et quelle orientation du Pass Culture ?"}
+{"id": "s02-ss09-m007", "alias": "Comment favoriser une création artistique diverse sans appels à projets ?"}
+{"id": "s02-ss09-m008", "alias": "Comment lutter contre les discriminations et les violences dans le secteur culturel ?"}
+{"id": "s02-ss09-m009", "alias": "Comment le domaine public commun peut-il financer de nouvelles créations ?"}
+{"id": "s02-ss09-m010", "alias": "Quel avenir pour les avantages fiscaux liés au mécénat ?"}
+{"id": "s02-ss09-m011", "alias": "Comment transformer les panneaux publicitaires en espaces artistiques, et avec quel fonds ?"}
+{"id": "s02-ss09-m012", "alias": "Comment faire évoluer et élargir le régime des intermittents ?"}
+{"id": "s02-ss09-m013", "alias": "Les artistes-auteurs peuvent-ils bénéficier de l’assurance-chômage ?"}
+{"id": "s02-ss09-m014", "alias": "Comment rapprocher les statuts des enseignants artistiques ?"}
+{"id": "s02-ss09-m015", "alias": "Quelles formations et quels emplois culturels développer localement ?"}
+{"id": "s02-ss09-m016", "alias": "Quelles règles pour les intelligences artificielles génératives dans la culture ?"}
+{"id": "s02-ss10-m001", "alias": "Comment financer le sport amateur grâce aux droits de diffusion et aux mouvements de joueurs ?"}
+{"id": "s02-ss10-m002", "alias": "Supprimer les annonces pour les jeux et mises sportives."}
+{"id": "s02-ss10-m003", "alias": "Rendre les instances sportives plus ouvertes et représentatives."}
+{"id": "s02-ss10-m004", "alias": "Comment soutenir la pratique sportive des femmes et la rendre accessible ?"}
+{"id": "s02-ss10-m005", "alias": "Faciliter la pratique sportive des personnes en situation de handicap."}
+{"id": "s02-ss10-m006", "alias": "Mieux prendre en compte les personnes sourdes ou avec une déficience auditive."}
+{"id": "s02-ss10-m007", "alias": "Réorganiser la répartition des conseillers techniques dans le domaine sportif."}
+{"id": "s02-ss10-m008", "alias": "Construire et remettre en état des installations sportives proches des habitants."}
+{"id": "s02-ss10-m009", "alias": "Comment permettre aux personnes les plus démunies d’accéder gratuitement ?"}
+{"id": "s02-ss10-m010", "alias": "Mettre un terme au traitement pénal des supporters."}
+{"id": "s02-ss10-m011", "alias": "Lutter dans le sport contre les discriminations racistes et les violences sexistes."}
+{"id": "s02-ss10-m012", "alias": "Combattre les attitudes hostiles envers les personnes LGBT dans le sport."}
+{"id": "s03-ss01-m001", "alias": "Réduction des rejets de gaz à effet de serre à l’horizon 2030, avec publication annuelle du bilan ; quel suivi des émissions est prévu ?"}
+{"id": "s03-ss01-m002", "alias": "Programme d’investissements jugés utiles, doté de 200 milliards d’euros ; quel montant est consacré au plan ?"}
+{"id": "s03-ss01-m003", "alias": "Inscription d’un principe de protection écologique dans la loi fondamentale ; quelle règle environnementale serait constitutionnalisée ?"}
+{"id": "s03-ss01-m004", "alias": "Textes de portée générale pour organiser démocratiquement la transition écologique ; comment la planification serait-elle encadrée ?"}
+{"id": "s03-ss01-m005", "alias": "Renforcement des ressources de l’administration publique et des organismes qui en dépendent ; quels moyens pour l’État ?"}
+{"id": "s03-ss01-m006", "alias": "Mise en place d’une instance dédiée à l’organisation de la transition écologique ; quel conseil est proposé ?"}
+{"id": "s03-ss01-m007", "alias": "Calcul des émissions de carbone rendu obligatoire dans les sociétés ; quelles obligations de comptabilisation pour les entreprises ?"}
+{"id": "s03-ss01-m008", "alias": "Infraction climatique liée à la dissimulation des rejets ; comment serait qualifiée la dissimulation des émissions ?"}
+{"id": "s03-ss01-m009", "alias": "Évaluation périodique de la santé des milieux naturels intégrée aux finances publiques ; quel état des écosystèmes serait suivi ?"}
+{"id": "s03-ss01-m010", "alias": "Organisme chargé de favoriser le retour d’activités sur le territoire ; quelle structure est prévue pour les relocalisations ?"}
+{"id": "s03-ss01-m011", "alias": "Dispositif national pour observer une situation au moment où elle évolue ; quel outil de suivi est proposé ?"}
+{"id": "s03-ss01-m012", "alias": "Transport et acheminement moins polluants par le rail, les voies d’eau et le partage des moyens ; que prévoit la logistique verte ?"}
+{"id": "s03-ss01-m013", "alias": "Suspension temporaire des grands chantiers considérés comme non nécessaires ; quels projets seraient mis en pause ?"}
+{"id": "s03-ss01-m014", "alias": "Suppression des avantages fiscaux accordés aux grandes sociétés ; quels allègements d’impôts seraient retirés ?"}
+{"id": "s03-ss01-m015", "alias": "Affectation de ces ressources au changement de modèle écologique ; à quoi servira cet argent ?"}
+{"id": "s03-ss01-m016", "alias": "Accord pour accompagner les salariés qui changent de métier ; quel soutien est prévu lors d’une reconversion professionnelle ?"}
+{"id": "s03-ss01-m017", "alias": "Priorité accordée aux salariés pour reprendre une activité ; quel droit de reprise leur est reconnu ?"}
+{"id": "s03-ss01-m018", "alias": "Rétablissement des capacités publiques de vérification et de surveillance ; quels contrôles l’État pourrait-il reprendre ?"}
+{"id": "s03-ss01-m019", "alias": "Réexamen de la réduction des protections liées à l’environnement ; que prévoit le retour sur ces normes ?"}
+{"id": "s03-ss02-m001", "alias": "Revoir les limites régionales en fonction des bassins versants et des écorégions."}
+{"id": "s03-ss02-m002", "alias": "Quelle place donner aux communes dans les décisions ? Les municipalités doivent être pleinement associées."}
+{"id": "s03-ss02-m003", "alias": "Mettre fin aux eurorégions."}
+{"id": "s03-ss02-m004", "alias": "Comment empêcher la différenciation entre territoires ?"}
+{"id": "s03-ss02-m005", "alias": "Une collectivité unique, uniquement pour les territoires ultramarins."}
+{"id": "s03-ss02-m006", "alias": "Réorganiser la composition des assemblées des régions."}
+{"id": "s03-ss02-m007", "alias": "Des personnes engagées pour la nature à l’échelle des communes."}
+{"id": "s03-ss02-m008", "alias": "Des assemblées régionales composées de citoyens."}
+{"id": "s03-ss02-m009", "alias": "Comment freiner l’extension des villes et des zones urbanisées ?"}
+{"id": "s03-ss02-m010", "alias": "Renforcer l’expertise et l’appui technique apportés aux territoires."}
+{"id": "s03-ss02-m011", "alias": "Faire des territoires ultramarins des lieux pilotes pour l’autonomie en énergie et en alimentation."}
+{"id": "s03-ss02-m012", "alias": "Protection douanière et avantage commercial pour les produits fabriqués localement."}
+{"id": "s03-ss02-m013", "alias": "Pouvoir couvrir les besoins alimentaires par ses propres ressources."}
+{"id": "s03-ss02-m014", "alias": "Préserver la diversité des espèces et des milieux naturels."}
+{"id": "s03-ss02-m015", "alias": "Des programmes pour rendre les territoires autonomes en énergie."}
+{"id": "s03-ss02-m016", "alias": "Mieux faire face aux dangers liés aux phénomènes naturels."}
+{"id": "s03-ss02-m017", "alias": "Des formations de proximité aux métiers de la transition."}
+{"id": "s03-ss03-m001", "alias": "Faire revenir la SNCF sous contrôle public et écarter l’ouverture à la concurrence ; qui doit gérer le rail ?"}
+{"id": "s03-ss03-m002", "alias": "Organisation publique des transports, pilotage collectif des déplacements ; quelle place pour un service public des mobilités ?"}
+{"id": "s03-ss03-m003", "alias": "Garder ou remettre en service les petites lignes, proposer des prix abordables et conserver des guichets ; comment préserver le train du quotidien ?"}
+{"id": "s03-ss03-m004", "alias": "Enquête sur la liaison ferroviaire Lyon-Turin ; quelles questions examiner sur ce projet ?"}
+{"id": "s03-ss03-m005", "alias": "Préserver le transport de marchandises par train sous responsabilité publique ; quel avenir pour le fret ferroviaire ?"}
+{"id": "s03-ss03-m006", "alias": "Proposer des déplacements sur réservation là où les transports sont peu denses ; comment se déplacer hors des villes ?"}
+{"id": "s03-ss03-m007", "alias": "Retirer les vols lorsqu’un trajet en train dure moins de quatre heures ; quand remplacer l’avion par le rail ?"}
+{"id": "s03-ss03-m008", "alias": "Favoriser le partage des véhicules et les déplacements doux ; quelles alternatives à la voiture individuelle ?"}
+{"id": "s03-ss03-m009", "alias": "Encadrer les gros SUV et développer en France de petits véhicules électriques ; quelle place pour les voitures légères ?"}
+{"id": "s03-ss03-m010", "alias": "Suspendre les zones à faibles émissions déjà en place ; que faire des ZFE actuelles ?"}
+{"id": "s03-ss03-m011", "alias": "Aider les garages solidaires ; où trouver un atelier de réparation accessible ?"}
+{"id": "s03-ss03-m012", "alias": "Acheminer davantage de marchandises par le rail et transférer les trajets vers d’autres modes ; comment réduire le transport routier ?"}
+{"id": "s03-ss03-m013", "alias": "Reprendre sous contrôle public les autoroutes et les aéroports jugés stratégiques ; qui doit les gérer ?"}
+{"id": "s03-ss03-m014", "alias": "Élargir l’offre de bus et autres transports collectifs dans les territoires ultramarins ; comment mieux s’y déplacer ?"}
+{"id": "s03-ss04-m001", "alias": "Que prévoit la fin du nucléaire, l’abandon des EPR, le démantèlement et la reconversion ?"}
+{"id": "s03-ss04-m002", "alias": "Comment passer entièrement aux énergies renouvelables en consommant moins ?"}
+{"id": "s03-ss04-m003", "alias": "Faut-il mettre fin aux aides publiques aux énergies fossiles ?"}
+{"id": "s03-ss04-m004", "alias": "Quelles solutions de stockage et de gestion des périodes de forte demande énergétique ?"}
+{"id": "s03-ss04-m005", "alias": "Quel cadre commun et quelle reconversion pour les salariés du nucléaire ?"}
+{"id": "s03-ss04-m006", "alias": "Comment fixer les tarifs réglementés selon les coûts de production, avec une première part gratuite ?"}
+{"id": "s03-ss04-m007", "alias": "Que prévoit l’abandon de la libéralisation et la création d’un pôle public réunissant EDF et Engie ?"}
+{"id": "s03-ss04-m008", "alias": "Comment revenir sur les augmentations du prix du gaz depuis 2017 ?"}
+{"id": "s03-ss04-m009", "alias": "Comment adapter les sources d’énergie aux réalités locales ?"}
+{"id": "s03-ss04-m010", "alias": "Que prévoit l’abrogation de la fusion entre l’ASN et l’IRSN ?"}
+{"id": "s03-ss05-m001", "alias": "Isolation thermique des habitations : combien de logements doivent être concernés chaque année ?"}
+{"id": "s03-ss05-m002", "alias": "Remise en état des logements très mal isolés avant leur mise en location : que faut-il faire ?"}
+{"id": "s03-ss05-m003", "alias": "Lutter contre la pauvreté liée aux dépenses énergétiques : que prévoit le programme ?"}
+{"id": "s03-ss05-m004", "alias": "Abandon des chaudières alimentées au fioul : par quoi les remplacer ?"}
+{"id": "s03-ss05-m005", "alias": "Comment reconnaître les labels verts fondés sur des performances contrôlées ?"}
+{"id": "s03-ss05-m006", "alias": "Formation des métiers concernés et point d’entrée public unique : comment se faire accompagner ?"}
+{"id": "s03-ss05-m007", "alias": "Bâtir de façon plus écologique avec des matériaux issus du vivant : de quoi s’agit-il ?"}
+{"id": "s03-ss05-m008", "alias": "Gestion de l’énergie dans les bâtiments tertiaires : comment mieux maîtriser leur consommation ?"}
+{"id": "s03-ss06-m001", "alias": "Comment lutter contre les appareils conçus pour ne pas durer et prolonger leur garantie ?"}
+{"id": "s03-ss06-m002", "alias": "Comment limiter les emballages plastiques jetables et mettre en place le retour des bouteilles en verre ?"}
+{"id": "s03-ss06-m003", "alias": "Un service public pour faire réparer et réutiliser les objets."}
+{"id": "s03-ss06-m004", "alias": "Rendre la conception écologique obligatoire et proposer des formations."}
+{"id": "s03-ss06-m005", "alias": "Comment comparer la durée de vie des produits ? Un indice de durabilité pour tous."}
+{"id": "s03-ss06-m006", "alias": "Réduire les prospectus, les affichages numériques et le démarchage publicitaire."}
+{"id": "s03-ss06-m007", "alias": "Interdire les annonces pour les produits qui polluent beaucoup."}
+{"id": "s03-ss06-m008", "alias": "Comment diminuer les spots publicitaires à la télévision ?"}
+{"id": "s03-ss06-m009", "alias": "Un réseau de centres de collecte et de tri des déchets dans le pays."}
+{"id": "s03-ss06-m010", "alias": "Interdire les affirmations trompeuses présentant un produit comme neutre en carbone."}
+{"id": "s03-ss07-m001", "alias": "Comment diminuer les produits chimiques utilisés dans les champs et écarter les plus nocifs ?"}
+{"id": "s03-ss07-m002", "alias": "Développer des fermes locales, variées et respectueuses de l’environnement, avec 300 000 emplois."}
+{"id": "s03-ss07-m003", "alias": "Comment assurer des prix justes aux producteurs et empêcher de vendre sous le coût d’achat ?"}
+{"id": "s03-ss07-m004", "alias": "Quelle retraite convenable pour les personnes qui travaillent dans l’agriculture ?"}
+{"id": "s03-ss07-m005", "alias": "Réorienter la politique agricole commune vers des pratiques plus vertes et davantage d’emplois."}
+{"id": "s03-ss07-m006", "alias": "Changer le partage des terres pour favoriser des fermes de dimension modeste."}
+{"id": "s03-ss07-m007", "alias": "Préserver les terres consacrées aux cultures et aux forêts."}
+{"id": "s03-ss07-m008", "alias": "Protéger les échanges commerciaux au nom de l’écologie."}
+{"id": "s03-ss07-m009", "alias": "Comment limiter les marges des supermarchés et des grandes enseignes ?"}
+{"id": "s03-ss07-m010", "alias": "Vente locale sans intermédiaires, du producteur au consommateur."}
+{"id": "s03-ss07-m011", "alias": "Préserver les spécialités alimentaires et produits typiques des régions."}
+{"id": "s03-ss08-m001", "alias": "Soutien aux personnes touchées et aux lanceurs d’alerte ; où trouver de l’aide ?"}
+{"id": "s03-ss08-m002", "alias": "Nettoyer les pollutions en urgence, en commençant par les Antilles et le chlordécone ; que prévoit-on ?"}
+{"id": "s03-ss08-m003", "alias": "Réparation pour les personnes touchées par les essais nucléaires ; qui peut être indemnisé ?"}
+{"id": "s03-ss08-m004", "alias": "Contrôle indépendant des risques industriels et amendes plus élevées ; qui surveille ces risques ?"}
+{"id": "s03-ss08-m005", "alias": "Mettre fin aux activités à risque et accompagner les travailleurs vers une reconversion ; que deviennent leurs emplois ?"}
+{"id": "s03-ss09-m001", "alias": "Comment prévenir les inondations et financer le déplacement des personnes concernées ?"}
+{"id": "s03-ss09-m002", "alias": "Quelle limite fixer aux prélèvements pour que les réserves d’eau se reconstituent naturellement ?"}
+{"id": "s03-ss09-m003", "alias": "Inscrire dans la Constitution que l’eau appartient à tous."}
+{"id": "s03-ss09-m004", "alias": "Faire de l’eau et des services d’hygiène un droit fondamental."}
+{"id": "s03-ss09-m005", "alias": "Comment lutter contre les interruptions d’eau interdites ?"}
+{"id": "s03-ss09-m006", "alias": "Impliquer les habitants et gérer les services de l’eau par des organismes publics."}
+{"id": "s03-ss09-m007", "alias": "Remplacer et remettre en état les vieux réseaux de tuyaux."}
+{"id": "s03-ss09-m008", "alias": "Rendre gratuits les premiers volumes consommés, puis faire varier le prix selon la consommation."}
+{"id": "s03-ss09-m009", "alias": "Des équipements publics gratuits pour boire, se doucher et utiliser les toilettes."}
+{"id": "s03-ss09-m010", "alias": "Renforcer les contrôles du secteur de l’eau avec davantage d’agents."}
+{"id": "s03-ss09-m011", "alias": "Mettre fin au changement de statut qui retire leur classement aux rivières et aux cours d’eau."}
+{"id": "s03-ss09-m012", "alias": "Quel objectif de qualité écologique pour l’ensemble des rivières et cours d’eau ?"}
+{"id": "s03-ss09-m013", "alias": "Faire davantage circuler les marchandises par les voies navigables."}
+{"id": "s03-ss09-m014", "alias": "Suspendre les projets de très grandes réserves d’eau artificielles."}
+{"id": "s03-ss09-m015", "alias": "Décider collectivement d’une répartition de l’eau qui en limite l’usage."}
+{"id": "s03-ss09-m016", "alias": "Accorder davantage de ressources aux organismes publics chargés de l’eau."}
+{"id": "s03-ss09-m017", "alias": "Créer une autorité nationale dédiée aux questions d’eau."}
+{"id": "s03-ss09-m018", "alias": "Garantir aux habitants des territoires ultramarins de l’eau propre à la consommation."}
+{"id": "s03-ss09-m019", "alias": "Gérer le service de l’eau directement par une structure publique locale."}
+{"id": "s03-ss09-m020", "alias": "Prévoir une organisation de secours dédiée à l’eau quand elle vient à manquer."}
+{"id": "s03-ss09-m021", "alias": "Effacer les sommes dues lorsque le service fourni n’a pas fonctionné correctement."}
+{"id": "s03-ss09-m022", "alias": "Mettre en place des mesures d’urgence pour faire face à la situation à Mayotte."}
+{"id": "s03-ss09-m023", "alias": "Reconnaître une situation d’urgence sanitaire en Guadeloupe et en Martinique."}
+{"id": "s03-ss10-m001", "alias": "Quelle règle pour les coupes qui rasent une parcelle ?"}
+{"id": "s03-ss10-m002", "alias": "Quel renfort pour l’ONF et quelle position sur sa privatisation ?"}
+{"id": "s03-ss10-m003", "alias": "Comment soutenir les groupements de petits producteurs ?"}
+{"id": "s03-ss10-m004", "alias": "Quelles améliorations pour le quotidien professionnel des travailleurs forestiers ?"}
+{"id": "s03-ss10-m005", "alias": "Quelle place accrue pour les espaces forestiers publics ?"}
+{"id": "s03-ss10-m006", "alias": "À quels critères environnementaux l’accès aux aides serait-il lié ?"}
+{"id": "s03-ss10-m007", "alias": "Le retrait des souches après coupe est-il autorisé ?"}
+{"id": "s03-ss10-m008", "alias": "Où consulter les décisions autorisant les coupes ?"}
+{"id": "s03-ss10-m009", "alias": "Comment rendre les boisements plus variés et capables de mieux résister ?"}
+{"id": "s03-ss10-m010", "alias": "Quel avenir pour les activités qui transforment le bois ?"}
+{"id": "s03-ss10-m011", "alias": "Que prévoit-on pour les scieries et les ventes de bois à l’étranger ?"}
+{"id": "s03-ss10-m012", "alias": "Comment encadrer le recours au bois comme source d’énergie ?"}
+{"id": "s03-ss10-m013", "alias": "Quelle part des espaces forestiers serait laissée évoluer naturellement ?"}
+{"id": "s03-ss10-m014", "alias": "Que faire des accords favorisant la déforestation venue de l’étranger ?"}
+{"id": "s03-ss10-m015", "alias": "Comment vérifier l’origine des produits et écarter ceux associés à la destruction des forêts ?"}
+{"id": "s03-ss10-m016", "alias": "Quelle coopération au-delà des frontières contre les trafics ?"}
+{"id": "s03-ss10-m017", "alias": "Quels moyens supplémentaires contre les feux ?"}
+{"id": "s03-ss11-m001", "alias": "Élevages industriels intensifs : veut-on mettre fin aux exploitations de type ferme-usine ?"}
+{"id": "s03-ss11-m002", "alias": "Déplacements des animaux : comment réduire la durée des trajets ?"}
+{"id": "s03-ss11-m003", "alias": "Fin des méthodes de traitement jugées cruelles, comme les cages en batterie ou le broyage."}
+{"id": "s03-ss11-m004", "alias": "Fourrure : mettre un terme aux élevages et à la vente de fourrure."}
+{"id": "s03-ss11-m005", "alias": "Conditions de vie du bétail : quelles règles pour l’accès à l’extérieur et aux pâturages ?"}
+{"id": "s03-ss11-m006", "alias": "Expériences sur les animaux : chercher des techniques de recherche qui s’en passent."}
+{"id": "s03-ss11-m007", "alias": "Pratiques impliquant des animaux : arrêt des chasses cruelles, des corridas et des animaux sauvages au cirque."}
+{"id": "s03-ss11-m008", "alias": "Élevage de saumons et céphalopodes : quel arrêt provisoire pour les fermes salmonicoles et quelle interdiction ?"}
+{"id": "s03-ss12-m001", "alias": "Peut-on breveter des organismes vivants ? Refus de la propriété industrielle sur le vivant."}
+{"id": "s03-ss12-m002", "alias": "Position contre les organismes génétiquement modifiés et les traités commerciaux jugés destructeurs."}
+{"id": "s03-ss12-m003", "alias": "Appui aux ententes entre pays pour défendre les ressources partagées."}
+{"id": "s03-ss12-m004", "alias": "Préserver les milieux naturels et les différentes espèces par des actions concrètes."}
+{"id": "s03-ss12-m005", "alias": "Quelles règles internationales pour préserver la diversité de la vie dans les mers ?"}
+{"id": "s03-ss12-m006", "alias": "Valoriser la pêche à petite échelle et combattre les prises illégales."}
+{"id": "s03-ss12-m007", "alias": "Mettre fin aux méthodes de pêche risquées, comme la pêche électrique."}
+{"id": "s03-ss12-m008", "alias": "Étendre ou renforcer les zones marines où la nature est protégée."}
+{"id": "s03-ss12-m009", "alias": "Suspendre les opérations de forage en Méditerranée et l’exploitation minière des grands fonds."}
+{"id": "s03-ss12-m010", "alias": "Réglementer le prélèvement de sable."}
+{"id": "s03-ss12-m011", "alias": "Réduire l’acidité des océans et les espaces marins privés d’oxygène."}
+{"id": "s03-ss12-m012", "alias": "Produire des énergies renouvelables en mer sous contrôle du secteur public."}
+{"id": "s03-ss12-m013", "alias": "Mesures urgentes pour l’éolien en mer, avec une possible reprise publique."}
+{"id": "s03-ss12-m014", "alias": "Réduire les émissions de carbone du transport maritime commercial."}
+{"id": "s03-ss13-m001", "alias": "Empreinte environnementale des outils numériques : comment réduire les effets du digital sur la planète ?"}
+{"id": "s03-ss13-m002", "alias": "Moins de consommation pour les centres de données, avec une autorisation requise : quelles obligations pour les data centers ?"}
+{"id": "s04-ss01-m001", "alias": "Qui peut bloquer les traités commerciaux et l’adhésion de nouveaux pays sans harmonisation ?"}
+{"id": "s04-ss01-m002", "alias": "Écarter les règles de l’Union qui ne concordent pas avec les engagements pris."}
+{"id": "s04-ss01-m003", "alias": "La Constitution de la 6e République prévaut, avec le principe de ne pas revenir en arrière."}
+{"id": "s04-ss01-m004", "alias": "À quelles conditions la France verserait-elle sa part au budget de l’Union ?"}
+{"id": "s04-ss01-m005", "alias": "Développer des partenariats avec les États qui souhaitent coopérer."}
+{"id": "s04-ss01-m006", "alias": "Faire participer les citoyens à l’échelle européenne."}
+{"id": "s04-ss01-m007", "alias": "Mettre fin aux traités commerciaux déjà en vigueur."}
+{"id": "s04-ss01-m008", "alias": "Ne pas prendre part à la politique de défense de l’Union européenne."}
+{"id": "s04-ss01-m009", "alias": "Faire prévaloir les règles les plus protectrices en matière de climat et de travail."}
+{"id": "s04-ss02-m001", "alias": "Politique étrangère sans camp privilégié, échanges avec tous les pays : quelle approche diplomatique est proposée ?"}
+{"id": "s04-ss02-m002", "alias": "Pas de pacte militaire durable dans la région Asie-Pacifique."}
+{"id": "s04-ss02-m003", "alias": "Quel rapprochement est prévu entre les mouvements altermondialistes ?"}
+{"id": "s04-ss02-m004", "alias": "Retrouver une diplomatie française autonome et son réseau à l’étranger."}
+{"id": "s04-ss03-m001", "alias": "Sortie du commandement intégré de l’OTAN, puis retrait de l’Alliance ; quelle position sur l’OTAN ?"}
+{"id": "s04-ss03-m002", "alias": "Instance de réflexion sur les options autres que le nucléaire ; où trouver les pistes concernant le nucléaire ?"}
+{"id": "s04-ss03-m003", "alias": "Document stratégique et loi de programmation visant l’indépendance ; quel cadre est prévu pour l’indépendance ?"}
+{"id": "s04-ss03-m004", "alias": "Pôle public dans l’industrie de l’armement ; quelle place pour un secteur public de l’armement ?"}
+{"id": "s04-ss03-m005", "alias": "Technologies françaises de rupture privilégiées ; quelles innovations françaises sont prioritaires ?"}
+{"id": "s04-ss03-m006", "alias": "Préférence pour les équipements français ; quelle place pour le matériel français ?"}
+{"id": "s04-ss03-m007", "alias": "Engagement militaire facultatif intégré au service citoyen ; peut-on choisir une option militaire dans ce service ?"}
+{"id": "s04-ss03-m008", "alias": "Dispositifs défensifs non létaux pour le numérique et l’espace ; quels moyens de défense sont prévus dans ces domaines ?"}
+{"id": "s04-ss03-m009", "alias": "Renseignement prenant en compte les risques liés au climat ; comment s’adapte-t-il aux risques climatiques ?"}
+{"id": "s04-ss03-m010", "alias": "Équipements et infrastructures adaptés au climat ; comment les préparer aux conditions climatiques ?"}
+{"id": "s04-ss03-m011", "alias": "Renforcement des ressources du service de santé des armées ; quels moyens pour la santé militaire ?"}
+{"id": "s04-ss04-m001", "alias": "Comment favoriser l’arrêt des combats en Ukraine et ouvrir des pourparlers ?"}
+{"id": "s04-ss04-m002", "alias": "Quelle sécurité commune en Europe après le retour de la paix ?"}
+{"id": "s04-ss04-m003", "alias": "Quelle position sur la reconnaissance de la Palestine comme État ?"}
+{"id": "s04-ss04-m004", "alias": "Comment obtenir une trêve durable à Gaza, lever son blocus, sanctionner le gouvernement Netanyahou et suspendre les ventes d’armes ?"}
+{"id": "s04-ss04-m005", "alias": "Quelle aide et quel appui pour l’agence des Nations unies pour les réfugiés palestiniens ?"}
+{"id": "s04-ss04-m006", "alias": "Quelles initiatives pour réduire les armes nucléaires et prendre part au TIAN ?"}
+{"id": "s04-ss04-m007", "alias": "Comment mettre à l’abri les installations nucléaires dans les zones de conflit ?"}
+{"id": "s04-ss04-m008", "alias": "Quel rôle pour les Nations unies dans la sécurité collective mondiale ?"}
+{"id": "s04-ss04-m009", "alias": "Faut-il s’engager militairement sans autorisation explicite de l’ONU ?"}
+{"id": "s04-ss04-m010", "alias": "Quelle place pour une instance mondiale sur l’environnement, l’UNESCO et l’OMS ?"}
+{"id": "s04-ss04-m011", "alias": "Comment changer le fonctionnement du Conseil de sécurité de l’ONU ?"}
+{"id": "s04-ss04-m012", "alias": "Comment faire évoluer l’organisation des Nations unies pour l’alimentation et l’agriculture ?"}
+{"id": "s04-ss04-m013", "alias": "Comment privilégier des règlements politiques sous l’autorité de l’ONU là où la paix reste incertaine ?"}
+{"id": "s04-ss04-m014", "alias": "Quel dispositif onusien pour intervenir face aux urgences écologiques ?"}
+{"id": "s04-ss04-m015", "alias": "Comment soutenir les tribunaux internationaux et les poursuites pour crimes de guerre ?"}
+{"id": "s04-ss04-m016", "alias": "Quelle place pour le droit des peuples à décider de leur avenir ?"}
+{"id": "s04-ss05-m001", "alias": "Que proposent de changer les institutions financières mondiales et l’organisation du commerce international ?"}
+{"id": "s04-ss05-m002", "alias": "Les droits des travailleurs doivent-ils être respectés dans les accords commerciaux ?"}
+{"id": "s04-ss05-m003", "alias": "Quelles règles obligatoires encadreraient les entreprises multinationales ?"}
+{"id": "s04-ss05-m004", "alias": "Comment organiser le règlement commun des dettes des États ?"}
+{"id": "s04-ss05-m005", "alias": "La reconnaissance juridique des atteintes graves à l’environnement comme crime."}
+{"id": "s04-ss05-m006", "alias": "Une juridiction mondiale pour les questions de justice liée au climat."}
+{"id": "s04-ss05-m007", "alias": "Une cour internationale consacrée à la justice économique."}
+{"id": "s04-ss05-m008", "alias": "Que faire des brevets sur les vaccins et de leur délivrance d’office ?"}
+{"id": "s04-ss05-m009", "alias": "Un accord international obligatoire encadrant les multinationales."}
+{"id": "s04-ss05-m010", "alias": "Un accord mondial consacré aux matières plastiques."}
+{"id": "s04-ss05-m011", "alias": "Quelle place donner à l’eau dans les priorités internationales ?"}
+{"id": "s04-ss05-m012", "alias": "Préserver les fonds océaniques profonds et les espaces marins internationaux."}
+{"id": "s04-ss05-m013", "alias": "Faire des régions polaires des biens partagés par tous."}
+{"id": "s04-ss05-m014", "alias": "Le rôle des casques bleus lors de catastrophes naturelles."}
+{"id": "s04-ss05-m015", "alias": "Une devise mondiale commune face au dollar."}
+{"id": "s04-ss05-m016", "alias": "Comment réorganiser les dettes des pays souverains ?"}
+{"id": "s04-ss06-m001", "alias": "Quelle place donner aux territoires ultramarins dans la politique internationale ?"}
+{"id": "s04-ss06-m002", "alias": "Faire des territoires d’outre-mer des centres de coopération pour le développement partagé."}
+{"id": "s04-ss06-m003", "alias": "Participer aux partenariats entre régions, comme les organisations africaines et latino-américaines."}
+{"id": "s04-ss06-m004", "alias": "Quel avenir pour la Nouvelle-Calédonie en tenant compte des référendums ?"}
+{"id": "s04-ss07-m001", "alias": "Quelle part du revenu national consacrer à l’aide au développement ?"}
+{"id": "s04-ss07-m002", "alias": "Retour du codéveloppement : comment relancer cette approche ?"}
+{"id": "s04-ss07-m003", "alias": "Comment transformer l’AFD en travaillant avec les organisations de la société civile sur place ?"}
+{"id": "s04-ss07-m004", "alias": "Quelle approche des relations avec les pays africains respecte leur souveraineté ?"}
+{"id": "s04-ss07-m005", "alias": "L’aide destinée au Sahel dépendrait-elle du respect des droits fondamentaux ?"}
+{"id": "s04-ss07-m006", "alias": "Que prévoir pour revoir les ententes de défense ?"}
+{"id": "s04-ss07-m007", "alias": "Comment sortir de la tutelle concernant les monnaies CFA et ECO ?"}
+{"id": "s04-ss07-m008", "alias": "Que faire des dettes qualifiées d’odieuses : lesquelles annuler ?"}
+{"id": "s04-ss07-m009", "alias": "Pourquoi mener une enquête sur le fiasco au Sahel ?"}
+{"id": "s04-ss08-m001", "alias": "Établissements méditerranéens pour les études et la formation professionnelle ; existe-t-il un réseau commun ?"}
+{"id": "s04-ss08-m002", "alias": "Organisation collective de sécurité civile ; quels moyens communs sont prévus ?"}
+{"id": "s04-ss08-m003", "alias": "Dispositif partagé pour lutter contre la pollution ; quelle structure commune de dépollution ?"}
+{"id": "s04-ss08-m004", "alias": "Équipements pour intervenir sous la mer ; quels moyens d’action sous-marins ?"}
+{"id": "s04-ss08-m005", "alias": "Règles environnementales plus strictes pour les navires et le transport maritime ; quelles normes écologiques ?"}
+{"id": "s04-ss08-m006", "alias": "Chaîne télévisée multilingue dédiée à la Méditerranée ; existe-t-il une télévision méditerranéenne ?"}
+{"id": "s04-ss09-m001", "alias": "Place du français dans les instances internationales : comment y préserver son usage ?"}
+{"id": "s04-ss09-m002", "alias": "Liens entre les populations francophones : que signifie une francophonie des peuples ?"}
+{"id": "s04-ss09-m003", "alias": "Mobilité étudiante en français, sur le modèle Erasmus : quels échanges francophones ?"}
+{"id": "s04-ss09-m004", "alias": "Ressources et titres d’études partagés : quels contenus et diplômes communs ?"}
+{"id": "s04-ss09-m005", "alias": "Audiovisuel en français : comment consolider les médias francophones ?"}
+{"id": "s04-ss09-m006", "alias": "Consolidation de l’instance parlementaire : quelle assemblée est concernée ?"}
+{"id": "s04-ss09-m007", "alias": "Publication de recherche francophone de haut niveau : quelle revue scientifique ?"}
+{"id": "s04-ss09-m008", "alias": "Établissement universitaire francophone consacré à l’espace : de quoi s’agit-il ?"}
+{"id": "s04-ss09-m009", "alias": "Lieux dédiés à la culture francophone : quels espaces sont prévus ?"}
+{"id": "s04-ss09-m010", "alias": "Maillage des Instituts et Alliances françaises : comment consolider ce réseau ?"}
+{"id": "s05-ss01-m001", "alias": "Aide à mourir et soins palliatifs inscrits dans la Constitution : que prévoit le programme ?"}
+{"id": "s05-ss02-m001", "alias": "Comment reconstruire l’hôpital public et obtenir une couverture intégrale des soins avec les mutuelles intégrées ?"}
+{"id": "s05-ss02-m002", "alias": "Comment retrouver urgences, maternités et maisons de retraite publiques à moins d’une demi-heure ?"}
+{"id": "s05-ss02-m003", "alias": "Comment annuler l’augmentation des sommes restant à payer pour les soins ?"}
+{"id": "s05-ss02-m004", "alias": "Que prévoit la gratuité de l’accueil à l’école et des services de santé publique ?"}
+{"id": "s05-ss02-m005", "alias": "Quels équipements et matériels médicaux nécessaires seraient couverts ?"}
+{"id": "s05-ss02-m006", "alias": "Le sport prescrit par un médecin peut-il être remboursé ?"}
+{"id": "s05-ss02-m007", "alias": "Comment remplacer le paiement des hôpitaux selon leur activité par un budget global ?"}
+{"id": "s05-ss02-m008", "alias": "Comment rendre publics les décès dus au manque de soins et revenir sur les lits fermés ?"}
+{"id": "s05-ss02-m009", "alias": "Qu’est-il prévu pour embaucher davantage de soignants et améliorer leur rémunération ?"}
+{"id": "s05-ss02-m010", "alias": "Comment lutter contre le manque de médecins dans certains territoires et organiser leur installation et les soins de garde ?"}
+{"id": "s05-ss02-m011", "alias": "Que prévoit la régularisation des médecins et autres praticiens diplômés hors de l’Union européenne ?"}
+{"id": "s05-ss03-m001", "alias": "Comment organiser une filière publique du médicament, avec relocalisation, réserve stratégique, contrôle des prix et possibilité de réquisition ?"}
+{"id": "s05-ss04-m001", "alias": "Préparer l’adaptation aux pandémies dans le respect des libertés ; comment s’y préparer sans y porter atteinte ?"}
+{"id": "s05-ss04-m002", "alias": "Suppression des textes sur l’urgence sanitaire et le passe ; peut-on abroger le cadre légal qui les concerne ?"}
+{"id": "s05-ss04-m003", "alias": "Assimiler les pandémies aux désastres naturels ; peuvent-elles être reconnues comme catastrophes naturelles ?"}
+{"id": "s05-ss05-m001", "alias": "Psychiatrie publique, suivi psychologique et formation : comment améliorer les soins en santé mentale ?"}
+{"id": "s05-ss05-m002", "alias": "Mieux agir en amont pour éviter les problèmes de santé."}
+{"id": "s05-ss05-m003", "alias": "Comment préserver la recherche des intérêts financiers ?"}
+{"id": "s05-ss05-m004", "alias": "Santé et environnement : agir contre les maladies qui durent."}
+{"id": "s05-ss05-m005", "alias": "Quel plan pour mettre fin au VIH ?"}
+{"id": "s05-ss05-m006", "alias": "Cannabis légal géré par l’État, avec des fonds consacrés à prévenir les risques."}
+{"id": "s05-ss05-m007", "alias": "Limiter les dangers liés aux consommations : quelle approche ?"}
+{"id": "s05-ss05-m008", "alias": "Quel ministère dirige la politique de santé ?"}
+{"id": "s05-ss05-m009", "alias": "Contrebande de tabac et ambition d’une génération de jeunes sans tabac."}
+{"id": "s05-ss06-m001", "alias": "Inscrire l’avortement et les moyens contraceptifs dans la Charte européenne ; que prévoit-elle pour ces droits ?"}
+{"id": "s05-ss06-m002", "alias": "Augmenter les ressources pour la procréation médicalement assistée ; quels moyens pour la PMA ?"}
+{"id": "s05-ss06-m003", "alias": "Serviettes et autres produits menstruels sans frais ; où trouver des protections périodiques gratuites ?"}
+{"id": "s05-ss06-m004", "alias": "Soutenir davantage les centres de planification familiale et les associations ; quels moyens pour ces structures ?"}
+{"id": "s05-ss06-m005", "alias": "Prise en charge des médicaments ou soins liés à la ménopause ; quel remboursement est prévu ?"}
+{"id": "s05-ss06-m006", "alias": "Faciliter réellement l’accès à l’avortement et retirer la clause de conscience en double ; quels obstacles sont visés ?"}
+{"id": "s05-ss06-m007", "alias": "S’opposer aux groupes contre le droit de choisir ; que prévoit la lutte contre les mouvements anti-choix ?"}
+{"id": "s05-ss06-m008", "alias": "Nommer les mauvais traitements pendant l’accouchement et prévoir des sanctions ; comment traiter les violences obstétricales ?"}
+{"id": "s05-ss07-m001", "alias": "Revenu garanti pour vivre au minimum du seuil de pauvreté"}
+{"id": "s05-ss07-m002", "alias": "Comment atteindre l’objectif qu’il n’y ait plus de personnes sans domicile ?"}
+{"id": "s05-ss07-m003", "alias": "Des droits adaptés à chaque personne et accordés automatiquement"}
+{"id": "s05-ss07-m004", "alias": "Comment réduire les situations où des personnes ne demandent pas les aides auxquelles elles ont droit ?"}
+{"id": "s05-ss07-m005", "alias": "Pas de système de score pour évaluer les personnes qui reçoivent des allocations"}
+{"id": "s05-ss07-m006", "alias": "Mesures d’urgence face à l’infestation de punaises de lit"}
+{"id": "s05-ss08-m001", "alias": "Respect intégral des droits de l’enfant selon la convention internationale : que prévoit le programme ?"}
+{"id": "s05-ss08-m002", "alias": "Pilotage recentré et ressources supplémentaires : que propose le programme ?"}
+{"id": "s05-ss08-m003", "alias": "Davantage de lieux d’accueil adaptés aux besoins des enfants, à leur âge, aux fratries, à l’urgence et aux soins."}
+{"id": "s05-ss08-m004", "alias": "Chaque enfant confié à un placement doit-il avoir un avocat ?"}
+{"id": "s05-ss08-m005", "alias": "Pas d’hébergement à l’hôtel et accompagnement prévu jusqu’à 25 ans."}
+{"id": "s05-ss08-m006", "alias": "Mesures de rattrapage pour les territoires ultramarins."}
+{"id": "s05-ss08-m007", "alias": "Aucune violence à visée éducative ne serait autorisée."}
+{"id": "s05-ss08-m008", "alias": "Garantie d’accès aux soins, notamment psychologiques : que prévoit le programme ?"}
+{"id": "s05-ss09-m001", "alias": "Ouverture annuelle de lits dans les établissements publics pour personnes âgées : combien de places et pendant combien de temps ?"}
+{"id": "s05-ss09-m002", "alias": "Quelle aide publique pour la perte d’autonomie et les soins à domicile ?"}
+{"id": "s05-ss09-m003", "alias": "Maisons de retraite publiques à prix abordables : quel réseau accessible ?"}
+{"id": "s05-ss09-m004", "alias": "Formation et embauche de professionnels pour accompagner les personnes âgées : combien de personnes ?"}
+{"id": "s05-ss09-m005", "alias": "Comment rendre les professions du secteur plus attractives et mieux reconnues ?"}
+{"id": "s05-ss09-m006", "alias": "Quel devenir pour les établissements d’hébergement pour personnes âgées dépendantes privés à but lucratif ?"}
+{"id": "s05-ss10-m001", "alias": "Allocation adulte handicapé : comment relever et ajuster l’AAH pour les personnes qui ne peuvent pas du tout travailler ?"}
+{"id": "s05-ss10-m002", "alias": "Accessibilité des habitations : que prévoit-on pour les logements neufs et l’aménagement des logements existants ?"}
+{"id": "s05-ss10-m003", "alias": "Accompagnement scolaire du handicap : quel service pour les élèves, les AESH et les classes ULIS ?"}
+{"id": "s05-ss10-m004", "alias": "Insertion professionnelle des personnes handicapées : comment assurer un financement durable ?"}
+{"id": "s05-ss10-m005", "alias": "Droits des travailleurs en ESAT : statut salarié, rémunération minimale et droits syndicaux."}
+{"id": "s05-ss10-m006", "alias": "Budget annuel consacré à la suppression des obstacles rencontrés par les personnes handicapées."}
+{"id": "s05-ss11-m001", "alias": "Département ministériel consacré à la production alimentaire ; quel ministère s’occuperait de ce secteur ?"}
+{"id": "s05-ss11-m002", "alias": "Suppression des additifs alimentaires les plus contestés ; quels ingrédients controversés seraient interdits ?"}
+{"id": "s05-ss11-m003", "alias": "Plafonds pour le sel, le sucre et les matières grasses ; quelles quantités maximales seraient fixées ?"}
+{"id": "s05-ss11-m004", "alias": "Affichage obligatoire du score nutritionnel Nutri-Score ; devra-t-il apparaître sur les produits ?"}
+{"id": "s05-ss11-m005", "alias": "Publicité pour les aliments visant les enfants ; quelle promotion commerciale leur serait interdite ?"}
+{"id": "s05-ss11-m006", "alias": "Apprentissage de l’alimentation et de la nutrition dès l’école maternelle ; à quel âge commencerait cette éducation ?"}
+{"id": "s05-ss11-m007", "alias": "Test d’un dispositif de protection sociale consacré à l’accès à l’alimentation ; que prévoit l’expérimentation ?"}
+{"id": "s05-ss11-m008", "alias": "Cinq produits saisonniers parmi les fruits et légumes à tarif maintenu ; quels aliments seraient concernés ?"}
+{"id": "s05-ss11-m009", "alias": "Repas des services de restauration collective issus de l’agriculture biologique et locale, avec un choix sans viande chaque jour."}
+{"id": "s06-ss01-m001", "alias": "Accueil des tout-petits : où trouver des places en crèche ou d’autres solutions de garde ?"}
+{"id": "s06-ss01-m002", "alias": "Quel accueil sans frais dans les crèches et les jardins d’enfants en petits groupes ?"}
+{"id": "s06-ss01-m003", "alias": "Que signifie le gel des structures privées à but lucratif ?"}
+{"id": "s06-ss01-m004", "alias": "Un droit garanti et opposable pour faire accueillir son enfant : comment cela fonctionne ?"}
+{"id": "s06-ss01-m005", "alias": "Quelles améliorations pour les conditions d’emploi et la formation des professionnels ?"}
+{"id": "s06-ss02-m001", "alias": "Objectif de faire disparaître l’illettrisme à l’horizon 2027."}
+{"id": "s06-ss02-m002", "alias": "Où trouver des lieux pour apprendre à lire et écrire ou suivre des cours de français ?"}
+{"id": "s06-ss02-m003", "alias": "Financement d’actions menées par des associations."}
+{"id": "s06-ss02-m004", "alias": "Comment repérer les personnes concernées chaque année et leur proposer une remise à niveau sans frais ?"}
+{"id": "s06-ss03-m001", "alias": "École publique sans frais pour les repas, trajets, activités, livres et fournitures ; comment réduire les dépenses scolaires et les inégalités entre élèves ?"}
+{"id": "s06-ss03-m002", "alias": "Moins d’élèves dans les classes, notamment en maternelle et en REP ; comment alléger les effectifs par classe ?"}
+{"id": "s06-ss03-m003", "alias": "Scolarité obligatoire jusqu’à la majorité, avec une aide à l’autonomie envisageable dès 16 ans ; jusqu’à quel âge l’école serait-elle obligatoire ?"}
+{"id": "s06-ss03-m004", "alias": "Même accès à l’éducation pour tous ; que signifie l’égalité à l’école ?"}
+{"id": "s06-ss03-m005", "alias": "Rétablir des règles communes à l’échelle nationale ; quel cadre pour l’école ?"}
+{"id": "s06-ss03-m006", "alias": "Faire de l’école un moteur du changement écologique ; quelle place pour la transition écologique à l’école ?"}
+{"id": "s06-ss03-m007", "alias": "Revoir la carte des établissements relevant de l’éducation prioritaire ; comment définir les zones prioritaires ?"}
+{"id": "s06-ss03-m008", "alias": "Développer l’accompagnement pour combler les retards scolaires ; quels soutiens pour les élèves en difficulté ?"}
+{"id": "s06-ss03-m009", "alias": "Modifier la répartition des élèves entre écoles pour lutter contre la ségrégation ; comment changer la carte scolaire ?"}
+{"id": "s06-ss03-m010", "alias": "Diversifier l’apprentissage des langues dès le cours préparatoire ; quelles langues apprendre dès le CP ?"}
+{"id": "s06-ss03-m011", "alias": "Ouvrir davantage de classes aux élèves nouvellement arrivés ; où scolariser les primo-arrivants ?"}
+{"id": "s06-ss03-m012", "alias": "Mettre fin à l’uniforme à l’école ; que devient le port de la tenue uniforme ?"}
+{"id": "s06-ss03-m013", "alias": "Abandonner la réforme appelée Choc des savoirs ; que prévoit-on pour cette réforme scolaire ?"}
+{"id": "s06-ss03-m014", "alias": "Supprimer la répartition des élèves selon leur niveau ; en finir avec les groupes de niveau ?"}
+{"id": "s06-ss03-m015", "alias": "Ne plus faire du brevet une condition pour entrer au lycée ; le brevet doit-il déterminer le passage au lycée ?"}
+{"id": "s06-ss03-m016", "alias": "Installer des écoles publiques dans les zones éloignées des établissements scolaires ; où ouvrir des établissements publics ?"}
+{"id": "s06-ss03-m017", "alias": "Rétablir un baccalauréat identique au niveau national et annuler les réformes précédentes ; quel bac pour tous ?"}
+{"id": "s06-ss03-m018", "alias": "Mettre fin aux avantages particuliers de l’enseignement privé ; quel statut pour les écoles privées ?"}
+{"id": "s06-ss03-m019", "alias": "Sanctionner financièrement les établissements privés qui ségrègent ; quelle pénalité pour les écoles privées concernées ?"}
+{"id": "s06-ss03-m020", "alias": "Intégrer les questions écologiques dans toutes les matières ; quelle place pour l’écologie dans les cours ?"}
+{"id": "s06-ss03-m021", "alias": "Des établissements de dimensions plus modestes et rénovés ; comment transformer les bâtiments scolaires ?"}
+{"id": "s06-ss03-m022", "alias": "Accroître les possibilités pour les lycéens de se réunir et de créer des associations ; quels droits pour les élèves ?"}
+{"id": "s06-ss03-m023", "alias": "Apprendre le respect de l’égalité et lutter contre les traitements discriminatoires ; que prévoit l’école contre les discriminations ?"}
+{"id": "s06-ss03-m024", "alias": "Trois cours par an sur les relations affectives et la sexualité ; combien de séances sont prévues ?"}
+{"id": "s06-ss03-m025", "alias": "Mettre en place le projet d’une école qui accompagne les élèves dans leur ensemble ; que recouvre l’école globale ?"}
+{"id": "s06-ss03-m026", "alias": "Retirer la participation au SNU de l’emploi du temps scolaire ; le SNU est-il maintenu pendant les cours ?"}
+{"id": "s06-ss03-m027", "alias": "Inclure les langues, les cultures et l’histoire des territoires ultramarins dans les enseignements ; quelle place pour les outre-mer dans les programmes ?"}
+{"id": "s06-ss04-m001", "alias": "Comment mieux rémunérer les personnels et leur donner davantage de moyens ?"}
+{"id": "s06-ss04-m002", "alias": "Que prévoit-on pour compenser la valeur du point salarial et arrêter le Pacte ?"}
+{"id": "s06-ss04-m003", "alias": "Comment organiser les embauches sur plusieurs années et prévoir des pré-recrutements ?"}
+{"id": "s06-ss04-m004", "alias": "Où se former aux métiers de l’enseignement, et comment consolider cette formation ?"}
+{"id": "s06-ss04-m005", "alias": "Le nombre d’assistants d’éducation va-t-il augmenter ?"}
+{"id": "s06-ss04-m006", "alias": "Les enseignants auront-ils plus d’autonomie, sans surveillance constante ?"}
+{"id": "s06-ss04-m007", "alias": "Qui aidera les directeurs pour les démarches administratives ?"}
+{"id": "s06-ss04-m008", "alias": "Quelle place pour les personnels, les familles et les élèves dans les décisions ?"}
+{"id": "s06-ss04-m009", "alias": "Comment renforcer le suivi médical à l’école ?"}
+{"id": "s06-ss04-m010", "alias": "Que devient la coopération avec le Medef et les fondations du CAC 40 ?"}
+{"id": "s06-ss05-m001", "alias": "Inclusion scolaire : comment rendre l’école accessible à chaque élève ?"}
+{"id": "s06-ss05-m002", "alias": "Statut et recrutement des accompagnants d’élèves handicapés, fin du partage de leurs interventions."}
+{"id": "s06-ss05-m003", "alias": "Quels outils d’apprentissage adaptés : langue des signes, braille ou communication alternative ?"}
+{"id": "s06-ss05-m004", "alias": "Sensibilisation aux discriminations, de la maternelle aux études supérieures et à la formation professionnelle."}
+{"id": "s06-ss05-m005", "alias": "Comment rapprocher l’école et le secteur médico-social ?"}
+{"id": "s06-ss06-m001", "alias": "Développer les établissements publics de formation professionnelle et les lycées agricoles : où étudier un métier dans le public ?"}
+{"id": "s06-ss06-m002", "alias": "Centres de formation polyvalente et technique : que sont les centres polytechniques ?"}
+{"id": "s06-ss06-m003", "alias": "Qui superviserait les centres de formation d’apprentis ? Les CFA passeraient sous la tutelle régionale."}
+{"id": "s06-ss06-m004", "alias": "Mettre fin aux titres professionnels délivrés par le privé : les diplômes de métier privés seraient interdits."}
+{"id": "s06-ss06-m005", "alias": "Revenir à un baccalauréat professionnel préparé en quatre années."}
+{"id": "s06-ss06-m006", "alias": "Préserver les formations courtes tout en incitant à continuer ses études."}
+{"id": "s06-ss06-m007", "alias": "Des parcours de formation tournés vers la transition écologique : quelles filières pour bifurquer vers l’écologie ?"}
+{"id": "s06-ss06-m008", "alias": "Quels moyens pour les établissements agricoles publics ? Renforcer les ressources des lycées agricoles."}
+{"id": "s06-ss06-m009", "alias": "Un hébergement en internat sans frais, attribué selon les ressources."}
+{"id": "s06-ss06-m010", "alias": "Un service public à l’échelle nationale pour aider chacun à choisir son orientation."}
+{"id": "s06-ss06-m011", "alias": "La taxe liée à l’apprentissage irait uniquement au secteur public."}
+{"id": "s06-ss07-m001", "alias": "Entrer dans le supérieur sans tri via Parcoursup et avoir la possibilité de poursuivre en master : quelles règles d’accès ?"}
+{"id": "s06-ss07-m002", "alias": "Études universitaires gratuites, du premier cycle jusqu’au doctorat : quels frais d’inscription ?"}
+{"id": "s06-ss07-m003", "alias": "Annuler l’augmentation des droits d’inscription demandés aux étudiants étrangers."}
+{"id": "s06-ss07-m004", "alias": "Fin de la contribution de vie étudiante et de campus : que devient la CVEC ?"}
+{"id": "s06-ss07-m005", "alias": "Financement durable de l’enseignement supérieur et recensement des besoins."}
+{"id": "s06-ss07-m006", "alias": "Empêcher les établissements privés d’exercer dans un but lucratif."}
+{"id": "s06-ss07-m007", "alias": "Investissements immobiliers à l’échelle des universités : quel programme pour les bâtiments ?"}
+{"id": "s06-ss07-m008", "alias": "Abroger les lois LRU et Fioraso concernant l’enseignement supérieur."}
+{"id": "s06-ss07-m009", "alias": "Surveillance de la qualité pédagogique dans toutes les formations privées."}
+{"id": "s06-ss08-m001", "alias": "Recherche sur les domaines porteurs pour l’avenir : quels secteurs seraient étudiés ?"}
+{"id": "s06-ss08-m002", "alias": "Hausse des moyens publics consacrés à la recherche"}
+{"id": "s06-ss08-m003", "alias": "Quelle protection et quel statut pour les jeunes scientifiques ?"}
+{"id": "s06-ss08-m004", "alias": "Des universités davantage en lien avec la société"}
+{"id": "s06-ss08-m005", "alias": "Un service public pour diffuser les publications scientifiques"}
+{"id": "s06-ss08-m006", "alias": "Renforcer les grands instituts de recherche et supprimer l’ANR"}
+{"id": "s06-ss08-m007", "alias": "Mettre fin au crédit d’impôt recherche et orienter le soutien vers le secteur public"}
+{"id": "s06-ss08-m008", "alias": "Des fonds publics pour la recherche sur l’écologie"}
+{"id": "s06-ss08-m009", "alias": "Revues scientifiques en français consultables librement"}
+{"id": "s06-ss08-m010", "alias": "Supprimer le HCERES et confier l’évaluation à des pairs élus"}
+{"id": "s06-ss08-m011", "alias": "Une charte internationale d’éthique pour les technosciences"}
+{"id": "s06-ss08-m012", "alias": "Titulariser les personnels contractuels et abroger la loi de programmation 2021-2030"}
+{"id": "s06-ss09-m001", "alias": "Hausse annuelle de l’offre de logements étudiants et rénovation : où se loger pendant ses études ?"}
+{"id": "s06-ss09-m002", "alias": "Davantage de psychologues et des soins gratuits : où trouver un accompagnement psychologique et des soins sans payer ?"}
+{"id": "s06-ss09-m003", "alias": "Tarif du repas universitaire à un euro maintenu : le repas au resto U restera-t-il à ce prix ?"}
+{"id": "s06-ss09-m004", "alias": "Réduire la précarité étudiante : augmenter les indemnités de stage, négocier les places de stage et lutter contre les CDD déguisés."}
+{"id": "s06-ss09-m005", "alias": "Bilan de santé, évaluation de l’écriture, de la lecture et du calcul avec remise à niveau si besoin, formation gratuite à la conduite et permis dans le service citoyen obligatoire."}
+{"id": "s06-ss10-m001", "alias": "Clubs sportifs pour les élèves du primaire dans chaque école ; où les enfants peuvent-ils pratiquer une activité sportive à l’école ?"}
+{"id": "s06-ss10-m002", "alias": "Volume de cours de sport imposé et accompagnement des formations STAPS ; combien d’heures d’EPS sont prévues et quel soutien aux STAPS ?"}
+{"id": "s06-ss10-m003", "alias": "Initiation à la nage rendue incontournable ; l’école impose-t-elle aux élèves d’apprendre à nager ?"}
+{"id": "s07-ss01-m001", "alias": "Quels équipements de maintien de l’ordre seraient proscrits : pistolets à impulsion électrique, grenades de désencerclement ou lanceurs de balles ?"}
+{"id": "s07-ss01-m002", "alias": "Suppression de la loi concernant le fait de ne pas s’arrêter aux injonctions des forces de l’ordre."}
+{"id": "s07-ss01-m003", "alias": "Retour d’une police au contact des habitants et dissolution des brigades BAC et BRAV-M."}
+{"id": "s07-ss01-m004", "alias": "Remise d’un document lors d’une vérification d’identité : que prévoit la mesure ?"}
+{"id": "s07-ss01-m005", "alias": "Allongement à deux ans de la formation des gardiens de la paix."}
+{"id": "s07-ss01-m006", "alias": "Création d’une commission consacrée aux violences commises par la police et à la justice."}
+{"id": "s07-ss01-m007", "alias": "Remplacement des inspections de la police et de la gendarmerie par un organisme autonome."}
+{"id": "s07-ss01-m008", "alias": "Réorganisation du rôle et des tâches confiés aux forces de police."}
+{"id": "s07-ss01-m009", "alias": "Transfert de certaines missions de surveillance privée vers le service public."}
+{"id": "s07-ss01-m010", "alias": "Fin des textes de sécurité jugés inefficaces et renforcement de la prévention."}
+{"id": "s07-ss01-m011", "alias": "Quelles méthodes d’immobilisation présentant un risque mortel seraient interdites ?"}
+{"id": "s07-ss01-m012", "alias": "Interdiction d’encercler une foule, sauf si un danger est immédiat."}
+{"id": "s07-ss01-m013", "alias": "Retour à l’ancien code encadrant la conduite des policiers, celui de 1986."}
+{"id": "s07-ss01-m014", "alias": "Rattachement des enquêteurs de police à l’autorité de la justice."}
+{"id": "s07-ss01-m015", "alias": "Accès à un statut permanent pour les adjoints."}
+{"id": "s07-ss01-m016", "alias": "Ouverture de nouveaux lieux de police de quartier."}
+{"id": "s07-ss01-m017", "alias": "Intégration des agents de police municipale après leur formation."}
+{"id": "s07-ss01-m018", "alias": "Abandon des objectifs chiffrés dans la conduite de la police."}
+{"id": "s07-ss01-m019", "alias": "Interdiction d’identifier les personnes par leur visage dans les lieux publics."}
+{"id": "s07-ss02-m001", "alias": "Comment désengorger les prisons tout en favorisant la réinsertion des personnes détenues ?"}
+{"id": "s07-ss02-m002", "alias": "Comment mieux combattre les infractions financières, renforcer les effectifs et lever le blocage de Bercy ?"}
+{"id": "s07-ss02-m003", "alias": "Comment rendre les poursuites pénales plus efficaces pour les atteintes à l’environnement ?"}
+{"id": "s07-ss02-m004", "alias": "Comment mieux sanctionner les auteurs d’agressions sexuelles et faire du consentement un élément de la définition du viol ?"}
+{"id": "s07-ss02-m005", "alias": "Quels moyens supplémentaires pour combattre la traite des êtres humains et ses réseaux ?"}
+{"id": "s07-ss02-m006", "alias": "Quelle justice pour les mineurs, fondée sur les principes de 1945 et un code de l’enfance ?"}
+{"id": "s07-ss02-m007", "alias": "Comment combattre les violences sexuelles visant les enfants ?"}
+{"id": "s07-ss02-m008", "alias": "Quels moyens pour supprimer les contenus illicites ?"}
+{"id": "s07-ss02-m009", "alias": "Quel texte pour lutter contre le sexisme et les violences envers les femmes ?"}
+{"id": "s07-ss02-m010", "alias": "Comment prévenir le harcèlement dans les transports ?"}
+{"id": "s07-ss02-m011", "alias": "Comment développer l’entraide entre systèmes judiciaires de différents pays ?"}
+{"id": "s07-ss03-m001", "alias": "Orientation générale contre le terrorisme ; quelle approche antiterroriste est proposée ?"}
+{"id": "s07-ss03-m002", "alias": "Engager plus aisément des poursuites contre ceux qui financent le terrorisme."}
+{"id": "s07-ss03-m003", "alias": "Renforcer les effectifs du renseignement et donner la priorité aux opérations d’infiltration."}
+{"id": "s07-ss03-m004", "alias": "Examiner et faire le bilan des textes de loi déjà en vigueur."}
+{"id": "s07-ss03-m005", "alias": "Agir contre le recrutement et l’endoctrinement de personnes."}
+{"id": "s07-ss03-m006", "alias": "Mettre un terme au maintien durable de l’état d’urgence."}
+{"id": "s07-ss03-m007", "alias": "Quel rôle de supervision est prévu pour le juge judiciaire ?"}
+{"id": "s07-ss03-m008", "alias": "Accroître les ressources de PHAROS ; quels moyens pour cette plateforme ?"}
+{"id": "s07-ss03-m009", "alias": "Protéger les édifices religieux et les lieux dédiés à la culture."}
+{"id": "s07-ss04-m001", "alias": "Service citoyen rémunéré pendant neuf mois, avec entraînement militaire facultatif et missions d’intérêt général : que prévoit cette conscription ?"}
+{"id": "s07-ss04-m002", "alias": "Création d’une garde civile à l’échelle nationale."}
+{"id": "s07-ss04-m003", "alias": "Contrôle médical, remise à niveau et permis compris dans le dispositif."}
+{"id": "s07-ss04-m004", "alias": "Suppression du SNU et enquête sur ses dérives : que prévoit-on pour le service national universel ?"}
+{"id": "s07-ss04-m005", "alias": "Garde nationale placée sous une autorité civile."}
+{"id": "s08-ss01-m001", "alias": "Droit du sol, enfants nés en France et accès à la nationalité française : quelles règles pour devenir français à la naissance ?"}
+{"id": "s08-ss01-m002", "alias": "Vote des personnes étrangères aux scrutins locaux : peuvent-elles participer aux élections de leur commune ?"}
+{"id": "s08-ss01-m003", "alias": "Visas, régularisation des travailleurs, étudiants et parents d’enfants scolarisés ; place du titre de séjour de dix ans. Comment faciliter les démarches ?"}
+{"id": "s08-ss01-m004", "alias": "Règles Dublin pour l’asile et accords du Touquet : envisager leur suspension et leur renégociation."}
+{"id": "s08-ss01-m005", "alias": "Que faire des textes récents sur l’asile et l’immigration ?"}
+{"id": "s08-ss01-m006", "alias": "Aide médicale d’État : quel avenir pour ce dispositif ?"}
+{"id": "s08-ss01-m007", "alias": "Protection des enfants étrangers : abandon des tests osseux, pas d’enfermement en CRA et présomption qu’ils sont mineurs."}
+{"id": "s08-ss01-m008", "alias": "Structures d’accueil en nombre suffisant, délit de solidarité et guichet unique : quelles démarches et quel accompagnement ?"}
+{"id": "s08-ss01-m009", "alias": "OFPRA hors tutelle du ministère de l’Intérieur : quelle indépendance pour l’office ?"}
+{"id": "s08-ss01-m010", "alias": "Genre et orientation sexuelle dans l’examen du droit d’asile : ces éléments sont-ils pris en considération ?"}
+{"id": "s08-ss01-m011", "alias": "Réfugiés : quelle attitude humaine adopter à leur égard ?"}
+{"id": "s08-ss01-m012", "alias": "Un statut pour les personnes en détresse liée à l’environnement : de quoi s’agit-il ?"}
+{"id": "s08-ss01-m013", "alias": "Comment dépasser le blocage autour de Schengen et Frontex ?"}
+{"id": "s08-ss02-m001", "alias": "Soutien accru à l’OIM et au HCR, avec un rendez-vous annuel : que prévoit le programme pour ces organisations ?"}
+{"id": "s08-ss02-m002", "alias": "Refus des traités de commerce qui incitent les personnes à partir : quelle position sur ces accords ?"}
+{"id": "s08-ss02-m003", "alias": "Quel accompagnement est prévu face aux effets du changement climatique ?"}
+{"id": "s08-ss03-m001", "alias": "Structures chargées de promouvoir l’égalité et de suivre les discriminations ; qui s’en occupe ?"}
+{"id": "s08-ss03-m002", "alias": "Action contre les discriminations dans l’emploi, le logement, l’école et la santé."}
+{"id": "s08-ss03-m003", "alias": "Repérer les discriminations par des tests et des dossiers rendus anonymes."}
+{"id": "s08-ss03-m004", "alias": "Prévenir les biais discriminatoires dans l’intelligence artificielle et les outils médicaux."}
+{"id": "s08-ss03-m005", "alias": "Fin des textes relatifs au séparatisme et au contrat lié à l’engagement républicain."}
+{"id": "s08-ss03-m006", "alias": "Action coordonnée des ministères contre la haine visant les musulmans et les Juifs."}
+{"id": "s08-ss03-m007", "alias": "Un jour férié national le 4 février pour honorer les victimes de l’esclavage et leurs luttes, en complément des commémorations ultramarines."}
+{"id": "s08-ss03-m008", "alias": "Accès aux documents coloniaux et échanges sur les restitutions."}
+{"id": "s08-ss03-m009", "alias": "Comment commémorer le massacre des Algériens du 17 octobre 1961 et le reconnaître comme crime d’État ?"}
+{"id": "a01-ss01-b001", "alias": "Comment fonctionne le barème progressif de l’impôt sur le revenu et le calcul par portions de revenus ?"}
+{"id": "a01-ss01-b002", "alias": "Quels sont les paliers et pourcentages du barème de l’impôt sur le revenu concerné ?"}
+{"id": "a01-ss01-b003", "alias": "Quel revenu reste non imposé dans la première tranche ?"}
+{"id": "a01-ss01-b004", "alias": "Quel taux d’impôt s’applique à cette tranche de revenus ?"}
+{"id": "a01-ss01-b005", "alias": "Quel pourcentage d’impôt correspond à ce palier de revenu ?"}
+{"id": "a01-ss01-b006", "alias": "Quel taux concerne cette tranche supérieure du barème ?"}
+{"id": "a01-ss01-b007", "alias": "Quel est le taux appliqué au-delà du dernier seuil de revenus ?"}
+{"id": "a01-ss01-b008", "alias": "En quoi consiste l’impôt minimal sur le patrimoine des très grandes fortunes appelé taxe Zucman ?"}
+{"id": "a01-ss01-b009", "alias": "Que désignent l’ancien impôt sur la fortune et son remplacement centré sur l’immobilier ?"}
+{"id": "a01-ss01-b010", "alias": "Comment s’appelle le prélèvement à taux fixe sur les revenus du capital ?"}
+{"id": "a01-ss01-b011", "alias": "Quel est le gain obtenu en revendant des actions ou titres plus cher que leur prix d’achat ?"}
+{"id": "a01-ss01-b012", "alias": "Quel dispositif fiscal permet une exonération, une déduction ou un crédit d’impôt ?"}
+{"id": "a01-ss01-b013", "alias": "Quel impôt concerne les gains non réalisés lorsqu’une personne fortunée quitte la France ?"}
+{"id": "a01-ss01-b014", "alias": "Comment désigne-t-on des bénéfices particulièrement élevés en période favorable ?"}
+{"id": "a01-ss01-b015", "alias": "Quel impôt local annuel paie le propriétaire d’un logement ou d’un autre bien immobilier ?"}
+{"id": "a01-ss01-b016", "alias": "Comment les revenus d’un couple marié ou pacsé sont-ils regroupés pour calculer l’impôt ?"}
+{"id": "a01-ss01-b017", "alias": "Quelle somme peut être retranchée de l’impôt dû ou remboursée si elle le dépasse ?"}
+{"id": "a01-ss01-b018", "alias": "Quel prélèvement s’applique à l’achat et à la vente d’actifs financiers ?"}
+{"id": "a01-ss01-b019", "alias": "Que signifie contourner l’impôt, parfois légalement, notamment en passant par l’étranger ?"}
+{"id": "a01-ss01-b020", "alias": "Comment appelle-t-on la dissimulation illégale de revenus ou de biens pour réduire ses impôts ?"}
+{"id": "a01-ss01-b021", "alias": "Que signifie le passage d’une entreprise ou d’un actif public au secteur privé ?"}
+{"id": "a01-ss01-b022", "alias": "Comment fonctionne un contrat où une entreprise privée finance, construit et gère un équipement public ?"}
+{"id": "a01-ss01-b023", "alias": "Quelle différence entre banque pour les particuliers et PME et banque des grandes entreprises et des marchés ?"}
+{"id": "a01-ss01-b024", "alias": "Que sont les placements opaques ou risqués dont les pertes peuvent être mal comprises par l’acheteur ?"}
+{"id": "a01-ss01-b025", "alias": "Comment appelle-t-on le rachat d’une société principalement financé par emprunt ?"}
+{"id": "a01-ss01-b026", "alias": "Quelle dette ne prévoit pas de date de remboursement du capital et verse des intérêts ?"}
+{"id": "a01-ss01-b027", "alias": "Quels titres de dette à court terme l’État émet-il pour se financer ?"}
+{"id": "a01-ss01-b028", "alias": "Comment fonctionne une obligation dont le capital et les intérêts évoluent avec les prix ?"}
+{"id": "a01-ss01-b029", "alias": "Comment analyser de manière démocratique l’origine de la dette publique et repérer les parts contestées ?"}
+{"id": "a01-ss01-b030", "alias": "Comment désigne-t-on une dette considérée comme contraire à l’intérêt de la population ou contestable ?"}
+{"id": "a01-ss01-b031", "alias": "Part des profits distribuée aux détenteurs d’actions; comment s’appelle la somme versée aux actionnaires ?"}
+{"id": "a01-ss01-b032", "alias": "Échanges d’actions tout au long de la séance, plutôt qu’à des moments précis; que signifie la négociation en continu ?"}
+{"id": "a01-ss01-b033", "alias": "Suppressions de postes pour satisfaire les actionnaires ou soutenir le cours malgré la rentabilité; comment nommer ce type de licenciement ?"}
+{"id": "a01-ss01-b034", "alias": "Indemnité de départ particulièrement importante pour un dirigeant; quel est le nom de ce paiement ?"}
+{"id": "a01-ss01-b035", "alias": "Pension supplémentaire très avantageuse réservée à certains dirigeants; comment appelle-t-on ce régime de retraite ?"}
+{"id": "a01-ss01-b036", "alias": "Options d’achat d’actions à tarif fixé ou attribution de titres aux salariés et dirigeants; que sont ces avantages en actions ?"}
+{"id": "a01-ss01-b037", "alias": "Taxe due sur les profits des sociétés; comment s’appelle l’impôt payé par les entreprises sur leurs bénéfices ?"}
+{"id": "a01-ss01-b038", "alias": "Priorité pour acheter un bien avant sa vente à quelqu’un d’autre; quel est ce droit d’achat prioritaire ?"}
+{"id": "a01-ss01-b039", "alias": "Procédure permettant à une entreprise en difficulté de poursuivre son activité et de régler ses dettes; de quoi s’agit-il ?"}
+{"id": "a01-ss01-b040", "alias": "Fonds qui répartit des ressources afin de limiter les différences entre entreprises ou territoires; quel est son rôle ?"}
+{"id": "a01-ss01-b041", "alias": "Quantité réduite pour un prix identique ou supérieur; comment appelle-t-on cette baisse discrète du contenu d’un produit ?"}
+{"id": "a01-ss01-b042", "alias": "Produit vendu moins cher que son prix d’achat; que signifie vendre à un prix inférieur à son coût ?"}
+{"id": "a01-ss01-b043", "alias": "Révision automatique d’un montant selon un indice, comme pour un salaire ou une pension; comment s’appelle ce mécanisme ?"}
+{"id": "a01-ss01-b044", "alias": "Valeur de référence utilisée pour calculer la rémunération des fonctionnaires; qu’est-ce que le point d’indice ?"}
+{"id": "a01-ss01-b045", "alias": "Baisse de pension lorsqu’il manque des trimestres cotisés; comment s’appelle cette réduction ?"}
+{"id": "a01-ss01-b046", "alias": "Prestations destinées aux personnes disposant de très peu de ressources; quelles aides relèvent des minima sociaux ?"}
+{"id": "a01-ss01-b047", "alias": "Dispositif public qui protège les propriétaires contre les loyers non payés; comment fonctionne cette garantie ?"}
+{"id": "a01-ss01-b048", "alias": "Soutien financier à une cause ou une œuvre ouvrant droit à des avantages fiscaux; que désigne le mécénat ?"}
+{"id": "a01-ss01-b049", "alias": "Financement hospitalier calculé selon le nombre d’actes, remplacé ici par une somme globale; que signifie T2A ?"}
+{"id": "a01-ss01-b050", "alias": "Montant forfaitaire que l’État verse à un établissement pour couvrir son fonctionnement; qu’est-ce qu’une dotation globale ?"}
+{"id": "a01-ss01-b051", "alias": "Part des frais de médicaments, de soins ou de transport sanitaire payée par le patient; que couvre la franchise médicale ?"}
+{"id": "a01-ss01-b052", "alias": "Monnaie de pays d’Afrique de l’Ouest et centrale, historiquement rattachée au trésor français; que désignent CFA et ECO ?"}
+{"id": "a01-ss01-b053", "alias": "Soutien financier de pays riches destiné aux pays en développement; comment s’appelle cette aide ?"}
+{"id": "a01-ss01-b054", "alias": "Destruction grave d’un milieu naturel; quel terme juridique désigne une atteinte majeure à un écosystème ?"}
+{"id": "a01-ss02-b001", "alias": "Rubrique sur les questions économiques et sociales ; où trouver les sujets liés à l’économie et à la société ?"}
+{"id": "a01-ss02-b002", "alias": "Prélèvement sur la plupart des revenus destiné au financement de la Sécurité sociale ; que signifie CSG ?"}
+{"id": "a01-ss02-b003", "alias": "Impôt lié à la consommation et ajouté à la valeur des produits ; que veut dire TVA ?"}
+{"id": "a01-ss02-b004", "alias": "Entreprises de petite ou moyenne taille ; que désigne l’abréviation PME ?"}
+{"id": "a01-ss02-b005", "alias": "Économie réunissant associations, coopératives, mutuelles et fondations ; que recouvre l’ESS ?"}
+{"id": "a01-ss02-b006", "alias": "Forme de coopérative au service d’un intérêt collectif ; que signifie SCIC ?"}
+{"id": "a01-ss02-b007", "alias": "Coopérative où les salariés détiennent la majorité du capital ; que désigne une SCOP ?"}
+{"id": "a01-ss02-b008", "alias": "Rémunération minimale prévue entre professions ; que signifie SMIC ?"}
+{"id": "a01-ss02-b009", "alias": "Soutien financier personnalisé pour le logement ; que veut dire APL ?"}
+{"id": "a01-ss02-b010", "alias": "Logement social avec un loyer modéré ; que signifie HLM ?"}
+{"id": "a01-ss02-b011", "alias": "Que désigne le RSA, cette notion de revenu liée à la solidarité active ?"}
+{"id": "a01-ss02-b012", "alias": "Allocation destinée aux adultes en situation de handicap ; que signifie AAH ?"}
+{"id": "a01-ss02-b013", "alias": "Renvoi vers les termes financiers pour trouver la définition de LBO."}
+{"id": "a01-ss02-b014", "alias": "Instance consacrée à l’hygiène, à la sécurité et aux conditions de travail ; que signifie CHSCT ?"}
+{"id": "a01-ss02-b015", "alias": "Association chargée de la gestion de l’assurance chômage ; quel est le rôle de l’Unédic ?"}
+{"id": "a01-ss02-b016", "alias": "Organisme national dédié à l’informatique et aux libertés ; que signifie CNIL ?"}
+{"id": "a01-ss02-b017", "alias": "Acronyme regroupant Google, Apple, Facebook, Amazon et Microsoft ; quelles entreprises désigne GAFAM ?"}
+{"id": "a01-ss02-b018", "alias": "Technologie d’intelligence artificielle ; que signifie l’abréviation IA ?"}
+{"id": "a01-ss02-b019", "alias": "Organisation mondiale en charge du commerce ; que veut dire OMC ?"}
+{"id": "a01-ss02-b020", "alias": "Crédit d’impôt accordé au titre de la recherche ; que signifie CIR ?"}
+{"id": "a01-ss02-b021", "alias": "Politique agricole commune de l’Union européenne ; que veut dire PAC ?"}
+{"id": "a01-ss02-b022", "alias": "Zone où les émissions sont limitées ; que signifie ZFE ?"}
+{"id": "a01-ss02-b023", "alias": "Réacteur nucléaire pressurisé européen ; que désigne EPR ?"}
+{"id": "a01-ss02-b024", "alias": "Autorité de sûreté nucléaire et institut de radioprotection et de sûreté nucléaire ; que signifient ASN et IRSN ?"}
+{"id": "a01-ss02-b025", "alias": "Électricité de France et entreprise d’énergie ; à quoi correspondent EDF et Engie ?"}
+{"id": "a01-ss02-b026", "alias": "Entreprise nationale des chemins de fer français ; que signifie SNCF ?"}
+{"id": "a01-ss02-b027", "alias": "Office national chargé des forêts ; que désigne l’ONF ?"}
+{"id": "a01-ss02-b028", "alias": "Organisation de la réponse en matière de sécurité civile ; que signifie ORSEC ?"}
+{"id": "a01-ss02-b029", "alias": "Systèmes de localisation utilisant des satellites, américain et européen ; que désignent GPS et Galileo ?"}
+{"id": "a01-ss02-b030", "alias": "Agence française consacrée au développement ; que signifie AFD ?"}
+{"id": "a01-ss02-b031", "alias": "Vocabulaire des pouvoirs publics et de la vie politique ; de quelles institutions parle-t-on ?"}
+{"id": "a01-ss02-b032", "alias": "Référendum à l’initiative des citoyens ; comment les citoyens peuvent-ils proposer un vote ?"}
+{"id": "a01-ss02-b033", "alias": "Réorganisation territoriale de la République ; que désigne la loi NOTRe ?"}
+{"id": "a01-ss02-b034", "alias": "Réformes des universités et de l’enseignement supérieur ; que recouvrent les lois LRU et Fioraso ?"}
+{"id": "a01-ss02-b035", "alias": "Organisme de vigilance face aux dérives sectaires ; quel est le rôle de la Miviludes ?"}
+{"id": "a01-ss02-b036", "alias": "Service national universel ; que signifie l’abréviation SNU ?"}
+{"id": "a01-ss02-b037", "alias": "Alliance liée au traité de l’Atlantique nord ; que signifie OTAN ?"}
+{"id": "a01-ss02-b038", "alias": "Organisation des pays unis à l’échelle mondiale ; que signifie ONU ?"}
+{"id": "a01-ss02-b039", "alias": "Union des pays européens ; que signifie UE ?"}
+{"id": "a01-ss02-b040", "alias": "Banque centrale de l’Europe ; que signifie BCE ?"}
+{"id": "a01-ss02-b041", "alias": "Fonds monétaire à l’échelle internationale ; que signifie FMI ?"}
+{"id": "a01-ss02-b042", "alias": "Organisation mondiale consacrée au travail ; que signifie OIT ?"}
+{"id": "a01-ss02-b043", "alias": "Organisation chargée des questions de santé dans le monde ; que signifie OMS ?"}
+{"id": "a01-ss02-b044", "alias": "Organisation onusienne pour l’agriculture et l’alimentation ; que signifie FAO ?"}
+{"id": "a01-ss02-b045", "alias": "Organisme des Nations unies pour la culture, les sciences et l’éducation ; que signifie UNESCO ?"}
+{"id": "a01-ss02-b046", "alias": "Organisme onusien pour les réfugiés palestiniens ; que signifie UNRWA ?"}
+{"id": "a01-ss02-b047", "alias": "Accord interdisant les armes nucléaires ; que désigne le TIAN ?"}
+{"id": "a01-ss02-b048", "alias": "Communauté des pays d’Amérique latine et des Caraïbes ; que signifie CELAC ?"}
+{"id": "a01-ss02-b049", "alias": "Juridiction internationale ; que signifie CIJ ?"}
+{"id": "a01-ss02-b050", "alias": "Organismes des migrations et de l’aide aux réfugiés ; que désignent OIM et HCR ?"}
+{"id": "a01-ss02-b051", "alias": "Agence européenne des frontières ; que signifie Frontex ?"}
+{"id": "a01-ss02-b052", "alias": "Office français chargé des réfugiés et des apatrides ; que signifie OFPRA ?"}
+{"id": "a01-ss02-b053", "alias": "Lieu de rétention administrative ; que signifie CRA ?"}
+{"id": "a01-ss02-b054", "alias": "Aide médicale publique ; que signifie AME ?"}
+{"id": "a01-ss02-b055", "alias": "Domaines des soins, de l’école, des tribunaux et des forces de l’ordre."}
+{"id": "a01-ss02-b056", "alias": "Établissement accueillant des personnes âgées dépendantes ; que signifie EHPAD ?"}
+{"id": "a01-ss02-b057", "alias": "Avortement volontaire ; que signifie IVG ?"}
+{"id": "a01-ss02-b058", "alias": "Conception avec assistance médicale ; que signifie PMA ?"}
+{"id": "a01-ss02-b059", "alias": "Grossesse menée pour autrui ; que signifie GPA ?"}
+{"id": "a01-ss02-b060", "alias": "Virus de l’immunodéficience humaine ; à quoi correspond le sigle VIH ?"}
+{"id": "a01-ss02-b061", "alias": "Que désigne le sigle regroupant les personnes lesbiennes, gays, bi, trans et intersexes ?"}
+{"id": "a01-ss02-b062", "alias": "Quel établissement propose un accompagnement par le travail ? Que signifie ESAT ?"}
+{"id": "a01-ss02-b063", "alias": "Comment appelle-t-on la personne qui accompagne à l’école les élèves handicapés ?"}
+{"id": "a01-ss02-b064", "alias": "Quel est le nom de la langue signée utilisée en France ? Que signifie LSF ?"}
+{"id": "a01-ss02-b065", "alias": "Comment nomme-t-on les réseaux d’écoles bénéficiant d’une éducation prioritaire ?"}
+{"id": "a01-ss02-b066", "alias": "Comment s’appelle la première classe de l’école primaire ? Que signifie CP ?"}
+{"id": "a01-ss02-b067", "alias": "Quel sigle désigne les cours de sport à l’école ?"}
+{"id": "a01-ss02-b068", "alias": "Que recouvre la filière universitaire des activités physiques et sportives ?"}
+{"id": "a01-ss02-b069", "alias": "Où se forment les apprentis ? Attention, CFA peut aussi désigner le franc CFA."}
+{"id": "a01-ss02-b070", "alias": "Comment s’appelle la contribution liée à la vie étudiante et au campus ?"}
+{"id": "a01-ss02-b071", "alias": "Quel organisme régional s’occupe des œuvres universitaires et scolaires ?"}
+{"id": "a01-ss02-b072", "alias": "Que signifie le sigle de l’agence nationale consacrée à la recherche ?"}
+{"id": "a01-ss02-b073", "alias": "Quel organisme évalue la recherche et l’enseignement supérieur ?"}
+{"id": "a01-ss02-b074", "alias": "Que signifie BAC dans le contexte de la police et de la lutte contre la criminalité ?"}
+{"id": "a01-ss02-b075", "alias": "Quel est le nom de la brigade motorisée intervenant contre les actions violentes ?"}
+{"id": "a01-ss02-b076", "alias": "Quels services inspectent la police nationale et la gendarmerie nationale ?"}
+{"id": "a01-ss02-b077", "alias": "Comment s’appelle l’arme qui lance des balles de défense ?"}
+{"id": "a01-ss02-b078", "alias": "Où signaler des contenus illégaux trouvés sur internet ?"}
+{"id": "a02-ss01-b001", "alias": "Fin du mécanisme permettant de faire passer une loi sans scrutin à l’Assemblée : le programme veut-il supprimer le 49.3 ?"}
+{"id": "a02-ss01-b002", "alias": "Comment fonctionne le passage en force du gouvernement sur un texte, avec interruption des discussions et possibilité de censure ?"}
+{"id": "a02-ss01-b003", "alias": "Délai, signatures et majorité requis pour contester l’adoption d’un texte et faire tomber le gouvernement après le 49.3."}
+{"id": "a02-ss01-b004", "alias": "Autonomie des collectivités ultramarines et statut institutionnel envisagé pour la Corse : que prévoit l’article 74 ?"}
+{"id": "a02-ss02-b001", "alias": "Sujets liés au travail, au chômage et à la retraite"}
+{"id": "a02-ss02-b002", "alias": "Réforme du Code du travail de 2017 : que changent les ordonnances Pénicaud sur les indemnités et les représentants du personnel ?"}
+{"id": "a02-ss02-b003", "alias": "Loi Travail de 2016 : quelle place pour les accords d’entreprise et quelle règle s’applique au salarié ?"}
+{"id": "a02-ss02-b004", "alias": "Changements des allocations chômage : que prévoit le programme pour les règles d’indemnisation réformées entre 2019 et 2023 ?"}
+{"id": "a02-ss02-b005", "alias": "Remplacement de Pôle emploi par France Travail : que devient l’inscription des personnes au RSA et les activités demandées ?"}
+{"id": "a02-ss02-b006", "alias": "Abandon de poste : est-ce considéré comme une démission et que prévoit le programme ?"}
+{"id": "a02-ss02-b007", "alias": "Âge de départ à la retraite : que prévoit le programme face au passage de 62 à 64 ans ?"}
+{"id": "a02-ss02-b008", "alias": "Habitat et questions liées au logement"}
+{"id": "a02-ss02-b009", "alias": "Squat et loyers impayés : que change la loi Kasbarian-Bergé pour l’occupation des logements et les expulsions ?"}
+{"id": "a02-ss02-b010", "alias": "Organisation des collectivités et des institutions territoriales"}
+{"id": "a02-ss02-b011", "alias": "Répartition des pouvoirs locaux : que prévoit la loi NOTRe pour les communes, départements, régions et intercommunalités ?"}
+{"id": "a02-ss02-b012", "alias": "Réorganisation des hauts fonctionnaires préfectoraux et diplomatiques : que devient leur statut commun ?"}
+{"id": "a02-ss02-b013", "alias": "Régime religieux particulier en Alsace-Moselle : que prévoit le concordat sur la reconnaissance et le financement des cultes ?"}
+{"id": "a02-ss02-b014", "alias": "Loi séparatisme et contrat républicain des associations : que prévoit le programme pour ces textes et obligations ?"}
+{"id": "a02-ss02-b015", "alias": "Écoles, universités et politique de recherche"}
+{"id": "a02-ss02-b016", "alias": "Autonomie financière et administrative des universités : que prévoit la loi LRU et que veut faire le programme ?"}
+{"id": "a02-ss02-b017", "alias": "Regroupement des établissements d’enseignement supérieur : que prévoit la loi Fioraso ?"}
+{"id": "a02-ss02-b018", "alias": "Budget de la recherche et contrats des chercheurs : que prévoit la loi de programmation 2021-2030 ?"}
+{"id": "a02-ss02-b019", "alias": "Parcoursup et contribution étudiante CVEC : que prévoit la loi ORE pour ces deux dispositifs ?"}
+{"id": "a02-ss02-b020", "alias": "Réforme du collège et groupes de niveau : que prévoit le Choc des savoirs sur le brevet et l’entrée au lycée ?"}
+{"id": "a02-ss02-b021", "alias": "Pacte enseignant : quelles missions supplémentaires rémunérées sont prévues pour les professeurs ?"}
+{"id": "a02-ss02-b022", "alias": "Questions relatives aux soins et à la santé publique"}
+{"id": "a02-ss02-b023", "alias": "Mesures sanitaires contre le Covid : quels pouvoirs exceptionnels et quelles conditions d’accès à certains lieux ?"}
+{"id": "a02-ss02-b024", "alias": "Règles relatives à l’asile, au séjour des étrangers et à leurs droits"}
+{"id": "a02-ss02-b025", "alias": "Loi immigration de 2024 : que change-t-elle pour les conditions de séjour et l’accès de certains étrangers aux droits ?"}
+{"id": "a02-ss02-b026", "alias": "Interdiction des pratiques visant à modifier l’orientation sexuelle ou l’identité de genre : que prévoit le programme pour son application ?"}
+{"id": "a02-ss02-b027", "alias": "Police, infractions et fonctionnement de la justice"}
+{"id": "a02-ss02-b028", "alias": "Refus d’obtempérer : que prévoit le texte sur les sanctions ou l’usage des armes par les forces de l’ordre ?"}
+{"id": "a02-ss02-b029", "alias": "Règles de conduite professionnelle des policiers : que prévoit le code de déontologie rétabli ?"}
+{"id": "a02-ss02-b030", "alias": "Justice des mineurs : quels principes éducatifs de l’ordonnance de 1945 le programme veut-il reprendre ?"}
+{"id": "a02-ss02-b031", "alias": "Énergie atomique, nucléaire : de quoi parle le programme ?"}
+{"id": "a02-ss02-b032", "alias": "Regroupement de l’autorité nucléaire et de l’institut d’expertise en une entité, abrogé par le programme : que prévoit-il ?"}
+{"id": "a02-ss03-b001", "alias": "Règle européenne sur le pays chargé d’examiner l’asile, souvent celui d’arrivée ; suspension prévue. Quel État doit étudier la demande ?"}
+{"id": "a02-ss03-b002", "alias": "Accord franco-britannique qui situe la frontière britannique en France ; renégociation demandée. Que prévoit le programme sur cet accord frontalier ?"}
+{"id": "a02-ss03-b003", "alias": "Traité international consacré aux droits des enfants, dont l’application stricte est demandée. Que prévoit le programme pour ce texte ?"}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-01",
+  "status": "authorship_source_snapshot_runtime_freeze_required_before_execution",
+  "files": {
+    "backend/chati/__init__.py": "1e887ec3369ae683157c0051085fc62337759f511c5234ddf0d7e217e78140fb",
+    "backend/chati/config.py": "b4165e0d1352627d72dfb7ff0e16a74d1261f02a2ef1721613bbcb04c0f39ee4",
+    "backend/chati/corpus.py": "2591126bd510ba05fb5c0e7f7914220c63a975db24ad7a4f369614a47b1a4dab",
+    "backend/chati/followups.py": "2faae76a5e3f4e0da368d1c25fb18bd5528e8a2df9ced7435a9386025150dc33",
+    "backend/chati/generation.py": "14835ca14fb339526765350cfe9ed614e81a0c8461fca25fe92298747f68ec57",
+    "backend/chati/index.py": "602ad142e61fef09ff651e684e02cb65fdb9d7d09e85cd2f7fb437772df3a988",
+    "backend/chati/main.py": "1304438607ee363663e615e60d6cc7168f90786720665b7bba82f594f3cde1cc",
+    "backend/chati/models.py": "c03fd7e7231c238ab284947323767d43605034581593f69999ed8e53e5436ecb",
+    "backend/chati/queries.py": "920f37619ef97d2c169ff8e977e7dc573ea2fbf71a722ec3e7c42197854e542f",
+    "backend/chati/retrieval.py": "2c89fa7444250218157002294240b531fa22ee31a9f7b296d045bd15a54f5223",
+    "backend/chati/synonyms.py": "79f83e1a4bea502cc04a878a63ab3025678d7577a73fb2727ce5bc43d6453c58",
+    "backend/chati/verification.py": "2c23d72207f0d9da3db10e8906c21db769a7d5d2ac4ecc100b61251cd67b5b6d",
+    "backend/chati/web.py": "746ff3edcf6dc24f52de5838a7e73b2007d6b923d3c4d15f4bdbad830ee97508",
+    "Dockerfile": "12449561c43889e990b1f889b483f3bf69edc8a87cbbaf44504e315e78e1fcd4",
+    "compose.yaml": "d1b069bd4ddcc8f540df0bbb90c644d4633d8764d14ce0515b441aa79638323c",
+    "backend/requirements.lock": "3ad4d455532cd086a19053f987e68d2310c1da6322aec43399444f5dd940b2e7",
+    "data/structured/enrichment.jsonl": "11772d47245714cd1badee38186accb17cb851295c9c676e6f4732fa092f3c59"
+  },
+  "note": "No .env or secret read. This snapshots source/data, not the running image, effective environment, index or provider model snapshot. Record those before evaluation. Enrichment is never used as gold evidence."
+}

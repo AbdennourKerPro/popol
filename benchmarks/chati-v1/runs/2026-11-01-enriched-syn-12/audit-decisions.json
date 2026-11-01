@@ -1,0 +1,717 @@
+{
+ "reviewer": "Claude (Sonnet 5.5) : lecture des 40 réponses, du corrigé et des textes. Pas de juge humain ; même assistant que celui qui a implémenté les changements.",
+ "cases": [
+  {
+   "id": "MIL-001",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-002",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-003",
+   "scores": [
+    0,
+    1,
+    0,
+    2
+   ],
+   "criteria": [
+    0.5,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [
+    "« Le RIC permettrait de révoquer des responsables » : pouvoir de révocation de personnes attribué au RIC, la source dit révoquer, proposer ou abroger des lois."
+   ],
+   "false_absence": false,
+   "notes": "Même erreur qu'aux runs précédents, reformulée en « responsables »."
+  },
+  {
+   "id": "MIL-004",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-005",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-006",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-007",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-008",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-009",
+   "scores": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "L'identifiant de source est inséré dans le texte du bloc (clarté 1). Contenu conforme."
+  },
+  {
+   "id": "MIL-010",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-011",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-012",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-013",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-014",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-015",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-016",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-017",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-018",
+   "scores": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    0,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Guichets papier et aide numérique corrects ; accueils physiques (s02-ss06-m005) toujours non retrouvés ni dits, sans fausse absence ; ajoute la lutte contre le non-recours, hedgée."
+  },
+  {
+   "id": "MIL-019",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-020",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-021",
+   "scores": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "L'identifiant de source est inséré dans le texte du bloc (clarté 1). Veto, licenciements boursiers et objectif de pouvoir salarié présents."
+  },
+  {
+   "id": "MIL-022",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-023",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-024",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-025",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-026",
+   "scores": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "criteria": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "conditional": {
+    "if_ending_aesh_mutualisation_claimed": [
+     1
+    ]
+   },
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "L'identifiant de source est inséré dans le texte du bloc (clarté 1). Contenu conforme, fin de la mutualisation sourcée par s06-ss05-m002."
+  },
+  {
+   "id": "MIL-027",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-028",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-029",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-030",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-031",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-032",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-033",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {
+    "if_general_children_rights_answer": [
+     1
+    ]
+   },
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-034",
+   "scores": [
+    1,
+    2,
+    1,
+    2
+   ],
+   "criteria": [
+    0.5,
+    1
+   ],
+   "conditional": {
+    "if_conditional_factual_answer": [
+     0.5
+    ],
+    "if_nursery_prices_claimed": [
+     1
+    ],
+    "if_student_housing_count_claimed": [
+     1
+    ]
+   },
+   "critical_errors": [],
+   "false_absence": true,
+   "notes": "Logement étudiant et gratuité des crèches exacts ; affirme que le résumé « ne précise pas de nombre de places » pour les crèches alors qu'il donne 500 000 places (s06-ss01-m001, non retrouvée) : fausse absence. Ambiguïté non signalée."
+  },
+  {
+   "id": "MIL-035",
+   "scores": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "L'identifiant de source est inséré dans le texte du bloc (clarté 1). Calcul refusé, barème 5 paliers distingué de la proposition."
+  },
+  {
+   "id": "MIL-036",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-037",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-038",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1
+   ],
+   "conditional": {
+    "if_retirement_details_given": [
+     1
+    ]
+   },
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-039",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {},
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  },
+  {
+   "id": "MIL-040",
+   "scores": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "criteria": [
+    1,
+    1
+   ],
+   "conditional": {
+    "if_substantive_nuclear_answer": [
+     1
+    ]
+   },
+   "critical_errors": [],
+   "false_absence": false,
+   "notes": "Lu en entier face au corrigé et aux textes : conforme, aucune affirmation hors source."
+  }
+ ]
+}

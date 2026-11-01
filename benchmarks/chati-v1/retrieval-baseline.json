@@ -1,0 +1,1077 @@
+{
+  "corpus_version": "d23e70c63868d6e4a9debe4fd22268375f1e06cb9c0595e3afd4cfc253a18120",
+  "retrieval_mode": "lexical",
+  "generation_executed": false,
+  "model": null,
+  "question_count": 40,
+  "cases_with_unconditional_evidence": 35,
+  "mean_known_evidence_coverage": 0.6904761904761905,
+  "limitation": "Diagnostic des groupes de preuves connus uniquement. Les références ouvertes peuvent accepter d’autres sources ; les groupes conditionnels sont exclus sans lecture de la réponse. Ce résultat ne note ni la qualité des réponses, ni la justesse sémantique des citations, ni la généralisation.",
+  "cases": [
+    {
+      "id": "MIL-001",
+      "category": "precise",
+      "retrieved_ids": [
+        "s01-ss01-m002",
+        "s01-ss01-m001",
+        "a01-ss02-b002",
+        "a01-ss01-b002",
+        "s01-ss01-m005",
+        "a01-ss01-b001",
+        "a01-ss01-b020",
+        "a01-ss01-b010"
+      ],
+      "context_ids": [
+        "s01-ss01-m002",
+        "s01-ss01-m001",
+        "a01-ss02-b002",
+        "a01-ss01-b002",
+        "s01-ss01-m005",
+        "a01-ss01-b001",
+        "a01-ss01-b020",
+        "a01-ss01-b010"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-002",
+      "category": "precise",
+      "retrieved_ids": [
+        "s01-ss14-m005",
+        "s01-ss14-m006",
+        "s01-ss14-m008",
+        "s01-ss14-m003",
+        "s01-ss14-m004",
+        "s05-ss09-m005",
+        "s01-ss14-m002",
+        "s05-ss09-m006"
+      ],
+      "context_ids": [
+        "s01-ss14-m005",
+        "s01-ss14-m006",
+        "s01-ss14-m008",
+        "s01-ss14-m003",
+        "s01-ss14-m004",
+        "s05-ss09-m005",
+        "s01-ss14-m002",
+        "s05-ss09-m006"
+      ],
+      "known_evidence_coverage": 0.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-003",
+      "category": "precise",
+      "retrieved_ids": [
+        "s02-ss01-m012",
+        "s05-ss09-m005",
+        "s08-ss01-m002",
+        "s05-ss09-m006",
+        "s05-ss09-m002",
+        "s05-ss09-m004",
+        "s05-ss09-m003",
+        "s02-ss02-m012"
+      ],
+      "context_ids": [
+        "s02-ss01-m012",
+        "s05-ss09-m005",
+        "s08-ss01-m002",
+        "s05-ss09-m006",
+        "s05-ss09-m002",
+        "s05-ss09-m004",
+        "s05-ss09-m003",
+        "s02-ss02-m012"
+      ],
+      "known_evidence_coverage": 0.5,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-004",
+      "category": "precise",
+      "retrieved_ids": [
+        "s02-ss04-m006",
+        "s02-ss04-m002",
+        "s02-ss04-m003",
+        "s02-ss04-m013",
+        "s01-ss16-m002",
+        "s02-ss04-m007",
+        "s02-ss04-m009",
+        "s02-ss04-m011"
+      ],
+      "context_ids": [
+        "s02-ss04-m006",
+        "s02-ss04-m002",
+        "s02-ss04-m003",
+        "s02-ss04-m013",
+        "s01-ss16-m002",
+        "s02-ss04-m007",
+        "s02-ss04-m009",
+        "s02-ss04-m011"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-005",
+      "category": "precise",
+      "retrieved_ids": [
+        "s03-ss12-m012",
+        "a01-ss02-b023",
+        "s01-ss20-m005",
+        "s03-ss04-m002",
+        "s01-ss20-m014",
+        "s03-ss04-m003",
+        "s03-ss04-m001",
+        "s01-ss17-m004"
+      ],
+      "context_ids": [
+        "s03-ss12-m012",
+        "a01-ss02-b023",
+        "s01-ss20-m005",
+        "s03-ss04-m002",
+        "s01-ss20-m014",
+        "s03-ss04-m003",
+        "s03-ss04-m001",
+        "s01-ss17-m004"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-006",
+      "category": "precise",
+      "retrieved_ids": [
+        "s03-ss03-m007",
+        "s03-ss01-m012",
+        "s06-ss08-m007",
+        "s01-ss16-m012",
+        "s01-ss11-m008",
+        "s03-ss09-m020",
+        "s04-ss05-m014",
+        "s01-ss06-m013"
+      ],
+      "context_ids": [
+        "s03-ss03-m007",
+        "s03-ss01-m012",
+        "s06-ss08-m007",
+        "s01-ss16-m012",
+        "s01-ss11-m008",
+        "s03-ss09-m020",
+        "s04-ss05-m014",
+        "s01-ss06-m013"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-007",
+      "category": "precise",
+      "retrieved_ids": [
+        "s04-ss03-m001",
+        "s07-ss04-m005",
+        "a01-ss02-b037",
+        "s02-ss09-m013",
+        "s07-ss01-m017",
+        "s01-ss11-m010",
+        "s01-ss13-m005",
+        "s05-ss02-m001"
+      ],
+      "context_ids": [
+        "s04-ss03-m001",
+        "s07-ss04-m005",
+        "a01-ss02-b037",
+        "s02-ss09-m013",
+        "s07-ss01-m017",
+        "s01-ss11-m010",
+        "s01-ss13-m005",
+        "s05-ss02-m001"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-008",
+      "category": "precise",
+      "retrieved_ids": [
+        "s04-ss04-m008",
+        "s04-ss04-m011",
+        "s04-ss04-m002",
+        "s04-ss04-m014",
+        "s04-ss04-m005",
+        "s04-ss04-m012",
+        "s04-ss04-m009",
+        "s04-ss04-m003"
+      ],
+      "context_ids": [
+        "s04-ss04-m008",
+        "s04-ss04-m011",
+        "s04-ss04-m002",
+        "s04-ss04-m014",
+        "s04-ss04-m005",
+        "s04-ss04-m012",
+        "s04-ss04-m009",
+        "s04-ss04-m003"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-009",
+      "category": "precise",
+      "retrieved_ids": [
+        "s05-ss02-m001",
+        "s03-ss04-m002",
+        "s05-ss11-m009",
+        "s01-ss13-m010",
+        "s05-ss10-m002",
+        "s05-ss02-m006",
+        "s01-ss13-m001",
+        "s01-ss13-m007"
+      ],
+      "context_ids": [
+        "s05-ss02-m001",
+        "s03-ss04-m002",
+        "s05-ss11-m009",
+        "s01-ss13-m010",
+        "s05-ss10-m002",
+        "s05-ss02-m006",
+        "s01-ss13-m001",
+        "s01-ss13-m007"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 0
+    },
+    {
+      "id": "MIL-010",
+      "category": "precise",
+      "retrieved_ids": [
+        "s05-ss09-m001",
+        "s06-ss06-m001",
+        "s05-ss02-m002",
+        "s05-ss05-m001",
+        "s05-ss09-m006",
+        "s06-ss06-m004",
+        "s01-ss10-m001",
+        "a01-ss02-b056"
+      ],
+      "context_ids": [
+        "s05-ss09-m001",
+        "s06-ss06-m001",
+        "s05-ss02-m002",
+        "s05-ss05-m001",
+        "s05-ss09-m006",
+        "s06-ss06-m004",
+        "s01-ss10-m001",
+        "a01-ss02-b056"
+      ],
+      "known_evidence_coverage": 0.5,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-011",
+      "category": "precise",
+      "retrieved_ids": [
+        "s06-ss01-m002",
+        "s02-ss09-m004",
+        "s03-ss03-m003",
+        "s05-ss09-m003",
+        "s01-ss06-m010",
+        "s05-ss09-m001",
+        "s03-ss04-m006",
+        "s06-ss01-m001"
+      ],
+      "context_ids": [
+        "s06-ss01-m002",
+        "s02-ss09-m004",
+        "s03-ss03-m003",
+        "s05-ss09-m003",
+        "s01-ss06-m010",
+        "s05-ss09-m001",
+        "s03-ss04-m006",
+        "s06-ss01-m001"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-012",
+      "category": "precise",
+      "retrieved_ids": [
+        "a02-ss02-b019",
+        "s06-ss07-m004",
+        "a01-ss02-b070",
+        "s06-ss07-m001",
+        "s01-ss01-m010",
+        "a01-ss02-b015",
+        "s03-ss10-m014",
+        "a01-ss01-b013"
+      ],
+      "context_ids": [
+        "a02-ss02-b019",
+        "s06-ss07-m004",
+        "a01-ss02-b070",
+        "s06-ss07-m001",
+        "s01-ss01-m010",
+        "a01-ss02-b015",
+        "s03-ss10-m014",
+        "a01-ss01-b013"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-013",
+      "category": "precise",
+      "retrieved_ids": [
+        "s07-ss01-m007",
+        "a01-ss02-b076"
+      ],
+      "context_ids": [
+        "s07-ss01-m007",
+        "a01-ss02-b076"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 0
+    },
+    {
+      "id": "MIL-014",
+      "category": "precise",
+      "retrieved_ids": [
+        "s07-ss04-m001",
+        "s07-ss04-m002",
+        "s07-ss04-m005",
+        "s07-ss04-m004",
+        "s07-ss04-m003",
+        "s03-ss06-m004",
+        "s04-ss03-m007",
+        "s01-ss10-m001"
+      ],
+      "context_ids": [
+        "s07-ss04-m001",
+        "s07-ss04-m002",
+        "s07-ss04-m005",
+        "s07-ss04-m004",
+        "s07-ss04-m003",
+        "s03-ss06-m004",
+        "s04-ss03-m007",
+        "s01-ss10-m001"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-015",
+      "category": "precise",
+      "retrieved_ids": [
+        "s08-ss01-m002",
+        "s02-ss01-m012",
+        "s02-ss02-m012",
+        "s03-ss03-m011",
+        "s01-ss16-m003",
+        "a01-ss02-b011",
+        "s01-ss16-m011",
+        "s01-ss06-m005"
+      ],
+      "context_ids": [
+        "s08-ss01-m002",
+        "s02-ss01-m012",
+        "s02-ss02-m012",
+        "s03-ss03-m011",
+        "s01-ss16-m003",
+        "a01-ss02-b011",
+        "s01-ss16-m011",
+        "s01-ss06-m005"
+      ],
+      "known_evidence_coverage": 0.5,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-016",
+      "category": "precise",
+      "retrieved_ids": [
+        "a01-ss02-b054",
+        "s08-ss01-m006",
+        "a01-ss02-b058",
+        "s01-ss06-m010",
+        "s08-ss03-m004",
+        "s06-ss04-m007",
+        "s01-ss09-m008",
+        "a01-ss02-b009"
+      ],
+      "context_ids": [
+        "a01-ss02-b054",
+        "s08-ss01-m006",
+        "a01-ss02-b058",
+        "s01-ss06-m010",
+        "s08-ss03-m004",
+        "s06-ss04-m007",
+        "s01-ss09-m008",
+        "a01-ss02-b009"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-017",
+      "category": "semantic",
+      "retrieved_ids": [
+        "s03-ss03-m007",
+        "a01-ss01-b041",
+        "s06-ss08-m003",
+        "s03-ss11-m003",
+        "s03-ss12-m007",
+        "s01-ss01-m015",
+        "a01-ss02-b006",
+        "s01-ss08-m007"
+      ],
+      "context_ids": [
+        "s03-ss03-m007",
+        "a01-ss01-b041",
+        "s06-ss08-m003",
+        "s03-ss11-m003",
+        "s03-ss12-m007",
+        "s01-ss01-m015",
+        "a01-ss02-b006",
+        "s01-ss08-m007"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 2
+    },
+    {
+      "id": "MIL-018",
+      "category": "semantic",
+      "retrieved_ids": [
+        "s01-ss20-m001",
+        "s02-ss10-m005",
+        "s06-ss04-m009",
+        "s03-ss03-m003",
+        "s06-ss04-m001",
+        "s06-ss04-m007",
+        "s06-ss04-m008",
+        "s06-ss04-m005"
+      ],
+      "context_ids": [
+        "s01-ss20-m001",
+        "s02-ss10-m005",
+        "s06-ss04-m009",
+        "s03-ss03-m003",
+        "s06-ss04-m001",
+        "s06-ss04-m007",
+        "s06-ss04-m008",
+        "s06-ss04-m005"
+      ],
+      "known_evidence_coverage": 0.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 2
+    },
+    {
+      "id": "MIL-019",
+      "category": "semantic",
+      "retrieved_ids": [
+        "s01-ss13-m007",
+        "s03-ss07-m004",
+        "s01-ss13-m010",
+        "s01-ss13-m001",
+        "s01-ss13-m009",
+        "s03-ss07-m011",
+        "s01-ss10-m004",
+        "s01-ss10-m005"
+      ],
+      "context_ids": [
+        "s01-ss13-m007",
+        "s03-ss07-m004",
+        "s01-ss13-m010",
+        "s01-ss13-m001",
+        "s01-ss13-m009",
+        "s03-ss07-m011",
+        "s01-ss10-m004",
+        "s01-ss10-m005"
+      ],
+      "known_evidence_coverage": 0.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-020",
+      "category": "semantic",
+      "retrieved_ids": [
+        "s03-ss09-m011",
+        "s03-ss09-m012",
+        "s05-ss05-m002",
+        "s07-ss03-m009",
+        "s03-ss09-m017",
+        "s03-ss09-m010",
+        "a02-ss03-b002",
+        "s03-ss09-m013"
+      ],
+      "context_ids": [
+        "s03-ss09-m011",
+        "s03-ss09-m012",
+        "s05-ss05-m002",
+        "s07-ss03-m009",
+        "s03-ss09-m017",
+        "s03-ss09-m010",
+        "a02-ss03-b002",
+        "s03-ss09-m013"
+      ],
+      "known_evidence_coverage": 0.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 2
+    },
+    {
+      "id": "MIL-021",
+      "category": "semantic",
+      "retrieved_ids": [
+        "s01-ss06-m015",
+        "s01-ss06-m016",
+        "s01-ss06-m008",
+        "s01-ss06-m017",
+        "s01-ss06-m013",
+        "s01-ss06-m011",
+        "s01-ss06-m007",
+        "s01-ss06-m004"
+      ],
+      "context_ids": [
+        "s01-ss06-m015",
+        "s01-ss06-m016",
+        "s01-ss06-m008",
+        "s01-ss06-m017",
+        "s01-ss06-m013",
+        "s01-ss06-m011",
+        "s01-ss06-m007",
+        "s01-ss06-m004"
+      ],
+      "known_evidence_coverage": 0.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-022",
+      "category": "semantic",
+      "retrieved_ids": [
+        "s01-ss15-m003",
+        "s04-ss01-m007",
+        "s01-ss13-m008",
+        "s02-ss08-m005",
+        "s08-ss01-m010",
+        "s04-ss01-m001",
+        "s06-ss04-m009",
+        "s06-ss04-m001"
+      ],
+      "context_ids": [
+        "s01-ss15-m003",
+        "s04-ss01-m007",
+        "s01-ss13-m008",
+        "s02-ss08-m005",
+        "s08-ss01-m010",
+        "s04-ss01-m001",
+        "s06-ss04-m009",
+        "s06-ss04-m001"
+      ],
+      "known_evidence_coverage": 0.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-023",
+      "category": "semantic",
+      "retrieved_ids": [
+        "s02-ss10-m005",
+        "s03-ss12-m008",
+        "s02-ss04-m009",
+        "s06-ss02-m002",
+        "s01-ss06-m013",
+        "s01-ss06-m015",
+        "s01-ss06-m004",
+        "s01-ss06-m008"
+      ],
+      "context_ids": [
+        "s02-ss10-m005",
+        "s03-ss12-m008",
+        "s02-ss04-m009",
+        "s06-ss02-m002",
+        "s01-ss06-m013",
+        "s01-ss06-m015",
+        "s01-ss06-m004",
+        "s01-ss06-m008"
+      ],
+      "known_evidence_coverage": 0.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-024",
+      "category": "semantic",
+      "retrieved_ids": [
+        "s03-ss13-m001",
+        "s03-ss13-m002",
+        "s07-ss02-m003",
+        "s02-ss10-m005",
+        "s01-ss10-m005",
+        "s04-ss06-m001",
+        "s08-ss01-m012",
+        "a01-ss02-b056"
+      ],
+      "context_ids": [
+        "s03-ss13-m001",
+        "s03-ss13-m002",
+        "s07-ss02-m003",
+        "s02-ss10-m005",
+        "s01-ss10-m005",
+        "s04-ss06-m001",
+        "s08-ss01-m012",
+        "a01-ss02-b056"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-025",
+      "category": "transversal",
+      "retrieved_ids": [
+        "s01-ss09-m004",
+        "s01-ss09-m009",
+        "s05-ss10-m002",
+        "s01-ss09-m006",
+        "s01-ss09-m011",
+        "s01-ss09-m008",
+        "s01-ss09-m005",
+        "s01-ss09-m001"
+      ],
+      "context_ids": [
+        "s01-ss09-m004",
+        "s01-ss09-m009",
+        "s05-ss10-m002",
+        "s01-ss09-m006",
+        "s01-ss09-m011",
+        "s01-ss09-m008",
+        "s01-ss09-m005",
+        "s01-ss09-m001"
+      ],
+      "known_evidence_coverage": 0.6666666666666666,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 2
+    },
+    {
+      "id": "MIL-026",
+      "category": "transversal",
+      "retrieved_ids": [
+        "s05-ss10-m005",
+        "s06-ss05-m002",
+        "s05-ss10-m002",
+        "a01-ss02-b062",
+        "s05-ss10-m003",
+        "s05-ss10-m001",
+        "s01-ss16-m002",
+        "s05-ss10-m004"
+      ],
+      "context_ids": [
+        "s05-ss10-m005",
+        "s06-ss05-m002",
+        "s05-ss10-m002",
+        "a01-ss02-b062",
+        "s05-ss10-m003",
+        "s05-ss10-m001",
+        "s01-ss16-m002",
+        "s05-ss10-m004"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 2
+    },
+    {
+      "id": "MIL-027",
+      "category": "transversal",
+      "retrieved_ids": [
+        "s05-ss05-m002",
+        "s05-ss05-m007",
+        "s05-ss05-m008",
+        "s05-ss05-m004",
+        "s05-ss05-m003",
+        "s05-ss05-m005",
+        "s05-ss05-m006",
+        "s05-ss05-m009"
+      ],
+      "context_ids": [
+        "s05-ss05-m002",
+        "s05-ss05-m007",
+        "s05-ss05-m008",
+        "s05-ss05-m004",
+        "s05-ss05-m003",
+        "s05-ss05-m005",
+        "s05-ss05-m006",
+        "s05-ss05-m009"
+      ],
+      "known_evidence_coverage": 0.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-028",
+      "category": "transversal",
+      "retrieved_ids": [
+        "s05-ss11-m009",
+        "s06-ss03-m005",
+        "s03-ss07-m001",
+        "s04-ss04-m008",
+        "s03-ss04-m005",
+        "s01-ss01-m008"
+      ],
+      "context_ids": [
+        "s05-ss11-m009",
+        "s06-ss03-m005",
+        "s03-ss07-m001",
+        "s04-ss04-m008",
+        "s03-ss04-m005",
+        "s01-ss01-m008"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-029",
+      "category": "transversal",
+      "retrieved_ids": [
+        "s01-ss06-m010",
+        "s01-ss09-m008",
+        "s01-ss02-m005",
+        "s01-ss20-m005",
+        "s02-ss04-m009",
+        "s01-ss07-m001",
+        "s01-ss06-m006",
+        "s01-ss16-m005"
+      ],
+      "context_ids": [
+        "s01-ss06-m010",
+        "s01-ss09-m008",
+        "s01-ss02-m005",
+        "s01-ss20-m005",
+        "s02-ss04-m009",
+        "s01-ss07-m001",
+        "s01-ss06-m006",
+        "s01-ss16-m005"
+      ],
+      "known_evidence_coverage": 0.3333333333333333,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 2
+    },
+    {
+      "id": "MIL-030",
+      "category": "transversal",
+      "retrieved_ids": [
+        "s08-ss03-m002",
+        "s08-ss03-m003",
+        "s08-ss03-m001",
+        "s08-ss03-m006",
+        "s08-ss03-m004",
+        "s08-ss03-m008",
+        "s08-ss03-m005",
+        "s08-ss03-m009"
+      ],
+      "context_ids": [
+        "s08-ss03-m002",
+        "s08-ss03-m003",
+        "s08-ss03-m001",
+        "s08-ss03-m006",
+        "s08-ss03-m004",
+        "s08-ss03-m008",
+        "s08-ss03-m005",
+        "s08-ss03-m009"
+      ],
+      "known_evidence_coverage": 0.6666666666666666,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-031",
+      "category": "conversation",
+      "retrieved_ids": [
+        "s05-ss09-m003",
+        "s01-ss14-m006",
+        "s01-ss14-m008",
+        "s05-ss09-m005",
+        "s01-ss14-m003",
+        "s01-ss14-m004",
+        "s05-ss09-m006",
+        "s01-ss14-m005"
+      ],
+      "context_ids": [
+        "s05-ss09-m003",
+        "s01-ss14-m006",
+        "s01-ss14-m008",
+        "s05-ss09-m005",
+        "s01-ss14-m003",
+        "s01-ss14-m004",
+        "s05-ss09-m006",
+        "s01-ss14-m005"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-032",
+      "category": "conversation",
+      "retrieved_ids": [
+        "s03-ss04-m001",
+        "s03-ss04-m005",
+        "s03-ss04-m002",
+        "s03-ss04-m003",
+        "s03-ss04-m009",
+        "s03-ss04-m010",
+        "s03-ss04-m004",
+        "s03-ss04-m008"
+      ],
+      "context_ids": [
+        "s03-ss04-m001",
+        "s03-ss04-m005",
+        "s03-ss04-m002",
+        "s03-ss04-m003",
+        "s03-ss04-m009",
+        "s03-ss04-m010",
+        "s03-ss04-m004",
+        "s03-ss04-m008"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-033",
+      "category": "conversation",
+      "retrieved_ids": [
+        "a01-ss02-b054",
+        "s08-ss01-m006",
+        "s01-ss16-m002",
+        "s08-ss01-m007",
+        "a01-ss02-b058",
+        "s01-ss06-m010",
+        "s02-ss06-m004",
+        "s01-ss02-m005"
+      ],
+      "context_ids": [
+        "a01-ss02-b054",
+        "s08-ss01-m006",
+        "s01-ss16-m002",
+        "s08-ss01-m007",
+        "a01-ss02-b058",
+        "s01-ss06-m010",
+        "s02-ss06-m004",
+        "s01-ss02-m005"
+      ],
+      "known_evidence_coverage": null,
+      "conditional_groups_not_scored": 1,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-034",
+      "category": "conversation",
+      "retrieved_ids": [
+        "s06-ss09-m001",
+        "s06-ss09-m002",
+        "s06-ss09-m003",
+        "s01-ss09-m009",
+        "s01-ss09-m004",
+        "s01-ss09-m002",
+        "s01-ss09-m003",
+        "s01-ss09-m007"
+      ],
+      "context_ids": [
+        "s06-ss09-m001",
+        "s06-ss09-m002",
+        "s06-ss09-m003",
+        "s01-ss09-m009",
+        "s01-ss09-m004",
+        "s01-ss09-m002",
+        "s01-ss09-m003",
+        "s01-ss09-m007"
+      ],
+      "known_evidence_coverage": null,
+      "conditional_groups_not_scored": 3,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-035",
+      "category": "insufficient",
+      "retrieved_ids": [
+        "s01-ss01-m001",
+        "s01-ss01-m002",
+        "a01-ss01-b020",
+        "a01-ss01-b002",
+        "s01-ss01-m012",
+        "s01-ss01-m008",
+        "s01-ss01-m005",
+        "a01-ss01-b001"
+      ],
+      "context_ids": [
+        "s01-ss01-m001",
+        "s01-ss01-m002",
+        "a01-ss01-b020",
+        "a01-ss01-b002",
+        "s01-ss01-m012",
+        "s01-ss01-m008",
+        "s01-ss01-m005",
+        "a01-ss01-b001"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 2
+    },
+    {
+      "id": "MIL-036",
+      "category": "insufficient",
+      "retrieved_ids": [
+        "s01-ss16-m002",
+        "s01-ss17-m002",
+        "s01-ss20-m007",
+        "a01-ss01-b009",
+        "s05-ss05-m006",
+        "s01-ss04-m006",
+        "s01-ss04-m007",
+        "s06-ss02-m004"
+      ],
+      "context_ids": [
+        "s01-ss16-m002",
+        "s01-ss17-m002",
+        "s01-ss20-m007",
+        "a01-ss01-b009",
+        "s05-ss05-m006",
+        "s01-ss04-m006",
+        "s01-ss04-m007",
+        "s06-ss02-m004"
+      ],
+      "known_evidence_coverage": null,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-037",
+      "category": "insufficient",
+      "retrieved_ids": [
+        "s01-ss10-m001",
+        "s01-ss12-m001",
+        "s01-ss12-m004",
+        "s01-ss12-m003",
+        "s01-ss12-m007",
+        "s01-ss12-m008",
+        "s01-ss12-m006",
+        "s01-ss12-m005"
+      ],
+      "context_ids": [
+        "s01-ss10-m001",
+        "s01-ss12-m001",
+        "s01-ss12-m004",
+        "s01-ss12-m003",
+        "s01-ss12-m007",
+        "s01-ss12-m008",
+        "s01-ss12-m006",
+        "s01-ss12-m005"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-038",
+      "category": "insufficient",
+      "retrieved_ids": [
+        "s01-ss14-m006",
+        "s01-ss14-m008",
+        "s01-ss14-m003",
+        "s01-ss14-m004",
+        "s06-ss02-m001",
+        "s01-ss14-m005",
+        "s01-ss14-m002",
+        "s01-ss14-m007"
+      ],
+      "context_ids": [
+        "s01-ss14-m006",
+        "s01-ss14-m008",
+        "s01-ss14-m003",
+        "s01-ss14-m004",
+        "s06-ss02-m001",
+        "s01-ss14-m005",
+        "s01-ss14-m002",
+        "s01-ss14-m007"
+      ],
+      "known_evidence_coverage": null,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-039",
+      "category": "insufficient",
+      "retrieved_ids": [
+        "s01-ss14-m001",
+        "a02-ss02-b007",
+        "s01-ss14-m006",
+        "s01-ss14-m008",
+        "s01-ss14-m003",
+        "s01-ss14-m004",
+        "s01-ss14-m005",
+        "s01-ss14-m002"
+      ],
+      "context_ids": [
+        "s01-ss14-m001",
+        "a02-ss02-b007",
+        "s01-ss14-m006",
+        "s01-ss14-m008",
+        "s01-ss14-m003",
+        "s01-ss14-m004",
+        "s01-ss14-m005",
+        "s01-ss14-m002"
+      ],
+      "known_evidence_coverage": 1.0,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 1
+    },
+    {
+      "id": "MIL-040",
+      "category": "adversarial",
+      "retrieved_ids": [
+        "s01-ss16-m002",
+        "s06-ss02-m001",
+        "s03-ss04-m009",
+        "s06-ss06-m006",
+        "s01-ss09-m006",
+        "s03-ss07-m002",
+        "a01-ss01-b005",
+        "s03-ss13-m002"
+      ],
+      "context_ids": [
+        "s01-ss16-m002",
+        "s06-ss02-m001",
+        "s03-ss04-m009",
+        "s06-ss06-m006",
+        "s01-ss09-m006",
+        "s03-ss07-m002",
+        "a01-ss01-b002",
+        "a01-ss01-b005",
+        "s03-ss13-m002"
+      ],
+      "known_evidence_coverage": null,
+      "conditional_groups_not_scored": 0,
+      "latency_ms": 2
+    }
+  ]
+}

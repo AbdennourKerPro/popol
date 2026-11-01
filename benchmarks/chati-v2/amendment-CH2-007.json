@@ -1,0 +1,25 @@
+{
+  "version": "1.0.3-user-amended",
+  "date": "2026-11-01",
+  "case_id": "CH2-007",
+  "authority": "Explicit user clarification in this session; not a new external review of all forty cases",
+  "user_instruction": "la portée de l’harmonisation est sur l’élargissement et non les accords de libre échange",
+  "previous_version": "1.0.2-validated",
+  "previous_manifest_sha256": "0be54dfe13d380f8ce4aa3c3d5294af4140d03d2151c641bb140cfec2158de55",
+  "approved_semantic_gold_sha256": "a8003c63c21082b4e7ee32bed58072462f44fb7ecae6212a42fea3f0e457ab26",
+  "questions_unchanged": true,
+  "corpus_unchanged": true,
+  "post_execution_amendment": true,
+  "scoring": {
+    "initial": {
+      "accuracy": 1,
+      "C01": 0.5,
+      "reason": "« lorsqu’ils » et « en l’absence d’harmonisation » étendent la condition aux deux objets : crédit partiel maintenu."
+    },
+    "repeat": {
+      "accuracy": 2,
+      "C01": 1,
+      "reason": "« les élargissements qui se feraient sans harmonisation » et la fiche fidèle sont acceptés : aucune extension explicite de la condition aux accords."
+    }
+  }
+}

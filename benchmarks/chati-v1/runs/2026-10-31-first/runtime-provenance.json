@@ -1,0 +1,23 @@
+{
+  "backend_fingerprints": {
+    "backend/chati/__init__.py": "1e887ec3369ae683157c0051085fc62337759f511c5234ddf0d7e217e78140fb",
+    "backend/chati/config.py": "84bac72ba6c565c51c41826ac1dc59138d15e18114ea420e1c159e3f5129b171",
+    "backend/chati/corpus.py": "cafcb6d560ab29c07f5ab23e8b709e87ff247717dfb7726a8feaf0e04e9eeaba",
+    "backend/chati/followups.py": "2faae76a5e3f4e0da368d1c25fb18bd5528e8a2df9ced7435a9386025150dc33",
+    "backend/chati/generation.py": "ce630edb767b4a051f9c8aa309894094bc05e415becefe6f3539b5ce1e77dbdc",
+    "backend/chati/index.py": "5793c5bc1f60438a9e6c2e55d5a714e6a6d30f56892d11a83e117cf991125266",
+    "backend/chati/main.py": "2fac26fc92c1bb599aefcd73dd41d94324fcd67bac800944087a659076a75b72",
+    "backend/chati/models.py": "9660623cea533c74c93de4d3ba963cb4a9ada1f151c91bb1f9825f3bd344ada7",
+    "backend/chati/retrieval.py": "70e0b5556858b0d8cbe7be3186e76042fbe74c0e2814e55baaef9973c31af8ab",
+    "backend/chati/web.py": "746ff3edcf6dc24f52de5838a7e73b2007d6b923d3c4d15f4bdbad830ee97508"
+  },
+  "index_sha256": "caed32b44e08ca5d1549bcb60172d7673afc12c82b2293dce77e30c8e54fcfeb",
+  "versions": {
+    "openai": "3.42.0",
+    "fastapi": "0.162.0",
+    "pydantic": "2.14.2",
+    "numpy": "2.5.4"
+  },
+  "container_image_id": "sha256:70fb4f66bd2e114a47a1f8cb9d3ae6012f8055153558c17709635f6d40bd0a31",
+  "backend_matches_collected_worktree": true
+}

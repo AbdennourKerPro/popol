@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Chati — Atelier de relecture</title>
+  <link rel="icon" href="/assets/lfi-vertical.png">
+  <link rel="stylesheet" href="/app.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#reading">Aller à la réponse</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Chati, atelier de relecture"><span>Chati<span class="red">.</span></span><small>ATELIER DE RELECTURE</small></a>
+    <div class="top-actions"><span class="local-pill">LOCAL · SANS APPEL IA</span><button id="corpus-open" class="button subtle">Chercher dans le corpus</button><button id="export" class="button">Exporter mes notes ↗</button></div>
+  </header>
+  <div id="error" class="error" role="alert" hidden></div>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Cas à relire">
+      <div class="sidebar-heading"><span class="eyebrow">BENCHMARK V2</span><h1>Votre regard<br>compte.</h1><p>Vérifiez les réponses, leurs nuances et leurs preuves.</p></div>
+      <div class="progress-card"><div><strong id="progress-label">Chargement…</strong><span id="draft-count"></span></div><progress id="progress" value="0" max="12" aria-label="Cas relus sur le premier passage"></progress><small>Progression sur les réponses du premier passage.</small></div>
+      <label class="search-label" for="case-search">Filtrer les cas</label><input id="case-search" type="search" placeholder="Question, thème, identifiant…">
+      <nav id="case-list" aria-label="Liste des questions"></nav>
+      <details class="method"><summary>Comment ce lot a été choisi</summary><p id="selection-method"></p><p>Les notes machine sont masquées au départ. Vos jugements restent distincts des leurs. Cet échantillon contrôle des jugements positifs ; il ne mesure pas la qualité globale du système.</p></details>
+    </aside>
+    <main id="reading" tabindex="-1">
+      <div class="intro"><div><span class="eyebrow">LIRE · VÉRIFIER · NUANCER</span><h2>Une relecture à votre rythme.</h2><p>Les réponses et les sources sont figées. Vous annotez leur qualité ; vous ne modifiez pas le programme.</p></div><img src="/assets/lfi-vertical.png" alt="La France insoumise" width="39" height="65"></div>
+      <details class="guide"><summary>Quelques repères pour relire utilement <span>5 minutes pour commencer</span></summary><ol id="guidance"></ol><div class="rubric-guide"><p><b>Exactitude :</b> les éléments demandés sont-ils corrects et complets ?</p><p><b>Sources :</b> les citations justifient-elles précisément les affirmations ?</p><p><b>Limites :</b> la réponse distingue-t-elle objectif, interprétation et information inconnue ?</p><p><b>Clarté :</b> répond-elle directement et résout-elle les reprises de la conversation ?</p><p><b>0 / 1 / 2 :</b> incorrect ou absent / partiel / satisfaisant. N/A en Sources seulement pour une pure clarification ou un refus sans faits sur une mesure.</p></div></details>
+      <section id="case-view" aria-live="polite"><p>Chargement des réponses et de leur contexte…</p></section>
+    </main>
+  </div>
+  <dialog id="corpus-dialog" aria-labelledby="corpus-title"><div class="dialog-header"><div><span class="eyebrow">CORPUS SOURCE FIGÉ</span><h2 id="corpus-title">Chercher au-delà des citations.</h2></div><button id="corpus-close" class="icon-button" aria-label="Fermer la recherche">×</button></div><p>Vérifiez notamment les constats d’absence dans les 795 mesures et les 171 blocs d’annexe. Un alias d’indexation ne constitue pas une preuve.</p><label for="corpus-search">Mot, expression ou identifiant</label><input id="corpus-search" type="search" placeholder="Ex. traité, patrimoine, s01-ss19-m007…"><p id="corpus-count" role="status"></p><div id="corpus-results"></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

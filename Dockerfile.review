@@ -1,0 +1,7 @@
+FROM python:3.14-slim-bookworm
+WORKDIR /app
+COPY review/ /app/review/
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+USER 1000:1000
+EXPOSE 8081
+CMD ["python", "/app/review/server.py", "--session", "/review-data/session.json", "--annotations", "/review-annotations/human-reviews.json", "--pdf", "/documents/programme.pdf", "--host", "0.0.0.0", "--port", "8081"]

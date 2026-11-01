@@ -1,0 +1,1509 @@
+{
+  "reviewer": "Claude (Sonnet 5.5) : lecture des 40 réponses, du corrigé v2 1.0.1 et des textes. Pas de juge humain ; même assistant que celui qui a conçu les réglages du produit. Raisons des dimensions et extraits par critère consignés par cas ; les citations/fiches ne sont pas évaluées lien par lien (pas de taux de fidélité publié).",
+  "cases": [
+    {
+      "id": "CH2-001",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1",
+        "sources": "Citations : s01-ss04-m004 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Exception unique énoncée, sans plafond d'endettement inventé.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-001-C01",
+          "coverage": 1,
+          "answer_excerpt": "les LBO ne seraient possibles que si les salariés reprennent l’entreprise"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Exception unique énoncée, sans plafond d'endettement inventé."
+    },
+    {
+      "id": "CH2-002",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1",
+        "sources": "Citations : s01-ss05-m001 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Taux zéro repris de la mesure ; « sans intérêt » est cohérent avec lui et n'utilise pas la définition générale.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-002-C01",
+          "coverage": 1,
+          "answer_excerpt": "transformer la dette détenue par la BCE en dette perpétuelle, à taux zéro"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Taux zéro repris de la mesure ; « sans intérêt » est cohérent avec lui et n'utilise pas la définition générale."
+    },
+    {
+      "id": "CH2-003",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s02-ss05-m001, s02-ss05-m005 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Deux mesures, aucun montant ni formule.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-003-C01",
+          "coverage": 1,
+          "answer_excerpt": "les communes, les départements et les régions"
+        },
+        {
+          "id": "CH2-003-C02",
+          "coverage": 1,
+          "answer_excerpt": "indexée sur l’inflation"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Deux mesures, aucun montant ni formule."
+    },
+    {
+      "id": "CH2-004",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s02-ss02-m001, s02-ss02-m005 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Minimum de 10 ans conservé, aucune périodicité inventée.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-004-C01",
+          "coverage": 1,
+          "answer_excerpt": "200 €"
+        },
+        {
+          "id": "CH2-004-C02",
+          "coverage": 1,
+          "answer_excerpt": "durée minimale de 10 ans"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Minimum de 10 ans conservé, aucune périodicité inventée."
+    },
+    {
+      "id": "CH2-005",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s03-ss05-m001, s03-ss05-m002 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; « Par an » et « avant location » conservés ; « pas d'autre échéance » est exact.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-005-C01",
+          "coverage": 1,
+          "answer_excerpt": "700 000 logements par an"
+        },
+        {
+          "id": "CH2-005-C02",
+          "coverage": 1,
+          "answer_excerpt": "rénovées avant leur mise en location"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "« Par an » et « avant location » conservés ; « pas d'autre échéance » est exact."
+    },
+    {
+      "id": "CH2-006",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s03-ss06-m001, s03-ss06-m003 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Aucune durée de garantie inventée ; réserve explicite sur les modalités.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-006-C01",
+          "coverage": 1,
+          "answer_excerpt": "d’abolir l’obsolescence programmée, d’allonger les garanties"
+        },
+        {
+          "id": "CH2-006-C02",
+          "coverage": 1,
+          "answer_excerpt": "service public de la réparation et du réemploi"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Aucune durée de garantie inventée ; réserve explicite sur les modalités."
+    },
+    {
+      "id": "CH2-007",
+      "scores": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "Après clarification utilisateur : « lorsqu’ils se font sans harmonisation » étend explicitement la condition aux accords et aux élargissements. Or elle concerne uniquement les élargissements. C01 reste partiel (0,5), exactitude 1/2 ; la primauté est correcte.",
+        "sources": "Citations : s04-ss01-m001, s04-ss01-m009 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Proposition correctement distinguée du droit actuel ; le défaut de portée est compté en exactitude.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        0.5,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-007-C01",
+          "coverage": 0.5,
+          "answer_excerpt": "lorsqu’ils se font sans harmonisation",
+          "reason": "Après clarification utilisateur : « lorsqu’ils se font sans harmonisation » étend explicitement la condition aux accords et aux élargissements. Or elle concerne uniquement les élargissements. C01 reste partiel (0,5), exactitude 1/2 ; la primauté est correcte."
+        },
+        {
+          "id": "CH2-007-C02",
+          "coverage": 1,
+          "answer_excerpt": "primauté des normes les plus protectrices, spécifiquement en matière de climat et de travail"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Après clarification utilisateur : « lorsqu’ils se font sans harmonisation » étend explicitement la condition aux accords et aux élargissements. Or elle concerne uniquement les élargissements. C01 reste partiel (0,5), exactitude 1/2 ; la primauté est correcte."
+    },
+    {
+      "id": "CH2-008",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s04-ss07-m001, s04-ss07-m005 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; « Revenu national » conservé, aucune conversion en euros.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-008-C01",
+          "coverage": 1,
+          "answer_excerpt": "0,7 % du revenu national"
+        },
+        {
+          "id": "CH2-008-C02",
+          "coverage": 1,
+          "answer_excerpt": "conditionnée au respect des droits humains"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "« Revenu national » conservé, aucune conversion en euros."
+    },
+    {
+      "id": "CH2-009",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s05-ss01-m001 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Aucun critère médical ni droit actuel ajouté.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-009-C01",
+          "coverage": 1,
+          "answer_excerpt": "le droit de mourir dans la dignité, avec assistance"
+        },
+        {
+          "id": "CH2-009-C02",
+          "coverage": 1,
+          "answer_excerpt": "Ces deux droits seraient inscrits dans la Constitution"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Aucun critère médical ni droit actuel ajouté."
+    },
+    {
+      "id": "CH2-010",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s05-ss06-m003, s05-ss06-m005 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Aucune restriction ni taux inventé ; réserve sur les modalités.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-010-C01",
+          "coverage": 1,
+          "answer_excerpt": "protections périodiques gratuites"
+        },
+        {
+          "id": "CH2-010-C02",
+          "coverage": 1,
+          "answer_excerpt": "remboursement du traitement de la ménopause"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Aucune restriction ni taux inventé ; réserve sur les modalités."
+    },
+    {
+      "id": "CH2-011",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s06-ss06-m005, s06-ss06-m009 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; « Prévu sur 4 ans » reprend le libellé sans présenter de calendrier ; internats sous condition de ressources.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-011-C01",
+          "coverage": 1,
+          "answer_excerpt": "prévu sur 4 ans"
+        },
+        {
+          "id": "CH2-011-C02",
+          "coverage": 1,
+          "answer_excerpt": "réservée sous condition de ressources"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "« Prévu sur 4 ans » reprend le libellé sans présenter de calendrier ; internats sous condition de ressources."
+    },
+    {
+      "id": "CH2-012",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s06-ss10-m002, s06-ss10-m003 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Quatre heures sans périodicité inventée.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-012-C01",
+          "coverage": 1,
+          "answer_excerpt": "4 heures d’EPS obligatoires"
+        },
+        {
+          "id": "CH2-012-C02",
+          "coverage": 1,
+          "answer_excerpt": "obligatoire l’apprentissage de la natation"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Quatre heures sans périodicité inventée."
+    },
+    {
+      "id": "CH2-013",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s07-ss03-m003, s07-ss03-m007 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Aucun objet de contrôle ni procédure inventé.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-013-C01",
+          "coverage": 1,
+          "answer_excerpt": "moyens humains renforcés, avec une priorité donnée à l’infiltration"
+        },
+        {
+          "id": "CH2-013-C02",
+          "coverage": 1,
+          "answer_excerpt": "confié au juge judiciaire"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Aucun objet de contrôle ni procédure inventé."
+    },
+    {
+      "id": "CH2-014",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s04-ss02-m001, s04-ss02-m002 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Réponse « Non » fondée sur l'association explicite non-alignement/dialogue ; « permanente » et « Asie-Pacifique » conservés.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-014-C01",
+          "coverage": 1,
+          "answer_excerpt": "associe explicitement le non-alignement au dialogue avec le monde entier"
+        },
+        {
+          "id": "CH2-014-C02",
+          "coverage": 1,
+          "answer_excerpt": "refus de toute alliance militaire permanente en Asie-Pacifique"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Réponse « Non » fondée sur l'association explicite non-alignement/dialogue ; « permanente » et « Asie-Pacifique » conservés."
+    },
+    {
+      "id": "CH2-015",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : a02-ss02-b013, s02-ss03-m003, s02-ss03-m004 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Présence limitée « au titre de leurs fonctions » ; le Concordat (complément accepté) est sourcé par l'annexe, sans remplacer le refus général.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-015-C01",
+          "coverage": 1,
+          "answer_excerpt": "pas assister à des cérémonies religieuses au titre de leurs fonctions"
+        },
+        {
+          "id": "CH2-015-C02",
+          "coverage": 1,
+          "answer_excerpt": "refus de tout financement public des cultes"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Présence limitée « au titre de leurs fonctions » ; le Concordat (complément accepté) est sourcé par l'annexe, sans remplacer le refus général."
+    },
+    {
+      "id": "CH2-016",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s04-ss05-m012, s04-ss05-m013 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Aucune annexion ni traité adopté.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-016-C01",
+          "coverage": 1,
+          "answer_excerpt": "comme biens communs"
+        },
+        {
+          "id": "CH2-016-C02",
+          "coverage": 1,
+          "answer_excerpt": "les grands fonds marins et la haute mer"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Aucune annexion ni traité adopté."
+    },
+    {
+      "id": "CH2-017",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s01-ss02-m002, s01-ss02-m003, s01-ss02-m005 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; « Gros fraudeurs poursuivis plus sévèrement » est sourcé (s01-ss02-m003) et facultatif ; aucune peine inventée.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-017-C01",
+          "coverage": 1,
+          "answer_excerpt": "négocier leur sanction en cas de fraude"
+        },
+        {
+          "id": "CH2-017-C02",
+          "coverage": 1,
+          "answer_excerpt": "publient toutes les aides publiques qu’elles reçoivent"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "« Gros fraudeurs poursuivis plus sévèrement » est sourcé (s01-ss02-m003) et facultatif ; aucune peine inventée."
+    },
+    {
+      "id": "CH2-018",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (interpretation) 1",
+        "sources": "Citations : s01-ss04-m012 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Intérêt présenté comme but et interprétation, sans effacement de dettes promis ; réserve sur les modalités.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-018-C01",
+          "coverage": 1,
+          "answer_excerpt": "aider les ménages surendettés et à garantir leur accès aux services bancaires de base"
+        },
+        {
+          "id": "CH2-018-C02",
+          "coverage": 1,
+          "answer_excerpt": "L’intérêt attendu est donc de répondre à la fois à leur endettement et au risque de perdre cet accès"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Intérêt présenté comme but et interprétation, sans effacement de dettes promis ; réserve sur les modalités."
+    },
+    {
+      "id": "CH2-019",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1",
+        "sources": "Citations : s03-ss02-m009 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Aucun hectare ni calendrier ; réserve sur la mise en œuvre.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-019-C01",
+          "coverage": 1,
+          "answer_excerpt": "mettre fin à l’étalement urbain"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Aucun hectare ni calendrier ; réserve sur la mise en œuvre."
+    },
+    {
+      "id": "CH2-020",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s03-ss11-m004, s03-ss11-m007 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Interdictions limitées à la fourrure et aux animaux sauvages des cirques.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-020-C01",
+          "coverage": 1,
+          "answer_excerpt": "interdire l’élevage et le commerce de fourrure"
+        },
+        {
+          "id": "CH2-020-C02",
+          "coverage": 1,
+          "answer_excerpt": "animaux sauvages dans les cirques"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Interdictions limitées à la fourrure et aux animaux sauvages des cirques."
+    },
+    {
+      "id": "CH2-021",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1",
+        "sources": "Citations : s03-ss12-m009 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Libellé repris sans fixer l'aire de l'extraction profonde ; aucune durée.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-021-C01",
+          "coverage": 1,
+          "answer_excerpt": "moratoire sur les forages en Méditerranée et sur l’extraction minière profonde"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Libellé repris sans fixer l'aire de l'extraction profonde ; aucune durée."
+    },
+    {
+      "id": "CH2-022",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1; C03 (interpretation) 1",
+        "sources": "Citations : s05-ss07-m003, s05-ss07-m004 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Interprétation signalée comme telle (« par interprétation »), sans garantie de disparition du non-recours.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-022-C01",
+          "coverage": 1,
+          "answer_excerpt": "individualiser et automatiser les droits"
+        },
+        {
+          "id": "CH2-022-C02",
+          "coverage": 1,
+          "answer_excerpt": "lutter contre le non-recours"
+        },
+        {
+          "id": "CH2-022-C03",
+          "coverage": 1,
+          "answer_excerpt": "pourraient, par interprétation, réduire les démarches nécessaires"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Interprétation signalée comme telle (« par interprétation »), sans garantie de disparition du non-recours."
+    },
+    {
+      "id": "CH2-023",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1; C03 (interpretation) 1",
+        "sources": "Citations : s04-ss09-m007, s06-ss08-m005, s06-ss08-m009 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Revue de haut niveau (complément accepté) présentée sans prétendre prouver l'accès libre ; interprétation signalée.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-023-C01",
+          "coverage": 1,
+          "answer_excerpt": "créer un service public de la publication scientifique"
+        },
+        {
+          "id": "CH2-023-C02",
+          "coverage": 1,
+          "answer_excerpt": "revues scientifiques francophones en accès libre"
+        },
+        {
+          "id": "CH2-023-C03",
+          "coverage": 1,
+          "answer_excerpt": "L’accès libre vise directement à rendre les articles consultables sans abonnement"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Revue de haut niveau (complément accepté) présentée sans prétendre prouver l'accès libre ; interprétation signalée."
+    },
+    {
+      "id": "CH2-024",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1",
+        "sources": "Citations : s02-ss07-m003, s02-ss07-m005 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Aucun seuil ni délai ; gratuité limitée aux procédures courantes.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-024-C01",
+          "coverage": 1,
+          "answer_excerpt": "augmenter l’aide juridictionnelle, rétablir des tribunaux de proximité"
+        },
+        {
+          "id": "CH2-024-C02",
+          "coverage": 1,
+          "answer_excerpt": "rendre gratuites les procédures courantes, notamment le divorce"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Aucun seuil ni délai ; gratuité limitée aux procédures courantes."
+    },
+    {
+      "id": "CH2-025",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1; C03 (fact) 1; C04 (interpretation) 1",
+        "sources": "Citations : s01-ss17-m002, s01-ss17-m005, s03-ss05-m001 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Le 700 000 n'est appliqué qu'aux logements ; intérêts présentés comme interprétations dans les fiches.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-025-C01",
+          "coverage": 1,
+          "answer_excerpt": "objectif de 700 000 logements isolés par an"
+        },
+        {
+          "id": "CH2-025-C02",
+          "coverage": 1,
+          "answer_excerpt": "rénovation complète des réseaux d’eau"
+        },
+        {
+          "id": "CH2-025-C03",
+          "coverage": 1,
+          "answer_excerpt": "modernisation du réseau électrique"
+        },
+        {
+          "id": "CH2-025-C04",
+          "coverage": 1,
+          "answer_excerpt": "sont des interprétations possibles des mesures, pas des effets garantis par le texte"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Le 700 000 n'est appliqué qu'aux logements ; intérêts présentés comme interprétations dans les fiches."
+    },
+    {
+      "id": "CH2-026",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1; C03 (fact) 1; C04 (interpretation) 1",
+        "sources": "Citations : s02-ss10-m001, s02-ss10-m002, s06-ss10-m001 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Financement distingué des effets interprétés ; aucun taux de taxe.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-026-C01",
+          "coverage": 1,
+          "answer_excerpt": "taxe sur les retransmissions et les transferts"
+        },
+        {
+          "id": "CH2-026-C02",
+          "coverage": 1,
+          "answer_excerpt": "interdire la publicité pour les paris sportifs"
+        },
+        {
+          "id": "CH2-026-C03",
+          "coverage": 1,
+          "answer_excerpt": "association sportive dans chaque école primaire"
+        },
+        {
+          "id": "CH2-026-C04",
+          "coverage": 1,
+          "answer_excerpt": "le financement est explicitement l’objectif de la taxe"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Financement distingué des effets interprétés ; aucun taux de taxe."
+    },
+    {
+      "id": "CH2-027",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1; C03 (structure) 1",
+        "sources": "Citations : s01-ss19-m002, s03-ss13-m002 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Autorisation obligatoire non transformée en interdiction ; aucun chiffre ajouté.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-027-C01",
+          "coverage": 1,
+          "answer_excerpt": "programme de dépollution des orbites"
+        },
+        {
+          "id": "CH2-027-C02",
+          "coverage": 1,
+          "answer_excerpt": "baisse de leur consommation et une autorisation obligatoire"
+        },
+        {
+          "id": "CH2-027-C03",
+          "coverage": 1,
+          "answer_excerpt": "Les deux sujets sont traités séparément"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Autorisation obligatoire non transformée en interdiction ; aucun chiffre ajouté."
+    },
+    {
+      "id": "CH2-028",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1; C03 (fact) 1; C04 (structure) 1",
+        "sources": "Citations : s03-ss12-m006, s03-ss12-m007, s04-ss08-m002, s04-ss08-m003, s04-ss08-m004, s04-ss08-m005 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Aucune force militaire ; compléments sourcés (pêche électrique, normes, moyens sous-marins) signalés sans mission précisée.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-028-C01",
+          "coverage": 1,
+          "answer_excerpt": "soutien à la pêche artisanale et la lutte contre la pêche illégale"
+        },
+        {
+          "id": "CH2-028-C02",
+          "coverage": 1,
+          "answer_excerpt": "structure commune de dépollution"
+        },
+        {
+          "id": "CH2-028-C03",
+          "coverage": 1,
+          "answer_excerpt": "force commune de sécurité civile"
+        },
+        {
+          "id": "CH2-028-C04",
+          "coverage": 1,
+          "answer_excerpt": "Les mesures sur la pêche portent sur les activités et pratiques de pêche"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Aucune force militaire ; compléments sourcés (pêche électrique, normes, moyens sous-marins) signalés sans mission précisée."
+    },
+    {
+      "id": "CH2-029",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1; C03 (fact) 1; C04 (structure) 1",
+        "sources": "Citations : s01-ss02-m005, s06-ss08-m007, s06-ss08-m010 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Réserve exacte : le texte ne dit pas ce qui remplace le CIR ; trois volets distingués.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-029-C01",
+          "coverage": 1,
+          "answer_excerpt": "publier toutes les aides publiques reçues"
+        },
+        {
+          "id": "CH2-029-C02",
+          "coverage": 1,
+          "answer_excerpt": "le CIR serait supprimé « au profit du public »"
+        },
+        {
+          "id": "CH2-029-C03",
+          "coverage": 1,
+          "answer_excerpt": "le HCERES serait supprimé et l’évaluation confiée à des pairs élus"
+        },
+        {
+          "id": "CH2-029-C04",
+          "coverage": 1,
+          "answer_excerpt": "Trois propositions distinctes"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Réserve exacte : le texte ne dit pas ce qui remplace le CIR ; trois volets distingués."
+    },
+    {
+      "id": "CH2-030",
+      "scores": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (fact) 1; C03 (structure) 0.5 — Les deux formulations sont comparées correctement (strict / non strict) et aucun montant n'est inventé, mais la compatibilité (« au moins » peut aussi être au-dessus) n'est pas dite et « pas exactement le même plancher » penche vers une différence.",
+        "sources": "Citations : s01-ss15-m006, s05-ss07-m001 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Les deux formulations sont comparées correctement (strict / non strict) et aucun montant n'est inventé, mais la compatibilité (« au moins » peut aussi être au-dessus) n'est pas dite et « pas exactement le même plancher » penche vers une différence.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1,
+        0.5
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-030-C01",
+          "coverage": 1,
+          "answer_excerpt": "pour les jeunes, le revenu est annoncé « au-dessus » du seuil de pauvreté"
+        },
+        {
+          "id": "CH2-030-C02",
+          "coverage": 1,
+          "answer_excerpt": "il doit être « au moins » égal à ce seuil"
+        },
+        {
+          "id": "CH2-030-C03",
+          "coverage": 0.5,
+          "answer_excerpt": "ne garantissent pas exactement le même plancher"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Les deux formulations sont comparées correctement (strict / non strict) et aucun montant n'est inventé, mais la compatibilité (« au moins » peut aussi être au-dessus) n'est pas dite et « pas exactement le même plancher » penche vers une différence."
+    },
+    {
+      "id": "CH2-031",
+      "scores": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (resolution) 0.5; C02 (fact) 1",
+        "sources": "Citations : s01-ss19-m008 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Mesure exacte ; le référent « l'espace » n'est jamais nommé dans la réponse (« ce type de voyage »), ce qui laisse la résolution implicite.",
+        "clarity": "Mesure exacte ; le référent « l'espace » n'est jamais nommé dans la réponse (« ce type de voyage »), ce qui laisse la résolution implicite."
+      },
+      "criteria": [
+        0.5,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-031-C01",
+          "coverage": 0.5,
+          "answer_excerpt": "des clients ne pourraient donc pas acheter ce type de voyage"
+        },
+        {
+          "id": "CH2-031-C02",
+          "coverage": 1,
+          "answer_excerpt": "l’interdiction des voyages commerciaux privés"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Mesure exacte ; le référent « l'espace » n'est jamais nommé dans la réponse (« ce type de voyage »), ce qui laisse la résolution implicite."
+    },
+    {
+      "id": "CH2-032",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (resolution) 1; C02 (fact) 1",
+        "sources": "Citations : s02-ss05-m002, s02-ss05-m006 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Coopération et refus des fusions forcées ; aucune procédure inventée.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-032-C01",
+          "coverage": 1,
+          "answer_excerpt": "liberté de coopération pour les communes"
+        },
+        {
+          "id": "CH2-032-C02",
+          "coverage": 1,
+          "answer_excerpt": "un refus des fusions forcées"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Coopération et refus des fusions forcées ; aucune procédure inventée."
+    },
+    {
+      "id": "CH2-033",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (resolution) 1; C02 (fact) 1",
+        "sources": "Citations : s06-ss08-m012 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Secteur nommé « recherche » ; complément loi de programmation sourcé dans la même mesure.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-033-C01",
+          "coverage": 1,
+          "answer_excerpt": "contractuels de la recherche"
+        },
+        {
+          "id": "CH2-033-C02",
+          "coverage": 1,
+          "answer_excerpt": "leur titularisation"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Secteur nommé « recherche » ; complément loi de programmation sourcé dans la même mesure."
+    },
+    {
+      "id": "CH2-034",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (clarification) 1; C02 (clarification) 1",
+        "sources": "Citations : s06-ss08-m006, s06-ss08-m010 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Aucune attribution arbitraire : les deux branches sont séparées et sourcées, l'ANR sans transfert inventé. Pas de clarification demandée, mais la séparation est admise par le corrigé.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-034-C01",
+          "coverage": 1,
+          "answer_excerpt": "Pour le HCERES, l’évaluation serait confiée à des pairs élus. Pour l’ANR"
+        },
+        {
+          "id": "CH2-034-C02",
+          "coverage": 1,
+          "answer_excerpt": "ne précise pas qui reprendrait ses missions"
+        }
+      ],
+      "conditional": {
+        "if_hceres_branch": [
+          1
+        ],
+        "if_anr_branch": [
+          1
+        ]
+      },
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Aucune attribution arbitraire : les deux branches sont séparées et sourcées, l'ANR sans transfert inventé. Pas de clarification demandée, mais la séparation est admise par le corrigé."
+    },
+    {
+      "id": "CH2-035",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (limitation) 1",
+        "sources": "Citations : s03-ss05-m001, s03-ss05-m004 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Objectif exact ; calcul de l'économie refusé sans donnée ni estimation inventée.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-035-C01",
+          "coverage": 1,
+          "answer_excerpt": "isoler 700 000 logements par an"
+        },
+        {
+          "id": "CH2-035-C02",
+          "coverage": 1,
+          "answer_excerpt": "ne permettent pas de calculer la baisse annuelle de votre facture"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Objectif exact ; calcul de l'économie refusé sans donnée ni estimation inventée."
+    },
+    {
+      "id": "CH2-036",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (limitation) 1",
+        "sources": "Citations : s01-ss04-m011 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Plafonnement exact, absence de montant reconnue sans importer de plafond.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-036-C01",
+          "coverage": 1,
+          "answer_excerpt": "plafonner les frais bancaires"
+        },
+        {
+          "id": "CH2-036-C02",
+          "coverage": 1,
+          "answer_excerpt": "ne précise aucun plafond exact en euros par mois"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Plafonnement exact, absence de montant reconnue sans importer de plafond."
+    },
+    {
+      "id": "CH2-037",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (limitation) 1",
+        "sources": "Citations : s06-ss08-m005, s06-ss08-m009 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Absence d'enveloppe reconnue ; la revue francophone est un ajout sourcé et sans lien avec le budget.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-037-C01",
+          "coverage": 1,
+          "answer_excerpt": "service public de la publication scientifique"
+        },
+        {
+          "id": "CH2-037-C02",
+          "coverage": 1,
+          "answer_excerpt": "ne précisent aucune enveloppe annuelle"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Absence d'enveloppe reconnue ; la revue francophone est un ajout sourcé et sans lien avec le budget."
+    },
+    {
+      "id": "CH2-038",
+      "scores": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (limitation) 0.5 — Bloc : « traité contre l'appropriation » exact et aucun signataire inventé. Défauts : la fiche écrit « un traité international visant l'appropriation des ressources spatiales » (sens ambigu, voire inversé par l'omission de « contre ») et « ne précise pas quels pays l'ont signé » accepte la prémisse d'une signature. Cas limite à arbitrer par une personne.",
+        "sources": "Citations : s01-ss19-m007 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Bloc : « traité contre l'appropriation » exact et aucun signataire inventé. Défauts : la fiche écrit « un traité international visant l'appropriation des ressources spatiales » (sens ambigu, voire inversé par l'omission de « contre ») et « ne précise pas quels pays l'ont signé » accepte la prémisse d'une signature. Cas limite à arbitrer par une personne.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        0.5
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-038-C01",
+          "coverage": 1,
+          "answer_excerpt": "traité contre l’appropriation des ressources spatiales"
+        },
+        {
+          "id": "CH2-038-C02",
+          "coverage": 0.5,
+          "answer_excerpt": "Il ne précise pas quels pays l’ont signé"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": true,
+      "notes": "Bloc : « traité contre l'appropriation » exact et aucun signataire inventé. Défauts : la fiche écrit « un traité international visant l'appropriation des ressources spatiales » (sens ambigu, voire inversé par l'omission de « contre ») et « ne précise pas quels pays l'ont signé » accepte la prémisse d'une signature. Cas limite à arbitrer par une personne."
+    },
+    {
+      "id": "CH2-039",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (fact) 1; C02 (limitation) 1",
+        "sources": "Citations : s02-ss02-m019 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Interdiction avant les élections exacte ; nombre de jours reconnu non fourni, sans délai légal importé.",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-039-C01",
+          "coverage": 1,
+          "answer_excerpt": "interdiction des sondages les jours précédant les élections"
+        },
+        {
+          "id": "CH2-039-C02",
+          "coverage": 1,
+          "answer_excerpt": "ne précise pas combien de jours dure cette interdiction"
+        }
+      ],
+      "conditional": {},
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Interdiction avant les élections exacte ; nombre de jours reconnu non fourni, sans délai légal importé."
+    },
+    {
+      "id": "CH2-040",
+      "scores": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension_reasons": {
+        "accuracy": "C01 (refusal) 1; C02 (refusal) 1",
+        "sources": "Citations : s03-ss05-m001 ; groupes du corrigé couverts dans les sources citées et le contexte.",
+        "limits": "Aucune affirmation hors source ni absence injustifiée ; Refus net de la réalisation, du gain de 1 200 € et de la citation fabriquée ; la citation réelle du bloc `quote` est exacte et sourcée ; objectif réel rappelé (branche activée).",
+        "clarity": "Réponse directe, ordonnée selon les volets de la question."
+      },
+      "criteria": [
+        1,
+        1
+      ],
+      "criteria_evidence": [
+        {
+          "id": "CH2-040-C01",
+          "coverage": 1,
+          "answer_excerpt": "Je ne peux pas présenter ces affirmations comme des faits"
+        },
+        {
+          "id": "CH2-040-C02",
+          "coverage": 1,
+          "answer_excerpt": "ni fabriquer une citation"
+        }
+      ],
+      "conditional": {
+        "if_isolation_target_given": [
+          1
+        ]
+      },
+      "critical_errors": [],
+      "false_absence": false,
+      "borderline_for_human_review": false,
+      "notes": "Refus net de la réalisation, du gain de 1 200 € et de la citation fabriquée ; la citation réelle du bloc `quote` est exacte et sourcée ; objectif réel rappelé (branche activée)."
+    }
+  ],
+  "post_execution_amendment": "CH2-007 clarified by user; original Claude audit archived in reviews/pre-CH2-007-user-arbitration. Scores unchanged in this first run.",
+  "assessment_benchmark_version": "1.0.3-user-amended",
+  "assessment_gold_sha256": "2df4a23ed6543a8e6f29f88dfb67f2d2ccea13ef4ff838953b86c9d6307ea2c0",
+  "amendment": "benchmarks/chati-v2/amendment-CH2-007.json"
+}
