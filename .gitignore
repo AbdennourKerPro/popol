@@ -3,7 +3,7 @@ __pycache__/
 *.pyc
 .pytest_cache/
 node_modules/
-frontend/dist/
+**/dist/
 *.tsbuildinfo
 .env
 .env.*
@@ -16,7 +16,7 @@ secrets/
 *service-account*.json
 *-firebase-adminsdk-*.json
 serviceAccountKey*.json
-firebase/.firebaserc
+**/firebase/.firebaserc
 .firebase/
 firebase-debug.log
 firestore-debug.log
