@@ -94,7 +94,7 @@ async def generate(client, model, messages, rows, web_context=None, verification
     user_text = " ".join(m.content for m in messages)
     error = None
     for attempt in range(2):
-        instructions = INSTRUCTIONS + (NOT_FOUND_NOTE if web_context is None else "") + (VERIFICATION_NOTE if verification else "") + ("\nLa tentative précédente avait une référence ou structure invalide (ou un identifiant écrit dans le texte). Reproduis les IDs fournis uniquement dans source_ids et respecte le schéma." if attempt else "")
+        instructions = INSTRUCTIONS + (NOT_FOUND_NOTE if web_context is None else "") + (VERIFICATION_NOTE if verification else "") + (f"\nLa tentative précédente a été rejetée : {error}. Corrige précisément ce point, en plaçant au moins un ID fourni dans source_ids de chaque bloc kind=answer, et respecte le schéma." if attempt else "")
         if web_context is not None:
             instructions += """\nMODE EXPLICATION ET COMPARAISON AVEC RECHERCHE WEB.
 Les sources jointes comprennent des mesures et des références de type web. La synthèse
