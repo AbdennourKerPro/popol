@@ -2,6 +2,7 @@ import { Download, Share2, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Sticker } from '../components/common';
 import { Mascot } from '../components/Mascot';
+import { MARQUE } from '../content/brand';
 import { type Format, FORMATS } from '../lib/posterFormats';
 
 const PUBLIC_URL: string | undefined = import.meta.env.VITE_PUBLIC_URL;
@@ -58,7 +59,7 @@ export function PosterModal({ themeId, theme, mesures, chiffres, onClose }: {
         <div className={`poster-preview preview-${format}`}>
           {image ? <img src={image.url} alt="Aperçu de l’image à partager" />
             : error ? <p>L’image n’a pas pu être créée.</p>
-            : <div className="poster-loading"><Mascot mood="think" size={90} className="bob" /><span>Chati dessine…</span></div>}
+            : <div className="poster-loading"><Mascot mood="think" size={90} className="bob" /><span>{MARQUE.dessine}</span></div>}
         </div>
         <div className="final-actions poster-modal-actions">
           {canShare && <button className="btn btn-primary" onClick={share}><Share2 size={18} strokeWidth={2.6} /> Partager</button>}

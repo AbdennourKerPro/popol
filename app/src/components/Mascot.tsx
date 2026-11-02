@@ -1,26 +1,41 @@
+import { MASCOTTE } from '../content/brand';
+import { MascotCat } from './MascotCat';
+
 export type Mood = 'idle' | 'happy' | 'wow' | 'think';
 
 const INK = '#1d1240';
+const LILAC = '#d8bfe8';
+const LILAC_DARK = '#b88fd6';
 const stroke = { stroke: INK, strokeLinecap: 'round', strokeLinejoin: 'round' } as const;
+
+/** A limb drawn as a thick outlined line. */
+function Limb({ d, width = 24 }: { d: string; width?: number }) {
+  return (
+    <g fill="none" strokeLinecap="round" strokeLinejoin="round">
+      <path d={d} stroke={INK} strokeWidth={width + 8} />
+      <path d={d} stroke={LILAC} strokeWidth={width} />
+    </g>
+  );
+}
 
 function Eyes({ mood }: { mood: Mood }) {
   if (mood === 'happy') {
     return (
-      <g {...stroke} strokeWidth={6} fill="none">
-        <path d="M61 108 Q74 92 87 108" />
-        <path d="M113 108 Q126 92 139 108" />
+      <g {...stroke} strokeWidth={5.5} fill="none">
+        <path d="M78 60 Q86 50 94 60" />
+        <path d="M106 60 Q114 50 122 60" />
       </g>
     );
   }
-  const ry = mood === 'wow' ? 20 : 17;
-  const pupil = mood === 'wow' ? { r: 5, dx: 0, dy: 0 } : mood === 'think' ? { r: 7, dx: 4, dy: -6 } : { r: 7.5, dx: 2, dy: 3 };
+  const r = mood === 'wow' ? 8.5 : 6.5;
+  const dy = mood === 'think' ? -2.5 : 0;
+  const dx = mood === 'think' ? 2.5 : 0;
   return (
     <g className="mascot-eyes">
-      {[74, 126].map((cx) => (
+      {[86, 114].map((cx) => (
         <g key={cx}>
-          <ellipse cx={cx} cy={106} rx={14} ry={ry} fill="#fff" {...stroke} strokeWidth={4.5} />
-          <circle cx={cx + pupil.dx} cy={106 + pupil.dy} r={pupil.r} fill={INK} />
-          <circle cx={cx + pupil.dx + 3} cy={106 + pupil.dy - 3.5} r={2.4} fill="#fff" />
+          <circle cx={cx + dx} cy={58 + dy} r={r} fill={INK} />
+          <circle cx={cx + dx + 2.4} cy={58 + dy - 2.4} r={2.2} fill="#fff" />
         </g>
       ))}
     </g>
@@ -28,47 +43,49 @@ function Eyes({ mood }: { mood: Mood }) {
 }
 
 function Mouth({ mood }: { mood: Mood }) {
-  if (mood === 'happy') {
-    return (
-      <g>
-        <path d="M84 139 Q100 166 116 139 Z" fill="#7d0f1f" {...stroke} strokeWidth={4.5} />
-        <path d="M92 152 Q100 146 108 152 Q104 158 100 158 Q96 158 92 152 Z" fill="#ff8a80" />
-      </g>
-    );
-  }
-  if (mood === 'wow') return <ellipse cx={100} cy={147} rx={7} ry={9} fill="#7d0f1f" {...stroke} strokeWidth={4} />;
-  if (mood === 'think') return <path d="M93 143 Q101 139 109 144" fill="none" {...stroke} strokeWidth={4.5} />;
-  return <path d="M100 132 V138 M88 138 Q94 146 100 138 Q106 146 112 138" fill="none" {...stroke} strokeWidth={4.5} />;
+  if (mood === 'happy') return <path d="M88 71 Q100 86 112 71 Z" fill="#7d0f1f" {...stroke} strokeWidth={4} />;
+  if (mood === 'wow') return <ellipse cx={100} cy={75} rx={5.5} ry={7} fill="#7d0f1f" {...stroke} strokeWidth={3.5} />;
+  if (mood === 'think') return <path d="M93 74 Q100 71 108 75" fill="none" {...stroke} strokeWidth={4} />;
+  return <path d="M91 72 Q100 80 109 72" fill="none" {...stroke} strokeWidth={4} />;
 }
 
-/** Chati, the cartoon cat, in the LFI palette. Purely decorative. */
-export function Mascot({ mood = 'idle', size = 160, className = '' }: { mood?: Mood; size?: number; className?: string }) {
+/** The turtle: a cartoon turtle, standing arms up. Original drawing, purely decorative. */
+function MascotTurtle({ mood = 'idle', size = 160, className = '' }: { mood?: Mood; size?: number; className?: string }) {
+  const armsUp = mood === 'happy' || mood === 'wow';
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" className={`mascot mood-${mood} ${className}`} width={size} height={size * 1.05} viewBox="0 0 200 210" aria-hidden="true">
-      {/* scarf */}
-      <path d="M126 178 L152 204 L128 207 L114 186 Z" fill="#d1271c" {...stroke} strokeWidth={5} />
-      <path d="M50 164 Q100 194 150 164 L153 182 Q100 214 47 182 Z" fill="#d1271c" {...stroke} strokeWidth={5} />
-      {/* ears */}
-      <path d="M38 102 L44 30 Q48 20 57 27 L100 62 Z" fill="#4c0297" {...stroke} strokeWidth={6} />
-      <path d="M162 102 L156 30 Q152 20 143 27 L100 62 Z" fill="#4c0297" {...stroke} strokeWidth={6} />
-      <path d="M52 80 L55 45 L78 64 Z" fill="#c9a6ee" />
-      <path d="M148 80 L145 45 L122 64 Z" fill="#c9a6ee" />
-      {/* head */}
-      <ellipse cx={100} cy={113} rx={72} ry={60} fill="#4c0297" {...stroke} strokeWidth={6} />
-      <path d="M100 98 C68 98 52 122 58 143 C64 163 136 163 142 143 C148 122 132 98 100 98 Z" fill="#fffcf4" />
-      <path d="M86 56 Q93 44 98 56 Q104 44 111 57" fill="none" {...stroke} strokeWidth={5} />
-      {/* whiskers */}
-      <g {...stroke} strokeWidth={3.5}>
-        <path d="M36 124 L60 129" /><path d="M38 140 L60 137" />
-        <path d="M164 124 L140 129" /><path d="M162 140 L140 137" />
+    <svg xmlns="http://www.w3.org/2000/svg" className={`mascot mood-${mood} ${className}`} width={size} height={size * 1.05}
+      viewBox="0 0 200 210" aria-hidden="true">
+      {/* tail */}
+      <path d="M142 168 Q166 170 170 184 Q154 184 140 178 Z" fill={LILAC} {...stroke} strokeWidth={5} />
+      {/* legs */}
+      <Limb d="M80 172 L74 196" width={26} />
+      <Limb d={mood === 'happy' ? 'M122 172 L148 186' : 'M122 172 L126 196'} width={26} />
+      {/* shell rim, then body */}
+      <ellipse cx={100} cy={128} rx={60} ry={62} fill={LILAC_DARK} {...stroke} strokeWidth={6} />
+      <ellipse cx={100} cy={130} rx={50} ry={55} fill={LILAC} {...stroke} strokeWidth={5} />
+      {/* belly with its grid */}
+      <ellipse cx={100} cy={132} rx={37} ry={42} fill="#fff" {...stroke} strokeWidth={4.5} />
+      <g {...stroke} strokeWidth={3} fill="none" opacity={0.85}>
+        <path d="M100 91 V173" />
+        <path d="M65 118 Q100 128 135 118" />
+        <path d="M64 146 Q100 156 136 146" />
       </g>
-      <ellipse cx={62} cy={136} rx={9} ry={5.5} fill="#d1271c" opacity={0.3} />
-      <ellipse cx={138} cy={136} rx={9} ry={5.5} fill="#d1271c" opacity={0.3} />
+      {/* arms */}
+      <Limb d={armsUp ? 'M58 112 Q38 104 26 72' : 'M58 116 Q36 124 28 146'} />
+      <Limb d={armsUp ? 'M142 112 Q162 104 174 72' : 'M142 116 Q164 124 172 146'} />
+      {/* head */}
+      <ellipse cx={100} cy={62} rx={35} ry={31} fill={LILAC} {...stroke} strokeWidth={5.5} />
+      <ellipse cx={72} cy={70} rx={8} ry={5} fill="#d1271c" opacity={0.28} />
+      <ellipse cx={128} cy={70} rx={8} ry={5} fill="#d1271c" opacity={0.28} />
       <Eyes mood={mood} />
-      <path d="M91 123 Q100 118 109 123 Q105 131 100 132 Q95 131 91 123 Z" fill="#d1271c" {...stroke} strokeWidth={3.5} />
       <Mouth mood={mood} />
     </svg>
   );
+}
+
+/** The active mascot (see content/brand.ts). */
+export function Mascot(props: { mood?: Mood; size?: number; className?: string }) {
+  return MASCOTTE === 'chat' ? <MascotCat {...props} /> : <MascotTurtle {...props} />;
 }
 
 export function Bubble({ children, className = '' }: { children: React.ReactNode; className?: string }) {

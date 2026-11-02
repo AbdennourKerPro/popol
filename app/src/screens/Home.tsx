@@ -2,6 +2,7 @@ import { ArrowRight, Gamepad2, Megaphone } from 'lucide-react';
 import type { Mode } from '../App';
 import { Footnote, Header, Sticker } from '../components/common';
 import { Bubble, Mascot } from '../components/Mascot';
+import { MARQUE } from '../content/brand';
 
 export function Home({ onPick }: { onPick: (mode: Mode) => void }) {
   return (
@@ -15,7 +16,7 @@ export function Home({ onPick }: { onPick: (mode: Mode) => void }) {
             <p className="lede">Quelques questions sur votre quotidien, et les mesures du programme qui vous concernent vraiment. Citées mot pour mot, avec leur source.</p>
           </div>
           <div className="home-mascot">
-            <Bubble className="bubble-down">Salut&nbsp;! Moi c’est <strong>Chati</strong>.</Bubble>
+            <Bubble className="bubble-down">{MARQUE.salutation}<strong>{MARQUE.surnom}</strong>.</Bubble>
             <Mascot mood="happy" size={190} className="bob" />
           </div>
         </section>

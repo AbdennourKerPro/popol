@@ -1,6 +1,7 @@
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { Mascot } from '../components/Mascot';
+import { MARQUE } from '../content/brand';
 
 import { type Format, FORMATS } from './posterFormats';
 
@@ -82,9 +83,9 @@ export async function renderPoster({ theme, mesures, chiffres, format, url }: Po
   // Wordmark and theme sticker
   const logoH = 80;
   ctx.fillStyle = C.purple; ctx.font = `900 64px ${SANS}`;
-  ctx.fillText('Chati', cx, y + 52);
+  ctx.fillText(MARQUE.nom, cx, y + 52);
   ctx.fillStyle = C.frame; ctx.font = `800 24px ${SANS}`;
-  ctx.fillText('LE CHAT INSOUMIS', cx + 3, y + 84);
+  ctx.fillText(MARQUE.sousTitre.toUpperCase(), cx + 3, y + 84);
   ctx.font = `900 28px ${SANS}`;
   const label = theme.toUpperCase();
   const pw = ctx.measureText(label).width + 48, ph = 56;
@@ -163,7 +164,7 @@ export async function renderPoster({ theme, mesures, chiffres, format, url }: Po
   }
 
   // Mascot overlapping the card corner
-  rotated(ctx, card.x + card.w - 40, card.y + card.h + 40, 9, () => ctx.drawImage(mascot, -115, -120, 230, 241));
+  rotated(ctx, card.x + card.w - 78, card.y + card.h + 40, 9, () => ctx.drawImage(mascot, -115, -120, 230, 241));
 
   // Footer
   const fy = card.y + card.h + 16 + 52;

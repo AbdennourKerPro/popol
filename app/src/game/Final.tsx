@@ -3,6 +3,7 @@ import { useMemo, useState } from 'react';
 import { Confetti, MeasureQuote, Sticker } from '../components/common';
 import { Estimator } from '../components/Estimator';
 import { Mascot } from '../components/Mascot';
+import { MARQUE } from '../content/brand';
 import { ESTIMATIONS, estimate, isConfirmed, type Values } from '../content/estimations';
 import { THEMES } from '../content/themes';
 import type { Tag, Theme } from '../content/types';
@@ -37,7 +38,7 @@ export function Final({ theme, liked, done, tags, values, onValue, onOther, onHo
       {liked.length > 0 ? (
         <article className="poster">
           <header>
-            <span className="poster-wordmark"><strong>Chati</strong><small>le chat insoumis</small></span>
+            <span className="poster-wordmark"><strong>{MARQUE.nom}</strong><small>{MARQUE.sousTitre}</small></span>
             <Sticker tone="red" tilt={5}>{theme.titre}</Sticker>
           </header>
           <h2>Ce que le programme change <span className="marker">pour moi</span></h2>

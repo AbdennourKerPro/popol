@@ -119,7 +119,9 @@ dont la logique a été lue dans le code public de leurs pages et portée dans `
 Elle reprend celle de Chati (`rag/frontend`) : violet `#4c0297`, rouge `#d1271c`, crème `#fffcf4`, encre
 `#1d1240`, Public Sans en 900 pour les titres et Gowun Batang pour les citations. L'ensemble est poussé vers
 le cartoon : cadres épais, ombres décalées pleines, stickers inclinés, rebonds, confettis, et la mascotte
-Chati, le chat insoumis, dessinée en SVG ([src/components/Mascot.tsx](src/components/Mascot.tsx)).
+la tortue insoumise, dessinée en SVG (dessin original). L'ancienne mascotte, Chati le chat, est conservée dans
+[src/components/MascotCat.tsx](src/components/MascotCat.tsx) : pour la rétablir, mettre `MASCOTTE = 'chat'` dans
+[src/content/brand.ts](src/content/brand.ts), qui change aussi les noms affichés ([src/components/Mascot.tsx](src/components/Mascot.tsx)).
 Les animations sont désactivées si le système le demande (`prefers-reduced-motion`).
 
 ## Limites du prototype
