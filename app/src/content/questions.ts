@@ -5,12 +5,13 @@ import {
   Pill, Droplet, HandHeart, Footprints, TrainFront, Bus, Recycle, Megaphone, Package, Salad, Mailbox, School, Wifi,
   FileText, Stethoscope, Hammer, BookOpen, CarFront, User, Users, TrendingUp, Gem, Gift, Banknote,
 } from 'lucide-react';
+import { EXPLORER_QUESTIONS } from './explorer';
 import type { Choice, Question } from './types';
 
 const nsp = (label = 'Je préfère ne pas dire'): Choice => ({ id: 'nsp', label, icon: EyeOff, tags: [] });
 
 /** Shared question bank: a question answered in one theme is not asked again in another. */
-export const QUESTIONS: Record<string, Question> = Object.fromEntries(([
+export const QUESTIONS: Record<string, Question> = Object.fromEntries([...([
   {
     id: 'statut',
     jeu: 'Pour commencer, tu fais quoi dans la vie ?',
@@ -329,4 +330,4 @@ export const QUESTIONS: Record<string, Question> = Object.fromEntries(([
       nsp(),
     ],
   },
-] satisfies Question[]).map((q) => [q.id, q]));
+] satisfies Question[]), ...EXPLORER_QUESTIONS].map((q) => [q.id, q]));

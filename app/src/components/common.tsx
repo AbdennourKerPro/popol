@@ -64,7 +64,7 @@ export function Confetti({ count = 34 }: { count?: number }) {
   );
 }
 
-const FOOTNOTE = 'Site non officiel, en soutien à la candidature de Jean-Luc Mélenchon. Les mesures de son programme sont citées mot pour mot. Vos réponses restent sur cet appareil : rien n’est enregistré ni envoyé.';
+const FOOTNOTE = 'Site non officiel, en soutien à la candidature de Jean-Luc Mélenchon. Vos réponses restent sur cet appareil : rien n’est enregistré ni envoyé.';
 
 export function Footnote() {
   return <p className="footnote">{FOOTNOTE} <a href="#mentions">Mentions légales</a></p>;

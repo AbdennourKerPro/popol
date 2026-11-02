@@ -86,7 +86,7 @@ export function Militant({ onHome }: { onHome: () => void }) {
 
         {step !== 'themes' && theme && (
           <nav className="theme-tabs" aria-label="Thèmes">
-            {THEMES.map((t) => (
+            {THEMES.filter((t) => t.groupe === theme.groupe).map((t) => (
               <button key={t.id} className={`theme-tab accent-${t.accent} ${t.id === theme.id ? 'active' : ''}`} onClick={() => open(t.id)}>
                 <t.icon size={16} strokeWidth={2.5} /> {t.titre}
               </button>
@@ -117,7 +117,7 @@ export function Militant({ onHome }: { onHome: () => void }) {
 
         {step === 'synthese' && theme && (
           <Synthese theme={theme} answers={answers} ranked={ranked} onRevisit={revisit}
-            next={THEMES.find((t) => !done.has(t.id) && t.id !== theme.id)} onOpen={open} onReset={reset} />
+            next={THEMES.find((t) => t.groupe === theme.groupe && !done.has(t.id) && t.id !== theme.id)} onOpen={open} onReset={reset} />
         )}
       </main>
       </EstimationContext.Provider>
@@ -262,7 +262,7 @@ function Synthese({ theme, answers, ranked, next, onOpen, onReset, onRevisit }: 
         </div>
       )}
 
-      <div className="block">
+      {theme.objections.length > 0 && <div className="block">
         <h2><ShieldQuestionMark size={22} strokeWidth={2.5} /> Objections fréquentes</h2>
         {theme.objections.map((o) => (
           <details key={o.objection} className="objection">
@@ -271,9 +271,9 @@ function Synthese({ theme, answers, ranked, next, onOpen, onReset, onRevisit }: 
             {o.mesures.map((id) => <MeasureQuote key={id} id={id} compact />)}
           </details>
         ))}
-      </div>
+      </div>}
 
-      <div className="block">
+      {theme.collectif.length > 0 && <div className="block">
         <h2><Users size={22} strokeWidth={2.5} /> Pour toute la société</h2>
         <div className="collectif-grid">
           {theme.collectif.map((id) => (
@@ -283,7 +283,7 @@ function Synthese({ theme, answers, ranked, next, onOpen, onReset, onRevisit }: 
             </div>
           ))}
         </div>
-      </div>
+      </div>}
 
       <p className="honesty">Les phrases d’argument et les réponses aux objections sont des formulations de l’appli. Seules les citations sont le texte du programme : en cas de doute, lisez la citation.</p>
 

@@ -52,7 +52,7 @@ h1, h2, h3 { margin: 0; }
 .eyebrow { display: block; font-size: 11px; font-weight: 800; letter-spacing: 1.8px; text-transform: uppercase; color: var(--purple); }
 .lede { font-family: 'Gowun Batang', serif; font-size: 18px; line-height: 1.65; color: #5f5a53; margin: 0; }
 .marker { color: var(--purple); background: linear-gradient(transparent 58%, var(--mark) 58%, var(--mark) 92%, transparent 92%); padding: 0 .08em; }
-.footnote { text-align: center; font-size: 12px; line-height: 1.6; color: #8b857c; max-width: 640px; margin: 10px auto 24px; padding: 0 20px; }
+.footnote { text-align: center; font-size: 12px; line-height: 1.6; color: #8b857c; max-width: 640px; margin: 56px auto 24px; padding: 0 20px; }
 
 /* Stickers */
 .sticker { display: inline-block; padding: 5px 12px; border: 2px solid var(--frame); border-radius: 999px; box-shadow: 2px 2px 0 var(--frame); font-size: 12px; font-weight: 900; letter-spacing: .8px; text-transform: uppercase; white-space: nowrap; }
@@ -118,6 +118,8 @@ h1, h2, h3 { margin: 0; }
 .accent-red { --accent: var(--red); --accent-soft: var(--peach); }
 .accent-purple { --accent: var(--purple); --accent-soft: var(--lilac); }
 .accent-ink { --accent: var(--frame); --accent-soft: #ecebf3; }
+.theme-section { margin: 48px 0 6px; font-size: 1.5rem; }
+.theme-section-lede { margin: 0 0 18px; opacity: .8; }
 .theme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
 .theme-card { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 24px 24px 22px; text-align: left; background: linear-gradient(var(--accent-soft), #fff 70%); border: 3px solid var(--frame); border-radius: 26px; box-shadow: var(--shadow-lg); transition: transform .12s, box-shadow .12s; animation: pop-in .4s backwards; }
 .theme-card:nth-child(2) { animation-delay: .06s; }

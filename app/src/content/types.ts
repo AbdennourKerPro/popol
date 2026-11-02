@@ -61,10 +61,14 @@ export interface Theme {
   accroche: string;
   icon: LucideIcon;
   accent: Accent;
+  /** Themes of the "explorer" section are not tied to a personal situation. */
+  groupe?: 'explorer';
   questions: string[];
   /** Game mode: the quiz is inserted after this many answers in the theme. */
-  quizApres: number;
-  quiz: Quiz;
+  quizApres?: number;
+  quiz?: Quiz;
+  /** How many relevant measures are offered at most (default 8). */
+  maxMesures?: number;
   cibles: Target[];
   /** Measures for everyone, shown after the personal ones. */
   collectif: string[];

@@ -5,7 +5,7 @@ import { Bubble, Mascot } from '../components/Mascot';
 import { themeById } from '../content/themes';
 import type { Question, Quiz as QuizContent, Theme } from '../content/types';
 import type { Values } from '../content/estimations';
-import { type Answers, rank, remaining, rewind, tagsOf } from '../lib/engine';
+import { type Answers, maxMesures, rank, remaining, rewind, tagsOf } from '../lib/engine';
 import { ThemePicker } from '../screens/ThemePicker';
 import { Final } from './Final';
 import { Swipe } from './Swipe';
@@ -31,7 +31,7 @@ export function Game({ onHome }: { onHome: () => void }) {
   /** `given`: answers given during this visit of the theme (answers carried over from another theme do not count). */
   const nextStep = (t: Theme, a: Answers, given: number, quizzed = quizDone.has(t.id)): Step => {
     const left = remaining(t, a);
-    if (!quizzed && (given >= t.quizApres || !left.length)) return 'quiz';
+    if (t.quiz && !quizzed && (given >= (t.quizApres ?? 0) || !left.length)) return 'quiz';
     return left.length ? 'question' : 'intro';
   };
 
@@ -63,7 +63,7 @@ export function Game({ onHome }: { onHome: () => void }) {
   const finishQuiz = () => {
     const quizzed = new Set(quizDone).add(theme!.id);
     setQuizDone(quizzed);
-    discover(theme!.quiz.mesure);
+    if (theme!.quiz) discover(theme!.quiz.mesure);
     setStep(nextStep(theme!, answers, history.length, true));
   };
 
@@ -96,9 +96,9 @@ export function Game({ onHome }: { onHome: () => void }) {
           const answered = theme.questions.filter((id) => id in answers).length;
           return <QuestionStep key={left[0].id} question={left[0]} progress={answered / (answered + left.length)} onAnswer={answer} onBack={back} theme={theme} />;
         })()}
-        {step === 'quiz' && theme && <Quiz key={theme.id} quiz={theme.quiz} onDone={finishQuiz} />}
+        {step === 'quiz' && theme?.quiz && <Quiz key={theme.id} quiz={theme.quiz} onDone={finishQuiz} />}
         {step === 'intro' && theme && <Intro theme={theme} answers={answers} onNext={() => setStep('swipe')} onSkip={() => finishSwipe([], [])} />}
-        {step === 'swipe' && theme && <Swipe theme={theme} ranked={rank(theme, answers).slice(0, 8)} onDone={finishSwipe} />}
+        {step === 'swipe' && theme && <Swipe theme={theme} ranked={rank(theme, answers).slice(0, maxMesures(theme))} onDone={finishSwipe} />}
         {step === 'final' && theme && (
           <Final theme={theme} liked={liked[theme.id] ?? []} done={done} tags={tags} values={values}
             onValue={(input, value) => setValues((v) => ({ ...v, [input]: value }))}
@@ -186,7 +186,7 @@ function Quiz({ quiz, onDone }: { quiz: QuizContent; onDone: () => void }) {
 }
 
 function Intro({ theme, answers, onNext, onSkip }: { theme: Theme; answers: Answers; onNext: () => void; onSkip: () => void }) {
-  const count = Math.min(8, rank(theme, answers).length);
+  const count = Math.min(maxMesures(theme), rank(theme, answers).length);
   return (
     <section className="screen intro-screen">
       {count > 0 && <Confetti />}

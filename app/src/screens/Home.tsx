@@ -13,7 +13,7 @@ export function Home({ onPick }: { onPick: (mode: Mode) => void }) {
           <div>
             <span className="eyebrow">En soutien à la candidature de Jean-Luc Mélenchon</span>
             <h1>Ça change quoi <span className="marker">pour moi</span>&nbsp;?</h1>
-            <p className="lede">Quelques questions sur votre quotidien, et les mesures du programme qui vous concernent vraiment. Citées mot pour mot, avec leur source.</p>
+            <p className="lede">Quelques questions sur votre quotidien, et les mesures du programme qui vous concernent vraiment.</p>
           </div>
           <div className="home-mascot">
             <Bubble className="bubble-down">{MARQUE.salutation}<strong>{MARQUE.surnom}</strong>.</Bubble>

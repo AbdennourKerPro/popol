@@ -16,7 +16,7 @@ export function Final({ theme, liked, done, tags, values, onValue, onOther, onHo
 }) {
   const [copied, setCopied] = useState(false);
   const [poster, setPoster] = useState(false);
-  const allDone = THEMES.every((t) => done.has(t.id));
+  const allDone = THEMES.filter((t) => !t.groupe).every((t) => done.has(t.id));
   const chiffres = useMemo(
     () => [...new Set(liked.filter((id) => isConfirmed(id, values, tags)).map((id) => estimate(id, values, tags)?.court).filter((c): c is string => !!c))],
     [liked, values, tags],
@@ -75,7 +75,7 @@ export function Final({ theme, liked, done, tags, values, onValue, onOther, onHo
         </div>
       )}
 
-      <div className="collectif">
+      {theme.collectif.length > 0 && <div className="collectif">
         <h3>Et pour <span>tout le monde</span></h3>
         <div className="collectif-grid">
           {theme.collectif.map((id) => (
@@ -85,7 +85,7 @@ export function Final({ theme, liked, done, tags, values, onValue, onOther, onHo
             </div>
           ))}
         </div>
-      </div>
+      </div>}
       {poster && <PosterModal themeId={theme.id} theme={theme.titre} mesures={texts} chiffres={chiffres} onClose={() => setPoster(false)} />}
     </section>
   );

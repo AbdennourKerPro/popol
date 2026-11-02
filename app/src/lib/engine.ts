@@ -50,6 +50,9 @@ export function score(target: Target, tags: Set<Tag>) {
 
 export interface Ranked { target: Target; score: number }
 
+export const MAX_DEFAULT = 8;
+export const maxMesures = (theme: Theme) => theme.maxMesures ?? MAX_DEFAULT;
+
 /** Relevant measures of the theme, most relevant first; ties keep the authoring order. */
 export function rank(theme: Theme, answers: Answers): Ranked[] {
   const tags = tagsOf(answers);

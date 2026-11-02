@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { QUESTIONS } from '../content/questions';
 import { THEMES, themeById } from '../content/themes';
+import data from '../data/mesures.json';
 import { hasMesure, rank, remaining, rewind, tagsOf } from './engine';
 
 const pouvoirAchat = themeById('pouvoir-achat')!;
@@ -10,9 +11,14 @@ describe('content', () => {
 
   it('cites only measures that exist in the corpus', () => {
     const ids = THEMES.flatMap((t) => [
-      ...t.cibles.map((c) => c.mesure), ...t.collectif, t.quiz.mesure, ...t.objections.flatMap((o) => o.mesures),
+      ...t.cibles.map((c) => c.mesure), ...t.collectif, ...(t.quiz ? [t.quiz.mesure] : []), ...t.objections.flatMap((o) => o.mesures),
     ]).concat(Object.values(QUESTIONS).flatMap((q) => q.choices.flatMap((c) => (c.teaser ? [c.teaser] : []))));
     expect(ids.filter((id) => !hasMesure(id))).toEqual([]);
+  });
+
+  it('offers a path to every measure of the corpus', () => {
+    const targeted = new Set(THEMES.flatMap((t) => t.cibles.map((c) => c.mesure)));
+    expect(Object.keys(data.mesures).filter((id) => !targeted.has(id))).toEqual([]);
   });
 
   it('only uses tags that some answer can produce', () => {
@@ -28,7 +34,7 @@ describe('content', () => {
       expect(theme.questions.every((id) => id in QUESTIONS)).toBe(true);
       const ids = theme.cibles.map((c) => c.mesure);
       expect(new Set(ids).size).toBe(ids.length);
-      expect(theme.quiz.options[theme.quiz.bonne]).toBeDefined();
+      if (theme.quiz) expect(theme.quiz.options[theme.quiz.bonne]).toBeDefined();
     }
   });
 });

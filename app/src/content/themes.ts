@@ -1,4 +1,5 @@
 import { Briefcase, Gem, GraduationCap, HeartPulse, House, Leaf, MapPin, Scale, Wallet } from 'lucide-react';
+import { EXPLORER_THEMES } from './explorer';
 import type { Condition, Theme } from './types';
 
 /** Everyone who answered the status question (each answer sets at least one of these tags). */
@@ -9,7 +10,7 @@ const TOUS_STATUTS: Condition = [['salarie'], ['independant'], ['plateforme'], [
  * must be readable in the cited measure. Objection answers are written for the app
  * and are labelled as such in the interface.
  */
-export const THEMES: Theme[] = [
+const PERSONNELS: Theme[] = [
   {
     id: 'pouvoir-achat',
     titre: 'Pouvoir d’achat',
@@ -653,5 +654,7 @@ export const THEMES: Theme[] = [
     ],
   },
 ];
+
+export const THEMES: Theme[] = [...PERSONNELS, ...EXPLORER_THEMES];
 
 export const themeById = (id: string) => THEMES.find((t) => t.id === id);
