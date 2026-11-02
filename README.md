@@ -5,7 +5,7 @@ Deux projets indépendants, partageant le même corpus (le programme de la Franc
 | Dossier | Rôle |
 |---|---|
 | [rag/](rag/README.md) | **Chati**, l'assistant RAG existant : corpus structuré du programme, recherche, génération sourcée, benchmarks, atelier de relecture. Autonome (Docker, tests, scripts). |
-| [app/](app/README.md) | Future petite appli web pour aider à convaincre de voter LFI à partir des mesures du programme. À construire. |
+| [app/](app/README.md) | **Ça change quoi pour moi ?** Prototype d’appli web qui relie la situation d’une personne aux mesures du programme : un mode jeu et un mode militant. Site statique, sans IA ni serveur. |
 
 Le corpus de référence (`mesures.jsonl`, `annexes.jsonl`, PDF source) vit dans `rag/data/` et
 `rag/assets/`. L'appli le consomme sans le modifier ; toute évolution du corpus se fait côté `rag/`.
