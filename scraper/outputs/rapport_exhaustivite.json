@@ -1,0 +1,26 @@
+{
+  "parties": 6,
+  "chapitres_attendus": 23,
+  "chapitres_extraits": 23,
+  "sous_sections_attendues": 111,
+  "sous_sections_extraites": 111,
+  "mesures": 1069,
+  "mesures_par_type": {
+    "cle": 107,
+    "complementaire": 881,
+    "sous_mesure": 81
+  },
+  "reference_indicative_mesures": 1069,
+  "ecart_reference": 0,
+  "pages_attendues": 31,
+  "pages_extraites": 31,
+  "pages_non_extraites": [],
+  "sous_sections_non_extraites": [],
+  "sous_sections_absentes_du_sommaire": [],
+  "erreurs_reseau": {},
+  "erreurs_structure": [],
+  "ids_dupliques": [],
+  "textes_identiques": [],
+  "extraction_complete": true,
+  "avertissements": []
+}
