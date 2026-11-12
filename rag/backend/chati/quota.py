@@ -126,6 +126,16 @@ class BaseStore:
     async def release(self, grant):
         raise NotImplementedError
 
+    async def record_feedback(self, doc):
+        """Store one anonymous rating (no question, no answer, no link)."""
+        raise NotImplementedError
+
+    async def feedback_report(self):
+        raise NotImplementedError
+
+
+FEEDBACK_DAYS = 90
+
 
 class MemoryStore(BaseStore):
     """Single-process store for tests and local development. Not for deployment."""
@@ -133,6 +143,7 @@ class MemoryStore(BaseStore):
     def __init__(self, settings, now=None):
         super().__init__(settings, now)
         self.invites, self.usage, self.budget = {}, {}, {}
+        self.feedback = []
         self._lock = asyncio.Lock()
 
     async def create_invite(self, label, daily_limit=None, days=None):
@@ -170,10 +181,17 @@ class MemoryStore(BaseStore):
             self.usage[(grant.invite_id, grant.day)]['count'] -= 1
             self.budget[grant.budget_day]['requests'] -= 1
 
+    async def record_feedback(self, doc):
+        self.feedback.append(dict(doc))
+
+    async def feedback_report(self):
+        return list(self.feedback)
+
 
 class FirestoreStore(BaseStore):
     """Cloud Firestore through the Firebase Admin SDK (async client). Collections:
-    <prefix>_invites/{sha256}, <prefix>_usage/{sha256}_{day}, <prefix>_budget/{day}."""
+    <prefix>_invites/{sha256}, <prefix>_usage/{sha256}_{day}, <prefix>_budget/{day},
+    <prefix>_feedback/{auto id} (anonymous ratings, deleted after 90 days through expire_at)."""
 
     def __init__(self, settings, db=None, now=None):
         super().__init__(settings, now)
@@ -199,7 +217,7 @@ class FirestoreStore(BaseStore):
         self.db = db
         self._lock = asyncio.Lock()  # one reservation at a time per process: no self-inflicted contention
         prefix = settings.quota_collection_prefix
-        self.invites, self.usage, self.budget = (db.collection(f'{prefix}_{n}') for n in ('invites', 'usage', 'budget'))
+        self.invites, self.usage, self.budget, self.feedback = (db.collection(f'{prefix}_{n}') for n in ('invites', 'usage', 'budget', 'feedback'))
 
     def refs(self, invite_id, day, budget_day):
         return self.invites.document(invite_id), self.usage.document(f'{invite_id}_{day}'), self.budget.document(budget_day)
@@ -268,6 +286,12 @@ class FirestoreStore(BaseStore):
         batch.set(usage_ref, {'count': firestore.Increment(-1)}, merge=True)
         batch.set(budget_ref, {'requests': firestore.Increment(-1)}, merge=True)
         await batch.commit()
+
+    async def record_feedback(self, doc):
+        await self.feedback.add({**doc, 'expire_at': self.now() + timedelta(days=FEEDBACK_DAYS)})
+
+    async def feedback_report(self):
+        return [d.to_dict() async for d in self.feedback.stream()]
 
     # -- administration (scripts/beta_admin.py) --
     async def create_invite(self, label, daily_limit=None, days=None):

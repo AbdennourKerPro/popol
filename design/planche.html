@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planche de style — Chati et Ça change quoi pour moi ?</title>
+<!-- Référence visuelle de la refonte (voir PLAN-REFONTE.md). À ouvrir depuis le dépôt :
+     les polices sont lues dans app/node_modules (npm install dans app/ au préalable). -->
+<link rel="stylesheet" href="../app/node_modules/@fontsource/public-sans/latin-400.css">
+<link rel="stylesheet" href="../app/node_modules/@fontsource/public-sans/latin-600.css">
+<link rel="stylesheet" href="../app/node_modules/@fontsource/public-sans/latin-700.css">
+<link rel="stylesheet" href="../app/node_modules/@fontsource/public-sans/latin-900.css">
+<link rel="stylesheet" href="../app/node_modules/@fontsource/gowun-batang/latin-400.css">
+<link rel="stylesheet" href="../app/node_modules/@fontsource/gowun-batang/latin-700.css">
+<link rel="stylesheet" href="jetons.css">
+<link rel="stylesheet" href="systeme.css">
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #e9e4d8; color: var(--charbon); font-family: var(--titre); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, p, ul, ol, figure, blockquote { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+button { font: inherit; color: inherit; border: 0; background: none; padding: 0; cursor: pointer; }
+
+/* ---------- Mise en page de la planche (hors système) ---------- */
+.planche { width: 1240px; margin: 0 auto; padding: 56px 0 96px; }
+.planche > header { margin-bottom: 56px; }
+.planche > header h1 { font-size: 52px; font-weight: 900; letter-spacing: -.035em; line-height: 1; }
+.planche > header p:not(.folio) { font-family: var(--texte); font-size: 18px; line-height: 1.6; color: var(--gris); max-width: 820px; margin-top: 16px; }
+.section { margin-top: 72px; }
+.section > h2 { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding-bottom: 10px; border-bottom: var(--trait); margin-bottom: 28px; }
+.section > h2 small { font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--gris); margin-left: 12px; font-size: 13px; }
+.grille { display: grid; gap: 28px; }
+.fiche { background: var(--creme); padding: 28px; }
+.fiche > h3 { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--gris); margin-bottom: 18px; }
+.legende { font-size: 13px; line-height: 1.5; color: var(--gris); margin-top: 14px; }
+.legende code { font-family: ui-monospace, monospace; font-size: 12px; }
+.ecran { background: var(--creme); width: 1240px; overflow: hidden; position: relative; }
+.ecran-titre { font-size: 13px; font-weight: 700; margin: 40px 0 12px; }
+.ecran-titre span { font-weight: 400; color: var(--gris); }
+.mobiles { display: flex; gap: 40px; align-items: flex-start; }
+.mobile { width: 390px; background: var(--creme); overflow: hidden; position: relative; flex-shrink: 0; }
+
+/* ---------- Couleurs ---------- */
+.nuancier { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+.nuance { height: 150px; padding: 16px; display: flex; flex-direction: column; justify-content: flex-end; font-size: 13px; font-weight: 700; }
+.nuance span { font-weight: 400; font-family: ui-monospace, monospace; font-size: 12px; opacity: .8; }
+.nuances-derivees { display: grid; grid-template-columns: repeat(6, 1fr); margin-top: 0; }
+.nuances-derivees .nuance { height: 84px; }
+.parties { display: flex; gap: 24px; margin-top: 4px; }
+
+/* Éléments propres à la planche (sprite d'icônes, faux champ) */
+.icone { stroke: currentColor; fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.champ .saisie { flex: 1; font: 400 var(--t-16)/1.5 var(--titre); color: var(--gris); padding: 9px 0; }
+
+/* ---------- Maquette : Chati (rag) ---------- */
+.chati { display: grid; grid-template-columns: 264px 1fr; height: 860px; }
+.chati .lateral { background: var(--violet); color: var(--creme); padding: 28px 22px 22px; display: flex; flex-direction: column; }
+.marque { font: 900 38px/1 var(--titre); letter-spacing: -.045em; }
+.chati .lateral .marque .ponctuation { color: var(--creme); background: var(--rouge); display: inline-block; width: .2em; height: .2em; border-radius: 50%; text-indent: -99px; overflow: hidden; margin-left: 3px; vertical-align: baseline; }
+.sous-marque { font: 400 var(--t-14)/1.4 var(--texte); color: var(--creme-70); margin-top: 6px; }
+.chati .lateral .bouton { margin-top: 28px; justify-content: center; padding: 0 12px; font-size: var(--t-14); white-space: nowrap; }
+.historique { margin-top: 30px; flex: 1; }
+.historique .folio { color: var(--creme-70); margin-bottom: 8px; }
+.historique li { padding: 11px 0; border-top: 1px solid var(--creme-25); font: 400 var(--t-14)/1.35 var(--titre); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.historique li.active { font-weight: 700; }
+.historique li.active::before { content: '— '; }
+.pied-lateral { display: grid; gap: 10px; font: 400 var(--t-14)/1.3 var(--titre); color: var(--creme-70); padding-top: 16px; border-top: 1px solid var(--creme-25); }
+.chati .principal { display: flex; flex-direction: column; min-width: 0; }
+.entete-folio { display: flex; justify-content: space-between; padding: 22px 48px 0; }
+.accueil { flex: 1; padding: 30px 48px 0; display: grid; grid-template-columns: 1fr 250px; gap: 20px 24px; align-content: start; }
+.accueil .parole { flex-direction: column; align-items: flex-start; gap: 18px; }
+.accueil .chapeau { color: var(--gris); max-width: 560px; margin-top: 20px; }
+.accueil .je-suis { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; }
+.accueil .je-suis > span { font: 700 var(--t-14)/1 var(--titre); margin-right: 6px; }
+.accueil .sommaire { grid-column: 1 / -1; margin-top: 8px; }
+.pied-saisie { padding: 18px 48px 22px; }
+.pied-saisie .mentions { display: flex; justify-content: space-between; margin-top: 10px; font: 400 var(--t-12)/1.4 var(--titre); color: var(--gris); }
+
+.conversation { flex: 1; padding: 30px 48px 0; overflow: hidden; }
+.question-posee { font: 900 var(--t-28)/1.15 var(--titre); letter-spacing: -.02em; max-width: 640px; padding-left: 18px; border-left: 6px solid var(--violet); }
+.reponse { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 44px; margin-top: 26px; }
+.reponse .signature { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.reponse h3 { margin: 26px 0 10px; padding-top: 14px; border-top: var(--trait); }
+.reponse .tirets li { position: relative; padding-left: 30px; margin-top: 10px; }
+.reponse .tirets li::before { content: '—'; position: absolute; left: 0; color: var(--violet); font-family: var(--titre); font-weight: 700; }
+.actions { display: flex; align-items: center; gap: 22px; margin-top: 22px; padding-top: 12px; border-top: 1.5px solid var(--filet); }
+.actions .droite { margin-left: auto; display: flex; gap: 16px; }
+.notes { background: var(--papier); padding: 18px 18px 20px; align-self: start; }
+.notes > .folio { margin-bottom: 4px; }
+.note { padding: 14px 0; border-top: 1.5px solid var(--filet); display: grid; grid-template-columns: 22px 1fr; gap: 4px 6px; }
+.note:first-of-type { border-top: 0; }
+.note .numero { font: 700 var(--t-14)/1.4 var(--titre); color: var(--rouge); }
+.note strong { font: 700 var(--t-14)/1.35 var(--titre); }
+.note p { grid-column: 2; font: 400 var(--t-14)/1.55 var(--texte); color: var(--gris); }
+.note .etiquette { grid-column: 2; margin-top: 4px; }
+
+/* ---------- Maquette : Ça change quoi pour moi ? (app) ---------- */
+.ccq { min-height: 760px; position: relative; }
+.ccq .bandeau { display: flex; justify-content: space-between; align-items: center; padding: 22px 56px; }
+.ccq .marque { font-size: 24px; letter-spacing: -.03em; }
+.ccq-accueil { display: grid; grid-template-columns: 1fr 380px; }
+.ccq-accueil .texte { padding: 34px 0 44px 56px; }
+.ccq-accueil h1 { margin-top: 20px; font-size: 96px; }
+.ccq-accueil .chapeau { max-width: 520px; color: var(--gris); margin-top: 26px; }
+.ccq-accueil .aplat { background: var(--violet); margin-top: -88px; padding: 120px 0 0; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; position: relative; }
+.ccq-accueil .aplat .bulle { position: absolute; top: 132px; left: -64px; }
+.ccq-accueil .aplat .mascotte { margin-bottom: 14px; }
+.ccq .sommaire { margin: 0 56px; --col: 64px; }
+.ccq .sommaire .entree { padding: 22px 8px; align-items: center; }
+.ccq .sommaire .numero { font: 900 var(--t-28)/1 var(--titre); color: var(--rouge); letter-spacing: -.02em; }
+.ccq .sommaire .entree:hover .numero { color: var(--creme); }
+.ccq .sommaire .entree .entree-texte { font: 900 34px/1.05 var(--titre); letter-spacing: -.03em; display: block; }
+.ccq .sommaire .entree .entree-detail { color: var(--gris); margin-top: 6px; display: block; }
+.ccq .sommaire .entree .fin { display: flex; align-items: center; gap: 22px; }
+.ccq .mention-legale { padding: 22px 56px 30px; font: 400 var(--t-12)/1.5 var(--titre); color: var(--gris); }
+
+.ccq-question { padding: 10px 56px 48px; max-width: 900px; }
+.ccq-question .tete { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+.ccq-question .parole { margin: 38px 0 30px; }
+.ccq-question .bulle { font: 900 var(--t-28)/1.15 var(--titre); letter-spacing: -.02em; max-width: 620px; padding: 20px 24px; }
+.ccq-question .suite { display: flex; justify-content: space-between; align-items: center; margin-top: 26px; }
+
+.ccq-resultat { padding: 10px 56px 48px; display: grid; grid-template-columns: 1fr 300px; gap: 56px; }
+.ccq-resultat h1 { margin: 14px 0 26px; }
+.classement .rang { display: grid; grid-template-columns: 84px 1fr; padding: 22px 0; border-top: var(--trait); }
+.classement .rang .numero { font: 900 56px/.9 var(--titre); letter-spacing: -.05em; color: var(--rouge); }
+.classement .rang h3 { font: 700 var(--t-22)/1.25 var(--titre); letter-spacing: -.01em; margin: 8px 0 12px; }
+.classement .rang .tete { display: flex; justify-content: space-between; align-items: center; }
+.classement .rang .pied { margin-top: 12px; }
+.cote { background: var(--violet); color: var(--creme); padding: 26px 24px; align-self: start; margin-top: 96px; }
+.cote .folio { color: var(--creme-70); }
+.cote h2 { margin: 10px 0 12px; }
+.cote p:not(.folio) { font: 400 var(--t-16)/1.6 var(--texte); color: var(--creme-70); margin-bottom: 20px; }
+.cote .bouton { width: 100%; justify-content: center; }
+.cote .bouton + .bouton { margin-top: 10px; background: none; color: var(--creme); border: 1.5px solid var(--creme-70); }
+
+/* Mobiles */
+.mobile .entete-folio { padding: 16px 20px 0; }
+.mobile .accueil { display: block; padding: 18px 20px 0; }
+.mobile .accueil .parole { flex-direction: row; align-items: flex-end; gap: 14px; margin: 0 0 18px; }
+.mobile .accueil .bulle { font-size: 14px; padding: 10px 14px; }
+.mobile .accueil h1 { font-size: 40px; }
+.mobile .accueil .chapeau { font-size: 16px; margin-top: 12px; }
+.mobile .accueil .intro { display: flex; flex-direction: column; }
+.mobile .accueil .intro .parole { order: -1; }
+.mobile .accueil .je-suis { margin-top: 18px; }
+.mobile .sommaire { margin-top: 20px; }
+.mobile .sommaire .entree { grid-template-columns: 1fr auto; gap: 4px 12px; padding: 14px 4px; }
+.mobile .sommaire .entree .etiquette { grid-column: 1 / -1; }
+.mobile .sommaire .entree .entree-texte { font-size: 16px; }
+.mobile .pied-saisie { padding: 16px 20px 18px; }
+.mobile .barre { display: flex; justify-content: space-between; align-items: center; background: var(--violet); color: var(--creme); padding: 12px 20px; }
+.mobile .barre .marque { font-size: 24px; }
+.mobile .barre .marque .ponctuation { color: var(--creme); background: var(--rouge); display: inline-block; width: .2em; height: .2em; border-radius: 50%; text-indent: -99px; overflow: hidden; margin-left: 2px; }
+.mobile .conversation { padding: 20px 20px 24px; }
+.mobile .question-posee { font-size: 22px; padding-left: 14px; border-left-width: 5px; }
+.mobile .reponse { display: block; margin-top: 18px; }
+.mobile .corps { font-size: 17px; }
+.mobile .actions { flex-wrap: wrap; gap: 14px 18px; }
+.mobile .ccq-question { padding: 6px 20px 28px; }
+.mobile .ccq-question .parole { margin: 22px 0 20px; gap: 12px; }
+.mobile .ccq-question .bulle { font-size: 20px; padding: 14px 16px; }
+.mobile .bulletin .ligne { font-size: 16px; padding: 15px 10px; }
+.mobile .ccq .bandeau { padding: 16px 20px; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-fleche" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-haut" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  <symbol id="i-copier" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="1.5"/><path d="M5 15V5.5A1.5 1.5 0 0 1 6.5 4H15"/></symbol>
+  <symbol id="i-partager" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.5M8.2 13.2l7.6 4.5"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="1.5"/><circle cx="9" cy="10" r="1.6"/><path d="M20.5 15.5l-4.6-4.6L6 19.5"/></symbol>
+  <symbol id="i-pouce" viewBox="0 0 24 24"><path d="M7 10v10M7 10l4-7c1.7 0 2.6 1.2 2.3 2.8L12.7 9H18a2 2 0 0 1 2 2.4l-1.2 6A2 2 0 0 1 16.8 19H7M3.5 10H7v9H3.5z"/></symbol>
+  <symbol id="i-coeur" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+</svg>
+
+<div class="planche">
+  <header>
+    <p class="folio">Refonte du design · planche de référence</p>
+    <h1 style="margin-top:12px">Le violet structure,<br>le rouge <span class="surligne">ponctue</span><span class="ponctuation">.</span></h1>
+    <p>Une seule langue graphique pour Chati et « Ça change quoi pour moi ? », tirée de l’imprimé militant : l’affiche pour les titres, le livre pour les réponses. Les quatre couleurs 2027 de la charte, ses deux familles de caractères, des aplats et des filets. Les mascottes sont les seuls dessins : rien d’autre n’a de contour épais ni de forme ronde.</p>
+  </header>
+
+  <section class="section">
+    <h2>Couleurs <small>Charte graphique de La France insoumise, palette « Couleurs 2027 »</small></h2>
+    <div class="nuancier">
+      <div class="nuance" style="background:var(--violet);color:var(--creme)">Violet <span>#4C0297 · structure, action</span></div>
+      <div class="nuance" style="background:var(--rouge);color:var(--creme)">Rouge <span>#D1271C · ponctuation</span></div>
+      <div class="nuance" style="background:var(--creme)">Crème <span>#FFFCF4 · fond</span></div>
+      <div class="nuance" style="background:var(--charbon);color:var(--creme)">Charbon <span>#212320 · texte, filets</span></div>
+    </div>
+    <div class="nuances-derivees">
+      <div class="nuance" style="background:var(--violet-nuit);color:var(--creme)">Violet nuit <span>#37016E</span></div>
+      <div class="nuance" style="background:var(--violet-pale)">Violet pâle <span>#EEE6F6</span></div>
+      <div class="nuance" style="background:var(--surligneur)">Surligneur <span>#FFC9C2</span></div>
+      <div class="nuance" style="background:var(--papier)">Papier <span>#F6F0E1</span></div>
+      <div class="nuance" style="background:var(--gris);color:var(--creme)">Gris <span>#5E5F5A</span></div>
+      <div class="nuance" style="background:var(--creme);box-shadow:inset 0 -1.5px 0 var(--filet)">Filet <span>charbon 16 %</span></div>
+    </div>
+    <div class="fiche" style="margin-top:28px">
+      <h3>Repère des six parties du programme — seconde palette de la charte, jamais en fond ni en texte</h3>
+      <div class="parties">
+        <span class="etiquette" style="--partie:var(--partie-1)"><i class="repere"></i>1 · Bifurcation écologique</span>
+        <span class="etiquette" style="--partie:var(--partie-2)"><i class="repere"></i>2 · Économie</span>
+        <span class="etiquette" style="--partie:var(--partie-3)"><i class="repere"></i>3 · Sécurité sociale</span>
+        <span class="etiquette" style="--partie:var(--partie-4)"><i class="repere"></i>4 · Goût du futur</span>
+        <span class="etiquette" style="--partie:var(--partie-5)"><i class="repere"></i>5 · 6e République</span>
+        <span class="etiquette" style="--partie:var(--partie-6)"><i class="repere"></i>6 · Monde ordonné</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Typographie <small>Public Sans (titres, interface) et Gowun Batang (texte courant) : les alternatives gratuites de la charte</small></h2>
+    <div class="grille" style="grid-template-columns:1.25fr 1fr">
+      <div class="fiche">
+        <h3>Titres — Public Sans Black, interlettrage serré</h3>
+        <p class="titre-affiche">Ça change quoi <span class="surligne">pour moi</span> <span class="ponctuation">?</span></p>
+        <p class="titre" style="margin-top:26px">Vos dix mesures<span class="ponctuation">.</span></p>
+        <p class="titre-2" style="margin-top:20px">La retraite à 60 ans, c’est irréaliste, non ?</p>
+        <p class="legende">64 / 40 / 28 px. Un seul mot surligné par titre. La ponctuation finale d’un titre de marque ou d’écran est rouge.</p>
+      </div>
+      <div class="fiche">
+        <h3>Texte — Gowun Batang</h3>
+        <p class="corps">Le programme prévoit la retraite à <span class="surligne">60 ans</span> pour <span class="surligne">40 annuités</span><a class="appel">1</a> et la revalorisation des pensions<a class="appel">2</a>.</p>
+        <p class="intertitre" style="margin-top:22px">Ce qui changerait</p>
+        <p class="corps-petit" style="margin-top:6px;color:var(--gris)">Texte secondaire, résumés et citations en 16 px.</p>
+        <p class="interface" style="margin-top:18px">Interface : Public Sans 600, 14 px</p>
+        <p class="folio" style="margin-top:14px">Folio · Partie 3 · Chapitre 1</p>
+        <p class="legende">Échelle : 12, 14, 16, 18, 22, 28, 40, 64 px. Aucune taille sous 12 px. Les capitales espacées sont réservées au folio et à l’étiquette.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Composants <small>Les mêmes dans les deux applications</small></h2>
+    <div class="grille" style="grid-template-columns:1fr 1fr">
+      <div class="fiche">
+        <h3>Boutons</h3>
+        <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+          <button class="bouton bouton-plein">Continuer <svg class="icone"><use href="#i-fleche"/></svg></button>
+          <button class="bouton bouton-contour">Recommencer</button>
+          <button class="bouton bouton-texte"><svg class="icone"><use href="#i-copier"/></svg>Copier</button>
+          <span style="background:var(--violet);padding:10px"><button class="bouton bouton-inverse">Nouvelle conversation</button></span>
+        </div>
+        <p class="legende">Rayon 4 px, hauteur 44 px. Aucune ombre, aucun déplacement au survol : le fond change.</p>
+      </div>
+      <div class="fiche">
+        <h3>Cases à cocher — profil et réponses</h3>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="coche">Étudiant·e</button><button class="coche cochee">Locataire</button><button class="coche">Retraité·e</button><button class="coche">Parent</button>
+        </div>
+        <div class="bulletin" style="margin-top:18px">
+          <button class="ligne cochee">Je suis locataire</button>
+          <button class="ligne">Je suis propriétaire</button>
+        </div>
+      </div>
+      <div class="fiche">
+        <h3>Le sommaire — toute liste d’entrées cliquables</h3>
+        <div class="sommaire">
+          <button class="entree"><span class="etiquette" style="--partie:var(--partie-3)"><i class="repere"></i>Logement</span><span class="entree-texte">Quelles mesures pour rendre le logement plus accessible ?</span><span class="fleche">→</span></button>
+          <button class="entree" style="background:var(--violet);color:var(--creme);padding-left:16px"><span class="etiquette" style="--partie:var(--partie-1);color:var(--creme)"><i class="repere"></i>Écologie</span><span class="entree-texte">Que prévoit le programme pour la transition écologique ?</span><span class="fleche" style="color:var(--creme);transform:translateX(4px)">→</span></button>
+        </div>
+        <p class="legende">Seconde ligne : état au survol. Remplace les cartes colorées, les pastilles et les boutons à ombre.</p>
+      </div>
+      <div class="fiche">
+        <h3>La mascotte parle — accueil, attente, erreur, écran vide</h3>
+        <div class="parole">
+          <img class="mascotte" src="mascottes/chat.svg" width="84" alt="">
+          <div class="bulle">Je cherche dans le programme…<span class="bulle-detail">Garantir une retraite digne · Augmenter les salaires</span></div>
+        </div>
+        <div class="parole" style="margin-top:22px">
+          <img class="mascotte" src="mascottes/tortue.svg" width="84" alt="">
+          <div class="bulle">Salut ! Je suis la tortue insoumise.</div>
+        </div>
+        <p class="legende">Seuls éléments à contour épais et à angles ronds. Les messages d’état passent par la bulle.</p>
+      </div>
+      <div class="fiche">
+        <h3>Champ de saisie</h3>
+        <div class="champ"><span class="saisie">Une question sur le programme ?</span><button class="champ-envoyer" aria-label="Envoyer"><svg class="icone"><use href="#i-haut"/></svg></button></div>
+      </div>
+      <div class="fiche">
+        <h3>Citation exacte, étiquettes, avancement</h3>
+        <figure class="citation">
+          <blockquote>Restaurer le droit à la retraite à 60 ans à taux plein pour toutes et tous après 40 annuités de cotisation.</blockquote>
+          <figcaption><span class="folio">Partie 3 · Chapitre 1</span><a class="lien">melenchon2027.fr ↗</a></figcaption>
+        </figure>
+        <div style="display:flex;gap:22px;margin-top:18px"><span class="etiquette etiquette-cle">Mesure clé</span><span class="etiquette">Texte explicatif</span><span class="etiquette">Source web</span></div>
+        <div class="avancement" style="margin-top:20px"><i style="width:27%"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Maquettes <small>Chati (rag)</small></h2>
+
+    <p class="ecran-titre">Accueil <span>— 1240 px</span></p>
+    <div class="ecran chati">
+      <aside class="lateral sur-violet">
+        <div class="marque">Chati<span class="ponctuation">.</span></div>
+        <p class="sous-marque">le Chat insoumis</p>
+        <button class="bouton bouton-inverse"><svg class="icone"><use href="#i-plus"/></svg>Nouvelle conversation</button>
+        <div class="historique">
+          <p class="folio">Vos conversations</p>
+          <ul><li class="active">La retraite à 60 ans, c’est irréaliste…</li><li>Que prévoit le programme pour l’école ?</li><li>Comment tout cela est-il financé ?</li></ul>
+        </div>
+        <div class="pied-lateral"><span>Explorer le programme ↗</span><span>Liens utiles</span><span>À propos de Chati</span></div>
+      </aside>
+      <div class="principal">
+        <div class="entete-folio"><span class="folio">L’Avenir en commun · 1 069 mesures</span><span class="folio">Assistant connecté</span></div>
+        <div class="accueil">
+          <div>
+            <h1 class="titre-affiche">Posez votre question<br>au <span class="surligne">programme</span><span class="ponctuation">.</span></h1>
+            <p class="corps chapeau">Chati cherche dans les mesures de L’Avenir en commun, répond simplement et cite chaque passage.</p>
+          </div>
+          <div class="parole">
+            <div class="bulle vers-le-bas">Moi, c’est Chati.<span class="bulle-detail">Dites-moi qui vous êtes, je vous dirai ce qui change pour vous.</span></div>
+            <img class="mascotte" src="mascottes/chat.svg" width="132" alt="">
+          </div>
+          <div class="je-suis"><span>Je suis…</span><button class="coche">Étudiant·e</button><button class="coche">Salarié·e</button><button class="coche cochee">Locataire</button><button class="coche">Retraité·e</button><button class="coche">Parent</button><button class="coche">Sans emploi</button><button class="coche">En zone rurale</button><button class="bouton bouton-texte">Tout voir</button></div>
+          <div class="sommaire">
+            <button class="entree"><span class="etiquette"><i class="repere"></i>Votre situation</span><span class="entree-texte">Qu’est-ce que le programme changerait concrètement pour moi ?</span><span class="fleche">→</span></button>
+            <button class="entree"><span class="etiquette" style="--partie:var(--partie-3)"><i class="repere"></i>Logement</span><span class="entree-texte">Quelles mesures pour rendre le logement plus accessible ?</span><span class="fleche">→</span></button>
+            <button class="entree"><span class="etiquette" style="--partie:var(--partie-1)"><i class="repere"></i>Écologie</span><span class="entree-texte">Que prévoit le programme pour la transition écologique ?</span><span class="fleche">→</span></button>
+            <button class="entree"><span class="etiquette" style="--partie:var(--partie-2)"><i class="repere"></i>Fiscalité</span><span class="entree-texte">Comment le programme veut-il rendre l’impôt plus juste ?</span><span class="fleche">→</span></button>
+          </div>
+        </div>
+        <div class="pied-saisie">
+          <div class="champ"><span class="saisie">Une question sur le programme ?</span><button class="champ-envoyer" aria-label="Envoyer"><svg class="icone"><use href="#i-haut"/></svg></button></div>
+          <div class="mentions"><span>Profil : Locataire · <u>effacer</u></span><span>Outil non officiel · <u>À propos</u></span></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="ecran-titre">Réponse <span>— la question devient un titre, les sources sont des notes en marge</span></p>
+    <div class="ecran chati">
+      <aside class="lateral sur-violet">
+        <div class="marque">Chati<span class="ponctuation">.</span></div>
+        <p class="sous-marque">le Chat insoumis</p>
+        <button class="bouton bouton-inverse"><svg class="icone"><use href="#i-plus"/></svg>Nouvelle conversation</button>
+        <div class="historique">
+          <p class="folio">Vos conversations</p>
+          <ul><li class="active">La retraite à 60 ans, c’est irréaliste…</li><li>Que prévoit le programme pour l’école ?</li><li>Comment tout cela est-il financé ?</li></ul>
+        </div>
+        <div class="pied-lateral"><span>Explorer le programme ↗</span><span>Liens utiles</span><span>À propos de Chati</span></div>
+      </aside>
+      <div class="principal">
+        <div class="conversation">
+          <h2 class="question-posee">La retraite à 60 ans, c’est irréaliste, non ?</h2>
+          <article class="reponse">
+            <div>
+              <div class="signature"><img class="mascotte" src="mascottes/chat.svg" width="34" alt=""><span class="folio">Chati · programme et sources web</span></div>
+              <p class="corps">Non : le programme prévoit la retraite à <span class="surligne">60 ans</span> pour <span class="surligne">40 annuités</span><a class="appel">1</a> et détaille les recettes qui la financent<a class="appel">2</a>.</p>
+              <h3 class="intertitre">Ce qui changerait</h3>
+              <ul class="tirets corps">
+                <li>Le droit de partir à 60 ans à taux plein est rétabli pour toutes et tous<a class="appel">1</a>.</li>
+                <li>Les exonérations de cotisations non compensées sont supprimées pour financer les pensions<a class="appel">2</a>.</li>
+                <li>Plusieurs pays européens maintiennent un âge légal inférieur à 64 ans<a class="appel">3</a>.</li>
+              </ul>
+              <div class="actions">
+                <button class="bouton bouton-texte"><svg class="icone"><use href="#i-copier"/></svg>Copier</button>
+                <button class="bouton bouton-texte"><svg class="icone"><use href="#i-partager"/></svg>Partager</button>
+                <button class="bouton bouton-texte"><svg class="icone"><use href="#i-image"/></svg>Image</button>
+                <span class="droite"><button class="bouton bouton-texte" aria-label="Réponse utile"><svg class="icone"><use href="#i-pouce"/></svg></button><button class="bouton bouton-texte" aria-label="Réponse à améliorer"><svg class="icone" style="transform:rotate(180deg)"><use href="#i-pouce"/></svg></button></span>
+              </div>
+            </div>
+            <aside class="notes">
+              <p class="folio">Notes et sources</p>
+              <div class="note"><span class="numero">1</span><strong>Garantir une retraite digne</strong><p>Restaurer le droit à la retraite à 60 ans à taux plein…</p><span class="etiquette etiquette-cle" style="--partie:var(--partie-3)"><i class="repere"></i>Mesure clé · P3 · Ch. 1</span></div>
+              <div class="note"><span class="numero">2</span><strong>Garantir une retraite digne</strong><p>Revenir sur la non-compensation des exonérations…</p><span class="etiquette" style="--partie:var(--partie-3)"><i class="repere"></i>Mesure · P3 · Ch. 1</span></div>
+              <div class="note"><span class="numero">3</span><strong>Âge légal de départ en Europe</strong><p>cleiss.fr · consulté le 12/11/2026</p><span class="etiquette">Source web ↗</span></div>
+            </aside>
+          </article>
+        </div>
+        <div class="pied-saisie">
+          <div class="champ"><span class="saisie">Une autre question ?</span><button class="champ-envoyer" aria-label="Envoyer"><svg class="icone"><use href="#i-haut"/></svg></button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Maquettes <small>Ça change quoi pour moi ? (app)</small></h2>
+
+    <p class="ecran-titre">Accueil <span>— la tortue dans un aplat violet à fond perdu, les modes en sommaire</span></p>
+    <div class="ecran ccq">
+      <div class="bandeau"><div class="marque">Ça change quoi <span class="ponctuation">?</span></div></div>
+      <div class="ccq-accueil">
+        <div class="texte">
+          <p class="folio">En soutien à la candidature de Jean-Luc Mélenchon</p>
+          <h1 class="titre-affiche">Ça change quoi<br><span class="surligne">pour moi</span> <span class="ponctuation">?</span></h1>
+          <p class="corps chapeau">Quelques questions sur votre quotidien, et le classement des mesures du programme qui vous concernent vraiment.</p>
+        </div>
+        <div class="aplat">
+          <div class="bulle">Salut ! Je suis la tortue insoumise.</div>
+          <img class="mascotte" src="mascottes/tortue.svg" width="230" alt="">
+        </div>
+      </div>
+      <div class="sommaire">
+        <button class="entree"><span class="numero">01</span><span><span class="entree-texte">Je joue</span><span class="entree-detail">Quelques questions, et ton classement de mesures.</span></span><span class="fin"><span class="etiquette">1 à 5 minutes</span><span class="fleche">→</span></span></button>
+        <button class="entree"><span class="numero">02</span><span><span class="entree-texte">Je milite</span><span class="entree-detail">Le guide d’entretien : les questions à poser, les arguments qui portent.</span></span><span class="fin"><span class="etiquette">Porte-à-porte</span><span class="fleche">→</span></span></button>
+        <button class="entree"><span class="numero">03</span><span><span class="entree-texte">Tout le programme</span><span class="entree-detail">Les 1 069 mesures, classées comme dans le livre.</span></span><span class="fin"><span class="etiquette">Recherche</span><span class="fleche">→</span></span></button>
+      </div>
+      <p class="mention-legale">Site non officiel, en soutien à la candidature de Jean-Luc Mélenchon. Vos réponses restent sur cet appareil : rien n’est enregistré ni envoyé. <u>Mentions légales</u></p>
+    </div>
+
+    <p class="ecran-titre">Question <span>— la tortue pose la question, on répond comme sur un bulletin</span></p>
+    <div class="ecran ccq" style="min-height:0">
+      <div class="bandeau"><div class="marque">Ça change quoi <span class="ponctuation">?</span></div><button class="bouton bouton-texte">Quitter</button></div>
+      <div class="ccq-question">
+        <div class="tete"><span class="folio">Question 3 sur 11 · Logement</span><span class="folio">≈ 2 min restantes</span></div>
+        <div class="avancement"><i style="width:27%"></i></div>
+        <div class="parole">
+          <img class="mascotte" src="mascottes/tortue.svg" width="96" alt="">
+          <div class="bulle">Côté logement, tu es dans quelle situation&nbsp;?</div>
+        </div>
+        <div class="bulletin">
+          <button class="ligne cochee">Locataire dans le privé</button>
+          <button class="ligne">Locataire d’un logement social</button>
+          <button class="ligne">Propriétaire</button>
+          <button class="ligne">Hébergé·e, ou sans logement stable</button>
+        </div>
+        <div class="suite"><button class="bouton bouton-texte">← Question précédente</button><button class="bouton bouton-plein">Continuer <svg class="icone"><use href="#i-fleche"/></svg></button></div>
+      </div>
+    </div>
+
+    <p class="ecran-titre">Classement <span>— numéros d’affiche rouges, texte exact du programme en citation</span></p>
+    <div class="ecran ccq" style="min-height:0">
+      <div class="bandeau"><div class="marque">Ça change quoi <span class="ponctuation">?</span></div><button class="bouton bouton-texte">Recommencer</button></div>
+      <div class="ccq-resultat">
+        <div>
+          <p class="folio">Ton classement · parcours normal</p>
+          <h1 class="titre-affiche">Tes <span class="surligne">dix</span> mesures<span class="ponctuation">.</span></h1>
+          <ol class="classement">
+            <li class="rang"><span class="numero">01</span><div>
+              <div class="tete"><span class="etiquette" style="--partie:var(--partie-3)"><i class="repere"></i>Logement</span><button class="bouton bouton-texte"><svg class="icone"><use href="#i-coeur"/></svg>Ça me parle</button></div>
+              <h3>Les loyers seraient encadrés à la baisse dans tout le pays.</h3>
+              <figure class="citation"><blockquote>Encadrer les loyers partout sur le territoire et à la baisse dans les grandes villes.</blockquote><figcaption><span class="folio">Partie 3 · Chapitre 1</span><a class="lien">melenchon2027.fr ↗</a></figcaption></figure>
+            </div></li>
+            <li class="rang"><span class="numero">02</span><div>
+              <div class="tete"><span class="etiquette" style="--partie:var(--partie-2)"><i class="repere"></i>Pouvoir d’achat</span><button class="bouton bouton-texte" style="color:var(--violet)"><svg class="icone" style="fill:var(--violet)"><use href="#i-coeur"/></svg>Gardée</button></div>
+              <h3>Le SMIC serait augmenté dès le début du mandat.</h3>
+            </div></li>
+          </ol>
+        </div>
+        <aside class="cote sur-violet">
+          <p class="folio">3 mesures gardées</p>
+          <h2 class="titre-2">Ton programme en image</h2>
+          <p>Une affiche avec tes mesures, à partager en post ou en story.</p>
+          <button class="bouton bouton-inverse">Créer mon affiche</button>
+          <button class="bouton">Continuer le parcours long</button>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Mobile <small>390 px — mêmes composants, une colonne ; les notes passent sous la réponse ou dans le panneau</small></h2>
+    <div class="mobiles">
+      <div class="mobile">
+        <div class="barre"><div class="marque">Chati<span class="ponctuation">.</span></div><span class="interface">Menu</span></div>
+        <div class="accueil">
+          <div class="parole"><img class="mascotte" src="mascottes/chat.svg" width="64" alt=""><div class="bulle">Moi, c’est Chati.</div></div>
+          <h1 class="titre-affiche">Posez votre question au <span class="surligne">programme</span><span class="ponctuation">.</span></h1>
+          <p class="corps chapeau">Chati répond simplement et cite chaque passage.</p>
+          <div class="je-suis"><span>Je suis…</span><button class="coche">Étudiant·e</button><button class="coche cochee">Locataire</button><button class="coche">Parent</button><button class="bouton bouton-texte">Tout voir</button></div>
+          <div class="sommaire">
+            <button class="entree"><span class="etiquette" style="--partie:var(--partie-3)"><i class="repere"></i>Logement</span><span class="entree-texte">Quelles mesures pour rendre le logement plus accessible ?</span><span class="fleche">→</span></button>
+            <button class="entree"><span class="etiquette" style="--partie:var(--partie-1)"><i class="repere"></i>Écologie</span><span class="entree-texte">Que prévoit le programme pour la transition écologique ?</span><span class="fleche">→</span></button>
+          </div>
+        </div>
+        <div class="pied-saisie"><div class="champ"><span class="saisie">Une question ?</span><button class="champ-envoyer" aria-label="Envoyer"><svg class="icone"><use href="#i-haut"/></svg></button></div></div>
+      </div>
+
+      <div class="mobile">
+        <div class="barre"><div class="marque">Chati<span class="ponctuation">.</span></div><span class="interface">Menu</span></div>
+        <div class="conversation">
+          <h2 class="question-posee">La retraite à 60 ans, c’est irréaliste, non ?</h2>
+          <article class="reponse">
+            <div class="signature"><img class="mascotte" src="mascottes/chat.svg" width="30" alt=""><span class="folio">Chati</span></div>
+            <p class="corps">Non : le programme prévoit la retraite à <span class="surligne">60 ans</span> pour <span class="surligne">40 annuités</span><a class="appel">1</a>.</p>
+            <h3 class="intertitre">Ce qui changerait</h3>
+            <ul class="tirets corps"><li>Le droit de partir à 60 ans à taux plein est rétabli<a class="appel">1</a>.</li></ul>
+            <div class="actions"><button class="bouton bouton-texte"><svg class="icone"><use href="#i-copier"/></svg>Copier</button><button class="bouton bouton-texte"><svg class="icone"><use href="#i-partager"/></svg>Partager</button><button class="bouton bouton-texte">3 notes et sources</button></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="mobile ccq" style="min-height:0">
+        <div class="bandeau"><div class="marque">Ça change quoi <span class="ponctuation">?</span></div><button class="bouton bouton-texte">Quitter</button></div>
+        <div class="ccq-question">
+          <div class="tete"><span class="folio">Question 3 sur 11</span><span class="folio">Logement</span></div>
+          <div class="avancement"><i style="width:27%"></i></div>
+          <div class="parole"><img class="mascotte" src="mascottes/tortue.svg" width="64" alt=""><div class="bulle">Côté logement, tu es dans quelle situation&nbsp;?</div></div>
+          <div class="bulletin">
+            <button class="ligne cochee">Locataire dans le privé</button>
+            <button class="ligne">Locataire d’un logement social</button>
+            <button class="ligne">Propriétaire</button>
+          </div>
+          <div class="suite"><span></span><button class="bouton bouton-plein">Continuer <svg class="icone"><use href="#i-fleche"/></svg></button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

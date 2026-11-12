@@ -12,8 +12,9 @@ import shutil
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-FILES = ['Dockerfile', 'backend/requirements.lock', 'assets/Programme-Mélenchon-LFI.pdf',
-         'data/structured/mesures.jsonl', 'data/structured/annexes.jsonl', 'data/structured/enrichment.jsonl',
+FILES = ['Dockerfile', 'backend/requirements.lock', 
+         'data/programme/mesures.jsonl', 'data/programme/textes.jsonl', 'data/programme/enrichment.jsonl',
+         'data/programme/answers.jsonl', 'data/programme/annotations.jsonl', 'data/programme/publics.json',
          'frontend/package.json', 'frontend/package-lock.json', 'frontend/index.html', 'frontend/tsconfig.json',
          'frontend/vite.config.ts']
 TREES = ['backend/chati', 'frontend/src', 'frontend/public']

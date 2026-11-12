@@ -15,7 +15,7 @@ function Eyes({ mood }: { mood: Mood }) {
   const ry = mood === 'wow' ? 20 : 17;
   const pupil = mood === 'wow' ? { r: 5, dx: 0, dy: 0 } : mood === 'think' ? { r: 7, dx: 4, dy: -6 } : { r: 7.5, dx: 2, dy: 3 };
   return (
-    <g className="mascot-eyes">
+    <g className="mascotte-yeux">
       {[74, 126].map((cx) => (
         <g key={cx}>
           <ellipse cx={cx} cy={106} rx={14} ry={ry} fill="#fff" {...stroke} strokeWidth={4.5} />
@@ -44,7 +44,7 @@ function Mouth({ mood }: { mood: Mood }) {
 /** Chati, the cartoon cat. */
 export function ChatiCat({ mood = 'idle', size = 160, className = '' }: { mood?: Mood; size?: number; className?: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" className={`mascot mood-${mood} ${className}`} width={size} height={size * 1.05} viewBox="0 0 200 210" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" className={`mascotte mood-${mood} ${className}`} width={size} height={size * 1.05} viewBox="0 0 200 210" aria-hidden="true">
       {/* scarf */}
       <path d="M126 178 L152 204 L128 207 L114 186 Z" fill="#d1271c" {...stroke} strokeWidth={5} />
       <path d="M50 164 Q100 194 150 164 L153 182 Q100 214 47 182 Z" fill="#d1271c" {...stroke} strokeWidth={5} />

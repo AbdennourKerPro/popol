@@ -118,7 +118,7 @@ def build_audit(raw, ref, decision, corpus):
         unsupported = decision.get('unsupported_citations', {}).get(str(index), [])
         if not set(unsupported) <= set(block['source_ids']):
             raise ValueError('Unobserved citation label')
-        blocks.append({'index': index, 'text': block['text'], 'support': support,
+        blocks.append({'index': index, 'text': ' '.join([block['text'], *[p['text'] for p in block.get('points', [])]]), 'support': support,
             'non_applicability_reason': 'Pure limite d’information ou invitation ; aucune proposition positive à vérifier dans ce bloc.' if nonfactual else None,
             'citations': [{'id': sid, 'contributes': sid not in unsupported} for sid in block['source_ids']],
             'reason': decision['notes']})

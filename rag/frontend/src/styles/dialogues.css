@@ -1,0 +1,254 @@
+/* Dialogue « À propos » et page des liens utiles */
+
+.info-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: var(--overlay);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.info-dialog {
+  background: var(--surface-cool);
+  border-radius: 16px;
+  max-width: 500px;
+  padding: 38px;
+  position: relative;
+  max-height: 90svh;
+  overflow: auto;
+}
+
+.info-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.info-dialog h2 {
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  font-weight: 900;
+}
+
+.info-dialog>p {
+  font-family: 'Gowun Batang',serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.info-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+}
+
+.info-stat strong {
+  font-size: 27px;
+  color: var(--purple);
+  letter-spacing: -1px;
+}
+
+.info-stat>span {
+  font-size: 12px;
+  color: var(--subtle);
+  margin-right: 12px;
+}
+
+.info-dialog .info-mode {
+  font-size: 15px;
+}
+
+.info-dialog .info-small {
+  font-family: 'Public Sans',sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--subtle);
+}
+
+.info-done {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 23px;
+  padding: 13px 16px;
+  background: var(--purple);
+  color: var(--on-accent);
+  font-size: 13px;
+  border-radius: 7px;
+}
+
+@media(max-width:760px) {
+  .info-dialog {
+    padding: 33px 25px;
+  }
+}
+
+.useful-links-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 9px;
+  background: transparent;
+  color: var(--on-accent);
+  font-size: 13px;
+  text-align: left;
+}
+
+.useful-links-button > svg:last-child {
+  margin-left: auto;
+}
+
+.useful-links-button:hover,
+.useful-links-button.active {
+  background: var(--nav-hover);
+  border-radius: 9px;
+}
+
+.useful-links {
+  flex: 1;
+  overflow-y: auto;
+  padding: 55px 40px;
+}
+
+.useful-links > * {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.links-back {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 auto 35px;
+  padding: 0;
+  background: none;
+  color: var(--purple);
+  font-size: 14px;
+}
+
+.links-back svg {
+  transform: rotate(180deg);
+}
+
+.useful-links > .eyebrow {
+  display: block;
+}
+
+.useful-links h1 {
+  font-size: 38px;
+  letter-spacing: -1.5px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.useful-links h1 span {
+  color: var(--purple);
+}
+
+.useful-links > p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.useful-links-list {
+  display: grid;
+  gap: 20px;
+  margin-top: 32px;
+  padding-bottom: 15px;
+}
+
+.useful-links-list a {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 24px;
+  border: var(--frame-border);
+  border-radius: 16px;
+  box-shadow: 4px 4px 0 var(--frame-ink);
+  background: var(--blue-soft);
+  color: var(--blue);
+  text-decoration: none;
+  transition: transform .15s, box-shadow .15s;
+}
+
+.useful-links-list a:nth-child(2) {
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.useful-links-list a:nth-child(3) {
+  background: var(--ochre-soft);
+  color: var(--ochre);
+}
+
+.useful-links-list a:hover {
+  background: var(--surface);
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--frame-ink);
+}
+
+.useful-links-list a > svg {
+  flex-shrink: 0;
+}
+
+.useful-links-list a > svg:last-child {
+  margin-left: auto;
+}
+
+.useful-links-list h2 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.useful-links-list p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .main > .conversation-area:first-of-type,
+  .main > .useful-links {
+    padding-top: 62px;
+  }
+
+  .useful-links {
+    padding: 62px 22px 25px;
+  }
+
+  .useful-links-list a {
+    gap: 12px;
+    padding: 20px 16px;
+  }
+
+  .useful-links h1 {
+    font-size: 32px;
+  }
+}
+
+.info-dialog {
+  border: var(--frame-border);
+  border-radius: 22px;
+  box-shadow: 6px 6px 0 var(--frame-ink);
+}
+
+.info-stat strong {
+  color: var(--blue);
+}
+
+.info-stat strong:nth-of-type(2) {
+  color: var(--green);
+}

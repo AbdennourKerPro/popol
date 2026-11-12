@@ -128,10 +128,16 @@ Le contrôle technique d’un ID ou d’une citation ne prouve pas que la source
 soutient toute l’explication. Le benchmark doit aussi évaluer ce soutien sémantique,
 les conditions des mesures, les effets non démontrés et les absences de données.
 
-Pour la V1, l’API transmet progressivement les **étapes de traitement**, puis
-une réponse structurée après validation. L’affichage mot par mot de texte non
-validé n’est pas nécessaire pour obtenir l’interface de chat attendue. Une évolution
-pourra afficher des blocs validés progressivement, après mesure de l’expérience.
+L’API transmet progressivement les **étapes de traitement** et les passages
+trouvés (`context`), puis une réponse structurée après validation. Derrière le réglage
+`STREAM_BLOCKS` (désactivé par défaut), les blocs complets sont aussi diffusés à mesure
+qu’ils sont écrits (`backend/chati/streaming.py`), à titre provisoire : la réponse
+finale validée les remplace. Le texte n’est jamais diffusé mot par mot.
+
+Une question autonome (un seul message, sans web ni mesure de suivi) dont la réponse
+vérifiée est déjà connue est servie depuis le cache en mémoire (`backend/chati/cache.py`,
+clé : question normalisée, version du corpus, modèle, profil), sans appel au modèle ni
+question décomptée.
 
 ## API proposée
 
@@ -141,22 +147,48 @@ pourra afficher des blocs validés progressivement, après mesure de l’expéri
 | `GET /api/status` | Version du corpus, état et mode de l’index, disponibilité de la configuration |
 | `POST /api/chat` | Messages en entrée ; événements SSE de statut puis réponse structurée finale |
 | `GET /api/sources/{id}` | Texte exact et provenance d’une mesure ou annexe de la version chargée |
-| `GET /documents/programme.pdf` | PDF de référence, ouvert avec `#page=N` depuis la fiche source |
+| `POST /api/feedback` | Avis anonyme sur une réponse (pouce, motif) ; aucun texte libre accepté |
 
 Le front lit le flux SSE du POST avec `fetch` et peut annuler la demande. L’arrêt
 est propagé côté serveur autant que possible. Les événements portent un identifiant
-de demande et un type stable : `status`, `answer`, `done`, `error`.
+de demande et un type stable :
+
+| Événement | Contenu |
+| --- | --- |
+| `status` | étape en cours (`stage`, `label`) |
+| `context` | après la recherche, avant la rédaction : `sources`, au plus 6 mesures trouvées (ni en mode `full`, ni en consultation) |
+| `block` | seulement avec `STREAM_BLOCKS=true` : un bloc complet déjà écrit par le modèle (`index`, `kind`, `text`, `points`, `source_ids`), affiché à titre provisoire s’il ne cite que des IDs fournis et ne contient aucune référence manuelle |
+| `reset` | avant une seconde tentative de génération : les blocs provisoires sont effacés |
+| `answer` | réponse finale validée ; elle seule fait foi |
+| `done` | fin du flux |
+| `error` | message ; `retry_after` (secondes) quand le fournisseur est saturé |
 
 La réponse finale contient au minimum `request_id`, `corpus_version`, `blocks`,
 `measures`, `sources` et un statut (`answered`, `partial`, `clarification`,
-`not_in_corpus`). Les URL ne sont jamais demandées au modèle ; elles sont résolues
+`not_in_corpus`). Chaque bloc porte `points` (liste de `{text, source_ids}`, une
+entrée par mesure, autorisée pour `explanation`, `benefits` et `comparison`) ; après
+validation, `source_ids` du bloc réunit ses propres IDs et ceux de ses points. Le
+texte peut encadrer de `**` au plus trois chiffres clés par bloc, rendus en gras par
+le front sans interpréter d’autre balisage. La réponse ajoute aussi `related` (jusqu’à
+3 mesures proches non citées, seulement pour `not_in_corpus`) et `cached` (vrai si la
+réponse vient du cache). Si le contrôle des références échoue hors mode web, la
+réponse est une consultation (`mode: consultation`) des passages les plus proches,
+et la question n’est pas décomptée. Les URL ne sont jamais demandées au modèle ; elles sont résolues
 par le serveur. Le front affiche les contenus comme du texte ou du Markdown
 contrôlé, sans interpréter du HTML arbitraire.
 
 ### Questions de suivi et recherche externe
 
-`POST /api/chat` accepte aussi `research` (faux par défaut) et
-`focus_measure_id` pour ancrer une relance sur une mesure connue du serveur. La
+`POST /api/chat` accepte aussi `research` (faux par défaut),
+`focus_measure_id` pour ancrer une relance sur une mesure connue du serveur, et
+`profile` (au plus 3 publics de `data/programme/publics.json`, 422 sinon). Une question qui exprime
+un doute ou porte sur le coût (`backend/chati/objections.py`, texte entre « » ignoré) déclenche,
+si la recherche web est disponible et `OBJECTION_RESEARCH` actif, une recherche d’exemples à
+l’étranger et de base juridique (`research_web(objective='objection')`) ; la synthèse est générée
+en mode `objection`, qui n’exige pas de citation web. Sans résultat vérifié, le programme seul
+répond. Quand des exemples web sont utilisés, le champ `research` de la réponse vaut vrai. Enfin, `profile` : les mesures
+retrouvées qui concernent ce profil reçoivent un petit bonus de classement
+(`PROFILE_BOOST`) et le modèle reçoit le champ `profil`. La
 réponse ajoute `followups`, des suggestions construites à partir d’une mesure
 effectivement citée, ainsi que l’indication du mode de recherche. L’interface
 propose l’exemple concret, la comparaison à aujourd’hui et les avantages/limites.

@@ -1,4 +1,32 @@
-# Extraction du résumé de programme
+# Données du programme
+
+## Corpus actif : `programme/`
+
+Le RAG utilise **L’Avenir en commun**, livre-programme publié sur
+<https://melenchon2027.fr/programme/livre/>, extrait par `../../scraper/` (6 parties,
+23 chapitres, 111 sous-sections). Pour le reconstruire :
+`python scripts/import_programme.py`, puis reconstruire l’image Docker (index de recherche).
+
+- `programme/mesures.jsonl` : 1 069 mesures (`categorie` : `cle`, `complementaire`,
+  `sous_mesure`). `parent_id` et `sous_mesures_ids` relient une mesure à ses sous-mesures.
+- `programme/textes.jsonl` : 140 textes explicatifs (introduction, présentations, textes
+  de sous-section). Ils donnent le contexte et les raisons ; ce ne sont pas des mesures.
+- `programme/enrichment.jsonl` : formulations d’indexation, propres à ce corpus
+  (`scripts/enrich_index.py`). Vide tant qu’elles n’ont pas été générées et relues.
+- `programme/import-report.json` : décomptes et empreintes des fichiers d’entrée.
+
+Identifiants : `p1c02-ss03-m004` (partie, chapitre, sous-section, mesure), `-t001` pour un
+texte, `p1-t001` pour une présentation de partie, `i1-t001` pour l’introduction. `texte_source`
+conserve le texte publié ; `texte` normalise seulement ce qu’un modèle ne peut pas citer à
+l’identique (espaces Unicode, césures conditionnelles, accents décomposés).
+
+## Ancien corpus, figé : `structured/` et `source/`
+
+Résumé de programme utilisé jusqu’au 8 novembre 2026. **Ne pas modifier** : les benchmarks
+`chati-v1` et `chati-v2` en vérifient les empreintes, et l’app `Ça change quoi` s’y réfère
+encore. La suite de ce document le décrit.
+
+### Extraction du résumé de programme
 
 La source est la copie HTML déjà téléchargée dans cette session depuis la page
 Google Docs publiée fournie par l’utilisateur. Cette copie est archivée dans

@@ -15,7 +15,7 @@ def missing_aspects(answer, messages):
     return aspects
 
 
-async def verify_absences(client, model, retriever, corpus, messages, rows, answer, usage):
+async def verify_absences(client, model, retriever, corpus, messages, rows, answer, usage, profile_labels=None):
     """Return (answer, usage, info). `info` is None when nothing was declared absent;
     otherwise it describes the extra search (and `rows` additions) even if it changed nothing."""
     aspects = missing_aspects(answer, messages)
@@ -34,7 +34,7 @@ async def verify_absences(client, model, retriever, corpus, messages, rows, answ
     info['added_ids'] = [r['id'] for r in extra_rows]
     try:
         better, better_usage = await generate(client, model, messages, rows + extra_rows,
-                                              verification={'aspects': aspects})
+                                              verification={'aspects': aspects}, profile_labels=profile_labels)
     except ValueError:
         return answer, usage, info, rows  # keep the first answer, whose references were valid
     info['regenerated'] = True

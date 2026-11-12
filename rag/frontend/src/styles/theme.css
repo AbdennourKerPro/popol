@@ -1,0 +1,35 @@
+/* Alias provisoires : les zones « message », « sources » et « dialogues » utilisent encore les
+   anciens noms de variables. Ils pointent vers les jetons de design/jetons.css et disparaissent
+   quand ces zones sont réécrites (étapes 4 et 5 de design/PLAN-REFONTE.md). */
+:root {
+  --canvas: var(--creme);
+  --surface: var(--creme);
+  --surface-cool: var(--papier);
+  --ink: var(--charbon);
+  --muted: var(--gris);
+  --subtle: var(--gris);
+  --border: var(--filet);
+  --frame-ink: var(--charbon);
+  --frame-border: var(--trait);
+  --purple: var(--violet);
+  --purple-hover: var(--violet-nuit);
+  --red: var(--rouge);
+  --blue: var(--violet);
+  --blue-soft: var(--violet-pale);
+  --blue-border: var(--violet);
+  --green: var(--violet);
+  --green-soft: var(--papier);
+  --green-border: var(--filet);
+  --ochre: var(--gris);
+  --ochre-soft: var(--papier);
+  --ochre-border: var(--filet);
+  --coral: var(--rouge);
+  --coral-soft: var(--papier);
+  --coral-border: var(--rouge);
+  --nav-hover: var(--violet-nuit);
+  --on-accent: var(--creme);
+  --focus: var(--violet);
+  --focus-soft: var(--violet-pale);
+  --shadow-soft: transparent;
+  --overlay: var(--voile);
+}

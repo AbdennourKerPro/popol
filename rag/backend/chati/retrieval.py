@@ -72,8 +72,9 @@ class Retriever:
         expression = " OR ".join(f'"{term}"*' for term in terms)
         return [r[0] for r in self.db.execute("SELECT id FROM documents WHERE documents MATCH ? ORDER BY bm25(documents,0,3,1,1) LIMIT ?", (expression, count)).fetchall()]
 
-    async def rank(self, queries: list[str], client=None, depth=30):
-        """One fused (lexical + semantic) ranking per query; embeddings in a single call."""
+    async def rank(self, queries: list[str], client=None, depth=30, profile=()):
+        """One fused (lexical + semantic) ranking per query; embeddings in a single call.
+        With a profile, candidates already retrieved that concern it get a small bonus."""
         if not self.ready:
             raise ValueError(self.index_error)
         embeddings = []
@@ -95,6 +96,11 @@ class Retriever:
             for part in parts:
                 for rank, identifier in enumerate(part, 1):
                     scores[identifier] += 1 / (60 + rank)
+            if profile:
+                wanted = set(profile)
+                for identifier in scores:
+                    if self.corpus.publics_by_id.get(identifier, set()) & wanted:
+                        scores[identifier] += self.settings.profile_boost
             rankings.append(sorted(scores, key=scores.get, reverse=True)[:depth])
         return rankings
 
@@ -115,10 +121,10 @@ class Retriever:
                         used[group(ranking[depth])] = used.get(group(ranking[depth]), 0) + 1
         return chosen
 
-    async def search(self, query: str, client=None, count=None, extra_queries=()):
+    async def search(self, query: str, client=None, count=None, extra_queries=(), profile=()):
         count = count or self.settings.retrieval_count
         queries = list(dict.fromkeys([query, *extra_queries]))
-        ids = self.select(await self.rank(queries, client), count)
+        ids = self.select(await self.rank(queries, client, profile=profile), count)
         return self.corpus.expand(ids), ids
 
     def close(self):

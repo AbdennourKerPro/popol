@@ -1,0 +1,22 @@
+{
+ "version": 1,
+ "reviews": {
+  "p1c03-ss08-m001": {
+   "id": "p1c03-ss08-m001",
+   "verdict": "corrige",
+   "publics": [
+    "agriculteur",
+    "rural"
+   ],
+   "themes": [
+    "agriculture",
+    "ecologie",
+    "travail_retraite"
+   ],
+   "portee": "collective",
+   "resume": "Des emplois agricoles seraient créés dans le cadre d’une agriculture relocalisée, diversifiée et écologique.",
+   "comment": null,
+   "updated": "2026-11-09T19:44:51+00:00"
+  }
+ }
+}

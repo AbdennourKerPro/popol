@@ -1,0 +1,103 @@
+{
+  "regles": "Le relecteur a raison par défaut. Refus quand : un profil ajouté masque la mesure à tous les autres (publics = filtre exclusif) ; un profil vise en réalité un sous-groupe étroit ; le relecteur n'avait pas le texte explicatif ; la reformulation déforme le sens ou remplace par goût un terme courant ou propre au programme.",
+  "garder_actuel": {
+    "publics": {
+      "p1c03-ss03-m002": "Le maillage du pays profite d'abord à ceux qui n'ont pas de transports : le réserver aux usagers le masquerait aux automobilistes ruraux.",
+      "p1c03-ss06-m005": "Interdiction d'élevages cruels : mesure de protection animale pour tous ; 'agriculteur' la masquerait à tous les autres.",
+      "p1c03-ss06-m007": "Normes d'élevage : même motif.",
+      "p4c05-ss01-m006": "Lutte contre la pêche destructrice : même motif.",
+      "p2c03-ss05-m008": "Prix de l'énergie des entreprises, dans le chapitre petites entreprises : un artisan ou commerçant est directement concerné.",
+      "p3c02-ss02-m001": "Plan national contre les violences faites aux enfants : 'parent' le masquerait aux non-parents.",
+      "p3c02-ss02-m002": "Constitutionnaliser les droits de l'enfant : enjeu général, même motif.",
+      "p3c02-ss02-m004": "Pratique de la démocratie à l'école : même motif.",
+      "p3c02-ss02-m013": "Droit général à la santé des enfants : même motif.",
+      "p3c02-ss08-m003": "La raison donnée ne justifie pas l'ajout des parents.",
+      "p3c03-ss02-m007": "Discours masculinistes dans les politiques numériques : l'école n'est qu'un exemple.",
+      "p3c03-ss04-m007": "Sous-groupe étroit : 'salarie' montrerait à tous les salariés une mesure pour les professionnelles de la petite enfance.",
+      "p4c02-ss02-m007": "Sous-groupe étroit : les personnels du périscolaire ne sont pas tous les agents publics.",
+      "p4c02-ss02-m013": "Remplacer agent_public par salarie étendrait au privé un droit visant les personnels de l'école.",
+      "p4c02-ss03-m013": "Sous-groupe étroit : les accompagnants d'élèves handicapés ne sont pas tous les agents publics.",
+      "p4c02-ss04-m009": "Sous-groupe étroit : les lycées agricoles ne concernent pas tous les étudiants.",
+      "p4c02-ss05-m003": "Sous-groupe étroit : les chercheurs ne sont pas tous les agents publics.",
+      "p4c02-ss07-m002": "Le texte explicatif du programme fixe la conscription avant 25 ans : 'jeune' est juste.",
+      "p4c02-ss07-m004": "Même motif.",
+      "p4c05-ss01-m010": "Plan contre les sargasses dans les Antilles : vise explicitement ces territoires.",
+      "p5c03-ss04-m004": "'jeune' masquerait 200 000 logements publics par an à toute personne de plus de 30 ans."
+    },
+    "portee": {
+      "p2c03-ss05-m008": "Liée au profil conservé.",
+      "p3c02-ss08-m003": "Liée au profil conservé.",
+      "p4c02-ss05-m003": "Liée au profil refusé.",
+      "p4c05-ss01-m010": "Liée au profil conservé.",
+      "p5c03-ss04-m004": "Liée au profil refusé.",
+      "p5c03-ss01-m010": "La taxe d'habitation concerne presque tous les ménages : 'ciblee' sans profil est incohérent.",
+      "p5c03-ss03-m001": "'large' contredit des profils limités aux ruraux et à l'outre-mer."
+    },
+    "themes": {
+      "p1c03-ss07-m011": "Mesure de la sous-section sur la sobriété et la consommation : 'democratie' fait fausse route."
+    },
+    "resume": {
+      "p2c03-ss05-m002": "Faux sens : un barème progressif n'est pas un financement « progressivement ».",
+      "p2c03-ss02-m002": "« Contrôle collectif » interprète « socialiser » ; l'original est fidèle.",
+      "p2c02-ss03-m010": "Ajoute « réservées aux dirigeants », absent du texte ; « parachutes dorés » est courant.",
+      "p2c02-ss03-m011": "Changement de pure forme : « stock-options » est courant.",
+      "p3c01-ss06-m002": "Changement de pure forme : « burn-out » est le mot du programme.",
+      "p5c01-ss01-m001": "Fait disparaître le nom du référendum d'initiative citoyenne.",
+      "p5c01-ss02-m001": "« Constituante » est un terme central du programme.",
+      "p6c01-ss04-m002": "Remplace « bifurcation », mot propre au programme, par « transition », et perd « mobilisée ».",
+      "p6c03-ss07-m004": "Changement de pure forme : « Erasmus » est connu."
+    }
+  },
+  "remplacer": {
+    "p3c02-ss02-m011": {
+      "publics": [
+        "outre_mer"
+      ],
+      "motif": "Garde outre_mer ; 'parent' montrerait une mesure ultramarine à tous les parents."
+    },
+    "p3c02-ss05-m007": {
+      "publics": [
+        "handicap"
+      ],
+      "motif": "Garde handicap ; 'parent' montrerait cette mesure sur l'école inclusive à tous les parents."
+    },
+    "p3c02-ss02-m016": {
+      "publics": [],
+      "motif": "Le retrait d'agent_public est juste, mais 'salarie' restant serait incohérent : contrôle sans droit pour les salariés."
+    },
+    "p3c04-ss03-m002": {
+      "publics": [],
+      "motif": "Le retrait d'agent_public est juste ; le contenu des programmes d'histoire n'est pas une mesure pour les seuls parents."
+    },
+    "p4c02-ss03-m010": {
+      "publics": [],
+      "motif": "Le retrait d'agent_public est juste ; 'etudiant' viserait tous les étudiants pour la formation des enseignants."
+    },
+    "p4c03-ss03-m006": {
+      "publics": [],
+      "motif": "'salarie' et 'etudiant' seraient trop larges pour les écoles supérieures d'art."
+    },
+    "p5c01-ss06-m008": {
+      "publics": [],
+      "motif": "Cohérence avec les autres mesures sur les journalistes : 'salarie' est trop large."
+    },
+    "p6c02-ss02-m012": {
+      "publics": [],
+      "motif": "Le retrait d'agent_public est juste ; 'etudiant' ne convient pas aux écoles militaires."
+    },
+    "p4c05-ss02-m001": {
+      "resume": "L’éolien en mer serait développé pour atteindre au moins 45 gigawatts installés en 2050, avec d’autres énergies marines renouvelables dans le plan de bifurcation énergétique.",
+      "motif": "Correction acceptée, en gardant « bifurcation », le mot du programme."
+    },
+    "p4c02-ss02-m003": {
+      "resume": "Les effectifs par classe seraient réduits partout pour passer sous la moyenne européenne de 19 élèves, en priorité en maternelle et dans les réseaux d’éducation prioritaire.",
+      "motif": "« Les classes compteraient moins de 19 élèves » transforme une moyenne en plafond."
+    },
+    "p4c05-ss03-m004": {
+      "publics": [
+        "etudiant"
+      ],
+      "motif": "Mesure nationale (« y compris dans les Outre-mer ») : le profil outre_mer la réserverait à ces territoires."
+    }
+  }
+}

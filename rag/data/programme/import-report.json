@@ -1,0 +1,18 @@
+{
+  "source": "https://melenchon2027.fr/programme/livre/",
+  "extrait_le": "2026-11-08T21:09:24.228134+00:00",
+  "fichiers_source_sha256": {
+    "programme_complet.json": "a1d74d4cd6eb362bb2ef86653e63d599c5d9add673621205a983e7eb0d1f14e6",
+    "mesures.jsonl": "a1c3c7f3275c0d3ebde77d77c4ecfbd8675422c0eb017a1b68a33852f35a2d08"
+  },
+  "mesures": 1069,
+  "mesures_par_categorie": {
+    "cle": 107,
+    "complementaire": 881,
+    "sous_mesure": 81
+  },
+  "textes_explicatifs": 140,
+  "parties": 6,
+  "chapitres": 23,
+  "sous_sections": 111
+}

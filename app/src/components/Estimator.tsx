@@ -1,6 +1,6 @@
 import { Calculator } from 'lucide-react';
 import { createContext, useContext } from 'react';
-import { ESTIMATIONS, estimate, inputValue, isConfirmed, visibleInputs, type Input, type Values } from '../content/estimations';
+import { CHIFFRAGES, estimate, inputValue, isConfirmed, visibleInputs, type Input, type Values } from '../content/chiffrages';
 import type { Tag } from '../content/types';
 
 const display = (input: Input, v: number) => {
@@ -13,7 +13,7 @@ const display = (input: Input, v: number) => {
 export function Estimator({ id, values, tags, onChange }: {
   id: string; values: Values; tags: Set<Tag>; onChange: (input: string, value: number) => void;
 }) {
-  const estimation = ESTIMATIONS[id];
+  const estimation = CHIFFRAGES[id];
   if (!estimation) return null;
   const result = estimate(id, values, tags)!;
   const inputs = visibleInputs(id, values, tags);
@@ -65,11 +65,29 @@ export function Estimator({ id, values, tags, onChange }: {
   );
 }
 
-interface EstimationState { values: Values; tags: Set<Tag>; onChange: (input: string, value: number) => void }
+interface EstimationState { values: Values; tags: Set<Tag>; onChange: (input: string, value: number) => void; tu: boolean }
 export const EstimationContext = createContext<EstimationState | null>(null);
 
 /** Estimator reading its state from the nearest EstimationContext. */
 export function ContextEstimator({ id }: { id: string }) {
   const state = useContext(EstimationContext);
   return state ? <Estimator id={id} {...state} /> : null;
+}
+
+/** « Calculer ce que ça change pour moi », under a measure that can be computed. Nothing otherwise. */
+export function ChiffrageInline({ id }: { id: string }) {
+  const state = useContext(EstimationContext);
+  if (!state || !CHIFFRAGES[id]) return null;
+  return (
+    <details className="chiffrer">
+      <summary><Calculator size={16} strokeWidth={2.6} /> Calculer ce que ça change pour {state.tu ? 'toi' : 'la personne'}</summary>
+      <Estimator id={id} values={state.values} tags={state.tags} onChange={state.onChange} />
+    </details>
+  );
+}
+
+/** One line per computed figure the person has set, for the shared image. */
+export function chiffresConfirmes(ids: string[], values: Values, tags: Set<Tag>): string[] {
+  const lines = ids.filter((id) => isConfirmed(id, values, tags)).map((id) => estimate(id, values, tags)?.court);
+  return [...new Set(lines.filter((l): l is string => !!l))];
 }

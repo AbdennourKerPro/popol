@@ -75,7 +75,7 @@ def collect(args):
                     sorted((ROOT / 'backend/chati').glob('*.py'))}
     fingerprints.update({str(path.relative_to(ROOT)): digest(path) for path in
                          [questions_path, args.benchmark / 'references.jsonl', args.benchmark / 'manifest.json',
-                          ROOT / 'data/structured/mesures.jsonl', ROOT / 'data/structured/annexes.jsonl']})
+                          ROOT / 'data/programme/mesures.jsonl', ROOT / 'data/programme/textes.jsonl']})
     if metadata_path.exists():
         metadata = json.loads(metadata_path.read_text())
         if metadata['fingerprints'] != fingerprints or metadata['app_status'] != status:

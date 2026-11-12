@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - app/**
-      - rag/data/structured/mesures.jsonl
+      - rag/data/programme/**
       - .github/workflows/pages.yml
   workflow_dispatch:
 

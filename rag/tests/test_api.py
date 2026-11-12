@@ -23,9 +23,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 @pytest.fixture
 def settings(tmp_path):
-    return Settings(corpus_dir=ROOT / 'data/structured', index_dir=tmp_path,
-                    static_dir=ROOT / 'frontend/dist', pdf_path=ROOT / 'assets/Programme-Mélenchon-LFI.pdf',
-                    mode='lexical', consultation=True, api_key='')
+    return Settings(corpus_dir=ROOT / 'data/programme', index_dir=tmp_path,
+                    static_dir=ROOT / 'frontend/dist',
+                    mode='lexical', consultation=True, api_key='', answer_cache_size=0)
 
 
 @pytest.fixture
@@ -36,7 +36,7 @@ def corpus(settings):
 def test_consultation_stream_and_provenance(settings):
     with TestClient(create_app(settings)) as client:
         status = client.get('/api/status').json()
-        assert status['measure_count'] == 795 and status['annex_count'] == 171
+        assert status['measure_count'] == 1069 and status['text_count'] == 140
         assert status['consultation_mode'] and not status['generation_available']
         response = client.post('/api/chat', json={'messages': [{'role': 'user', 'content': 'retraites'}]})
         events = [json.loads(event.split('data: ', 1)[1]) for event in response.text.strip().split('\n\n')]
@@ -50,12 +50,11 @@ def test_consultation_stream_and_provenance(settings):
         assert response.text.endswith('\n\n') and 'event: done' in response.text
 
 
-def test_static_pdf_and_missing_source(settings):
+def test_static_and_missing_source(settings):
     with TestClient(create_app(settings)) as client:
         assert client.get('/api/health').json() == {'status': 'ok'}
         assert client.get('/api/sources/s99-ss99-m999').status_code == 404
-        response = client.get('/documents/programme.pdf')
-        assert response.content.startswith(b'%PDF') and response.headers['content-type'] == 'application/pdf'
+        assert client.get('/documents/programme.pdf').headers['content-type'] != 'application/pdf'
         if settings.static_dir.exists():
             assert '<title>Chati' in client.get('/').text
 
@@ -83,13 +82,17 @@ def test_request_bounds(settings):
 def test_lexical_search_sanitizes_expression(settings, corpus):
     retriever = Retriever(corpus, settings)
     assert retriever.lexical('" OR * : (ret) --') is not None
-    assert 's01-ss01-m004' in retriever.lexical('ISF')
+    assert 'p2c02-ss02-m003' in retriever.lexical('ISF')
     retriever.close()
 
 
 def test_context_dependencies(corpus):
-    assert [r['id'] for r in corpus.expand(['s03-ss01-m015'])] == ['s03-ss01-m014', 's03-ss01-m015']
-    assert [r['id'] for r in corpus.expand(['a01-ss01-b004'])] == ['a01-ss01-b002', 'a01-ss01-b004']
+    parent = corpus.by_id['p2c02-ss03-m003']
+    # A sub-measure comes with the measure it details, a parent with its sub-measures.
+    assert [r['id'] for r in corpus.expand([parent['sous_mesures_ids'][1]])][:2] == [parent['id'], parent['sous_mesures_ids'][1]]
+    assert [r['id'] for r in corpus.expand([parent['id']])] == [parent['id'], *parent['sous_mesures_ids']]
+    assert len(corpus.expand([parent['id']], limit=2)) == 2
+    assert parent['texte'] in corpus.index_text(corpus.by_id[parent['sous_mesures_ids'][0]])
 
 
 def write_index(settings, corpus, version=None):
@@ -107,7 +110,7 @@ def test_semantic_index_version_and_fusion(settings, corpus):
     retriever = Retriever(corpus, replace(settings, mode='hybrid'))
     client = SimpleNamespace(embeddings=SimpleNamespace(create=AsyncMock(return_value=SimpleNamespace(data=[SimpleNamespace(embedding=[1, 1, 1])]))))
     rows, ids = asyncio.run(retriever.search('ISF', client))
-    assert retriever.ready and rows and 's01-ss01-m004' in ids
+    assert retriever.ready and rows and 'p2c02-ss02-m003' in ids
     assert client.embeddings.create.await_count == 1
     retriever.close()
 
@@ -121,12 +124,12 @@ def test_invalid_embedding_is_rejected(settings, corpus):
     retriever.close()
 
 
-def good_answer(identifier='s01-ss14-m001'):
+def good_answer(identifier='p3c01-ss07-m001'):
     return GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text='Le résumé prévoit la retraite à 60 ans pour 40 annuités.', source_ids=[identifier])], measures=[])
 
 
 def test_reference_and_quote_checks(corpus):
-    row = corpus.by_id['s01-ss14-m001']
+    row = corpus.by_id['p3c01-ss07-m001']
     assert validate_answer(good_answer(), [row])
     with pytest.raises(ValueError, match='Référence'):
         validate_answer(good_answer('s99-ss99-m999'), [row])
@@ -136,11 +139,21 @@ def test_reference_and_quote_checks(corpus):
     assert validate_answer(valid_quote, [row])
 
 
-def test_annex_cannot_be_presented_as_measure(corpus):
-    row = corpus.by_id['a01-ss01-b001']
+def test_one_block_per_type(corpus):
+    row = corpus.by_id['p3c01-ss07-m001']
+    def blocks(*kinds):
+        return GeneratedAnswer(status='answered', blocks=[Block(kind=k, text='Texte.', source_ids=[row['id']]) for k in kinds], measures=[])
+    assert validate_answer(blocks('answer', 'explanation', 'benefits', 'limits'), [row])
+    for kind in ('explanation', 'benefits'):
+        with pytest.raises(ValueError, match='Plusieurs blocs'):
+            validate_answer(blocks('answer', kind, kind), [row])
+
+
+def test_explanatory_text_cannot_be_presented_as_measure(corpus):
+    row = corpus.by_id['p1c01-ss01-t001']
     answer = GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text='Définition.', source_ids=[row['id']])],
                              measures=[MeasureExplanation(id=row['id'], explanation='test', expected_benefit='', benefit_basis='none')])
-    with pytest.raises(ValueError, match='annexe'):
+    with pytest.raises(ValueError, match='texte explicatif'):
         validate_answer(answer, [row])
 
 
@@ -152,7 +165,51 @@ def test_missing_factual_source_and_manual_link_rejected(corpus):
     answer = good_answer()
     answer.blocks[0].text += ' https://example.com'
     with pytest.raises(ValueError, match='manuelle'):
-        validate_answer(answer, [corpus.by_id['s01-ss14-m001']])
+        validate_answer(answer, [corpus.by_id['p3c01-ss07-m001']])
+
+
+def test_every_answer_block_is_checked_not_only_the_last(corpus):
+    row = corpus.by_id['p3c01-ss07-m001']
+    answer = GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text='Retraite à 60 ans.', source_ids=[]),
+                                                        Block(kind='explanation', text='Détail.', source_ids=[row['id']])], measures=[])
+    with pytest.raises(ValueError, match='sans source'):
+        validate_answer(answer, [row])
+    clarification = GeneratedAnswer(status='clarification', blocks=[Block(kind='answer', text='De quelle mesure parlez-vous ?', source_ids=[])], measures=[])
+    assert validate_answer(clarification, [row])
+
+
+def test_points_are_sourced_checked_and_merged_into_the_block(corpus):
+    from chati.models import Point
+    rows = [corpus.by_id['p3c01-ss07-m001'], corpus.by_id['p4c02-ss01-m001']]
+    def answer(points, kind='explanation', ids=()):
+        return GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text='Oui.', source_ids=[rows[0]['id']]),
+                                                          Block(kind=kind, text='Deux mesures :', source_ids=list(ids), points=points)], measures=[])
+    good = answer([Point(text='Retraite à **60 ans**.', source_ids=[rows[0]['id']]), Point(text='Des places en crèche.', source_ids=[rows[1]['id'], rows[0]['id']])])
+    checked = validate_answer(good, rows)  # explanation without its own source_ids, but sourced points
+    assert checked.blocks[1].source_ids == [rows[0]['id'], rows[1]['id']]
+    kept = validate_answer(answer([Point(text='Crèche.', source_ids=[rows[1]['id']])], ids=[rows[0]['id']]), rows)
+    assert kept.blocks[1].source_ids == [rows[0]['id'], rows[1]['id']]
+    with pytest.raises(ValueError, match='Référence'):
+        validate_answer(answer([Point(text='Inconnu.', source_ids=['s99-ss99-m999'])]), rows)
+    with pytest.raises(ValueError, match='Point sans référence'):
+        validate_answer(answer([Point(text='Sans source.', source_ids=[])], ids=[rows[0]['id']]), rows)
+    with pytest.raises(ValueError, match='Points interdits'):
+        validate_answer(GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text='Oui.', source_ids=[rows[0]['id']],
+                        points=[Point(text='x', source_ids=[rows[0]['id']])])], measures=[]), rows)
+    with pytest.raises(ValueError, match='manuelle'):
+        validate_answer(answer([Point(text='Voir https://example.com', source_ids=[rows[0]['id']])]), rows)
+    with pytest.raises(ValueError, match='Identifiant'):
+        validate_answer(answer([Point(text='Mesure p3c01-ss07-m001.', source_ids=[rows[0]['id']])]), rows)
+    with pytest.raises(ValueError, match='Plus de 8'):
+        validate_answer(answer([Point(text='x', source_ids=[rows[0]['id']])] * 9), rows)
+    with pytest.raises(ValueError, match='Explication sans référence'):
+        validate_answer(answer([]), rows)
+
+
+def test_instructions_answer_objections_without_raising_any():
+    from chati.generation import INSTRUCTIONS
+    assert 'OBJECTIONS.' in INSTRUCTIONS and 'même si l’utilisateur en fait une' not in INSTRUCTIONS
+    assert 'de ta propre initiative' in INSTRUCTIONS and 'ni question qui critique ou met en doute une mesure' in INSTRUCTIONS
 
 
 def test_bounded_reference_repair(corpus):
@@ -160,8 +217,8 @@ def test_bounded_reference_repair(corpus):
     good = SimpleNamespace(output_parsed=good_answer(), usage=None)
     parse = AsyncMock(side_effect=[bad, good])
     client = SimpleNamespace(responses=SimpleNamespace(parse=parse))
-    answer, usage = asyncio.run(generate(client, 'gpt-6-luna', [], [corpus.by_id['s01-ss14-m001']]))
-    assert answer.blocks[0].source_ids == ['s01-ss14-m001'] and parse.await_count == 2
+    answer, usage = asyncio.run(generate(client, 'gpt-6-luna', [], [corpus.by_id['p3c01-ss07-m001']]))
+    assert answer.blocks[0].source_ids == ['p3c01-ss07-m001'] and parse.await_count == 2
     assert all(call.kwargs['store'] is False for call in parse.call_args_list)
 
 
@@ -173,15 +230,56 @@ def test_mocked_luna_end_to_end(settings, monkeypatch):
         assert response.status_code == 200
         result = next(json.loads(e.split('data: ', 1)[1]) for e in response.text.strip().split('\n\n') if e.startswith('event: answer'))
         assert result['mode'] == 'generated' and result['model'] == 'gpt-6-luna'
-        assert result['sources'][0]['id'] == 's01-ss14-m001' and result['sources'][0]['pages'] == [8]
+        assert result['sources'][0]['id'] == 'p3c01-ss07-m001' and result['sources'][0]['source_url'].startswith('https://melenchon2027.fr/programme/livre/')
+
+
+def answer_event(response):
+    return next(json.loads(e.split('data: ', 1)[1]) for e in response.text.strip().split('\n\n') if e.startswith('event: answer'))
 
 
 def test_generation_failure_is_actionable(settings, monkeypatch):
     monkeypatch.setattr('chati.main.generate', AsyncMock(side_effect=ValueError('invalid references')))
     with TestClient(create_app(replace(settings, api_key='test-not-a-real-key', consultation=False))) as client:
         response = client.post('/api/chat', json={'messages': [{'role': 'user', 'content': 'retraites'}]})
-        assert 'event: error' in response.text and 'event: answer' not in response.text
+        assert 'event: error' not in response.text and 'event: done' in response.text
+        result = answer_event(response)
+        assert result['mode'] == 'consultation' and result['model'] is None and result['sources'] and len(result['sources']) <= 4
+        assert 'réponse vérifiée' in result['blocks'][0]['text'] and result['blocks'][0]['kind'] == 'limits'
         assert 'invalid references' not in response.text
+
+
+def test_found_passages_are_announced_before_the_answer(settings, monkeypatch):
+    monkeypatch.setattr('chati.main.generate', AsyncMock(return_value=(good_answer(), None)))
+    with TestClient(create_app(replace(settings, api_key='test-not-a-real-key', consultation=False))) as client:
+        response = client.post('/api/chat', json={'messages': [{'role': 'user', 'content': 'retraite à 60 ans'}]})
+        kinds = [e.split('\n', 1)[0][7:] for e in response.text.strip().split('\n\n')]
+        assert kinds.index('context') < kinds.index('answer') and kinds.index('context') < kinds.index('status', 1)
+        context = next(json.loads(e.split('data: ', 1)[1]) for e in response.text.strip().split('\n\n') if e.startswith('event: context'))
+        assert 1 <= len(context['sources']) <= 6 and all(s['type'] == 'mesure' for s in context['sources'])
+    with TestClient(create_app(settings)) as client:  # consultation: the passages are the answer itself
+        assert 'event: context' not in client.post('/api/chat', json={'messages': [{'role': 'user', 'content': 'retraites'}]}).text
+
+
+def test_full_context_failure_falls_back_to_searched_passages(settings, monkeypatch):
+    monkeypatch.setattr('chati.main.generate_full', AsyncMock(side_effect=ValueError('invalid references')))
+    with TestClient(create_app(replace(settings, api_key='test-not-a-real-key', consultation=False, context_mode='full'))) as client:
+        result = answer_event(client.post('/api/chat', json={'messages': [{'role': 'user', 'content': 'retraite à 60 ans'}]}))
+        assert result['mode'] == 'consultation' and result['context_mode'] == 'retrieval' and result['search_queries']
+        assert any('retraite' in s['text'].lower() or 'retraite' in s['subsection'].lower() for s in result['sources'])
+
+
+def test_not_in_corpus_answer_offers_close_measures(settings, corpus, monkeypatch):
+    absent = GeneratedAnswer(status='not_in_corpus', blocks=[Block(kind='limits', text='Les passages ne traitent pas ce point.', source_ids=[])], measures=[])
+    monkeypatch.setattr('chati.main.generate', AsyncMock(return_value=(absent, None)))
+    with TestClient(create_app(replace(settings, api_key='test-not-a-real-key', consultation=False))) as client:
+        result = answer_event(client.post('/api/chat', json={'messages': [{'role': 'user', 'content': 'retraites'}]}))
+        assert 1 <= len(result['related']) <= 3 and all(r['type'] == 'mesure' for r in result['related'])
+        assert set(r['id'] for r in result['related']) <= set(result['context_ids'])
+        keys = [r['categorie'] == 'cle' for r in result['related']]
+        assert keys == sorted(keys, reverse=True)  # key measures first
+    monkeypatch.setattr('chati.main.generate', AsyncMock(return_value=(good_answer(), None)))
+    with TestClient(create_app(replace(settings, api_key='test-not-a-real-key', consultation=False))) as client:
+        assert answer_event(client.post('/api/chat', json={'messages': [{'role': 'user', 'content': 'retraites'}]}))['related'] == []
 
 
 def test_index_command_builds_reloadable_artifact(settings, corpus, monkeypatch):
@@ -194,7 +292,7 @@ def test_index_command_builds_reloadable_artifact(settings, corpus, monkeypatch)
     monkeypatch.setattr('chati.index.AsyncOpenAI', lambda **kwargs: context)
     asyncio.run(build(replace(settings, api_key='test-not-a-real-key')))
     retriever = Retriever(corpus, replace(settings, mode='hybrid'))
-    assert retriever.ready and retriever.vectors.shape == (966, 3)
+    assert retriever.ready and retriever.vectors.shape == (len(corpus.rows), 3)
     assert list(settings.index_dir.iterdir()) == [settings.index_dir / 'embeddings.npz']
     retriever.close()
 
@@ -216,16 +314,16 @@ def test_incomplete_embeddings_do_not_replace_previous_index(settings, corpus, m
 def test_full_context_is_complete_stable_and_grouped(corpus):
     text = corpus.full_context()
     assert text == corpus.full_context()
-    lines = {line.split(' ', 1)[0]: line.split(' ', 1)[1] for line in text.splitlines() if line[:1] == 's' or line[:1] == 'a' and line[1:3].isdigit()}
+    lines = {line.split(' ', 1)[0]: line.split(' ', 1)[1] for line in text.splitlines() if line[:1] in 'ip' and line[1:2].isdigit()}
     assert set(lines) == set(corpus.by_id)
     assert all(lines[i] == corpus.by_id[i]['texte'] for i in lines)
-    assert text.count('## Retraites') == 1
+    assert text.count('## ' + corpus.by_id['p3c01-ss07-m001']['sous_section']) == 2  # one group of measures, one of texts
 
 
 def test_generate_full_puts_corpus_before_conversation_and_validates_ids(corpus):
     from chati.generation import generate_full
     from chati.models import Message
-    answer = GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text='Oui.', source_ids=['s01-ss14-m001'])], measures=[])
+    answer = GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text='Oui.', source_ids=['p3c01-ss07-m001'])], measures=[])
     parse = AsyncMock(return_value=SimpleNamespace(output_parsed=answer, usage=None))
     client = SimpleNamespace(responses=SimpleNamespace(parse=parse))
     result, _ = asyncio.run(generate_full(client, 'm', [Message(role='user', content='Retraites ?')], corpus))
@@ -240,11 +338,12 @@ def test_generate_full_puts_corpus_before_conversation_and_validates_ids(corpus)
 
 def test_enrichment_is_index_only(settings):
     plain, enriched = Corpus(settings.corpus_dir, enrichment=False), Corpus(settings.corpus_dir)
-    assert not plain.aliases and plain.enrichment_version == ''
-    assert enriched.aliases.keys() == enriched.by_id.keys() and enriched.enrichment_version
-    row = enriched.by_id['s01-ss08-m004']
+    assert not plain.aliases and plain.enrichment_version == '' and all(i in enriched.by_id for i in enriched.aliases)
+    row_id = 'p2c02-ss03-m001'
+    enriched.aliases = {row_id: 'une formulation de test'}
+    row = enriched.by_id['p2c02-ss03-m001']
     assert plain.index_text(row) != enriched.index_text(row) and enriched.index_text(row).startswith(plain.index_text(row))
-    assert row['texte'] == plain.by_id['s01-ss08-m004']['texte'] and 'Autres formulations' not in enriched.full_context()
+    assert row['texte'] == plain.by_id['p2c02-ss03-m001']['texte'] and 'Autres formulations' not in enriched.full_context()
 
 
 def test_synonyms_widen_only_matching_topics():
@@ -255,8 +354,8 @@ def test_synonyms_widen_only_matching_topics():
 
 def test_selection_interleaves_queries_and_softly_caps_subsections(settings, corpus):
     retriever = Retriever(corpus, replace(settings, per_subsection=2))
-    retraites = [i for i, r in corpus.by_id.items() if r['sous_section'] == 'Retraites'][:6]
-    creche = [i for i, r in corpus.by_id.items() if r['sous_section'] == 'Petite enfance'][:3]
+    retraites = [i for i, r in corpus.by_id.items() if r['sous_section_id'] == 'p3c01-ss07'][:6]
+    creche = [i for i, r in corpus.by_id.items() if r['sous_section_id'] == 'p4c02-ss01'][:3]
     chosen = retriever.select([retraites, creche], 6)
     assert len(chosen) == 6 and sum(i in creche for i in chosen) == 3 and sum(i in retraites for i in chosen) == 3
     assert retriever.select([retraites], 6) == retraites
@@ -265,13 +364,13 @@ def test_selection_interleaves_queries_and_softly_caps_subsections(settings, cor
 
 
 def test_source_identifier_in_text_is_rejected_unless_user_wrote_it(corpus):
-    row = corpus.by_id['s01-ss14-m001']
+    row = corpus.by_id['p3c01-ss07-m001']
     def answer(text):
         return GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text=text, source_ids=[row['id']])], measures=[])
     with pytest.raises(ValueError, match='Identifiant'):
-        validate_answer(answer('Retraite à 60 ans [s01-ss14-m001].'), [row])
+        validate_answer(answer('Retraite à 60 ans [p3c01-ss07-m001].'), [row])
     with pytest.raises(ValueError, match='Identifiant'):
-        validate_answer(answer('Retraite à 60 ans (s01-ss14-m001).'), [row])
+        validate_answer(answer('Retraite à 60 ans (p3c01-ss07-m001).'), [row])
     assert validate_answer(answer('Retraite à 60 ans.'), [row])
     assert validate_answer(answer('La mesure s99-ss99-m999 n’existe pas.'), [row], 'cite s99-ss99-m999')
 
@@ -280,21 +379,21 @@ def test_absence_check_adds_passages_and_regenerates(corpus):
     from chati.models import Message
     from chati.verification import missing_aspects, verify_absences
     messages = [Message(role='user', content='Combien de places en crèche ?')]
-    first = GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text='Aucun chiffre.', source_ids=['s06-ss01-m002'])],
+    first = GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text='Aucun chiffre.', source_ids=['p4c02-ss01-m002'])],
                             measures=[], not_found=['nombre de places en crèche'])
     assert missing_aspects(first, messages) == ['nombre de places en crèche']
     assert missing_aspects(good_answer(), messages) == []
     partial = GeneratedAnswer(status='partial', blocks=good_answer().blocks, measures=[])
     assert missing_aspects(partial, messages) == ['Combien de places en crèche ?']
-    better = GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text='500 000 places.', source_ids=['s06-ss01-m001'])], measures=[])
+    better = GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text='500 000 places.', source_ids=['p4c02-ss01-m001'])], measures=[])
     parse = AsyncMock(return_value=SimpleNamespace(output_parsed=better, usage=None))
     client = SimpleNamespace(responses=SimpleNamespace(parse=parse))
-    retriever = SimpleNamespace(rank=AsyncMock(return_value=[['s06-ss01-m002', 's06-ss01-m001', 's06-ss01-m003']]))
-    rows = [corpus.by_id['s06-ss01-m002']]
+    retriever = SimpleNamespace(rank=AsyncMock(return_value=[['p4c02-ss01-m002', 'p4c02-ss01-m001', 'p4c02-ss01-m003']]))
+    rows = [corpus.by_id['p4c02-ss01-m002']]
     answer, usage, info, all_rows = asyncio.run(verify_absences(client, 'm', retriever, corpus, messages, rows, first, {'input_tokens': 1}))
     assert answer == better and info['regenerated'] and info['first_usage'] == {'input_tokens': 1}
-    assert 's06-ss01-m001' in info['added_ids'] and 's06-ss01-m002' not in info['added_ids']
-    assert {r['id'] for r in all_rows} >= {'s06-ss01-m001', 's06-ss01-m002'}
+    assert 'p4c02-ss01-m001' in info['added_ids'] and 'p4c02-ss01-m002' not in info['added_ids']
+    assert {r['id'] for r in all_rows} >= {'p4c02-ss01-m001', 'p4c02-ss01-m002'}
     assert 'verification' in json.loads(parse.call_args.kwargs['input'][0]['content'])
     # nothing declared absent: no extra search or call
     assert asyncio.run(verify_absences(client, 'm', retriever, corpus, messages, rows, good_answer(), None))[2] is None

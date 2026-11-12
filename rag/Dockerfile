@@ -8,9 +8,8 @@ RUN npm run build
 
 FROM python:3.14-slim-bookworm AS runtime
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 \
-    PYTHONPATH=/app/backend CORPUS_DIR=/app/data/structured \
+    PYTHONPATH=/app/backend CORPUS_DIR=/app/data/programme \
     STATIC_DIR=/app/frontend/dist INDEX_DIR=/app/runtime/index \
-    PDF_PATH=/app/assets/Programme-Mélenchon-LFI.pdf \
     MODEL_CACHE_DIR=/app/models
 WORKDIR /app
 COPY backend/requirements.lock /app/backend/requirements.lock
@@ -19,8 +18,8 @@ RUN pip install --no-cache-dir -r backend/requirements.lock \
     && useradd --uid 1000 --gid chati --no-create-home chati \
     && mkdir -p /app/runtime/index && chown -R chati:chati /app/runtime
 COPY backend/chati /app/backend/chati
-COPY data/structured/mesures.jsonl data/structured/annexes.jsonl data/structured/enrichment.jsonl /app/data/structured/
-COPY assets/Programme-Mélenchon-LFI.pdf /app/assets/Programme-Mélenchon-LFI.pdf
+COPY data/programme/mesures.jsonl data/programme/textes.jsonl data/programme/enrichment.jsonl \
+     data/programme/answers.jsonl data/programme/annotations.jsonl data/programme/publics.json /app/data/programme/
 # Local multilingual embeddings (no API, no key): the model and the search index are built once,
 # at image build time, so that the server starts without downloading anything.
 RUN EMBEDDING_PROVIDER=local INDEX_DIR=/app/index-local PYTHONPATH=/app/backend python -m chati.index \

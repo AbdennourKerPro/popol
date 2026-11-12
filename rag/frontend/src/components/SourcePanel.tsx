@@ -24,14 +24,14 @@ export default function SourcePanel({ sources, active, close }: { sources: Sourc
     <aside ref={panel} className="source-panel" role="dialog" aria-modal="true" aria-labelledby="sources-title">
       <header><div><span className="eyebrow">RETOUR AU TEXTE</span><h2 id="sources-title">Les sources</h2></div><button ref={closeButton} className="icon-button" onClick={close} aria-label="Fermer les sources"><X size={20} /></button></header>
       <p className="source-intro">Les mesures et les références consultées pour comprendre et vérifier.</p>
-      <div className="source-list">{sources.map((source, index) => <article id={`source-${source.id}`} key={source.id} className={`source-card ${active === source.id ? 'highlighted' : ''}`}>
-        <div className="source-card-top"><span className="source-number">{index + 1}</span><span>{source.type === 'web' ? 'SOURCE EXTERNE · INTERNET' : source.type === 'mesure' ? 'MESURE DU RÉSUMÉ' : 'ANNEXE DU RÉSUMÉ'}</span></div>
+      <div className="source-list">{sources.map((source, index) => <article id={`source-${source.id}`} key={source.id} data-source-type={source.type} className={`source-card ${active === source.id ? 'highlighted' : ''}`}>
+        <div className="source-card-top"><span className="source-number">{index + 1}</span><span>{source.type === 'web' ? 'SOURCE EXTERNE · INTERNET' : source.type === 'mesure' ? (source.categorie === 'cle' ? 'MESURE CLÉ' : 'MESURE DU PROGRAMME') : 'TEXTE EXPLICATIF DU PROGRAMME'}</span></div>
         <h3>{source.subsection}</h3><div className="source-section">{source.section}</div>
         {source.type === 'web' ? <p className="web-source-meta"><Globe size={15} />{source.publisher}<br />Consulté le {source.retrieved_at?.split('-').reverse().join('/')}. Cette date est celle de la recherche, pas celle de publication du texte.</p> : <blockquote>{source.text}</blockquote>}
-        <div className="source-links">{source.type === 'web' ? <a href={source.source_url} target="_blank" rel="noreferrer"><Globe size={14} />Consulter le site<ArrowUpRight size={13} /></a> : <a href="https://melenchon2027.fr/programme/decouvrir/" target="_blank" rel="noreferrer"><BookOpen size={14} />Programme officiel · melenchon2027.fr<ArrowUpRight size={13} /></a>}</div>
+        <div className="source-links">{source.type === 'web' ? <a href={source.source_url} target="_blank" rel="noreferrer"><Globe size={14} />Consulter le site<ArrowUpRight size={13} /></a> : <a href={source.source_url} target="_blank" rel="noreferrer"><BookOpen size={14} />Programme officiel · melenchon2027.fr<ArrowUpRight size={13} /></a>}</div>
         <span className="source-id">{source.id}{source.type !== 'web' && ` · version ${source.corpus_version.slice(0, 8)}`}</span>
       </article>)}</div>
-      <footer>Le résumé définit les propositions. Les sources externes documentent le contexte et la situation actuelle ; elles sont identifiées séparément.</footer>
+      <footer>Le programme définit les propositions. Les sources externes documentent le contexte et la situation actuelle ; elles sont identifiées séparément.</footer>
     </aside>
   </div>;
 }

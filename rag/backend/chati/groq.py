@@ -1,7 +1,8 @@
 """Groq (OpenAI-compatible chat completions) behind the `client.responses.parse` interface.
 
-generation.py, queries.py and verification.py only call `client.responses.parse(...)`.
-This adapter honours that call with Groq's chat completions and strict JSON schemas, so
+generation.py, queries.py and verification.py call `client.responses.parse(...)` (and, when
+answer blocks are streamed, `client.responses.stream(...)`).
+This adapter honours these calls with Groq's chat completions and strict JSON schemas, so
 the rest of the pipeline is unchanged. It also enforces Groq's organisation-wide
 per-minute limits in-process (single instance), so that a burst waits or is refused
 politely instead of consuming the daily quota with rejected calls.
@@ -131,6 +132,19 @@ class GroqResponses:
         self.client, self.settings, self.gate = client, settings, gate
 
     async def parse(self, *, model, instructions, input, text_format, max_output_tokens=None, **_openai_only):
+        final = None
+        async for kind, value in self._run(model, instructions, input, text_format, max_output_tokens, stream=False):
+            if kind == 'final':
+                final = value
+        return final
+
+    def stream(self, *, model, instructions, input, text_format, max_output_tokens=None, **_openai_only):
+        """Same contract as the OpenAI SDK's `responses.stream`: an async context manager whose
+        events include `response.output_text.delta`, then `get_final_response()`."""
+        return _GroqStream(self._run(model, instructions, input, text_format, max_output_tokens, stream=True))
+
+    async def _run(self, model, instructions, input, text_format, max_output_tokens, stream):
+        """Yields ('delta', text) while streaming, then ('final', parsed response)."""
         s = self.settings
         messages = [{"role": "system", "content": instructions}]
         messages += [{"role": m["role"], "content": _flatten(m["content"])} for m in input]
@@ -144,7 +158,23 @@ class GroqResponses:
                 response = await self.client.chat.completions.create(
                     model=model, messages=messages, temperature=s.groq_temperature, max_completion_tokens=limit,
                     response_format={"type": "json_schema", "json_schema": {"name": text_format.__name__, "strict": strict, "schema": strict_schema(text_format)}},
-                    extra_body={"reasoning_effort": s.groq_reasoning_effort, "include_reasoning": False})
+                    extra_body={"reasoning_effort": s.groq_reasoning_effort, "include_reasoning": False},
+                    **({"stream": True, "stream_options": {"include_usage": True}} if stream else {}))
+                if stream:
+                    parts, usage, finish = [], None, None
+                    async for chunk in response:
+                        usage = getattr(chunk, "usage", None) or usage  # the last chunk carries the usage
+                        for choice in getattr(chunk, "choices", None) or []:
+                            delta = getattr(getattr(choice, "delta", None), "content", None)
+                            if delta:
+                                parts.append(delta)
+                                yield 'delta', delta
+                            finish = getattr(choice, "finish_reason", None) or finish
+                    content = "".join(parts)
+                else:
+                    usage = getattr(response, "usage", None)
+                    choice = response.choices[0]
+                    content, finish = choice.message.content, choice.finish_reason
             except RateLimitError as exc:
                 self.gate.settle(entry, None)
                 self.gate.cooldown(_retry_after(exc))
@@ -158,24 +188,49 @@ class GroqResponses:
             except Exception:
                 self.gate.settle(entry, None)
                 raise
-            usage = getattr(response, "usage", None)
             total = getattr(usage, "total_tokens", None)
             self.gate.settle(entry, total if total else s.llm_tokens_per_request)
             counter = TOKEN_COUNTER.get()
             if counter is not None:
                 counter[0] += total or s.llm_tokens_per_request
-            choice = response.choices[0]
-            if choice.finish_reason == "length":
+            if finish == "length":
                 raise ValueError("Réponse tronquée par la limite de tokens")
-            parsed = text_format.model_validate_json(choice.message.content or "")
+            parsed = text_format.model_validate_json(content or "")
             details = getattr(usage, "completion_tokens_details", None)
-            return SimpleNamespace(output_parsed=parsed, usage=_Usage({
+            yield 'final', SimpleNamespace(output_parsed=parsed, usage=_Usage({
                 "input_tokens": getattr(usage, "prompt_tokens", 0) or 0,
                 "output_tokens": getattr(usage, "completion_tokens", 0) or 0,
                 "total_tokens": total or 0,
                 "input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0},
                 "output_tokens_details": {"reasoning_tokens": getattr(details, "reasoning_tokens", 0) or 0}}))
+            return
         raise ValueError("Schéma de sortie refusé par le fournisseur")
+
+
+class _GroqStream:
+    """Async context manager over `GroqResponses._run`, shaped like the OpenAI SDK stream."""
+
+    def __init__(self, run):
+        self._run, self._final = run, None
+
+    async def __aenter__(self):
+        return self
+
+    async def __aexit__(self, *exc):
+        await self._run.aclose()
+
+    async def __aiter__(self):
+        async for kind, value in self._run:
+            if kind == 'delta':
+                yield SimpleNamespace(type='response.output_text.delta', delta=value)
+            else:
+                self._final = value
+
+    async def get_final_response(self):
+        if self._final is None:
+            async for _ in self:
+                pass
+        return self._final
 
 
 class GroqClient:

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Generate index-only paraphrases for every corpus row (written to stdout as JSONL).
 
-The output (data/structured/enrichment.jsonl) improves search only: it is never
+The output (data/programme/enrichment.jsonl) improves search only: it is never
 displayed, cited or given to the answer generator. It must be reviewed before use.
 Run in the app image so the key stays in the container:
-  docker compose run --rm -v $PWD/scripts:/s:ro app python /s/enrich_index.py > data/structured/enrichment.jsonl
+  docker compose run --rm -v $PWD/scripts:/s:ro app python /s/enrich_index.py > data/programme/enrichment.jsonl
 """
 import asyncio
 import json
@@ -15,7 +15,7 @@ from pathlib import Path
 from openai import AsyncOpenAI
 from pydantic import BaseModel, ConfigDict
 
-INSTRUCTIONS = """Tu prépares l'index de recherche d'un résumé de programme politique.
+INSTRUCTIONS = """Tu prépares l'index de recherche d'un programme politique.
 Pour chaque passage fourni, écris une courte ligne « alias » (30 mots maximum) qui aide
 à retrouver ce passage quand un citoyen le décrit avec d'autres mots : synonymes courants,
 reformulation en langage de tous les jours, nom usuel du sujet, et une question naturelle
@@ -53,8 +53,8 @@ async def enrich(client, model, section, subsection, rows, semaphore):
 
 
 async def main():
-    directory = Path(os.environ.get("CORPUS_DIR", "data/structured"))
-    rows = [json.loads(l) for n in ("mesures.jsonl", "annexes.jsonl") for l in (directory / n).read_text().splitlines() if l.strip()]
+    directory = Path(os.environ.get("CORPUS_DIR", "data/programme"))
+    rows = [json.loads(l) for n in ("mesures.jsonl", "textes.jsonl") for l in (directory / n).read_text().splitlines() if l.strip()]
     groups = {}
     for r in rows:
         groups.setdefault((r["section"], r["sous_section"]), []).append(r)
