@@ -6,6 +6,7 @@
   python scripts/beta_admin.py revoke <id>      # id = the first characters shown by `list`
   python scripts/beta_admin.py restore <id>
   python scripts/beta_admin.py budget           # today's global usage
+  python scripts/beta_admin.py feedback         # ratings: totals by rating, reason and theme
 
 Credentials: Application Default Credentials. Either `gcloud auth application-default login`
 or GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json (kept outside the repository).
@@ -15,6 +16,7 @@ The link is shown ONCE: only its SHA-256 is stored, so it cannot be shown again.
 """
 import argparse
 import asyncio
+from collections import Counter
 import os
 from pathlib import Path
 import sys
@@ -22,6 +24,24 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'backend'))
 from chati.config import Settings  # noqa: E402
 from chati.quota import FirestoreStore  # noqa: E402
+
+
+def feedback_summary(docs):
+    """Totals of the anonymous ratings (last 90 days): by rating, by reason, and by theme."""
+    if not docs:
+        return 'Aucun avis enregistré.'
+    ratings = Counter(d.get('rating') for d in docs)
+    reasons = Counter(d.get('reason') for d in docs if d.get('rating') == 'down')
+    themes = {rating: Counter(t for d in docs if d.get('rating') == rating for t in d.get('themes', [])) for rating in ('up', 'down')}
+    days = sorted(d['day'] for d in docs if d.get('day'))
+    lines = [f"{len(docs)} avis" + (f" du {days[0]} au {days[-1]}" if days else '') + f" : {ratings['up']} 👍, {ratings['down']} 👎"]
+    if reasons:
+        lines.append('\nMotifs des avis négatifs :')
+        lines += [f"  {reason or 'sans motif':12} {count}" for reason, count in reasons.most_common()]
+    lines.append('\nPar thème des sources citées :')
+    for theme in sorted(set(themes['up']) | set(themes['down']), key=lambda t: -(themes['up'][t] + themes['down'][t])):
+        lines.append(f"  {theme:20} 👍 {themes['up'][theme]:3}  👎 {themes['down'][theme]:3}")
+    return '\n'.join(lines)
 
 
 async def main(args):
@@ -42,6 +62,8 @@ async def main(args):
             sys.exit(f"{len(matches)} invitation(s) correspondent à « {args.id} » : précisez l'identifiant.")
         await store.set_active(matches[0]['id'], args.command == 'restore')
         print(f"{matches[0].get('label')} : {'réactivée' if args.command == 'restore' else 'désactivée'}.")
+    elif args.command == 'feedback':
+        print(feedback_summary(await store.feedback_report()))
     else:
         invites, budget = await store.report()
         if args.command == 'list':
@@ -59,5 +81,5 @@ if __name__ == '__main__':
     create = sub.add_parser('create'); create.add_argument('label'); create.add_argument('--limit', type=int); create.add_argument('--days', type=int)
     for name in ('revoke', 'restore'):
         sub.add_parser(name).add_argument('id')
-    sub.add_parser('list'); sub.add_parser('budget')
+    sub.add_parser('list'); sub.add_parser('budget'); sub.add_parser('feedback')
     asyncio.run(main(parser.parse_args()))

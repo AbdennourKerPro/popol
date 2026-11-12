@@ -1,0 +1,56 @@
+/* Fichier généré par design/synchroniser.mjs : ne pas modifier ici, modifier design/. */
+/* Jetons du design : la seule source de couleurs, tailles, espacements et durées.
+   Couleurs : palette « Couleurs 2027 » de la charte graphique de La France insoumise et leurs
+   teintes ; la seconde palette de la charte ne sert qu'au repère des six parties du programme. */
+:root {
+  --creme: #fffcf4;
+  --charbon: #212320;
+  --violet: #4c0297;
+  --rouge: #d1271c;
+
+  --papier: #f6f0e1;
+  --gris: #5e5f5a;
+  --filet: #21232029;
+  --violet-nuit: #37016e;
+  --violet-pale: #eee6f6;
+  --surligneur: #ffc9c2;
+  --creme-70: #fffcf4b3;
+  --creme-25: #fffcf440;
+  --voile: #21232066;
+  --blanc: #fff;
+
+  --partie-1: #2e9959;
+  --partie-2: #f9c900;
+  --partie-3: #ed5fb1;
+  --partie-4: #3885f4;
+  --partie-5: #7b13d6;
+  --partie-6: #f91616;
+
+  --titre: 'Public Sans', sans-serif;
+  --texte: 'Gowun Batang', serif;
+
+  --t-12: 12px;
+  --t-14: 14px;
+  --t-16: 16px;
+  --t-18: 18px;
+  --t-22: 22px;
+  --t-28: 28px;
+  --t-40: 40px;
+  --t-64: 64px;
+
+  --e-1: 4px;
+  --e-2: 8px;
+  --e-3: 12px;
+  --e-4: 16px;
+  --e-5: 24px;
+  --e-6: 32px;
+  --e-7: 48px;
+  --e-8: 72px;
+
+  --rayon: 4px;
+  --trait: 1.5px solid var(--charbon);
+  --trait-fin: 1.5px solid var(--filet);
+  --contour-mascotte: 2.5px solid var(--charbon);
+  --duree: 160ms;
+  --cible: 44px;
+}

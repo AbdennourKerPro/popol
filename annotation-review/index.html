@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relecture des annotations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Relecture des annotations</h1>
+    <div class="progress" aria-label="Avancement"><span id="progress-bar"></span></div>
+    <span id="progress-text" class="muted"></span>
+    <select id="filter" aria-label="Filtrer la liste">
+      <option value="all">Toutes</option>
+      <option value="todo">À relire</option>
+      <option value="ok">Correctes</option>
+      <option value="corrige">Corrigées</option>
+      <option value="doute">Douteuses</option>
+    </select>
+    <button id="open-summary" class="ghost">Bilan</button>
+    <button id="open-help" class="ghost" aria-label="Raccourcis clavier">?</button>
+  </header>
+  <div class="layout">
+    <nav id="list" aria-label="Mesures à relire"></nav>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <dialog id="dialog"></dialog>
+  <script src="app.js"></script>
+</body>
+</html>

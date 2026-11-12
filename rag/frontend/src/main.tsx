@@ -11,9 +11,16 @@ import '@fontsource/gowun-batang/latin-ext-400.css';
 import '@fontsource/gowun-batang/latin-ext-700.css';
 import App from './App';
 import { captureInvite } from './lib/invite';
-import './styles/app.css';
-import './styles/frames.css';
-import './styles/followups.css';
+import './styles/systeme/jetons.css';
+import './styles/systeme/systeme.css';
+import './styles/theme.css';
+import './styles/coque.css';
+import './styles/lateral.css';
+import './styles/accueil.css';
+import './styles/message.css';
+import './styles/saisie.css';
+import './styles/sources.css';
+import './styles/dialogues.css';
 
 captureInvite();
 

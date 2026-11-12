@@ -21,14 +21,14 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def beta_settings(tmp_path, **extra):
-    return Settings(corpus_dir=ROOT / 'data/structured', index_dir=tmp_path, static_dir=ROOT / 'frontend/dist',
-                    pdf_path=ROOT / 'assets/Programme-Mélenchon-LFI.pdf', mode='lexical', consultation=False,
+    return Settings(corpus_dir=ROOT / 'data/programme', index_dir=tmp_path, static_dir=ROOT / 'frontend/dist',
+                    mode='lexical', consultation=False,
                     llm_provider='groq', groq_api_key='gsk_test_not_real', beta_mode=True, quota_backend='memory',
-                    invite_daily_limit=3, **extra)
+                    invite_daily_limit=3, **({'answer_cache_size': 0} | extra))
 
 
 def answer(text='Retraite à 60 ans pour 40 annuités.'):
-    return GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text=text, source_ids=['s01-ss14-m001'])], measures=[])
+    return GeneratedAnswer(status='answered', blocks=[Block(kind='answer', text=text, source_ids=['p3c01-ss07-m001'])], measures=[])
 
 
 def events(response):
@@ -55,7 +55,9 @@ def test_strict_schema_is_closed_inlined_and_fully_required():
     schema = strict_schema(GeneratedAnswer)
     assert schema['required'] == list(schema['properties']) and 'not_found' in schema['required']
     block = schema['properties']['blocks']['items']
-    assert block['additionalProperties'] is False and block['required'] == ['kind', 'text', 'source_ids']
+    assert block['additionalProperties'] is False and block['required'] == ['kind', 'text', 'source_ids', 'points']
+    point = block['properties']['points']['items']
+    assert point['additionalProperties'] is False and point['required'] == ['text', 'source_ids']
 
 
 class FakeChat:
@@ -220,8 +222,14 @@ def test_failed_generation_gives_the_question_back(tmp_path, monkeypatch):
     monkeypatch.setattr('chati.main.generate', failing)
     with TestClient(create_app(beta_settings(tmp_path))) as client:
         token = add_invite(client)
-        messages = [[e for e in events(ask(client, token)) if e['_event'] == 'error'][0]['message'] for _ in range(3)]
-        assert 'contrôle des références' in messages[0] and '12 secondes' in messages[1] and 'ne compte pas' in messages[2]
+        # a failed reference check now shows the closest passages, still without counting the question
+        fallback = events(ask(client, token))
+        assert not [e for e in fallback if e['_event'] == 'error']
+        shown = [e for e in fallback if e['_event'] == 'answer'][0]
+        assert shown['mode'] == 'consultation' and shown['quota']['remaining'] == 3
+        errors = [[e for e in events(ask(client, token)) if e['_event'] == 'error'][0] for _ in range(2)]
+        assert '12 secondes' in errors[0]['message'] and errors[0]['retry_after'] == 12
+        assert 'ne compte pas' in errors[1]['message'] and 'retry_after' not in errors[1]
         assert client.get('/api/me', headers={'Authorization': f'Bearer {token}'}).json()['remaining'] == 3
 
 

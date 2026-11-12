@@ -3,11 +3,11 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field
 
-INSTRUCTIONS = """Tu prépares la recherche dans un résumé de programme politique (mesures courtes, style télégraphique).
+INSTRUCTIONS = """Tu prépares la recherche dans un programme politique (mesures rédigées et textes explicatifs).
 À partir de la conversation, écris entre 1 et 3 requêtes de recherche autonomes pour la DERNIÈRE question de
 l'utilisateur : une requête par volet distinct de la question (par exemple un volet par sujet ou par dispositif demandé).
 Chaque requête doit se comprendre seule : résous les pronoms et les « et pour… ? » avec l'historique, nomme le sujet,
-utilise les mots que le résumé emploierait (nom du dispositif, terme administratif ou usuel) et quelques synonymes.
+utilise les mots que le programme emploierait (nom du dispositif, terme administratif ou usuel) et quelques synonymes.
 Une question simple a une seule requête. N'invente aucun fait, n'ajoute pas de réponse, pas de chiffres absents de la question."""
 
 

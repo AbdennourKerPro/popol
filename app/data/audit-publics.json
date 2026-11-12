@@ -1,0 +1,702 @@
+{
+ "p1c01-ss01-m007": {
+  "texte": "Obliger les entreprises à adopter une comptabilité carbone pour les émissions directes et indirectes de GES certifiée par un organisme public agréé en commençant par les secteurs les plus polluants – énergie, transport, bâtiment, industrie lourde – puis selon la taille des entreprises, accompagnée d’une trajectoire de baisse de leurs émissions",
+  "avant": [
+   "independant"
+  ],
+  "apres": []
+ },
+ "p1c01-ss02-m001": {
+  "texte": "Faire des Outre-mer des territoires pilotes de la planification écologique : circuits courts, autonomie énergétique et 100 % renouvelable, autosuffisance alimentaire, politique maritime, protection de la biodiversité",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p1c01-ss02-m002": {
+  "texte": "Instaurer un bouclier douanier en faveur des productions locales à faible empreinte écologique",
+  "avant": [
+   "outre_mer",
+   "agriculteur"
+  ],
+  "apres": [
+   "agriculteur"
+  ]
+ },
+ "p1c01-ss02-m003": {
+  "texte": "Appliquer une préférence commerciale pour les produits ultramarins vers l’Hexagone et nouer des partenariats commerciaux équilibrés avec les voisins régionaux",
+  "avant": [
+   "outre_mer",
+   "agriculteur"
+  ],
+  "apres": [
+   "agriculteur"
+  ]
+ },
+ "p1c01-ss02-m004": {
+  "texte": "Tendre vers l’autosuffisance alimentaire grâce à l’agriculture paysanne écologique et aux filières agroalimentaires locales",
+  "avant": [
+   "outre_mer",
+   "agriculteur"
+  ],
+  "apres": []
+ },
+ "p1c01-ss02-m005": {
+  "texte": "Sauver les trésors de biodiversité des Outre-mer en renforçant les moyens d’étude et de protection des espèces animales et végétales",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p1c01-ss02-m006": {
+  "texte": "Promouvoir des plans d’autonomie énergétique",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p1c01-ss02-m009": {
+  "texte": "Généraliser et faciliter les prélèvements et analyses des sols des « jardins créoles » des particuliers (notamment en Martinique et Guadeloupe) afin d’encourager les pratiques agroécologiques déjà à l’œuvre",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p1c01-ss02-m011": {
+  "texte": "Lutter contre la pêche illégale dans les eaux territoriales françaises",
+  "avant": [
+   "outre_mer",
+   "agriculteur"
+  ],
+  "apres": []
+ },
+ "p1c02-ss03-m010": {
+  "texte": "Rendre effectives les peines de réquisition d’intérêt général pour toute délocalisation ou fermeture d’activité",
+  "avant": [
+   "salarie"
+  ],
+  "apres": []
+ },
+ "p1c03-ss01-m010": {
+  "texte": "Augmenter les effectifs et les moyens des forces de sécurité civile",
+  "avant": [
+   "agent_public"
+  ],
+  "apres": []
+ },
+ "p1c03-ss01-m011": {
+  "texte": "Planifier l’installation de solutions de rafraîchissement dans les hôpitaux, les établissements d’hébergement pour personnes âgées dépendantes (EHPAD), les écoles, les lieux collectifs et les espaces publics (réseaux de fraîcheur urbains, climatisation, végétalisation, ombrières, etc.)",
+  "avant": [
+   "senior",
+   "enfant_scolarise"
+  ],
+  "apres": []
+ },
+ "p1c03-ss03-m011": {
+  "texte": "Limiter la taille, le poids et les dimensions des SUV autorisés à la vente",
+  "avant": [
+   "automobiliste"
+  ],
+  "apres": []
+ },
+ "p1c03-ss08-m001": {
+  "texte": "Instaurer une agriculture relocalisée, diversifiée et écologique et créer 500 000 emplois agricoles",
+  "avant": [
+   "agriculteur"
+  ],
+  "apres": []
+ },
+ "p1c03-ss08-m007": {
+  "texte": "Instaurer un protectionnisme écologique pour tenir compte des conditions de production : appliquer la « clause de sauvegarde » pour interdire l’importation de produits contrevenant aux normes sanitaires ou environnementales nationales, tout en fixant un prix minimum d’entrée pour lutter contre la concurrence déloyale",
+  "avant": [
+   "agriculteur"
+  ],
+  "apres": []
+ },
+ "p1c03-ss08-m010": {
+  "texte": "Protéger nos produits du terroir de la concurrence internationale en sanctuarisant les moyens d’action de l’Institut national de l’origine et de la qualité (INAO), qui délivre l’appellation d’origine protégée (AOP) et l’indication géographique protégée (IGP)",
+  "avant": [
+   "agriculteur"
+  ],
+  "apres": []
+ },
+ "p2c01-ss03-m008": {
+  "texte": "Réformer les tribunaux de commerce en assurant une meilleure représentation des salariés dans leur composition",
+  "avant": [
+   "salarie"
+  ],
+  "apres": []
+ },
+ "p2c01-ss04-m003": {
+  "texte": "Donner la priorité aux structures non lucratives de l’ESS sur le secteur privé classique pour certaines activités essentielles : petite enfance, aide aux personnes âgées, restauration collective",
+  "avant": [
+   "parent",
+   "petite_enfance",
+   "aidant",
+   "retraite"
+  ],
+  "apres": []
+ },
+ "p2c03-ss02-m002": {
+  "texte": "Socialiser certaines banques de détail et les intégrer au pôle public bancaire, en vue de financer les très petites entreprises (TPE) sur des critères sociaux et écologiques",
+  "avant": [
+   "independant"
+  ],
+  "apres": []
+ },
+ "p2c03-ss05-m003": {
+  "texte": "Changer les règles de représentativité dans les instances patronales en faveur des TPE-PME et de l’ESS",
+  "avant": [
+   "independant"
+  ],
+  "apres": []
+ },
+ "p3c01-ss01-m007": {
+  "texte": "Garantir l’individualisation des droits et proposer l’automatisation des prestations sociales",
+  "avant": [
+   "chomeur",
+   "budget_serre"
+  ],
+  "apres": [
+   "budget_serre"
+  ]
+ },
+ "p3c01-ss01-m008": {
+  "texte": "Lutter contre le non-recours aux droits sociaux et civiques par la simplification des démarches et la réouverture des accueils physiques dans les services publics",
+  "avant": [
+   "chomeur",
+   "budget_serre"
+  ],
+  "apres": [
+   "budget_serre"
+  ]
+ },
+ "p3c01-ss01-m009": {
+  "texte": "Interdire les pratiques de notation des allocataires de prestations sociales, qui engendrent un sur-contrôle des personnes les plus défavorisées, avec des biais discriminatoires",
+  "avant": [
+   "chomeur",
+   "budget_serre"
+  ],
+  "apres": [
+   "budget_serre"
+  ]
+ },
+ "p3c01-ss07-m007": {
+  "texte": "Supprimer la décote, qui représente une double peine pour les retraités, en particulier les femmes et les plus précaires",
+  "avant": [
+   "retraite",
+   "precaire"
+  ],
+  "apres": [
+   "retraite"
+  ]
+ },
+ "p3c02-ss02-m011": {
+  "texte": "Engager un plan de rattrapage spécifique pour la protection des droits fondamentaux des enfants dans les Outre-mer",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p3c02-ss02-m014": {
+  "texte": "Mettre fin aux violations des droits fondamentaux des enfants étrangers, faire respecter l’interdiction d’expulsion des enfants et abolir l’enfermement des mineurs et familles avec enfants en rétention administrative",
+  "avant": [
+   "jeune"
+  ],
+  "apres": []
+ },
+ "p3c02-ss04-m006": {
+  "texte": "Collectiviser les EHPAD privés à but lucratif et les confier à des associations, coopératives, etc.",
+  "avant": [
+   "senior",
+   "retraite"
+  ],
+  "apres": []
+ },
+ "p3c02-ss05-m001": {
+  "texte": "Assurer l’autonomie financière des personnes en situation de handicap en revalorisant l’allocation aux adultes handicapés (AAH) à hauteur du SMIC",
+  "avant": [
+   "handicap",
+   "budget_serre"
+  ],
+  "apres": [
+   "handicap"
+  ]
+ },
+ "p3c02-ss05-m002": {
+  "texte": "Affirmer l’objectif de désinstitutionnalisation de la gestion du handicap",
+  "avant": [
+   "handicap"
+  ],
+  "apres": []
+ },
+ "p3c02-ss05-m007": {
+  "texte": "Faire de l’école pour tous une réalité :",
+  "avant": [
+   "handicap",
+   "parent",
+   "enfant_scolarise"
+  ],
+  "apres": []
+ },
+ "p3c02-ss05-m010": {
+  "texte": "Mettre en place des actions de sensibilisation pour lutter contre les discriminations dans l’Éducation nationale, de la maternelle au lycée, ainsi que dans l’enseignement supérieur et la formation professionnelle",
+  "avant": [
+   "handicap",
+   "etudiant"
+  ],
+  "apres": []
+ },
+ "p3c02-ss05-m011": {
+  "texte": "Décloisonner l’Éducation nationale et le secteur médico-social",
+  "avant": [
+   "handicap",
+   "parent",
+   "enfant_scolarise"
+  ],
+  "apres": []
+ },
+ "p3c02-ss05-m015": {
+  "texte": "Objectif « zéro obstacle » : tolérance zéro contre les entraves, c’est-à-dire les obstacles au déplacement ou à la vie quotidienne, permettre aux préfets de se substituer aux maires pour imposer les travaux dans des bâtiments privés et les fermer en cas de non-respect de la loi, imposer un plan de mise en accessibilité des transports",
+  "avant": [
+   "handicap",
+   "usager_transports"
+  ],
+  "apres": [
+   "handicap"
+  ]
+ },
+ "p3c03-ss02-m009": {
+  "texte": "Soutenir les permanences associatives et les dispositifs itinérants d’aide aux femmes victimes de violences, là où l’offre d’accompagnement est insuffisante, notamment en zones rurales et dans les quartiers populaires",
+  "avant": [
+   "rural"
+  ],
+  "apres": []
+ },
+ "p3c03-ss04-m007": {
+  "texte": "Répondre à la pénurie de professionnelles qualifiées par l’augmentation des salaires et des moyens globaux dédiés à la petite enfance, valoriser ces métiers et offrir des possibilités d’évolution de carrière",
+  "avant": [
+   "salarie",
+   "agent_public"
+  ],
+  "apres": []
+ },
+ "p3c03-ss04-m008": {
+  "texte": "Renforcer la formation initiale et continue des professionnelles, en particulier sur le développement affectif et relationnel de l’enfant, le respect de son intégrité physique et psychique, la prévention des violences, ainsi que l’accompagnement à la parentalité",
+  "avant": [
+   "salarie",
+   "agent_public"
+  ],
+  "apres": []
+ },
+ "p3c03-ss04-m009": {
+  "texte": "Fixer des normes d’encadrement plus ambitieuses pour aller vers un ratio moyen d’encadrement de 5 enfants d’âges mélangés par adulte",
+  "avant": [
+   "parent",
+   "petite_enfance"
+  ],
+  "apres": [
+   "petite_enfance"
+  ]
+ },
+ "p3c04-ss01-m010": {
+  "texte": "Renforcer les sanctions financières et pénales à l’encontre des entreprises ayant des pratiques discriminatoires, allant jusqu’au refus d’attribution de marchés publics",
+  "avant": [
+   "salarie"
+  ],
+  "apres": []
+ },
+ "p3c04-ss03-m001": {
+  "texte": "Instaurer le 4 février comme jour férié national en mémoire des victimes de l’esclavage et de leurs luttes s’ajoutant au jour de commémoration spécifique à chaque territoire d’Outre-mer",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p3c04-ss03-m002": {
+  "texte": "Développer de manière pluridisciplinaire la recherche universitaire, la formation des enseignants et le contenu des programmes et manuels scolaires sur l’histoire de l’esclavage, de la colonisation et de l’immigration",
+  "avant": [
+   "agent_public",
+   "enfant_scolarise"
+  ],
+  "apres": [
+   "agent_public"
+  ]
+ },
+ "p3c04-ss04-m004": {
+  "texte": "Établir un plan de prévention et de lutte contre les dérives racistes au sein des effectifs de police et de gendarmerie afin de garantir la neutralité républicaine des forces de sécurité",
+  "avant": [
+   "agent_public"
+  ],
+  "apres": []
+ },
+ "p4c01-ss01-m005": {
+  "texte": "Établir un plan d’urgence pour la dépollution rapide des régions durablement polluées en France, dont en priorité la Guadeloupe et la Martinique, victimes du chlordécone",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p4c01-ss01-m006": {
+  "texte": "Prendre en charge et indemniser les victimes, y compris indirectes, des essais nucléaires français et reconnaître leurs dommages environnementaux, en particulier en Polynésie",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p4c01-ss01-m010": {
+  "texte": "En Guadeloupe et en Martinique, reconnaître le statut de crise sanitaire et écologique concernant l’eau potable et son assainissement, la contamination au chlordécone et les effets cocktails avec d’autres substances dont les conséquences sont inconnues",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p4c02-ss02-m004": {
+  "texte": "Reconstituer les viviers de professeurs remplaçants, afin de mettre un terme au scandale des 15 millions d’heures de cours non assurées chaque année par manque d’enseignants",
+  "avant": [
+   "agent_public",
+   "parent",
+   "enfant_scolarise"
+  ],
+  "apres": [
+   "parent",
+   "enfant_scolarise"
+  ]
+ },
+ "p4c02-ss02-m007": {
+  "texte": "Construire un service public national du périscolaire, en lien avec les communes, fondé sur la gratuité, animé par des personnels formés, titulaires de la fonction publique",
+  "avant": [
+   "parent",
+   "enfant_scolarise",
+   "agent_public"
+  ],
+  "apres": [
+   "parent",
+   "enfant_scolarise"
+  ]
+ },
+ "p4c02-ss03-m002": {
+  "texte": "Protéger les élèves :",
+  "avant": [
+   "enfant_scolarise",
+   "etudiant"
+  ],
+  "apres": []
+ },
+ "p4c02-ss03-m007": {
+  "texte": "Interdire toute intervention des fondations « philanthropiques » des entreprises ou associations de défense de leurs intérêts à l’école, rompre la convention entre le Mouvement des entreprises de France (Medef) et l’Éducation nationale",
+  "avant": [
+   "enfant_scolarise",
+   "etudiant"
+  ],
+  "apres": []
+ },
+ "p4c02-ss03-m017": {
+  "texte": "Permettre aux élèves de participer activement à la vie de l’établissement dès l’école primaire, et étendre le droit de réunion et d’association pour les lycéennes et lycéens",
+  "avant": [
+   "enfant_scolarise",
+   "etudiant"
+  ],
+  "apres": [
+   "etudiant"
+  ]
+ },
+ "p4c02-ss04-m009": {
+  "texte": "Redonner et développer les moyens humains et financiers de formation aux lycées agricoles publics en les fléchant prioritairement dans les déserts d’enseignement public",
+  "avant": [
+   "etudiant",
+   "rural"
+  ],
+  "apres": []
+ },
+ "p4c02-ss07-m005": {
+  "texte": "Abroger le service militaire volontaire",
+  "avant": [
+   "jeune"
+  ],
+  "apres": []
+ },
+ "p4c02-ss07-m006": {
+  "texte": "Créer une garde nationale et régionale sous commandement civil, composée de la réserve de sécurité nationale, de la réserve de sécurité civile, de la réserve citoyenne et des jeunes en service citoyen obligatoire ayant souhaité intégrer l’une de ces réserves",
+  "avant": [
+   "jeune"
+  ],
+  "apres": []
+ },
+ "p4c03-ss03-m006": {
+  "texte": "Donner aux écoles supérieures d’art, tous domaines confondus, les moyens adéquats pour assurer la spécificité de leurs enseignements, revenir sur les récentes fermetures d’établissements, harmoniser les statuts des personnels de l’enseignement artistique",
+  "avant": [
+   "salarie",
+   "etudiant"
+  ],
+  "apres": [
+   "salarie"
+  ]
+ },
+ "p4c04-ss02-m014": {
+  "texte": "Développer une production publique de biomédicaments, notamment pour les thérapies contre le cancer",
+  "avant": [
+   "maladie"
+  ],
+  "apres": []
+ },
+ "p4c04-ss03-m005": {
+  "texte": "Interdire la publicité alimentaire sur tous les supports (radiophonique, audiovisuel et électronique) à destination des enfants et adolescents",
+  "avant": [
+   "etudiant",
+   "enfant_scolarise"
+  ],
+  "apres": [
+   "etudiant"
+  ]
+ },
+ "p4c04-ss04-m006": {
+  "texte": "Engager un plan pluriannuel de recrutement des professionnels du soin et du médico-social (médecins, infirmières, aides-soignantes et personnels administratifs)",
+  "avant": [
+   "salarie",
+   "agent_public"
+  ],
+  "apres": []
+ },
+ "p4c04-ss04-m008": {
+  "texte": "Actionner tous les leviers pour combattre les déserts médicaux :",
+  "avant": [
+   "rural"
+  ],
+  "apres": []
+ },
+ "p4c04-ss04-m010": {
+  "texte": "Recruter des médecins publics",
+  "avant": [
+   "rural"
+  ],
+  "apres": []
+ },
+ "p4c04-ss04-m011": {
+  "texte": "Réguler l’installation des médecins, généraliser les guichets uniques pour les démarches d’installation des soignants",
+  "avant": [
+   "rural"
+  ],
+  "apres": []
+ },
+ "p4c04-ss06-m002": {
+  "texte": "Affecter les recettes des taxes sur le cannabis à des programmes de lutte contre les addictions, notamment en milieu scolaire, et à une politique de prévention, de réduction des risques et d’aide à la désintoxication",
+  "avant": [
+   "enfant_scolarise",
+   "etudiant"
+  ],
+  "apres": []
+ },
+ "p4c05-ss01-m003": {
+  "texte": "Lancer un programme international de dépollution des mers et de l’Océan (récupération des déchets plastiques, équipements des littoraux en stations d’épuration, etc.) en commençant par la mer Méditerranée et les Outre-mer français",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p4c05-ss01-m005": {
+  "texte": "Mettre fin aux accords de pêche inégaux, qui détruisent les écosystèmes et privent les populations riveraines de leurs moyens de subsistance",
+  "avant": [
+   "agriculteur"
+  ],
+  "apres": []
+ },
+ "p4c05-ss01-m006": {
+  "texte": "Lutter contre les pratiques de pêche illégales et empêcher la réautorisation de la pêche électrique ; en finir avec les pratiques de pêche destructrices et les engins trop peu sélectifs",
+  "avant": [
+   "agriculteur"
+  ],
+  "apres": []
+ },
+ "p4c05-ss02-m004": {
+  "texte": "Investir plus fortement l’Organisation maritime internationale (OMI) pour soutenir l’objectif de neutralité carbone du transport maritime en 2050 et l’amélioration des conditions sociales des marins à l’échelle internationale",
+  "avant": [
+   "salarie"
+  ],
+  "apres": []
+ },
+ "p4c05-ss03-m004": {
+  "texte": "Créer un lycée de la mer dans chaque département maritime (y compris dans les Outre-mer)",
+  "avant": [
+   "etudiant",
+   "outre_mer"
+  ],
+  "apres": [
+   "etudiant"
+  ]
+ },
+ "p4c05-ss03-m005": {
+  "texte": "Développer une culture de la mer dans toute la société en s’assurant, notamment, que chaque enfant participe à une « classe de mer » au moins une fois au cours de sa scolarité",
+  "avant": [
+   "parent",
+   "enfant_scolarise",
+   "etudiant"
+  ],
+  "apres": [
+   "parent",
+   "enfant_scolarise"
+  ]
+ },
+ "p4c06-ss02-m004": {
+  "texte": "Initier la création d’une université francophone des métiers de l’espace en Guyane",
+  "avant": [
+   "etudiant",
+   "outre_mer"
+  ],
+  "apres": [
+   "etudiant"
+  ]
+ },
+ "p4c07-ss01-m007": {
+  "texte": "Mettre en place une autorité de contrôle dédiée à l’accessibilité numérique, dotée de moyens pour sanctionner les organismes ne respectant pas les obligations légales",
+  "avant": [
+   "handicap"
+  ],
+  "apres": []
+ },
+ "p4c07-ss03-m003": {
+  "texte": "Ouvrir des concertations entre la mission nationale de maîtrise de l’IA, les entreprises françaises du secteur, les syndicats de branche et les représentants des métiers pour développer des modèles d’IA visant à assister les travailleurs dans leurs tâches plutôt qu’à les surveiller ou les remplacer",
+  "avant": [
+   "salarie"
+  ],
+  "apres": []
+ },
+ "p5c01-ss01-m015": {
+  "texte": "Faire voter une loi d’amnistie pour les syndicalistes, les Gilets jaunes, les militants pour la paix, les écologistes, les associatifs et les militants des différents mouvements sociaux dans les Outre-mer, condamnés pour leur participation à la vie publique",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p5c01-ss05-m002": {
+  "texte": "Abroger le concordat d’Alsace-Moselle et les divers statuts spécifiques en vigueur dans les Outre-mer",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p5c02-ss02-m011": {
+  "texte": "Intégrer au service public certaines fonctions de sécurité aujourd’hui privées, comme le gardiennage des services publics",
+  "avant": [
+   "agent_public"
+  ],
+  "apres": []
+ },
+ "p5c02-ss03-m005": {
+  "texte": "Faire de la lutte contre la criminalité organisée, les trafics, la corruption et la délinquance financière une priorité en renforçant les effectifs spécialisés",
+  "avant": [
+   "agent_public"
+  ],
+  "apres": []
+ },
+ "p5c03-ss01-m005": {
+  "texte": "Augmenter l’enveloppe budgétaire des communes rurales par la création d’un fonds de soutien communal, notamment pour recruter et revaloriser les agents",
+  "avant": [
+   "agent_public"
+  ],
+  "apres": []
+ },
+ "p5c03-ss02-m004": {
+  "texte": "Réserver le statut de collectivité unique aux territoires insulaires et aux Outre-mer",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p5c03-ss03-m001": {
+  "texte": "Défendre et reconstruire un maillage dense et accessible de transports en commun et de services publics, notamment dans les départements ruraux, les quartiers populaires et les Outre-mer, afin de garantir une distance maximale (de 15 à 30 minutes en voiture ou en transport collectif) entre tout lieu d’habitation et les services publics essentiels (école, gare, hôpital, bureau de poste)",
+  "avant": [
+   "rural",
+   "grande_ville",
+   "outre_mer"
+  ],
+  "apres": [
+   "rural",
+   "outre_mer"
+  ]
+ },
+ "p5c03-ss03-m003": {
+  "texte": "Organiser des états généraux des quartiers populaires et des états généraux des espaces ruraux pour construire une véritable égalité territoriale, notamment dans les services publics",
+  "avant": [
+   "rural",
+   "grande_ville"
+  ],
+  "apres": []
+ },
+ "p5c03-ss04-m004": {
+  "texte": "Produire 200 000 logements publics par an et 30 000 logements jeunes pendant 5 ans aux normes écologiques les plus ambitieuses",
+  "avant": [
+   "jeune"
+  ],
+  "apres": []
+ },
+ "p5c03-ss05-m001": {
+  "texte": "Engager un plan pluriannuel d’investissement et de développement des services publics (transports, éducation, santé, logement, culture) en partant des propositions formulées par les mouvements sociaux ultramarins eux-mêmes, notamment en Guyane et à Mayotte",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p5c03-ss05-m006": {
+  "texte": "Mettre en œuvre un plan de réparation pour répondre à la crise sociale, économique et sanitaire que traverse l’archipel de Kanaky-Nouvelle-Calédonie",
+  "avant": [
+   "outre_mer"
+  ],
+  "apres": []
+ },
+ "p6c01-ss01-m001": {
+  "texte": "Des grands plans de dérégulation dits « omnibus », qui détruisent les rares progrès permis par le droit européen et mettent en danger les travailleurs, la santé et l’environnement, tel celui adopté sur le devoir de vigilance des multinationales, ou celui sur les pesticides, qui réautorise la mise sur le marché de nombreux produits hier interdits",
+  "avant": [
+   "salarie"
+  ],
+  "apres": []
+ },
+ "p6c01-ss01-m002": {
+  "texte": "Du projet dit de « 28e régime », qui veut contourner les législations nationales protectrices des travailleurs et créer toujours plus de niches fiscales et de régimes d’exception, entraînant ainsi une harmonisation « par le bas »",
+  "avant": [
+   "salarie"
+  ],
+  "apres": []
+ },
+ "p6c01-ss01-m004": {
+  "texte": "De la directive sur les travailleurs détachés, qui tire vers le bas les systèmes de sécurité sociale des États membres",
+  "avant": [
+   "salarie"
+  ],
+  "apres": []
+ },
+ "p6c03-ss01-m002": {
+  "texte": "Intégrer le respect des règles fondamentales de l’Organisation internationale du travail (OIT) dans les accords commerciaux",
+  "avant": [
+   "salarie"
+  ],
+  "apres": []
+ },
+ "p6c03-ss02-m010": {
+  "texte": "Régulariser les travailleurs, étudiants, parents d’enfants scolarisés sans papiers",
+  "avant": [
+   "salarie",
+   "etudiant",
+   "parent",
+   "enfant_scolarise"
+  ],
+  "apres": []
+ },
+ "p6c03-ss03-m002": {
+  "texte": "Faire des Outre-mer des pôles régionaux de codéveloppement : transfert de technologies auprès des pays voisins, aide logistique et scientifique, établissement de formations de haut niveau bénéficiant à la fois aux étudiants ultramarins et à ceux des pays voisins, coopération militaire de maintien de la paix",
+  "avant": [
+   "outre_mer",
+   "etudiant"
+  ],
+  "apres": [
+   "etudiant"
+  ]
+ },
+ "p6c03-ss05-m001": {
+  "texte": "Créer un réseau d’universités méditerranéennes et organiser un réseau méditerranéen de l’enseignement professionnel",
+  "avant": [
+   "etudiant"
+  ],
+  "apres": []
+ }
+}

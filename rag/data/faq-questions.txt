@@ -1,0 +1,14 @@
+# Questions amorcées dans le cache de réponses (scripts/warm_cache.py), une par ligne.
+# À garder synchronisé avec les suggestions d’accueil (`suggestions` dans frontend/src/App.tsx).
+Quelles mesures pour rendre le logement plus accessible ?
+Que prévoit le programme pour la transition écologique ?
+Quelles propositions pour les salaires et le pouvoir d’achat ?
+Comment améliorer l’accès aux soins et à l’hôpital ?
+Que prévoit le programme pour les retraites ?
+Quelles mesures pour l’école et les études ?
+Que changerait la 6e République pour les citoyens ?
+Comment le programme veut-il rendre l’impôt plus juste ?
+Que prévoit le programme pour les services publics dans les territoires ?
+Quelles mesures pour l’égalité entre les femmes et les hommes ?
+Que propose le programme pour les transports du quotidien ?
+Quelle politique internationale le programme propose-t-il pour la paix ?

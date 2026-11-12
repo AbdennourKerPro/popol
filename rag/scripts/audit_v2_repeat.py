@@ -102,7 +102,7 @@ def main():
     output = dict(focused)
     for spec in REVIEWS:
         identifier = spec['id']; response = raw[identifier]['answer']
-        texts = [b['text'] for b in response['blocks']] + [m['explanation'] for m in response['measures']] + [m['expected_benefit'] for m in response['measures']]
+        texts = [' '.join([b['text'], *[p['text'] for p in b.get('points', [])]]) for b in response['blocks']] +[m['explanation'] for m in response['measures']] + [m['expected_benefit'] for m in response['measures']]
         assert len(spec['points']) == len(refs[identifier]['criteria']), identifier
         for point in spec['points']:
             assert any(point[1] in text for text in texts), (identifier, point[1])

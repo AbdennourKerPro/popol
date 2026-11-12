@@ -1,17 +1,18 @@
 import type { LucideIcon } from 'lucide-react';
 
-/** Profile label set by an answer, e.g. `locataire`, `bas_salaire`. */
+/** Profile label set by an answer: a public of the taxonomy (`locataire`) or an interest (`i:ecologie`). */
 export type Tag = string;
 /** OR of ANDs: `[['salarie', 'penible'], ['senior']]`. */
 export type Condition = Tag[][];
+
+/** Journey length: each one adds questions to the previous one. */
+export type Longueur = 'court' | 'normal' | 'long';
 
 export interface Choice {
   id: string;
   label: string;
   icon: LucideIcon;
   tags: Tag[];
-  /** Game mode: measure revealed as a bonus right after this answer. */
-  teaser?: string;
 }
 
 export interface Question {
@@ -22,55 +23,13 @@ export interface Question {
   militant: string;
   /** Militant hint: why this question is asked. */
   pourquoi: string;
+  /** Shortest journey that asks it. */
+  niveau: Longueur;
   si?: Condition;
-  /** Hidden as soon as one of these tags is present. */
-  sauf?: Tag[];
   multiple?: boolean;
+  /** Most choices that can be ticked in a multiple question. */
+  max?: number;
+  /** Hide the choices whose tags are already given by an earlier answer. */
+  sansDoublon?: boolean;
   choices: Choice[];
-}
-
-/** A programme measure made relevant by a profile. */
-export interface Target {
-  mesure: string;
-  si: Condition;
-  poids: 1 | 2 | 3;
-  /** Each present tag adds 1 to the score. */
-  plus?: Tag[];
-  tu: string;
-  vous: string;
-}
-
-export interface Objection {
-  objection: string;
-  reponse: string;
-  mesures: string[];
-}
-
-export interface Quiz {
-  question: string;
-  options: string[];
-  bonne: number;
-  mesure: string;
-}
-
-export type Accent = 'red' | 'purple' | 'ink';
-
-export interface Theme {
-  id: string;
-  titre: string;
-  accroche: string;
-  icon: LucideIcon;
-  accent: Accent;
-  /** Themes of the "explorer" section are not tied to a personal situation. */
-  groupe?: 'explorer';
-  questions: string[];
-  /** Game mode: the quiz is inserted after this many answers in the theme. */
-  quizApres?: number;
-  quiz?: Quiz;
-  /** How many relevant measures are offered at most (default 8). */
-  maxMesures?: number;
-  cibles: Target[];
-  /** Measures for everyone, shown after the personal ones. */
-  collectif: string[];
-  objections: Objection[];
 }

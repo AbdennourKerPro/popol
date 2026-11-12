@@ -59,13 +59,30 @@ ne sont pas inclus dans l’image : la génération nécessite l’accès à l�
 - Nouvelle conversation, historique IndexedDB sur l’appareil, recherche, renommage
   et suppression des conversations.
 - Questions de suivi, annulation de la requête, copie et reformulation.
-- Exploration du corpus, fiches de mesures, annexes et accès aux pages du PDF.
+- Exploration du corpus, fiches de mesures, textes explicatifs et liens vers le programme officiel.
 - Réponse structurée, explications, avantages attendus distingués des interprétations,
   et limites lorsqu’une information manque.
 - Contrôle des IDs autorisés, des citations littérales et des types mesure/annexe ;
   réparation bornée d’une sortie invalide.
-- États de recherche/génération/vérification via SSE, puis affichage de la réponse
-  après validation. La V1 ne diffuse pas du texte non validé mot par mot.
+- États de recherche/génération/vérification via SSE, passages trouvés affichés
+  pendant la rédaction, puis affichage de la réponse après validation. Avec
+  `STREAM_BLOCKS=true`, les blocs complets s’affichent à titre provisoire dès qu’ils
+  sont écrits ; jamais de texte mot par mot.
+- Réponses en points sourcés (une mesure par point, citations propres), chiffres clés
+  en gras, badge « Mesure clé ».
+- Réponse persuasive aux objections : arguments du programme, phrase de chiffrage pour les
+  questions de financement (« le chiffrage est prêt… surveillez melenchon2027.fr »), et, avec
+  OpenAI, exemples d’autres pays et base juridique trouvés par une recherche web et cités avec leur
+  lien (`OBJECTION_RESEARCH`). Chati n’en formule aucune de lui-même (lot : `benchmarks/objections/`).
+- Pas d’impasse : mesures proches proposées quand le programme ne traite pas la
+  question ; passages les plus proches si le contrôle des références échoue ;
+  nouvel essai automatique quand le fournisseur est saturé.
+- Profil « Je suis… » (3 publics au plus, gardé sur l’appareil) qui oriente la
+  recherche et la réponse, et suggestion « Et pour moi ? ».
+- Partage d’une réponse par lien (`?q=` repose la question) ou en image (carte PNG).
+- Cache des réponses vérifiées aux questions autonomes (`ANSWER_CACHE_SIZE`, amorçage
+  par `scripts/warm_cache.py`) : une question déjà posée ne coûte ni appel ni quota.
+- Avis anonymes (pouce, motif) sans transmission de la question ni de la réponse.
 - Questions de suivi pour expliquer une mesure avec un exemple, comparer à la
   situation actuelle ou approfondir ses avantages et limites.
 - Mode **Programme + web** avec recherche native de Luna et références Internet
@@ -178,7 +195,11 @@ reste sur 8080. Voir le [guide de relecture](review/README.md).
 
 ## Configuration et exploitation
 
-Les paramètres sont décrits dans `.env.example`. `docker compose stop` arrête le
+Les paramètres sont décrits dans `.env.example` (dont `ANSWER_CACHE_SIZE`,
+`ANSWER_CACHE_FILE`, `PROFILE_BOOST` et `STREAM_BLOCKS`). Les annotations de publics
+(`data/programme/annotations.jsonl`, `publics.json`) se régénèrent depuis l’app
+« Ça change quoi pour moi ? » avec `python scripts/sync_annotations.py` ; elles
+n’entrent pas dans la version du corpus. `docker compose stop` arrête le
 service ; `docker compose logs app` montre ses journaux. L’adresse d’écoute sur
 l’hôte est locale par défaut (`127.0.0.1`). Cette V1 ne gère pas de comptes ni de
 contrôle d’accès multiutilisateur ; l’historique n’est pas synchronisé entre appareils.

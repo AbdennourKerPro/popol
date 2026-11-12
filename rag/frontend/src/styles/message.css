@@ -1,0 +1,610 @@
+/* Échange : questions, réponses, mesures, suivis, actions, attente */
+
+.messages {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 40px 20px;
+}
+
+.user-message {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+}
+
+.user-message>div {
+  background: var(--blue-soft);
+  border: 1px solid var(--blue-border);
+  color: var(--ink);
+  max-width: 85%;
+  padding: 14px 20px;
+  white-space: pre-wrap;
+  font-size: 15px;
+  line-height: 1.7;
+  border-radius: 13px 13px 3px 13px;
+}
+
+.assistant-message {
+  margin: 0 0 35px;
+}
+
+.assistant-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 15px;
+}
+
+.mini-brand {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 34px;
+  flex-shrink: 0;
+}
+
+.assistant-heading>strong {
+  font-size: 14px;
+}
+
+.assistant-heading>span:last-child {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--subtle);
+  margin-left: 4px;
+}
+
+.answer-body {
+  padding-left: 35px;
+}
+
+.answer-block p {
+  font-family: 'Gowun Batang',serif;
+  font-size: 17px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  margin: 0 0 18px;
+}
+
+.answer-block h3 {
+  font-size: 14px;
+  margin: 24px 0 9px;
+}
+
+.block-limits {
+  border-left: 2px solid var(--ochre-border);
+  padding-left: 15px;
+}
+
+.block-limits p {
+  color: var(--ochre);
+  font-size: 15px;
+}
+
+.block-quote {
+  border-left: 2px solid var(--blue);
+  padding-left: 15px;
+}
+
+.citation {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px 0 5px;
+  vertical-align: middle;
+  min-width: 18px;
+  height: 18px;
+  font-family: 'Public Sans',sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--blue-soft);
+  color: var(--blue);
+  border-radius: 4px;
+}
+
+.citation:hover {
+  background: var(--blue);
+  color: var(--on-accent);
+}
+
+.consultation-quote {
+  font-family: 'Gowun Batang',serif;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 20px 0;
+  padding: 12px 0 12px 17px;
+  border-left: 2px solid var(--blue-border);
+}
+
+.consultation-quote>span {
+  font-family: 'Public Sans',sans-serif;
+  font-size: 12px;
+  color: var(--blue);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.consultation-quote button {
+  font-family: 'Public Sans',sans-serif;
+  background: none;
+  color: var(--blue);
+  padding: 0;
+  margin-top: 8px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.measure-details {
+  border: 1px solid var(--blue-border);
+  border-radius: 9px;
+  margin: 22px 0;
+}
+
+.measure-details summary {
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.measure-details summary>span {
+  margin-left: auto;
+  color: var(--blue);
+  background: var(--blue-soft);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.measure-explanation {
+  margin: 0 15px;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+}
+
+.measure-explanation>button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0;
+  text-align: left;
+}
+
+.measure-explanation p {
+  font-family: 'Gowun Batang',serif;
+  line-height: 1.7;
+  font-size: 15px;
+  margin: 9px 0 0;
+}
+
+.measure-explanation .benefit {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.message-actions {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-top: 17px;
+}
+
+.message-actions button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  padding: 3px 0;
+  color: var(--subtle);
+  font-size: 12px;
+}
+
+.message-actions button:hover {
+  color: var(--purple);
+}
+
+.thinking {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 12px;
+  color: var(--subtle);
+  padding-bottom: 20px;
+}
+
+.thinking-dots {
+  display: flex;
+  gap: 3px;
+}
+
+.thinking-dots i {
+  background: var(--purple);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  animation: pulse 1.2s infinite;
+}
+
+.thinking-dots i:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.thinking-dots i:nth-child(3) {
+  animation-delay: .4s;
+}
+
+@media(max-width:760px) {
+  .messages {
+    padding: 22px 18px;
+  }
+
+  .answer-body {
+    padding-left: 0;
+  }
+
+  .assistant-heading {
+    margin-bottom: 15px;
+  }
+
+  .answer-block p {
+    font-size: 16px;
+  }
+
+  .assistant-heading>span:last-child {
+    font-size: 11px;
+  }
+
+  .user-message>div {
+    max-width: 90%;
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .thinking {
+    font-size: 12px;
+    gap: 8px;
+  }
+}
+
+.key-figure {
+  font-weight: 700;
+  color: var(--purple);
+}
+
+.answer-points {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer-points li {
+  position: relative;
+  padding-left: 20px;
+  font-family: 'Gowun Batang',serif;
+  font-size: 17px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.answer-points li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: .72em;
+  width: 7px;
+  height: 7px;
+  background: var(--blue);
+}
+
+.key-measure-badge {
+  display: inline-block;
+  margin-bottom: 7px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media(max-width:760px) {
+  .answer-points li {
+    font-size: 16px;
+    padding-left: 18px;
+  }
+}
+
+.related-measures {
+  margin: 22px 0;
+  padding: 15px;
+  border: 1.5px solid var(--frame-ink);
+  border-radius: 12px;
+  background: var(--blue-soft);
+}
+
+.related-measures>strong {
+  display: block;
+  font-size: 14px;
+  color: var(--blue);
+  margin-bottom: 11px;
+}
+
+.related-measures>div {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.related-measures button {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 12px;
+  align-items: center;
+  text-align: left;
+  padding: 11px 13px;
+  border: 1.5px solid var(--frame-ink);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.55;
+  box-shadow: 2px 2px 0 var(--frame-ink);
+}
+
+.related-measures button>span {
+  grid-column: 1/-1;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.related-measures button>svg {
+  grid-row: 2;
+  grid-column: 2;
+  color: var(--blue);
+}
+
+.related-measures button:hover:not(:disabled) {
+  transform: translate(1px,1px);
+  box-shadow: 1px 1px 0 var(--frame-ink);
+}
+
+.thinking-found {
+  margin: -8px 0 22px 43px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.thinking-found ul {
+  list-style: none;
+  margin: 7px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.thinking-found li {
+  padding: 3px 9px;
+  border: 1px solid var(--blue-border);
+  border-radius: 999px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-weight: 600;
+}
+
+@media(max-width:760px) {
+  .thinking-found {
+    margin-left: 0;
+  }
+}
+
+.feedback-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.message-actions .feedback-buttons button {
+  padding: 3px;
+}
+
+.message-actions .feedback-buttons button[aria-pressed=true] {
+  color: var(--purple);
+  opacity: 1;
+}
+
+.feedback-thanks {
+  font-size: 12px;
+  color: var(--subtle);
+}
+
+.feedback-reasons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin-top: 11px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.feedback-reasons button {
+  padding: 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.feedback-reasons button:hover {
+  border-color: var(--blue-border);
+  color: var(--blue);
+}
+
+@media(max-width:760px) {
+  .message-actions {
+    flex-wrap: wrap;
+    gap: 12px 15px;
+  }
+}
+
+.assistant-message.provisional {
+  opacity: .72;
+  margin-bottom: 14px;
+}
+
+.assistant-message.provisional .answer-body {
+  padding-left: 35px;
+}
+
+.assistant-message.provisional .citation {
+  background: var(--surface-cool);
+  color: var(--subtle);
+}
+
+@media(prefers-reduced-motion:no-preference) {
+  .assistant-message.provisional {
+    transition: opacity .2s;
+  }
+}
+
+.followups {
+  margin: 24px 0 12px;
+  padding: 16px;
+  background: var(--green-soft);
+  border: 1px solid var(--green-border);
+  border-radius: 16px;
+}
+
+.followups-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.followups-heading strong {
+  font-size: 14px;
+  color: var(--green);
+}
+
+.followups-heading>span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.followups>p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 7px 0 12px;
+}
+
+.followup-list {
+  display: grid;
+  gap: 8px;
+}
+
+.followup-list button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: left;
+  padding: 10px 12px;
+  border: 1.5px solid var(--frame-ink);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 2px 2px 0 var(--frame-ink);
+}
+
+.followup-list button:hover:not(:disabled) {
+  background: var(--surface-cool);
+  transform: translate(-1px,-1px);
+}
+
+.followup-list button:active:not(:disabled) {
+  transform: translate(2px,2px);
+  box-shadow: none;
+}
+
+.followups>small {
+  display: block;
+  margin-top: 11px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.user-research-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  color: var(--blue);
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 9px;
+}
+
+.measure-followups {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.measure-followups button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  background: none;
+  color: var(--green);
+  font-size: 12px;
+}
+
+@media(max-width:760px) {
+  .followups {
+    padding: 13px;
+  }
+
+  .followup-list button {
+    font-size: 12px;
+  }
+
+  .measure-followups {
+    gap: 12px;
+  }
+}
+
+.followups-heading {
+  margin-bottom: 10px;
+}

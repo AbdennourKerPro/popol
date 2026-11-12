@@ -1,6 +1,6 @@
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { Mascot } from './Mascot';
-import { mesure, SITE_LABEL, SITE_URL } from '../lib/engine';
+import { emplacement, type Mesure, SITE_LABEL } from '../lib/programme';
 
 export function Header({ onHome, children }: { onHome: () => void; children?: React.ReactNode }) {
   return (
@@ -22,15 +22,14 @@ export function Sticker({ children, tone = 'red', tilt = -3 }: { children: React
   return <span className={`sticker sticker-${tone}`} style={{ rotate: `${tilt}deg` }}>{children}</span>;
 }
 
-/** Exact measure text with its provenance: never paraphrased. */
-export function MeasureQuote({ id, compact = false }: { id: string; compact?: boolean }) {
-  const m = mesure(id);
+/** Exact measure text with its place in the book and a link to that page: never paraphrased. */
+export function MeasureQuote({ mesure, compact = false }: { mesure: Mesure; compact?: boolean }) {
   return (
     <figure className={`quote ${compact ? 'quote-compact' : ''}`}>
-      <blockquote>{m.texte}</blockquote>
+      <blockquote>{mesure.texte}</blockquote>
       <figcaption>
-        <span>{m.sousSection}</span>
-        <a href={SITE_URL} target="_blank" rel="noreferrer">{SITE_LABEL} <ExternalLink size={11} /></a>
+        <span>{emplacement(mesure)}</span>
+        <a href={mesure.url} target="_blank" rel="noreferrer">{SITE_LABEL} <ExternalLink size={11} /></a>
       </figcaption>
     </figure>
   );

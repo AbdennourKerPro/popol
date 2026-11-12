@@ -14,12 +14,15 @@ Ce document décrit ce qui a été mis en place pour une bêta fermée sans API 
 | Budget global | `DAILY_REQUEST_CAP` et `DAILY_TOKEN_CAP` (suivi des tokens réellement consommés, tentatives de réparation comprises) protègent les limites gratuites de Groq. |
 | Quota épuisé | Pas de bascule vers une API payante : la réponse devient une **consultation des mesures** (passages du programme sans génération), avec un message explicatif. |
 | Recherche web | Désactivée avec Groq (elle dépend des outils d'OpenAI). |
+| Cache de réponses | Une question autonome déjà posée (même texte à la casse, aux accents et à la ponctuation finale près, même profil) est servie depuis la mémoire du serveur, sans appel au modèle et **sans décompter de question**, même quota épuisé ; le lien doit rester valide. Amorçage : `scripts/warm_cache.py` (section 7). |
+| Avis | Pouce levé ou baissé sous chaque réponse, avec un motif facultatif. Lien valide exigé, aucune question décomptée, un seul avis par réponse. |
 
 Données stockées dans Firestore (jamais lisibles par un navigateur) :
 
 - `chati_invites/{sha256 du jeton}` : étiquette, limite quotidienne, actif, expiration. **Le jeton lui-même n'est jamais stocké** : une fuite de la base ne donne aucun lien utilisable.
 - `chati_usage/{invitation}_{jour}` : nombre de questions et tokens du jour.
 - `chati_budget/{jour}` : compteurs globaux.
+- `chati_feedback/{identifiant automatique}` : avis anonymes — jour, note (`up`/`down`), motif (`incomplet`, `hors_sujet`, `pas_clair`, `erreur` ou vide), statut et mode de la réponse, sections (`section_id`) et thèmes des sources citées. **Ni la question, ni la réponse, ni le lien** ne sont transmis ou stockés. `expire_at` à 90 jours.
 - Les compteurs portent un champ `expire_at` : vous pouvez activer une politique TTL pour les purger (facultatif).
 
 ## 2. Clé API Groq
@@ -150,6 +153,11 @@ python scripts/beta_admin.py create "Prénom Nom" --limit 5 --days 30   # affich
 python scripts/beta_admin.py list                                      # usage du jour par invitation
 python scripts/beta_admin.py revoke <id>                               # désactive un lien (restore pour le rétablir)
 python scripts/beta_admin.py budget                                    # budget global du jour
+python scripts/beta_admin.py feedback                                  # avis : totaux par note, motif et thème
+
+# amorcer le cache des réponses (questions d'accueil), serveur lancé ; chaque question nouvelle compte dans le quota du lien
+python scripts/warm_cache.py --base $BETA_BASE_URL --token <jeton> --questions data/faq-questions.txt --output data/programme/answers.jsonl
+# puis reconstruire l'image (le fichier est copié dans l'image) ou redémarrer le serveur local
 ```
 
 Après quelques jours, comparez `budget` (tokens réels par requête) à l'hypothèse de 3 000 et corrigez `LLM_TOKENS_PER_REQUEST`, `DAILY_TOKEN_CAP` et les limites par lien.
@@ -179,3 +187,6 @@ Après quelques jours, comparez `budget` (tokens réels par requête) à l'hypot
 | `INVITE_DAILY_LIMIT` | `5` | questions par jour et par lien (modifiable par invitation) |
 | `QUOTA_TIMEZONE`, `BUDGET_TIMEZONE` | `Europe/Paris`, `UTC` | jour des quotas par lien, jour du budget global |
 | `DAILY_REQUEST_CAP`, `DAILY_TOKEN_CAP` | 900, 170000 | budget global journalier |
+| `ANSWER_CACHE_SIZE`, `ANSWER_CACHE_FILE` | 300, `data/programme/answers.jsonl` | réponses vérifiées gardées en mémoire (0 = désactivé) et fichier d'amorçage |
+| `PROFILE_BOOST` | 0.005 | bonus de classement des mesures qui concernent le profil déclaré |
+| `OBJECTION_RESEARCH` | `true` | avec OpenAI : recherche web d’exemples étrangers pour répondre aux objections (un appel web facturé en plus par objection) ; sans effet avec Groq |

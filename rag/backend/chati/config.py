@@ -5,10 +5,9 @@ from pathlib import Path
 
 @dataclass(frozen=True)
 class Settings:
-    corpus_dir: Path = Path(os.environ.get("CORPUS_DIR", "data/structured"))
+    corpus_dir: Path = Path(os.environ.get("CORPUS_DIR", "data/programme"))
     index_dir: Path = Path(os.environ.get("INDEX_DIR", ".runtime/index"))
     static_dir: Path = Path(os.environ.get("STATIC_DIR", "frontend/dist"))
-    pdf_path: Path = Path(os.environ.get("PDF_PATH", "assets/Programme-Mélenchon-LFI.pdf"))
     llm_provider: str = os.environ.get("LLM_PROVIDER", "openai")
     api_key: str = os.environ.get("OPENAI_API_KEY", "")
     model: str = os.environ.get("OPENAI_MODEL", "gpt-6-luna")
@@ -45,12 +44,21 @@ class Settings:
     retrieval_count: int = int(os.environ.get("RETRIEVAL_COUNT", "12"))
     verify_absence: bool = os.environ.get("VERIFY_ABSENCE", "false").lower() == "true"
     keep_top: int = int(os.environ.get("RETRIEVAL_KEEP_TOP", "0"))
+    # Small bonus added to the fused score of retrieved measures that concern the declared profile.
+    profile_boost: float = float(os.environ.get("PROFILE_BOOST", "0.005"))
     context_mode: str = os.environ.get("CONTEXT_MODE", "retrieval")
     consultation: bool = os.environ.get("CONSULTATION_MODE", "false").lower() == "true"
     timeout: float = float(os.environ.get("OPENAI_TIMEOUT", "60"))
     concurrency: int = int(os.environ.get("MAX_CONCURRENT_REQUESTS", "4"))
     web_enabled: bool = os.environ.get("WEB_SEARCH_ENABLED", "true").lower() == "true"
     web_max_calls: int = int(os.environ.get("WEB_MAX_TOOL_CALLS", "3"))
+    # Answer a doubt or an objection with verified examples abroad and the legal basis (web, OpenAI only).
+    objection_research: bool = os.environ.get("OBJECTION_RESEARCH", "true").lower() == "true"
+    # Verified answers to standalone questions, kept in memory (0 disables the cache).
+    answer_cache_size: int = int(os.environ.get("ANSWER_CACHE_SIZE", "300"))
+    answer_cache_file: Path = Path(os.environ.get("ANSWER_CACHE_FILE", "data/programme/answers.jsonl"))
+    # Send each answer block as soon as the model has written it (provisional display).
+    stream_blocks: bool = os.environ.get("STREAM_BLOCKS", "false").lower() == "true"
 
     @property
     def provider_key(self) -> str:
@@ -93,3 +101,5 @@ class Settings:
             raise ValueError("Limites de requêtes invalides")
         if not 1 <= self.web_max_calls <= 5:
             raise ValueError("WEB_MAX_TOOL_CALLS doit être compris entre 1 et 5")
+        if self.answer_cache_size < 0:
+            raise ValueError("ANSWER_CACHE_SIZE doit être positif ou nul")

@@ -1,0 +1,250 @@
+/* Barre latérale : aplat violet, marque, conversations, liens. */
+
+.lateral {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 264px;
+  padding: 28px 22px 22px;
+  background: var(--violet);
+  color: var(--creme);
+}
+
+.lateral-tete {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.lateral-marque {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.lateral .marque {
+  font-size: var(--t-40);
+}
+
+.sous-marque {
+  font-family: var(--texte);
+  font-size: var(--t-14);
+  line-height: 1.4;
+  color: var(--creme-70);
+}
+
+.lateral-fermer {
+  display: none;
+  color: var(--creme);
+}
+
+.lateral-nouvelle {
+  margin-top: 28px;
+  padding: 0 12px;
+  font-size: var(--t-14);
+  white-space: nowrap;
+}
+
+.lateral-recherche {
+  margin-top: var(--e-4);
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1.5px solid var(--creme-25);
+  background: none;
+  color: var(--creme);
+  font-size: var(--t-14);
+}
+
+.lateral-recherche::placeholder {
+  color: var(--creme-70);
+}
+
+.lateral-recherche:focus-visible {
+  outline: none;
+  border-bottom-color: var(--creme);
+}
+
+.lateral > .folio {
+  margin: 30px 0 var(--e-2);
+  color: var(--creme-70);
+}
+
+.historique {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.historique-ligne {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--creme-25);
+}
+
+.historique-titre {
+  flex: 1;
+  min-width: 0;
+  min-height: var(--cible);
+  padding: 11px 0;
+  overflow: hidden;
+  color: var(--creme);
+  font-size: var(--t-14);
+  line-height: 1.35;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.historique-titre:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.historique-ligne.active .historique-titre {
+  font-weight: 700;
+}
+
+.historique-ligne.active .historique-titre::before {
+  content: '— ';
+}
+
+.historique-actions summary {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  list-style: none;
+  color: var(--creme-70);
+  cursor: pointer;
+}
+
+.historique-actions summary::-webkit-details-marker {
+  display: none;
+}
+
+.historique-actions summary:hover {
+  color: var(--creme);
+}
+
+.historique-actions > div {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 5;
+  padding: var(--e-1);
+  border: var(--trait);
+  border-radius: var(--rayon);
+  background: var(--creme);
+  color: var(--charbon);
+}
+
+.historique-actions button {
+  display: flex;
+  align-items: center;
+  gap: var(--e-2);
+  width: 100%;
+  padding: var(--e-2) var(--e-3);
+  font-size: var(--t-14);
+  text-align: left;
+}
+
+.historique-actions button:hover {
+  background: var(--violet-pale);
+  color: var(--violet);
+}
+
+.historique-vide {
+  padding-top: 11px;
+  border-top: 1px solid var(--creme-25);
+  font-family: var(--texte);
+  font-size: var(--t-14);
+  line-height: 1.5;
+  color: var(--creme-70);
+}
+
+.lateral-pied {
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+  padding-top: var(--e-4);
+  border-top: 1px solid var(--creme-25);
+  font-size: var(--t-14);
+  color: var(--creme-70);
+}
+
+.lateral-pied a,
+.lateral-pied button {
+  color: var(--creme-70);
+  font-size: var(--t-14);
+  text-decoration: none;
+}
+
+.lateral-pied a:hover,
+.lateral-pied button:hover {
+  color: var(--creme);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.lateral-pied p {
+  margin-top: var(--e-1);
+  font-size: var(--t-12);
+  line-height: 1.4;
+}
+
+.barre-mobile {
+  display: none;
+}
+
+.voile-lateral {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .lateral {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 21;
+    width: min(300px, 86vw);
+    transform: translateX(-100%);
+    transition: transform var(--duree) ease-out;
+  }
+
+  .lateral.ouvert {
+    transform: none;
+  }
+
+  .lateral-fermer {
+    display: inline-flex;
+  }
+
+  .voile-lateral {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: block;
+    background: var(--voile);
+  }
+
+  .barre-mobile {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding: 0 var(--e-4) 0 20px;
+    background: var(--violet);
+    color: var(--creme);
+  }
+
+  .barre-mobile .marque {
+    font-size: var(--t-22);
+  }
+
+  .barre-menu,
+  .barre-menu:not(:disabled):hover {
+    color: var(--creme);
+  }
+}

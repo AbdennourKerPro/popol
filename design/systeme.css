@@ -1,0 +1,773 @@
+/* Composants partagés par Chati (rag/frontend) et « Ça change quoi pour moi ? » (app).
+   Référence visuelle : design/planche.html. Uniquement des jetons (jetons.css).
+   Règles : le violet structure, le rouge ponctue ; aplats et filets, angles vifs ;
+   les mascottes et leurs bulles sont les seuls éléments ronds à contour épais. */
+
+/* ---------- Focus ---------- */
+
+:where(button, a, input, textarea, select, summary):focus-visible {
+  outline: 3px solid var(--violet);
+  outline-offset: 2px;
+}
+
+.sur-violet :where(button, a, input, textarea, select, summary):focus-visible {
+  outline-color: var(--creme);
+}
+
+/* ---------- Typographie ---------- */
+
+.titre-affiche {
+  font-family: var(--titre);
+  font-size: var(--t-64);
+  font-weight: 900;
+  line-height: .95;
+  letter-spacing: -.04em;
+}
+
+.titre {
+  font-family: var(--titre);
+  font-size: var(--t-40);
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: -.03em;
+}
+
+.titre-2 {
+  font-family: var(--titre);
+  font-size: var(--t-28);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+}
+
+.intertitre {
+  font-family: var(--titre);
+  font-size: var(--t-14);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: .01em;
+}
+
+.corps {
+  font-family: var(--texte);
+  font-size: var(--t-18);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.corps-petit {
+  font-family: var(--texte);
+  font-size: var(--t-16);
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.interface {
+  font-family: var(--titre);
+  font-size: var(--t-14);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.folio {
+  font-family: var(--titre);
+  font-size: var(--t-12);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+.ponctuation {
+  color: var(--rouge);
+}
+
+.secondaire {
+  color: var(--gris);
+}
+
+/* ---------- Marque ---------- */
+
+.marque {
+  font-family: var(--titre);
+  font-size: var(--t-28);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.04em;
+  white-space: nowrap;
+}
+
+/* ---------- Surligneur : mot clé d'un titre, chiffre clé d'une réponse ---------- */
+
+.surligne {
+  background-image: linear-gradient(transparent 52%, var(--surligneur) 52%, var(--surligneur) 94%, transparent 94%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0 .06em;
+  font-weight: 700;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+:where(.titre-affiche, .titre, .titre-2) .surligne {
+  font-weight: 900;
+  animation: trace-surligneur 300ms ease-out 1 backwards;
+}
+
+@keyframes trace-surligneur {
+  from {
+    background-size: 0 100%;
+  }
+}
+
+/* ---------- Appel de note : la citation d'une source ---------- */
+
+.appel {
+  display: inline;
+  margin-left: 2px;
+  padding: 0 1px;
+  font-family: var(--titre);
+  font-size: .62em;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: super;
+  color: var(--rouge);
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.appel + .appel::before {
+  content: ' ';
+}
+
+button.appel:hover,
+a.appel:hover {
+  text-decoration: underline;
+}
+
+.appel-inactif {
+  color: var(--gris);
+  cursor: default;
+}
+
+/* ---------- Boutons ---------- */
+
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--e-2);
+  min-height: var(--cible);
+  padding: 0 20px;
+  border: 0;
+  border-radius: var(--rayon);
+  font-family: var(--titre);
+  font-size: var(--t-16);
+  font-weight: 700;
+  line-height: 1.1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--duree) ease-out, color var(--duree) ease-out, border-color var(--duree) ease-out;
+}
+
+.bouton:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.bouton-plein {
+  background: var(--violet);
+  color: var(--creme);
+}
+
+.bouton-plein:not(:disabled):hover {
+  background: var(--violet-nuit);
+}
+
+.bouton-contour {
+  background: none;
+  color: var(--charbon);
+  border: var(--trait);
+}
+
+.bouton-contour:not(:disabled):hover {
+  background: var(--charbon);
+  color: var(--creme);
+}
+
+.bouton-texte {
+  min-height: 32px;
+  padding: 0;
+  background: none;
+  color: var(--gris);
+  font-size: var(--t-14);
+  font-weight: 600;
+  text-underline-offset: 4px;
+}
+
+.bouton-texte:not(:disabled):hover {
+  color: var(--violet);
+  text-decoration: underline;
+}
+
+.bouton-texte[aria-pressed='true'] {
+  color: var(--violet);
+}
+
+.bouton-inverse {
+  background: var(--creme);
+  color: var(--violet);
+}
+
+.bouton-inverse:not(:disabled):hover {
+  background: var(--violet-pale);
+}
+
+.bouton-contour-inverse {
+  background: none;
+  color: var(--creme);
+  border: 1.5px solid var(--creme-70);
+}
+
+.bouton-contour-inverse:not(:disabled):hover {
+  background: var(--creme);
+  color: var(--violet);
+}
+
+.bouton-icone {
+  width: var(--cible);
+  padding: 0;
+}
+
+.icone {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* ---------- Étiquette et repère de partie ---------- */
+
+.etiquette {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--e-2);
+  font-family: var(--titre);
+  font-size: var(--t-12);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+.etiquette-cle {
+  color: var(--rouge);
+}
+
+.repere {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  background: var(--partie, var(--violet));
+}
+
+[data-partie='1'] { --partie: var(--partie-1); }
+[data-partie='2'] { --partie: var(--partie-2); }
+[data-partie='3'] { --partie: var(--partie-3); }
+[data-partie='4'] { --partie: var(--partie-4); }
+[data-partie='5'] { --partie: var(--partie-5); }
+[data-partie='6'] { --partie: var(--partie-6); }
+
+/* ---------- Cases à cocher : profil, réponses, options ---------- */
+
+.coche {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--e-2);
+  min-height: 36px;
+  padding: 0 12px 0 10px;
+  border: var(--trait-fin);
+  border-radius: var(--rayon);
+  background: none;
+  color: var(--charbon);
+  font-family: var(--titre);
+  font-size: var(--t-14);
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--duree) ease-out, background var(--duree) ease-out;
+}
+
+.coche::before {
+  content: '';
+  display: grid;
+  place-items: center;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  border: var(--trait);
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--creme);
+}
+
+.coche:not(:disabled):hover {
+  border-color: var(--charbon);
+}
+
+.coche:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.coche[aria-pressed='true'],
+.coche.cochee {
+  background: var(--violet-pale);
+  border-color: var(--violet);
+  color: var(--violet);
+}
+
+.coche[aria-pressed='true']::before,
+.coche.cochee::before {
+  content: '✓';
+  border-color: var(--violet);
+  background: var(--violet);
+}
+
+.bulletin {
+  display: grid;
+}
+
+.bulletin .ligne {
+  display: flex;
+  align-items: center;
+  gap: var(--e-4);
+  min-height: var(--cible);
+  padding: 16px;
+  border: 0;
+  border-top: var(--trait-fin);
+  background: none;
+  color: var(--charbon);
+  font-family: var(--titre);
+  font-size: var(--t-18);
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--duree) ease-out;
+}
+
+.bulletin .ligne:last-child {
+  border-bottom: var(--trait-fin);
+}
+
+.bulletin .ligne::before {
+  content: '';
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  border: var(--trait);
+  border-radius: 3px;
+  font-size: var(--t-14);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--creme);
+}
+
+.bulletin .ligne:not(:disabled):hover {
+  background: var(--papier);
+}
+
+.bulletin .ligne[aria-pressed='true'],
+.bulletin .ligne.cochee {
+  background: var(--violet-pale);
+  color: var(--violet);
+}
+
+.bulletin .ligne[aria-pressed='true']::before,
+.bulletin .ligne.cochee::before {
+  content: '✓';
+  border-color: var(--violet);
+  background: var(--violet);
+}
+
+/* ---------- Sommaire : toute liste d'entrées cliquables ---------- */
+
+.sommaire {
+  border-top: var(--trait);
+}
+
+.sommaire .entree {
+  display: grid;
+  grid-template-columns: var(--col, 150px) minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: var(--e-5);
+  width: 100%;
+  min-height: var(--cible);
+  padding: 18px 8px;
+  border: 0;
+  border-bottom: var(--trait-fin);
+  background: none;
+  color: var(--charbon);
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--duree) ease-out, color var(--duree) ease-out, padding var(--duree) ease-out;
+}
+
+.sommaire .entree:last-child {
+  border-bottom: var(--trait);
+}
+
+.sommaire.sans-colonne .entree {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.sommaire .entree-texte {
+  font-family: var(--titre);
+  font-size: var(--t-18);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.sommaire .entree-detail {
+  display: block;
+  margin-top: var(--e-1);
+  font-family: var(--texte);
+  font-size: var(--t-16);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--gris);
+}
+
+.sommaire .fleche {
+  align-self: center;
+  font-family: var(--titre);
+  font-size: var(--t-22);
+  line-height: 1;
+  color: var(--gris);
+  transition: transform var(--duree) ease-out, color var(--duree) ease-out;
+}
+
+.sommaire .entree:not(:disabled):hover {
+  padding-left: 16px;
+  background: var(--violet);
+  color: var(--creme);
+}
+
+.sommaire .entree:not(:disabled):hover :where(.etiquette, .fleche, .entree-detail, .secondaire) {
+  color: var(--creme);
+}
+
+.sommaire .entree:not(:disabled):hover .fleche {
+  transform: translateX(4px);
+}
+
+.sommaire .entree:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+/* ---------- Champ de saisie ---------- */
+
+.champ {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--e-3);
+  padding: 14px 14px 14px 18px;
+  border: var(--trait);
+  border-radius: var(--rayon);
+  background: var(--blanc);
+}
+
+.champ:focus-within {
+  outline: 3px solid var(--violet);
+  outline-offset: 2px;
+}
+
+.champ :where(input, textarea) {
+  flex: 1;
+  min-width: 0;
+  padding: 9px 0;
+  border: 0;
+  background: none;
+  color: var(--charbon);
+  font-family: var(--titre);
+  font-size: var(--t-16);
+  line-height: 1.5;
+}
+
+.champ :where(input, textarea):focus,
+.champ :where(input, textarea):focus-visible {
+  outline: none;
+}
+
+.champ :where(input, textarea)::placeholder {
+  color: var(--gris);
+  opacity: 1;
+}
+
+.champ-envoyer {
+  display: grid;
+  place-items: center;
+  width: var(--cible);
+  height: var(--cible);
+  flex-shrink: 0;
+  border: 0;
+  border-radius: var(--rayon);
+  background: var(--violet);
+  color: var(--creme);
+  cursor: pointer;
+  transition: background var(--duree) ease-out;
+}
+
+.champ-envoyer:not(:disabled):hover {
+  background: var(--violet-nuit);
+}
+
+.champ-envoyer:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+.champ-envoyer.arreter {
+  background: var(--charbon);
+}
+
+/* ---------- La mascotte et sa bulle ---------- */
+
+.parole {
+  display: flex;
+  align-items: flex-end;
+  gap: 22px;
+}
+
+.mascotte {
+  display: block;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.mascotte-yeux {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: cligner 4.5s infinite;
+}
+
+@keyframes cligner {
+  0%, 94%, 100% {
+    transform: scaleY(1);
+  }
+
+  96% {
+    transform: scaleY(.1);
+  }
+}
+
+.bulle {
+  position: relative;
+  display: inline-block;
+  max-width: 420px;
+  padding: 14px 18px;
+  border: var(--contour-mascotte);
+  border-radius: 18px;
+  background: var(--blanc);
+  color: var(--charbon);
+  font-family: var(--titre);
+  font-size: var(--t-16);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.bulle-detail {
+  display: block;
+  margin-top: var(--e-1);
+  font-size: var(--t-14);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--gris);
+}
+
+/* Queue de la bulle : deux triangles (contour, puis fond), vers la mascotte à gauche. */
+.bulle::before,
+.bulle::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.bulle::before {
+  left: -14px;
+  bottom: 16px;
+  border-width: 9px 14px 9px 0;
+  border-color: transparent var(--charbon) transparent transparent;
+}
+
+.bulle::after {
+  left: -9px;
+  bottom: 18.5px;
+  border-width: 6.5px 10px 6.5px 0;
+  border-color: transparent var(--blanc) transparent transparent;
+}
+
+.bulle.vers-la-droite::before {
+  left: auto;
+  right: -14px;
+  border-width: 9px 0 9px 14px;
+  border-color: transparent transparent transparent var(--charbon);
+}
+
+.bulle.vers-la-droite::after {
+  left: auto;
+  right: -9px;
+  border-width: 6.5px 0 6.5px 10px;
+  border-color: transparent transparent transparent var(--blanc);
+}
+
+.bulle.vers-le-bas::before {
+  left: 36px;
+  bottom: -14px;
+  border-width: 14px 9px 0;
+  border-color: var(--charbon) transparent transparent;
+}
+
+.bulle.vers-le-bas::after {
+  left: 38.5px;
+  bottom: -9px;
+  border-width: 10px 6.5px 0;
+  border-color: var(--blanc) transparent transparent;
+}
+
+/* ---------- Citation exacte du programme ---------- */
+
+.citation {
+  margin: 0;
+  padding: 2px 0 2px 18px;
+  border-left: 3px solid var(--violet);
+}
+
+.citation blockquote {
+  margin: 0;
+  font-family: var(--texte);
+  font-size: var(--t-16);
+  line-height: 1.65;
+  color: var(--charbon);
+}
+
+.citation figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--e-2) var(--e-4);
+  margin-top: var(--e-2);
+}
+
+.lien {
+  font-family: var(--titre);
+  font-size: var(--t-14);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--violet);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+}
+
+/* ---------- Listes à tirets ---------- */
+
+.tirets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tirets > li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.tirets > li + li {
+  margin-top: 10px;
+}
+
+.tirets > li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  font-family: var(--titre);
+  font-weight: 700;
+  color: var(--violet);
+}
+
+/* ---------- Avancement ---------- */
+
+.avancement {
+  height: 4px;
+  background: var(--filet);
+}
+
+.avancement > i {
+  display: block;
+  height: 100%;
+  background: var(--violet);
+  transition: width 300ms ease-out;
+}
+
+/* ---------- Petits écrans et mouvement réduit ---------- */
+
+@media (max-width: 760px) {
+  .titre-affiche {
+    font-size: var(--t-40);
+  }
+
+  .titre {
+    font-size: var(--t-28);
+  }
+
+  .titre-2 {
+    font-size: var(--t-22);
+  }
+
+  .corps {
+    font-size: var(--t-16);
+  }
+
+  .sommaire .entree {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--e-1) var(--e-3);
+    padding: 14px 4px;
+  }
+
+  .sommaire .entree > :first-child:not(.entree-texte):not(:only-child) {
+    grid-column: 1 / -1;
+  }
+
+  .sommaire .entree-texte {
+    font-size: var(--t-16);
+  }
+
+  .bulletin .ligne {
+    padding: 15px 10px;
+    font-size: var(--t-16);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

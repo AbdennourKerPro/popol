@@ -25,10 +25,16 @@ const loadImage = (src: string) => new Promise<HTMLImageElement>((resolve, rejec
   img.src = src;
 });
 
+/** Keeps a number with its thousands and its unit on one line: « 1 700 euros », « 10 % », « 35 heures ». */
+const glue = (text: string) => text
+  .replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u00a0')
+  .replace(/(\d) (?=(?:euros?|€|%|heures?|ans|semaines?|jours|mois|M€)(?![\p{L}]))/gu, '$1\u00a0');
+
 function wrap(ctx: CanvasRenderingContext2D, text: string, width: number): string[] {
   const lines: string[] = [];
   let line = '';
-  for (const word of text.split(/\s+/)) {
+  // Splits on regular spaces only: the non-breaking ones keep a figure together.
+  for (const word of glue(text).split(/[ \t\n]+/)) {
     const next = line ? `${line} ${word}` : word;
     if (line && ctx.measureText(next).width > width) { lines.push(line); line = word; } else line = next;
   }

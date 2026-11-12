@@ -1,0 +1,12 @@
+{"id": "OBJ-001", "messages": [{"role": "user", "content": "Comment tout cela est-il financé ?"}]}
+{"id": "OBJ-002", "messages": [{"role": "user", "content": "La retraite à 60 ans, c’est irréaliste, non ?"}]}
+{"id": "OBJ-003", "messages": [{"role": "user", "content": "Bloquer les prix, ça ne crée pas des pénuries ?"}]}
+{"id": "OBJ-004", "messages": [{"role": "user", "content": "Augmenter le SMIC, ça ne va pas détruire des emplois ?"}]}
+{"id": "OBJ-005", "messages": [{"role": "user", "content": "Taxer les riches, ils vont tous partir à l’étranger, non ?"}]}
+{"id": "OBJ-006", "messages": [{"role": "user", "content": "Sortir du nucléaire, on va manquer d’électricité, non ?"}]}
+{"id": "OBJ-007", "messages": [{"role": "user", "content": "Encadrer les loyers, ça décourage les propriétaires de louer, non ?"}]}
+{"id": "OBJ-008", "messages": [{"role": "user", "content": "Avec la dette qu’on a, comment payer toutes ces dépenses publiques ?"}]}
+{"id": "OBJ-009", "messages": [{"role": "user", "content": "Que prévoit le programme pour les retraites ?"}, {"role": "assistant", "content": "Il propose la retraite à 60 ans pour 40 annuités."}, {"role": "user", "content": "Et qui paie ?"}]}
+{"id": "OBJ-010", "messages": [{"role": "user", "content": "Que prévoit le programme pour l’hôpital public ?"}, {"role": "assistant", "content": "Il propose notamment de recruter des soignants et de rouvrir des lits."}, {"role": "user", "content": "Mais on n’arrive déjà pas à recruter, c’est faisable ?"}]}
+{"id": "OBJ-011", "messages": [{"role": "user", "content": "Que prévoit le programme pour le pouvoir d’achat ?"}, {"role": "assistant", "content": "Il propose notamment d’augmenter le SMIC et de bloquer les prix des produits de première nécessité."}, {"role": "user", "content": "Les petites entreprises pourront suivre ?"}]}
+{"id": "OBJ-012", "messages": [{"role": "user", "content": "La planification écologique, c’est encore plus de bureaucratie, non ?"}]}
