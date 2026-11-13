@@ -11,9 +11,8 @@ export function Home({ onPick }: { onPick: (page: Mode | 'explorer') => void }) 
       <main className="home">
         <section className="home-hero">
           <div>
-            <span className="eyebrow">En soutien à la candidature de Jean-Luc Mélenchon</span>
             <h1>Ça change quoi <span className="marker">pour moi</span>&nbsp;?</h1>
-            <p className="lede">Quelques questions sur votre quotidien, et le classement des mesures du programme qui vous concernent vraiment.</p>
+            <p className="lede">Répondez à quelques questions sur votre situation et découvrez les mesures qui vous concernent le plus&nbsp;!</p>
           </div>
           <div className="home-mascot">
             <Bubble className="bubble-down">{MARQUE.salutation}<strong>{MARQUE.surnom}</strong>.</Bubble>

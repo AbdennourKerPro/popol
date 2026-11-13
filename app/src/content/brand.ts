@@ -2,7 +2,7 @@
 export const MASCOTTE: 'tortue' | 'chat' = 'tortue';
 
 const MARQUES = {
-  tortue: { nom: 'Tortue', sousTitre: 'la tortue insoumise', salutation: 'Salut ! Je suis ', surnom: 'la tortue insoumise', dessine: 'La tortue dessine…' },
+  tortue: { nom: 'Tortue', sousTitre: 'la tortue sagace', salutation: 'Salut ! Je suis ', surnom: 'la tortue sagace', dessine: 'La tortue dessine…' },
   chat: { nom: 'Chati', sousTitre: 'le chat insoumis', salutation: 'Salut ! Moi c’est ', surnom: 'Chati', dessine: 'Chati dessine…' },
 };
 export const MARQUE = MARQUES[MASCOTTE];

@@ -49,6 +49,26 @@ function Mouth({ mood }: { mood: Mood }) {
   return <path d="M91 72 Q100 80 109 72" fill="none" {...stroke} strokeWidth={4} />;
 }
 
+/** A glass of strawberry milk with a straw, held at (x, y). */
+function StrawberryMilk({ x, y }: { x: number; y: number }) {
+  return (
+    <g transform={`translate(${x} ${y})`}>
+      {/* straw */}
+      <path d="M3 -16 L9 -36 L17 -36" fill="none" {...stroke} strokeWidth={8} />
+      <path d="M3 -16 L9 -36 L17 -36" fill="none" stroke="#e8336b" strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" />
+      {/* glass and milk */}
+      <path d="M-12 -22 L12 -22 L9 10 L-9 10 Z" fill="#fff" {...stroke} strokeWidth={4} />
+      <path d="M-10.5 -13 L10.5 -13 L8.6 7.5 L-8.6 7.5 Z" fill="#f7a6c4" />
+      <path d="M-6 -9 L-5 3" stroke="#fff" strokeWidth={2.5} strokeLinecap="round" opacity={0.8} />
+      {/* strawberry on the rim */}
+      <path d="M-14 -27 Q-6 -27 -7 -20 Q-9 -13 -14 -13 Q-19 -13 -21 -20 Q-22 -27 -14 -27 Z" fill="#d1271c" {...stroke} strokeWidth={3} />
+      <path d="M-18 -27 L-14 -31 L-10 -27" fill="#3f9a3a" {...stroke} strokeWidth={2.5} />
+      {/* fingers wrapping the glass */}
+      <ellipse cx={-10} cy={-2} rx={7} ry={9} fill={LILAC} {...stroke} strokeWidth={4} />
+    </g>
+  );
+}
+
 /** The turtle: a cartoon turtle, standing arms up. Original drawing, purely decorative. */
 function MascotTurtle({ mood = 'idle', size = 160, className = '' }: { mood?: Mood; size?: number; className?: string }) {
   const armsUp = mood === 'happy' || mood === 'wow';
@@ -73,6 +93,7 @@ function MascotTurtle({ mood = 'idle', size = 160, className = '' }: { mood?: Mo
       {/* arms */}
       <Limb d={armsUp ? 'M58 112 Q38 104 26 72' : 'M58 116 Q36 124 28 146'} />
       <Limb d={armsUp ? 'M142 112 Q162 104 174 72' : 'M142 116 Q164 124 172 146'} />
+      <StrawberryMilk x={armsUp ? 176 : 174} y={armsUp ? 70 : 144} />
       {/* head */}
       <ellipse cx={100} cy={62} rx={35} ry={31} fill={LILAC} {...stroke} strokeWidth={5.5} />
       <ellipse cx={72} cy={70} rx={8} ry={5} fill="#d1271c" opacity={0.28} />
