@@ -6,7 +6,9 @@ export type Tag = string;
 export type Condition = Tag[][];
 
 /** Journey length: each one adds questions to the previous one. */
-export type Longueur = 'court' | 'normal' | 'long';
+export type Longueur = 'court' | 'normal';
+/** Who runs the journey: the person alone (game) or a militant interviewing them. */
+export type Mode = 'jeu' | 'militant';
 
 export interface Choice {
   id: string;
@@ -23,6 +25,10 @@ export interface Question {
   militant: string;
   /** Militant hint: why this question is asked. */
   pourquoi: string;
+  /** Game hint shown under the question. */
+  aide?: string;
+  /** Personal question (identity) asked only in the game, never at the door. */
+  jeuSeul?: boolean;
   /** Shortest journey that asks it. */
   niveau: Longueur;
   si?: Condition;

@@ -13,7 +13,7 @@ import type { Values } from '../content/chiffrages';
 import { PosterModal } from './PosterModal';
 
 export function Game({ onHome, onExplore }: { onHome: () => void; onExplore: () => void }) {
-  const parcours = useParcours();
+  const parcours = useParcours('jeu');
   const { longueur, question, result } = parcours;
   const [values, setValues] = useState<Values>({});
   const estimation = useMemo(() => ({ values, tags: parcours.tags, tu: true, onChange: (input: string, value: number) => setValues((v) => ({ ...v, [input]: value })) }), [values, parcours.tags]);
@@ -28,7 +28,7 @@ export function Game({ onHome, onExplore }: { onHome: () => void; onExplore: () 
               <Mascot mood="idle" size={110} className="bob" />
               <Bubble className="bubble-left">On y va&nbsp;? <span>Plus tu réponds, plus ton classement est précis. Tu peux t’arrêter quand tu veux.</span></Bubble>
             </div>
-            <LongueurPicker onPick={parcours.start} />
+            <LongueurPicker mode="jeu" onPick={parcours.start} />
           </section>
         )}
         {longueur && question && <QuestionStep key={question.id} question={question} parcours={parcours} />}
@@ -57,6 +57,7 @@ function QuestionStep({ question, parcours }: { question: Question; parcours: Pa
         <Mascot mood="think" size={104} className="bob" />
         <Bubble className="bubble-left question-bubble">
           {question.jeu}
+          {question.aide && <span>{question.aide}</span>}
           {question.multiple && <span>{question.max ? `${question.max} réponses au plus` : 'Plusieurs réponses possibles'}</span>}
         </Bubble>
       </div>
@@ -112,7 +113,7 @@ function Resultat({ parcours, longueur, onExplore }: { parcours: Parcours; longu
           <button className="btn btn-primary" onClick={() => setLengthen(true)}><ListPlus size={18} strokeWidth={2.6} /> Répondre à plus de questions</button>
           <button className="btn btn-secondary" onClick={onExplore}><ScanSearch size={18} strokeWidth={2.6} /> Tout le programme</button>
         </div>
-        {lengthen && <LongueurPicker from={longueur} answers={parcours.answers} onPick={parcours.start} />}
+        {lengthen && <LongueurPicker mode="jeu" from={longueur} answers={parcours.answers} onPick={parcours.start} />}
       </section>
     );
   }
@@ -137,14 +138,14 @@ function Resultat({ parcours, longueur, onExplore }: { parcours: Parcours; longu
       )}
       <div className="final-actions">
         <button className="btn btn-primary" onClick={() => setPoster(true)}><ImageIcon size={18} strokeWidth={2.6} /> Créer mon image{kept.size ? ` (${kept.size})` : ''}</button>
-        {longueur !== 'long' && <button className="btn btn-secondary" onClick={() => setLengthen((v) => !v)}><ListPlus size={18} strokeWidth={2.6} /> Affiner mon classement</button>}
+        {longueur === 'court' && <button className="btn btn-secondary" onClick={() => setLengthen((v) => !v)}><ListPlus size={18} strokeWidth={2.6} /> Affiner mon classement</button>}
         <button className="btn btn-secondary" onClick={onExplore}><ScanSearch size={18} strokeWidth={2.6} /> Tout le programme</button>
         <button className="btn btn-ghost" onClick={parcours.reset}><RotateCcw size={18} strokeWidth={2.6} /> Recommencer</button>
       </div>
       {lengthen && (
         <div className="lengthen">
           <p className="lede">Quelques questions de plus : tes réponses sont gardées.</p>
-          <LongueurPicker from={longueur} answers={parcours.answers} onPick={parcours.start} />
+          <LongueurPicker mode="jeu" from={longueur} answers={parcours.answers} onPick={parcours.start} />
         </div>
       )}
       <p className="rank-note">Classement calculé sur cet appareil à partir de tes réponses. Les {EN_TETE} premières sont celles qui te concernent le plus.</p>

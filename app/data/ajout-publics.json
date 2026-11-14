@@ -1,0 +1,722 @@
+{
+ "p1c03-ss01-m011": {
+  "texte": "Planifier l’installation de solutions de rafraîchissement dans les hôpitaux, les établissements d’hébergement pour personnes âgées dépendantes (EHPAD), les écoles, les lieux collectifs et les espaces publics (réseaux de fraîcheur urbains, climatisation, végétalisation, ombrières, etc.)",
+  "ajout": [
+   "soignant",
+   "enseignant"
+  ]
+ },
+ "p1c03-ss06-m008": {
+  "texte": "Bannir l’utilisation des animaux à des fins scientifiques en orientant la recherche vers des méthodes non animales",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p2c02-ss02-m012": {
+  "texte": "Mettre fin au quotient conjugal, système patriarcal favorisant les inégalités salariales entre les femmes et les hommes",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p2c02-ss03-m004": {
+  "texte": "Revaloriser en matière de salaires, de conditions de travail et de parcours professionnels les métiers occupés majoritairement par des femmes dans les secteurs du soin, du lien et du contact",
+  "ajout": [
+   "soignant",
+   "femme"
+  ]
+ },
+ "p2c02-ss03-m007": {
+  "texte": "Créer une commission de contrôle salarié sur l’égalité entre les femmes et les hommes dans l’entreprise et punir sévèrement, par des sanctions financières et pénales, le non-respect de l’égalité de rémunération entre les femmes et les hommes",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p2c02-ss03-m008": {
+  "texte": "Majorer les rémunérations pour les horaires de travail décalés dans la journée (6 h-8 h ou 18 h-22 h) ou le week-end",
+  "ajout": [
+   "metier_penible"
+  ]
+ },
+ "p3c01-ss01-m010": {
+  "texte": "Assurer la gratuité des protections périodiques pour toutes et tous, quel que soit l’âge",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c01-ss04-m001": {
+  "texte": "Rétablir immédiatement la durée légale hebdomadaire du temps de travail à 35 heures (en majorant les heures supplémentaires, cotisations incluses, à 25 % pour les quatre premières et 50 % au-delà), passer aux 32 heures dans les métiers pénibles ou de nuit et favoriser leur généralisation par la négociation collective",
+  "ajout": [
+   "metier_penible"
+  ]
+ },
+ "p3c01-ss04-m004": {
+  "texte": "Remettre en cause les autorisations de travail le dimanche",
+  "ajout": [
+   "metier_penible"
+  ]
+ },
+ "p3c01-ss04-m005": {
+  "texte": "En finir avec la flexibilisation, l’annualisation contrainte, l’intensification et les horaires fractionnés",
+  "ajout": [
+   "metier_penible"
+  ]
+ },
+ "p3c01-ss06-m003": {
+  "texte": "Doubler les effectifs de l’inspection du travail et l’autoriser à interrompre un chantier pour raison climatique",
+  "ajout": [
+   "metier_penible"
+  ]
+ },
+ "p3c01-ss06-m004": {
+  "texte": "Établir des seuils thermiques minimaux et maximaux dans les locaux intérieurs de travail, imposer des temps de pause obligatoires par température extrême",
+  "ajout": [
+   "metier_penible"
+  ]
+ },
+ "p3c01-ss06-m007": {
+  "texte": "Inscrire l’exposition à tous les produits cancérogènes pointés par le Centre international de recherche sur le cancer (CIRC) dans les facteurs de maladies professionnelles, dont les pesticides",
+  "ajout": [
+   "metier_penible"
+  ]
+ },
+ "p3c01-ss07-m007": {
+  "texte": "Supprimer la décote, qui représente une double peine pour les retraités, en particulier les femmes et les plus précaires",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c01-ss08-m007": {
+  "texte": "Intégrer l’aide médicale d’État (AME) au régime général de la Sécurité sociale, abroger les restrictions d’accès instaurées en 2026 et renforcer sa couverture",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p3c02-ss01-m003": {
+  "texte": "Soutenir l’inclusion dans la Charte européenne des droits fondamentaux du droit à l’interruption volontaire de grossesse (IVG) et à la contraception, ainsi que leur accès gratuit pour toutes les personnes menstruées",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c02-ss01-m004": {
+  "texte": "Déjudiciariser le changement de sexe à l’état civil en le rendant libre et gratuit devant un officier d’état civil ; tendre vers la suppression de la mention du sexe sur la carte nationale d’identité et le passeport ; pour les mineurs, permettre cette modification avec l’accord d’un des parents",
+  "ajout": [
+   "lgbti"
+  ]
+ },
+ "p3c02-ss02-m014": {
+  "texte": "Mettre fin aux violations des droits fondamentaux des enfants étrangers, faire respecter l’interdiction d’expulsion des enfants et abolir l’enfermement des mineurs et familles avec enfants en rétention administrative",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p3c02-ss02-m016": {
+  "texte": "Étendre le contrôle des antécédents, au moyen d’une attestation d’honorabilité, à toutes les personnes travaillant dans les établissements scolaires",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p3c02-ss04-m004": {
+  "texte": "Former, qualifier et recruter du personnel en nombre suffisant pour respecter un ratio minimal d’encadrement « au chevet » des résidents",
+  "ajout": [
+   "soignant"
+  ]
+ },
+ "p3c02-ss04-m007": {
+  "texte": "Revaloriser les métiers et revenus de l’ensemble des professionnelles du grand âge, à domicile comme en institution, en refondant les grilles de rémunération et de qualifications",
+  "ajout": [
+   "soignant"
+  ]
+ },
+ "p3c02-ss05-m008": {
+  "texte": "Créer un corps de fonctionnaires pour les personnels d’accompagnement des élèves en situation de handicap (AESH), en recruter davantage pour renforcer les capacités d’accueil et d’accompagnement et mettre fin à la mutualisation",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p3c02-ss06-m001": {
+  "texte": "Mettre en œuvre un plan d’éradication des violences à l’encontre des personnes LGBTI",
+  "ajout": [
+   "lgbti"
+  ]
+ },
+ "p3c02-ss06-m002": {
+  "texte": "Faire appliquer l’interdiction des thérapies de conversion en ciblant les acteurs qui en font la promotion",
+  "ajout": [
+   "lgbti"
+  ]
+ },
+ "p3c02-ss06-m003": {
+  "texte": "Former le personnel médical à l’accueil des personnes trans et intersexes",
+  "ajout": [
+   "lgbti"
+  ]
+ },
+ "p3c02-ss06-m004": {
+  "texte": "Rembourser à 100 % par la Sécurité sociale les soins de transition, sans devoir passer par une procédure de reconnaissance d’affection de longue durée (ALD)",
+  "ajout": [
+   "lgbti"
+  ]
+ },
+ "p3c02-ss06-m005": {
+  "texte": "Interdire et sanctionner toute intervention médicale non consentie sur les enfants intersexes (mutilations, traitements hormonaux, stérilisations) et assurer un accès effectif à la justice, via des enquêtes indépendantes et diligentes, pour toute atteinte à leurs droits humains",
+  "ajout": [
+   "lgbti"
+  ]
+ },
+ "p3c02-ss07-m001": {
+  "texte": "Garantir le droit de partir et lutter contre la précarité des mères isolées : déconjugaliser et revaloriser l’allocation de soutien familial (ASF), défiscaliser les pensions alimentaires, réduire les délais de la justice familiale",
+  "ajout": [
+   "monoparental",
+   "femme"
+  ]
+ },
+ "p3c02-ss07-m002": {
+  "texte": "Créer un statut « famille monoparentale » sur le modèle du statut « famille nombreuse » ouvrant le droit à des réductions de tarifs dans les transports et les services publics",
+  "ajout": [
+   "monoparental"
+  ]
+ },
+ "p3c02-ss07-m004": {
+  "texte": "Accroître les moyens dédiés à la PMA et ouvrir des centres dédiés en nombre suffisant pour réduire les délais, harmoniser les pratiques à l’échelle nationale et rendre la PMA réellement accessible aux personnes trans",
+  "ajout": [
+   "lgbti"
+  ]
+ },
+ "p3c02-ss08-m002": {
+  "texte": "Développer, partout, la prescription sociale pour permettre aux professionnels de santé de diriger les personnes se sentant seules vers des structures d’accompagnement non médical gratuites et dédiées à la création de liens sociaux, comme des associations ou des collectifs à l’échelle communale",
+  "ajout": [
+   "soignant"
+  ]
+ },
+ "p3c03-ss01-m001": {
+  "texte": "Lutter contre le temps partiel contraint qui touche à 80 % des femmes",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c03-ss01-m002": {
+  "texte": "Revaloriser les rémunérations des métiers occupés majoritairement par des femmes, prendre en compte leur pénibilité en réinstaurant les facteurs de risques supprimés par Macron en 2017 et en créant de nouveaux critères liés aux contraintes émotionnelles fortes",
+  "ajout": [
+   "metier_penible",
+   "femme"
+  ]
+ },
+ "p3c03-ss02-m001": {
+  "texte": "Adopter une loi de lutte contre les violences sexistes et sexuelles et allouer les 3 milliards de budget demandés par les associations",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c03-ss02-m003": {
+  "texte": "Mettre fin au harcèlement sexiste et aux agressions sexuelles dans l’espace public en agissant, en particulier, sur la prévention et en promouvant un urbanisme féministe",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c03-ss02-m004": {
+  "texte": "Reconnaître et sanctionner les violences obstétricales et gynécologiques",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c03-ss02-m005": {
+  "texte": "Combattre l’impunité des agresseurs sexuels et la correctionnalisation des viols",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c03-ss02-m006": {
+  "texte": "Adapter le monde du travail à la réalité des violences conjugales et sexuelles et renforcer les obligations de l’employeur en matière de prévention et de traitement des violences sexistes et sexuelles au travail",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c03-ss02-m009": {
+  "texte": "Soutenir les permanences associatives et les dispositifs itinérants d’aide aux femmes victimes de violences, là où l’offre d’accompagnement est insuffisante, notamment en zones rurales et dans les quartiers populaires",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c03-ss03-m001": {
+  "texte": "Garantir l’égal accès et l’effectivité du droit à l’IVG, tout comme le choix de la méthode d’IVG, et supprimer la double clause de conscience des médecins",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c03-ss03-m002": {
+  "texte": "Lutter contre les mouvements anti-choix qui entravent les droits à la santé sexuelle et reproductive et le droit à l’avortement",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c03-ss03-m004": {
+  "texte": "Améliorer l’accès à la santé des femmes et leur prise en charge",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c03-ss03-m005": {
+  "texte": "Rembourser le traitement hormonal de la ménopause",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p3c04-ss01-m003": {
+  "texte": "Assurer la sécurité des lieux cultuels et culturels de notre pays en renforçant, si nécessaire, toutes les mesures de protection policières dont ils bénéficient, du fait des attaques et menaces contre des mosquées et des synagogues",
+  "ajout": [
+   "discrimine"
+  ]
+ },
+ "p3c04-ss01-m004": {
+  "texte": "Généraliser les campagnes de testing, pouvant donner lieu à des sanctions en cas de pratiques discriminatoires avérées",
+  "ajout": [
+   "discrimine"
+  ]
+ },
+ "p3c04-ss01-m005": {
+  "texte": "Expérimenter les dossiers anonymes dans l’accès à l’emploi, au logement, aux études supérieures, etc.",
+  "ajout": [
+   "discrimine"
+  ]
+ },
+ "p3c04-ss01-m006": {
+  "texte": "Créer un organisme indépendant dédié à la lutte contre les complotismes et contre les haines antisémites et islamophobes en ligne, placé sous l’égide de l’Autorité de régulation de la communication audiovisuelle et numérique (Arcom), dont l’objectif sera notamment d’accompagner les victimes dans leurs démarches",
+  "ajout": [
+   "discrimine"
+  ]
+ },
+ "p3c04-ss01-m007": {
+  "texte": "Mettre en place des règles contre les biais discriminatoires des intelligences artificielles et des technologies médicales, notamment sur la qualité des ensembles de données d’entraînement et les procédures d’essai pour la détection et la correction desdits biais",
+  "ajout": [
+   "discrimine"
+  ]
+ },
+ "p3c04-ss01-m008": {
+  "texte": "Reconnaître officiellement le traumatisme psychique conséquent au vécu raciste, et permettre aux victimes de bénéficier d’une prise en charge et d’une réparation intégrale effective",
+  "ajout": [
+   "discrimine"
+  ]
+ },
+ "p3c04-ss01-m009": {
+  "texte": "Renforcer la lutte contre toutes les discriminations et garantir l’égalité réelle dans l’emploi en renforçant la formation et les moyens de contrôle",
+  "ajout": [
+   "discrimine"
+  ]
+ },
+ "p3c04-ss01-m010": {
+  "texte": "Renforcer les sanctions financières et pénales à l’encontre des entreprises ayant des pratiques discriminatoires, allant jusqu’au refus d’attribution de marchés publics",
+  "ajout": [
+   "discrimine"
+  ]
+ },
+ "p3c04-ss02-m001": {
+  "texte": "Garantir le droit du sol intégral à tous les enfants nés en France, le rétablir sur l’ensemble du territoire national et faciliter l’accès à la nationalité française",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p3c04-ss02-m003": {
+  "texte": "Instituer le droit de vote des étrangers aux élections locales",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p3c04-ss03-m002": {
+  "texte": "Développer de manière pluridisciplinaire la recherche universitaire, la formation des enseignants et le contenu des programmes et manuels scolaires sur l’histoire de l’esclavage, de la colonisation et de l’immigration",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p3c04-ss04-m001": {
+  "texte": "Mettre en place le récépissé de contrôle d’identité par les agents de police et la gendarmerie pour lutter contre le contrôle au faciès, accompagné de dispositifs de formation, de contrôle et de sanctions",
+  "ajout": [
+   "discrimine",
+   "quartier_populaire"
+  ]
+ },
+ "p3c04-ss04-m007": {
+  "texte": "Créer un référent discriminations dans chaque hôpital et développer l’interprétariat médical public",
+  "ajout": [
+   "discrimine",
+   "etranger"
+  ]
+ },
+ "p4c01-ss03-m006": {
+  "texte": "Améliorer les conditions de travail en forêt : interdire le travail détaché, garantir une juste répartition de la valeur dans la filière forêt-bois, reconnaître la pénibilité et les maladies professionnelles, augmenter les salaires des forestiers et préserver le droit à la retraite anticipée",
+  "ajout": [
+   "metier_penible"
+  ]
+ },
+ "p4c02-ss02-m003": {
+  "texte": "Réduire partout les effectifs par classe pour faire mieux que la moyenne européenne de 19 élèves par classe en donnant la priorité aux maternelles et aux classes des actuels réseaux d’éducation prioritaire (REP)",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss02-m004": {
+  "texte": "Reconstituer les viviers de professeurs remplaçants, afin de mettre un terme au scandale des 15 millions d’heures de cours non assurées chaque année par manque d’enseignants",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss02-m010": {
+  "texte": "Mettre fin au « pacte enseignant »",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss02-m013": {
+  "texte": "Sortir du tout numérique pour un usage raisonné et réfléchi de cet outil, consacrer un droit à la déconnexion des élèves et des personnels",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss03-m001": {
+  "texte": "Rattraper le gel du point d’indice depuis 2010 et revaloriser les grilles salariales en engageant une négociation avec les organisations syndicales",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss03-m003": {
+  "texte": "Renforcer partout les effectifs de la vie scolaire (assistants d’éducation, assistants pédagogiques, conseillers principaux d’éducation) et des personnels sociaux et de santé (médecins et infirmières, psychologues scolaires, assistantes sociales), notamment pour lutter contre le harcèlement",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss03-m004": {
+  "texte": "Former l’ensemble des personnels scolaires et périscolaires à la prévention et à la détection de toutes les formes de violences contre les enfants et du harcèlement scolaire",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss03-m009": {
+  "texte": "Adopter un plan pluriannuel de recrutement pour l’ensemble des concours, avec un dispositif de pré-recrutement au métier d’enseignant favorisant l’accès des jeunes de tous les milieux sociaux",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss03-m010": {
+  "texte": "Créer des écoles universitaires des métiers de l’éducation, renforcer la formation initiale et continue des personnels, en intégrant notamment une solide formation à la sociologie de l’éducation, aux pédagogies, à toutes les formes de difficultés scolaires, à la psychologie de l’enfant et de l’adolescent ainsi qu’à la lutte contre les discriminations",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss03-m011": {
+  "texte": "Structurer une filière complète des métiers de l’éducation du certificat d’aptitude professionnelle (CAP) à bac + 5",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss03-m012": {
+  "texte": "Mettre fin aux techniques du nouveau management public (indicateurs, contrôle, évaluation permanente) et réaffirmer la liberté pédagogique des enseignants",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss03-m013": {
+  "texte": "Créer un véritable service public d’accompagnement du handicap, avec un nouveau corps de personnels fonctionnaires, mettant fin à la mutualisation des accompagnantes d’élèves en situation de handicap (AESH)",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss03-m014": {
+  "texte": "Titulariser l’ensemble des personnels contractuels de l’Éducation nationale",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss05-m003": {
+  "texte": "Revenir au principe du recrutement sur statut de chercheur ou d’enseignant-chercheur à l’issue du doctorat",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss06-m002": {
+  "texte": "Instaurer la gratuité de l’enseignement supérieur, de la licence au doctorat, quelle que soit la nationalité des étudiants",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p4c02-ss06-m003": {
+  "texte": "Rétablir l’égalité d’accès aux aides au logement pour l’ensemble des étudiants, y compris étrangers",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p4c02-ss06-m005": {
+  "texte": "Mettre fin à la précarité des contractuels et jeunes chercheurs par la titularisation des personnels effectuant des missions pérennes et par un plan pluriannuel de recrutement de titulaires dans toutes les catégories",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss06-m006": {
+  "texte": "Redonner à l’enseignement supérieur et à la recherche les moyens nécessaires à leur bon fonctionnement en les fondant sur des financements pérennes et en augmentant le budget des universités ; planifier les créations d’emplois et la construction de nouveaux établissements à partir d’une cartographie des besoins",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss06-m007": {
+  "texte": "Supprimer le Haut Conseil de l’évaluation de la recherche et de l’enseignement supérieur (Hcéres), refonder une vraie démocratie universitaire et confier le suivi et le cadrage de la recherche et de l’enseignement supérieur aux pairs élus dans les instances nationales et locales",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c02-ss06-m008": {
+  "texte": "Abroger la loi relative aux libertés et responsabilités des universités (LRU) et celle dite « Fioraso » ; réaffirmer le caractère national du service public de l’enseignement supérieur (cadre national des diplômes, statut des établissements et des personnel, etc.)",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c03-ss01-m011": {
+  "texte": "Lutter activement contre les discriminations de genre et d’origine ainsi que toutes formes de violences sexuelles, racistes et pédagogiques qui persistent dans les arts et la culture, y compris dans l’accès aux postes de création, de direction, d’administration et de programmation",
+  "ajout": [
+   "femme",
+   "discrimine"
+  ]
+ },
+ "p4c03-ss02-m005": {
+  "texte": "Assurer un vrai développement du sport féminin pour lutter contre les inégalités d’accès à la pratique sportive et aux postes d’encadrement, instaurer la parité dans la retransmission télévisuelle des grands événements sportifs et étendre leur diffusion sur des chaînes publiques",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p4c03-ss02-m011": {
+  "texte": "Organiser la mise en place réelle, à la fois contrôlée et évaluée, d’un plan d’action, de formation et de sensibilisation sur les violences sexistes, racistes et LGBTIphobes dans le sport pour garantir l’inclusion de toutes et tous dans les pratiques sportives et réaffirmer le refus catégorique des tests de féminité",
+  "ajout": [
+   "femme",
+   "lgbti",
+   "discrimine"
+  ]
+ },
+ "p4c03-ss03-m003": {
+  "texte": "Renforcer la place de l’éducation physique tout au long de la scolarité en améliorant la formation des professeurs des écoles et en garantissant quatre heures hebdomadaires d’éducation physique et sportive (EPS)",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c03-ss03-m005": {
+  "texte": "Assurer un financement pérenne de la filière des sciences et techniques des activités physiques et sportives (STAPS) pour garantir des conditions d’études et de recherche décentes en formation publique",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c03-ss03-m006": {
+  "texte": "Donner aux écoles supérieures d’art, tous domaines confondus, les moyens adéquats pour assurer la spécificité de leurs enseignements, revenir sur les récentes fermetures d’établissements, harmoniser les statuts des personnels de l’enseignement artistique",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c04-ss01-m007": {
+  "texte": "Former massivement les professionnels de santé pour renforcer le dépistage et la prévention des maladies écologiques ainsi que la prise en charge des plus vulnérables",
+  "ajout": [
+   "soignant"
+  ]
+ },
+ "p4c04-ss04-m006": {
+  "texte": "Engager un plan pluriannuel de recrutement des professionnels du soin et du médico-social (médecins, infirmières, aides-soignantes et personnels administratifs)",
+  "ajout": [
+   "soignant"
+  ]
+ },
+ "p4c04-ss04-m007": {
+  "texte": "Revaloriser les métiers et les salaires dans le domaine du soin et la tarification de certains actes libéraux des infirmières et infirmiers",
+  "ajout": [
+   "soignant"
+  ]
+ },
+ "p4c04-ss04-m010": {
+  "texte": "Recruter des médecins publics",
+  "ajout": [
+   "soignant"
+  ]
+ },
+ "p4c04-ss04-m011": {
+  "texte": "Réguler l’installation des médecins, généraliser les guichets uniques pour les démarches d’installation des soignants",
+  "ajout": [
+   "soignant"
+  ]
+ },
+ "p4c04-ss04-m012": {
+  "texte": "Rétablir l’obligation de participation de l’ensemble des médecins à la permanence des soins dans chaque département, en coopération avec l’ensemble des soignants de premier recours",
+  "ajout": [
+   "soignant"
+  ]
+ },
+ "p4c04-ss04-m016": {
+  "texte": "Permettre aux médecins et praticiens diplômés hors Union européenne d’exercer de manière pérenne en France par la validation des équivalences reconnues",
+  "ajout": [
+   "soignant",
+   "etranger"
+  ]
+ },
+ "p4c04-ss05-m005": {
+  "texte": "Donner les moyens aux professionnels de santé d’aller vers l’abolition de la contention et de la mise à l’isolement, pratiques attentatoires à la dignité humaine, et les remplacer par d’autres pratiques thérapeutiques fondées sur le respect de la personne",
+  "ajout": [
+   "soignant"
+  ]
+ },
+ "p4c05-ss02-m006": {
+  "texte": "Défendre les emplois de marins contre la concurrence déloyale, le dumping social et la Commission européenne (remorquage portuaire, construction et entretien des parcs éoliens maritimes, transports de passagers dans la Manche, la Méditerranée ou entre la Corse et le continent, etc.)",
+  "ajout": [
+   "metier_penible"
+  ]
+ },
+ "p4c05-ss03-m003": {
+  "texte": "Lancer un « Erasmus de la mer » avec des échanges entre enseignants et étudiants français, européens et francophones pour un partage des savoirs et savoir-faire",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c07-ss01-m014": {
+  "texte": "Investir dans la recherche fondamentale quantique en augmentant le financement des bourses doctorales dédiées et les laboratoires publics de recherches dédiés",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c07-ss02-m006": {
+  "texte": "Généraliser l’usage des logiciels libres dans les administrations publiques et l’Éducation nationale ; garantir l’interopérabilité chez tous les acteurs du numérique, publics comme privés",
+  "ajout": [
+   "enseignant"
+  ]
+ },
+ "p4c07-ss03-m011": {
+  "texte": "Obliger les fournisseurs de systèmes d’IA à détecter et corriger les éventuels biais discriminatoires de leurs systèmes",
+  "ajout": [
+   "discrimine"
+  ]
+ },
+ "p4c07-ss03-m013": {
+  "texte": "Interdire certains usages de l’IA et du « big data » qui vont à l’encontre des droits individuels et sociaux : identification biométrique, surveillance pour l’évaluation des droits sociaux, gestion des flux migratoires, notation des individus pour l’attribution de crédits et la tarification des assurances, police prédictive, etc.",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p5c02-ss04-m006": {
+  "texte": "Lutter contre l’impunité des agresseurs sexuels, la correctionnalisation des viols et la victimisation secondaire lors des procédures judiciaires",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p5c02-ss04-m009": {
+  "texte": "Garantir un accompagnement individualisé, tant sur le plan social que juridique, ainsi que la prise en charge d’un parcours de soins spécialisé pour les victimes de violences sexistes et sexuelles à 100 % par la Sécurité sociale",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p5c02-ss04-m012": {
+  "texte": "Garantir l’égalité de traitement des personnes étrangères devant la justice, notamment en abolissant les procédures d’exception",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p5c03-ss03-m001": {
+  "texte": "Défendre et reconstruire un maillage dense et accessible de transports en commun et de services publics, notamment dans les départements ruraux, les quartiers populaires et les Outre-mer, afin de garantir une distance maximale (de 15 à 30 minutes en voiture ou en transport collectif) entre tout lieu d’habitation et les services publics essentiels (école, gare, hôpital, bureau de poste)",
+  "ajout": [
+   "quartier_populaire"
+  ]
+ },
+ "p5c03-ss04-m019": {
+  "texte": "en finir avec les projets de rénovation urbaine qui se font contre les habitants",
+  "ajout": [
+   "quartier_populaire"
+  ]
+ },
+ "p5c03-ss04-m020": {
+  "texte": "garantir le droit à rester vivre dans son quartier",
+  "ajout": [
+   "quartier_populaire"
+  ]
+ },
+ "p6c01-ss01-m003": {
+  "texte": "Des législations européennes sur la migration (pacte sur la migration et l’asile, règlement dit « retour », etc.), qui font obstacle à une politique humaniste et réaliste",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p6c01-ss04-m008": {
+  "texte": "L’application de la clause de l’Européenne la plus favorisée pour harmoniser par le haut les droits des femmes",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p6c01-ss04-m009": {
+  "texte": "La garantie du droit à l’avortement partout dans l’UE",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p6c01-ss04-m010": {
+  "texte": "La mise en place d’un dispositif pour accueillir dignement les demandeurs d’asile et sanctionner les États membres qui ne respectent pas les droits humains",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p6c02-ss02-m012": {
+  "texte": "Faire de la lutte contre les violences sexuelles et sexistes et contre les discriminations au sein des armées une exigence immédiate, dans les unités comme dans les écoles de formation et les lycées militaires",
+  "ajout": [
+   "femme"
+  ]
+ },
+ "p6c03-ss02-m001": {
+  "texte": "Faciliter l’accès aux visas et instituer la carte de séjour de dix ans comme titre de séjour de référence",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p6c03-ss02-m004": {
+  "texte": "Créer un statut de « détresse environnementale » apportant une protection temporaire, pouvant devenir durable en fonction de la gravité de la catastrophe ayant entraîné la migration",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p6c03-ss02-m007": {
+  "texte": "Assumer notre devoir d’humanité envers les réfugiés en garantissant sans concession le droit d’asile",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p6c03-ss02-m008": {
+  "texte": "Prendre en charge les personnes migrantes grâce à des structures d’accueil et d’hébergement en nombre suffisant sur tout le territoire, créer un guichet unique d’accueil",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p6c03-ss02-m010": {
+  "texte": "Régulariser les travailleurs, étudiants, parents d’enfants scolarisés sans papiers",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p6c03-ss02-m011": {
+  "texte": "Fermer les centres de rétention administrative (CRA) en les remplaçant par des alternatives plus humaines et efficaces fondées sur l’accompagnement juridique, l’hébergement ouvert et le respect des libertés fondamentales",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p6c03-ss02-m012": {
+  "texte": "Supprimer la liste des pays d’origine sûrs et améliorer la prise en compte des identités de genre et des orientations sexuelles dans les procédures en mettant fin aux discriminations administratives et en assurant une protection réelle",
+  "ajout": [
+   "etranger",
+   "lgbti"
+  ]
+ },
+ "p6c03-ss02-m013": {
+  "texte": "Abroger les dernières lois sur l’asile et l’immigration, la circulaire dite « Retailleau » et l’ensemble des textes qui criminalisent les personnes étrangères et les personnes aidantes",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p6c03-ss02-m014": {
+  "texte": "Garantir l’accès à l’aide médicale d’État (AME) et assurer un accès effectif au soutien psychosocial pour les demandeurs d’asile",
+  "ajout": [
+   "etranger"
+  ]
+ },
+ "p6c03-ss02-m015": {
+  "texte": "Assurer l’accès aux droits (justice, santé, etc.) des femmes ayant subi des violences sexuelles dans le cadre de leur parcours migratoire",
+  "ajout": [
+   "femme",
+   "etranger"
+  ]
+ }
+}

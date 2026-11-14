@@ -1,5 +1,5 @@
 import { EN_TETE, LONGUEURS, POIDS_BESOIN, POIDS_INTERET, QUESTION_LIST, QUESTIONS } from '../content/questions';
-import type { Condition, Longueur, Question, Tag } from '../content/types';
+import type { Condition, Longueur, Mode, Question, Tag } from '../content/types';
 import { MESURES, type Categorie, type Mesure, type Portee } from './programme';
 
 /** Question id -> chosen choice ids. An empty list means "skipped". */
@@ -18,18 +18,19 @@ export function tagsOf(answers: Answers): Set<Tag> {
 const matches = (condition: Condition, tags: Set<Tag>) => condition.some((group) => group.every((t) => tags.has(t)));
 const isVisible = (question: Question, tags: Set<Tag>) => !question.si || matches(question.si, tags);
 
-const ORDRE: Longueur[] = ['court', 'normal', 'long'];
-const isIncluded = (question: Question, longueur: Longueur) => ORDRE.indexOf(question.niveau) <= ORDRE.indexOf(longueur);
+const ORDRE: Longueur[] = ['court', 'normal'];
+const isIncluded = (question: Question, longueur: Longueur, mode: Mode) =>
+  ORDRE.indexOf(question.niveau) <= ORDRE.indexOf(longueur) && !(question.jeuSeul && mode === 'militant');
 
 /** Questions of the journey not answered yet, in order. */
-export function remaining(answers: Answers, longueur: Longueur): Question[] {
+export function remaining(answers: Answers, longueur: Longueur, mode: Mode = 'jeu'): Question[] {
   const tags = tagsOf(answers);
-  return QUESTION_LIST.filter((q) => isIncluded(q, longueur) && !(q.id in answers) && isVisible(q, tags));
+  return QUESTION_LIST.filter((q) => isIncluded(q, longueur, mode) && !(q.id in answers) && isVisible(q, tags));
 }
 
 /** Questions of the journey already answered or still to ask: the length of the progress bar. */
-export const journeySize = (answers: Answers, longueur: Longueur) =>
-  QUESTION_LIST.filter((q) => isIncluded(q, longueur) && q.id in answers).length + remaining(answers, longueur).length;
+export const journeySize = (answers: Answers, longueur: Longueur, mode: Mode = 'jeu') =>
+  QUESTION_LIST.filter((q) => isIncluded(q, longueur, mode) && q.id in answers).length + remaining(answers, longueur, mode).length;
 
 /** Choices of a question that can still be ticked (a later round of interests hides those already given). */
 export function availableChoices(question: Question, tags: Set<Tag>) {
@@ -41,7 +42,7 @@ export function availableChoices(question: Question, tags: Set<Tag>) {
 export interface Profile {
   /** Situation tags (publics of the taxonomy). */
   situation: Set<Tag>;
-  /** Interest -> weight (3 first round, 2 second, 1 soft probes). */
+  /** Interest -> weight (topics ticked at the end). */
   interets: Map<string, number>;
   /** Themes of a difficulty the person has stated. */
   besoins: Set<string>;
@@ -81,7 +82,7 @@ export function score(m: Mesure, profile: Profile): number {
     interet = Math.max(interet, Math.max(profile.interets.get(theme) ?? 0, need) * (i === 0 ? 1 : 0.6));
   });
   if (!matched && !interet) return 0;
-  const fit = matched ? 3 * Math.min(matched, 2) + (2 * matched) / m.publics.length : 0;
+  const fit = matched ? 4 * Math.min(matched, 2) + (2 * matched) / m.publics.length : 0;
   return BASE[m.categorie] + PORTEE[m.portee] + fit + interet;
 }
 
@@ -138,7 +139,9 @@ const parDefaut = (): Ranked[] => MESURES.filter((m) => m.categorie === 'cle' &&
 export function classement(answers: Answers, longueur: Longueur) {
   const ranked = rank(answers);
   const defaut = ranked.length === 0;
-  const all = select(defaut ? parDefaut() : ranked, LONGUEURS[longueur].mesures);
+  // A situation that few measures target is completed by the key measures that concern many people.
+  const seen = new Set(ranked.map((r) => r.mesure.id));
+  const all = select([...ranked, ...parDefaut().filter((r) => !seen.has(r.mesure.id))], LONGUEURS[longueur].mesures);
   return { top: all.slice(0, EN_TETE), others: all.slice(EN_TETE), defaut };
 }
 

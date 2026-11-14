@@ -4,8 +4,9 @@ import { Militant } from './militant/Militant';
 import { Home } from './screens/Home';
 import { Explorer } from './screens/Explorer';
 import { Mentions } from './screens/Mentions';
+import type { Mode } from './content/types';
 
-export type Mode = 'jeu' | 'militant';
+export type { Mode };
 type Page = Mode | 'mentions' | 'explorer';
 
 const readMode = (): Page | null => {

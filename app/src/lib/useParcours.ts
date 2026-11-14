@@ -1,14 +1,14 @@
 import { useMemo, useState } from 'react';
-import type { Longueur, Question } from '../content/types';
+import type { Longueur, Mode, Question } from '../content/types';
 import { type Answers, classement, journeySize, remaining, rewind, tagsOf } from './engine';
 
 /** State of one question journey (a person's answers), shared by the game and the militant guide. */
-export function useParcours() {
+export function useParcours(mode: Mode) {
   const [longueur, setLongueur] = useState<Longueur | null>(null);
   const [answers, setAnswers] = useState<Answers>({});
   const [history, setHistory] = useState<string[]>([]);
 
-  const left = useMemo(() => (longueur ? remaining(answers, longueur) : []), [answers, longueur]);
+  const left = useMemo(() => (longueur ? remaining(answers, longueur, mode) : []), [answers, longueur, mode]);
   const tags = useMemo(() => tagsOf(answers), [answers]);
   const result = useMemo(() => (longueur && !left.length ? classement(answers, longueur) : null), [answers, longueur, left.length]);
 
@@ -17,7 +17,7 @@ export function useParcours() {
     /** Question being asked, if the journey is not over. */
     question: left[0] as Question | undefined,
     answered: history.length,
-    total: longueur ? journeySize(answers, longueur) : 0,
+    total: longueur ? journeySize(answers, longueur, mode) : 0,
     /** Choose or lengthen the journey: the answers already given are kept. */
     start: (next: Longueur) => setLongueur(next),
     answer(question: Question, choiceIds: string[]) {

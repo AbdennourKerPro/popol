@@ -12,7 +12,7 @@ import { type Answers, availableChoices, classement } from '../lib/engine';
 import { type Parcours, useParcours } from '../lib/useParcours';
 
 export function Militant({ onHome, onExplore }: { onHome: () => void; onExplore: () => void }) {
-  const parcours = useParcours();
+  const parcours = useParcours('militant');
   const { longueur, question, result } = parcours;
   const [sheet, setSheet] = useState(false);
   const [values, setValues] = useState<Values>({});
@@ -43,7 +43,7 @@ export function Militant({ onHome, onExplore }: { onHome: () => void; onExplore:
               </ul>
             </div>
             <h2 className="rank-section">Combien de temps avez-vous&nbsp;?</h2>
-            <LongueurPicker onPick={parcours.start} />
+            <LongueurPicker mode="militant" onPick={parcours.start} />
           </section>
         )}
 
@@ -155,11 +155,11 @@ function Synthese({ parcours, longueur, onExplore, onReset }: { parcours: Parcou
       )}
       <p className="honesty">Les phrases d’argument sont des reformulations de l’appli, sans ajout. Le texte exact du programme et sa page sur melenchon2027.fr sont sous chaque argument : en cas de doute, lisez la citation.</p>
       <div className="final-actions">
-        {longueur !== 'long' && <button className="btn btn-primary" onClick={() => setLengthen((v) => !v)}><ListPlus size={18} strokeWidth={2.6} /> Poser plus de questions</button>}
+        {longueur === 'court' && <button className="btn btn-primary" onClick={() => setLengthen((v) => !v)}><ListPlus size={18} strokeWidth={2.6} /> Poser plus de questions</button>}
         <button className="btn btn-secondary" onClick={onExplore}><ScanSearch size={18} strokeWidth={2.6} /> Tout le programme</button>
         <button className="btn btn-secondary" onClick={onReset}><RotateCcw size={18} strokeWidth={2.6} /> Nouvelle personne</button>
       </div>
-      {lengthen && <LongueurPicker from={longueur} answers={parcours.answers} onPick={parcours.start} />}
+      {lengthen && <LongueurPicker mode="militant" from={longueur} answers={parcours.answers} onPick={parcours.start} />}
     </section>
   );
 }

@@ -18,17 +18,27 @@ describe('taxonomy and questions', () => {
     const unknown = [...produced].filter((t) => !PUBLIC_IDS.includes(t) && !THEME_IDS.includes(t.split(':')[1] as never));
     expect(unknown).toEqual([]);
   });
-  it('has unique question and choice ids, and the three journeys grow', () => {
+  it('has unique question and choice ids, and the journeys grow', () => {
     expect(new Set(QUESTION_LIST.map((q) => q.id)).size).toBe(QUESTION_LIST.length);
     for (const q of QUESTION_LIST) expect(new Set(q.choices.map((c) => c.id)).size).toBe(q.choices.length);
-    const count = (l: 'court' | 'normal' | 'long') => remaining({}, l).length;
-    expect([count('court'), count('normal'), count('long')]).toEqual([6, 11, 20]);
+    expect([remaining({}, 'court').length, remaining({}, 'normal').length]).toEqual([8, 12]);
+  });
+  it('asks mostly about the situation: a single question on topics, at the end', () => {
+    const topics = QUESTION_LIST.filter((q) => q.choices.some((c) => c.tags.some((t) => t.startsWith('i:'))));
+    expect(topics.map((q) => q.id)).toEqual(['compte']);
+    expect(remaining({}, 'normal').at(-1)!.id).toBe('compte');
+  });
+  it('keeps the identity questions for the game, never asked at the door', () => {
+    const personal = QUESTION_LIST.filter((q) => q.jeuSeul).map((q) => q.id);
+    expect(personal).toEqual(['genre', 'identite']);
+    expect(remaining({}, 'normal', 'jeu').map((q) => q.id)).toEqual(expect.arrayContaining(personal));
+    expect(remaining({}, 'normal', 'militant').some((q) => q.jeuSeul)).toBe(false);
   });
 });
 
 describe('time estimates', () => {
   it('gives each journey a duration from its number of questions, and the time left while answering', () => {
-    expect([6, 11, 20].map(dureeEstimee)).toEqual(['≈ 2 min', '≈ 3 min', '≈ 5 min']);
+    expect([8, 12, 20].map(dureeEstimee)).toEqual(['≈ 2 min', '≈ 3 min', '≈ 5 min']);
     expect([0, 3, 4, 8, 20].map(tempsRestant)).toEqual(['', 'Moins d’une minute', 'Moins d’une minute', '≈ 2 min restantes', '≈ 5 min restantes']);
   });
 });
@@ -56,12 +66,30 @@ describe('programme data', () => {
 describe('journey', () => {
   const salarieLocataire: Answers = { statut: ['prive'], logement: ['locataire'], compte: ['logement', 'pouvoir_achat'] };
 
-  it('asks conditional and later-round questions only when they apply', () => {
-    expect(remaining({}, 'court').map((q) => q.id)).toEqual(['statut', 'age', 'foyer', 'logement', 'lieu', 'compte']);
-    expect(remaining(salarieLocataire, 'normal').map((q) => q.id)).toContain('compte2');
-    const second = availableChoices(QUESTIONS.compte2, tagsOf(salarieLocataire));
-    expect(second.map((c) => c.id)).not.toContain('logement');
-    expect(second.map((c) => c.id)).toContain('sante');
+  it('asks conditional questions only when they apply', () => {
+    expect(remaining({}, 'court').map((q) => q.id)).toEqual(['statut', 'age', 'genre', 'budget', 'foyer', 'logement', 'lieu', 'compte']);
+    expect(remaining({ statut: ['prive'] }, 'court').map((q) => q.id)).toContain('metier');
+    expect(remaining({ statut: ['retraite'] }, 'court').map((q) => q.id)).not.toContain('metier');
+    expect(availableChoices(QUESTIONS.compte, new Set()).length).toBe(THEME_IDS.length);
+  });
+
+  it('brings up the measures aimed at the person’s job and identity', () => {
+    const aimedAt = (pub: string) => MESURES.find((m) => m.publics.length === 1 && m.publics[0] === pub)!;
+    for (const [answers, pub] of [
+      [{ statut: ['public'], metier: ['soin'] }, 'soignant'],
+      [{ genre: ['femme'] }, 'femme'],
+      [{ identite: ['racisme'] }, 'discrimine'],
+    ] as [Answers, string][]) {
+      const m = aimedAt(pub);
+      expect(m, pub).toBeDefined();
+      expect(rank({ statut: ['prive'] }).some((r) => r.mesure.id === m.id), pub).toBe(false);
+      expect(rank(answers).some((r) => r.mesure.id === m.id), pub).toBe(true);
+    }
+  });
+
+  it('puts a matching situation before a ticked topic', () => {
+    const top = classement({ statut: ['precaire'], budget: ['difficiles'], compte: ['international'] }, 'court').top;
+    expect(top[0].mesure.publics.length + (top[0].mesure.portee === 'large' ? 1 : 0)).toBeGreaterThan(0);
   });
 
   it('only offers a measure aimed at publics to a person who is one of them', () => {
@@ -77,7 +105,7 @@ describe('journey', () => {
     const perSection = new Map<string, number>();
     for (const r of top.top) perSection.set(r.mesure.sousSection, (perSection.get(r.mesure.sousSection) ?? 0) + 1);
     expect(Math.max(...perSection.values())).toBeLessThanOrEqual(2);
-    expect(classement(salarieLocataire, 'long').others).toHaveLength(20);
+    expect(classement(salarieLocataire, 'normal').others).toHaveLength(15);
   });
 
   it('falls back on the key measures that concern many people when nothing can be targeted', () => {
@@ -111,8 +139,6 @@ describe('journey', () => {
     const withBills = { ...base, energie: ['pese'] };
     const { top, others } = classement(withBills, 'normal');
     expect([...top, ...others].some((r) => r.mesure.id === freeEnergy)).toBe(true);
-    // A difficulty does not hide the theme from the later rounds of interests.
-    expect(availableChoices(QUESTIONS.compte2, tagsOf({ sante: ['maladie'] })).map((c) => c.id)).toContain('sante');
     // ... and only measures that directly reach most people are pulled up.
     expect(rank({ sante: ['maladie'] }).filter((r) => r.mesure.publics.length === 0).every((r) => r.mesure.portee === 'large')).toBe(true);
   });

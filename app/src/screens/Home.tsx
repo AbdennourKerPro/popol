@@ -25,7 +25,7 @@ export function Home({ onPick }: { onPick: (page: Mode | 'explorer') => void }) 
             <Sticker tone="red" tilt={4}>1 à 5 minutes</Sticker>
             <span className="mode-icon"><Gamepad2 size={30} strokeWidth={2.4} /></span>
             <strong>Je joue</strong>
-            <span>Réponds à quelques questions, en version courte, normale ou longue : tu obtiens ton classement de mesures.</span>
+            <span>Ton travail, ton foyer, ton logement, ta vie : quelques questions, et les mesures qui changent ton quotidien.</span>
             <span className="mode-cta">C’est parti <ArrowRight size={18} strokeWidth={2.6} /></span>
           </button>
           <button className="mode-card mode-militant" onClick={() => onPick('militant')}>
