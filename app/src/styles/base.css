@@ -98,7 +98,7 @@ h1, h2, h3 { margin: 0; }
 .home h1 { font-size: clamp(42px, 6.4vw, 78px); font-weight: 900; line-height: 1; letter-spacing: -2.8px; color: var(--frame); margin: 16px 0 20px; }
 .home-mascot { display: flex; flex-direction: column; align-items: center; gap: 24px; }
 .mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 34px; }
-.mode-card { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 30px 28px 26px; text-align: left; border: 3px solid var(--frame); border-radius: 28px; box-shadow: var(--shadow-lg); transition: transform .12s, box-shadow .12s; }
+.mode-card { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 30px 28px 26px; text-align: left; text-decoration: none; border: 3px solid var(--frame); border-radius: 28px; box-shadow: var(--shadow-lg); transition: transform .12s, box-shadow .12s; }
 .mode-card:hover { transform: translate(-2px, -2px); box-shadow: 9px 9px 0 var(--frame); }
 .mode-card:active { transform: translate(5px, 5px); box-shadow: none; }
 .mode-card > .sticker { position: absolute; top: -15px; right: 24px; }
@@ -106,13 +106,18 @@ h1, h2, h3 { margin: 0; }
 .mode-card > span:not([class]) { font-size: 15.5px; line-height: 1.55; color: #5f5a53; max-width: 380px; }
 .mode-icon { display: grid; place-items: center; width: 62px; height: 62px; border-radius: 19px; border: var(--line); box-shadow: var(--shadow-sm); color: #fff; rotate: -5deg; transition: rotate .25s var(--spring); }
 .mode-card:hover .mode-icon { rotate: 6deg; }
-.mode-cta { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; font-weight: 900; font-size: 16px; }
+.mode-cta { display: inline-flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 12px; font-weight: 900; font-size: 16px; }
 .mode-game { background: var(--peach); }
 .mode-game .mode-icon { background: var(--red); }
 .mode-game .mode-cta { color: var(--red); }
-.mode-militant { background: var(--lilac); }
-.mode-militant .mode-icon { background: var(--purple); }
-.mode-militant .mode-cta { color: var(--purple); }
+.mode-quotidien { background: var(--lilac); }
+.mode-quotidien .mode-icon { background: var(--purple); }
+.mode-quotidien .mode-cta { color: var(--purple); }
+.home .explorer-link { width: fit-content; text-align: center; text-decoration: none; }
+.home .explorer-link svg { flex-shrink: 0; }
+.home-footer { margin-top: 36px; text-align: center; }
+.home-militant-link { display: inline-block; padding: 10px 0; color: var(--purple); font-size: 14px; font-weight: 700; text-underline-offset: 3px; }
+.home-footer .footnote { margin-top: 8px; }
 
 /* Theme picker */
 .accent-red { --accent: var(--red); --accent-soft: var(--peach); }
