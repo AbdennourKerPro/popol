@@ -1,0 +1,43 @@
+.page > .quotidien-main { max-width: 860px; }
+.quotidien-main h1 {
+  margin: 8px 0 12px;
+  color: var(--frame);
+  font-size: clamp(30px, 5vw, 44px);
+  font-weight: 900;
+  letter-spacing: -1.4px;
+}
+.quotidien-lieux { display: grid; gap: 14px; margin: 24px 0; }
+.quotidien-lieu {
+  border: var(--line);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+}
+.quotidien-lieu > summary {
+  padding: 14px;
+  border-radius: 15px;
+  color: var(--frame);
+  cursor: pointer;
+  list-style: none;
+}
+.quotidien-lieu > summary::-webkit-details-marker { display: none; }
+.quotidien-lieu > summary:hover, .quotidien-lieu[open] > summary { background: var(--lilac); }
+.quotidien-lieu-entete {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+.quotidien-lieu > summary strong { display: block; margin-bottom: 4px; color: var(--purple); }
+.quotidien-icone {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: var(--line);
+  border-radius: 12px;
+  background: var(--lilac);
+  color: var(--purple);
+}
+.quotidien-lieu[open] .quotidien-chevron { transform: rotate(180deg); }
+.quotidien-lieu > .quote { margin: 12px 14px 14px; }
